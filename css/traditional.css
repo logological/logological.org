@@ -1,0 +1,195 @@
+/* $Id: traditional.css,v 1.3 2005/02/18 22:06:57 psy Exp $ */
+
+@import 'http://www.w3.org/StyleSheets/Core/Traditional';
+
+body {
+}
+
+.bib-abstract {
+  display: block;
+  margin-top: 1em;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: smaller;
+  text-align: justify;
+  display: block;
+  line-height: 1.33em;
+}
+
+.bib-abstract:before {
+  content: "Abstract: ";
+  font-weight: bold;
+ }
+
+.bib-article {
+}
+
+.bib-author {
+}
+
+.bib-bibitem {
+  clear: both;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.bib-bibitem p {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.bib-bibliography {
+}
+
+.bib-bibliography ul {
+}
+
+.bib-bibtex {
+  font-family: Courier, "Courier New", monospace;
+  margin-top: 1em;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: smaller;
+  text-align: left;
+  line-height: 1.33em;
+}
+
+.bib-bibtex:before {
+}
+
+.bib-book {
+}
+
+.bib-booklet {
+}
+
+.bib-booktitle {
+}
+
+.bib-editor {
+}
+
+.bib-entry-key {
+}
+
+.bib-entry-type {
+}
+
+.bib-field {
+  margin-left: 3ex;
+  text-indent: -22ex;
+  padding-left: 22ex;
+}
+
+.bib-field-data {
+}
+
+.bib-field-name {
+}
+
+.bib-footer {
+  margin-top: 3em;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.bib-icon {
+  border: 0;
+  padding-left: 5px;
+}
+
+.bib-iconbox {
+  float: right;
+}
+
+.bib-inbook {
+}
+
+.bib-incollection {
+}
+
+.bib-inproceedings {
+}
+
+.bib-legend {
+  text-align: center;
+}
+
+.bib-legend:after {
+  content: "Legend of file formats";
+  font-style: italic;
+}
+
+.bib-legend ul {
+  padding-top: 1ex;
+  padding-bottom: 0;
+  margin-bottom: 0.5ex;
+  text-align: center;
+}
+
+.bib-legend ul>li {
+  display: inline;
+  margin: 0;
+  padding-right: 2ex;
+  margin-right: 1ex;
+  white-space: nowrap;
+}
+
+.bib-legend ul>li>img {
+  vertical-align: middle;
+}
+
+.bib-manual {
+}
+
+.bib-mastersthesis {
+}
+
+.bib-misc {
+}
+
+.bib-phdthesis {
+}
+
+.bib-showhide {
+  margin-top: 2em;
+}
+
+.bib-showhide ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.bib-showhide ul>li {
+  font-weight: bold;
+  padding: 1ex;
+  display: inline;
+  margin: 0;
+  margin-right: 1ex;
+}
+
+.bib-showhide ul>li>a {
+}
+
+.bib-showhide ul>li>a:before {
+  content: "~ ";
+}
+
+.bib-showhide ul>li>a:after {
+  content: " ~";
+}
+
+.bib-techreport {
+}
+
+.bib-title {
+}
+
+.bib-unpublished {
+}
+
+.bib-year {
+}
+

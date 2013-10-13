@@ -1,0 +1,148 @@
+/*
+** $Id: compact.css,v 1.1 2005/02/18 22:05:38 psy Exp $
+**
+** Use this file as a template for creating your own styles for
+** use with mypubs bibliographies.
+**
+*/
+
+body {
+}
+
+h1 {
+}
+
+.bib-abstract {
+  display: none;
+}
+
+.bib-abstract:before {
+}
+
+.bib-article {
+}
+
+.bib-author {
+}
+
+.bib-bibitem {
+}
+
+.bib-bibitem p {
+}
+
+.bib-bibliography {
+}
+
+.bib-bibliography ul {
+}
+
+.bib-bibtex {
+  display: none;
+}
+
+.bib-bibtex:before {
+}
+
+.bib-book {
+}
+
+.bib-booklet {
+}
+
+.bib-booktitle {
+}
+
+.bib-editor {
+}
+
+.bib-entry-key {
+}
+
+.bib-entry-type {
+}
+
+.bib-field {
+}
+
+.bib-field-data {
+}
+
+.bib-field-name {
+}
+
+.bib-footer {
+}
+
+.bib-icon {
+}
+
+.bib-iconbox {
+  display: none;
+}
+
+.bib-inbook {
+}
+
+.bib-incollection {
+}
+
+.bib-inproceedings {
+}
+
+.bib-legend {
+  display: none;
+}
+
+.bib-legend:before {
+}
+
+.bib-legend ul {
+}
+
+.bib-legend ul>li {
+}
+
+.bib-legend ul>li>abbr {
+}
+
+.bib-legend ul>li>img {
+}
+
+.bib-manual {
+}
+
+.bib-mastersthesis {
+}
+
+.bib-misc {
+}
+
+.bib-phdthesis {
+}
+
+.bib-showhide {
+  display: none;
+}
+
+.bib-showhide ul {
+}
+
+.bib-showhide ul>li {
+}
+
+.bib-showhide ul>li>a {
+}
+
+.bib-techreport {
+}
+
+.bib-title {
+}
+
+.bib-unpublished {
+}
+
+.bib-year {
+}
+

@@ -1,0 +1,230 @@
+/* $Id: breuel.css,v 1.5 2005/02/18 22:04:45 psy Exp $ */
+
+body {
+  color: black;
+  background-color: white;
+}
+
+a {
+  color: purple;
+}
+
+a:visited { 
+  color: purple;
+}
+
+a:hover { 
+  color: blue;
+}
+
+h1 {
+  border-bottom: solid 4px #B588C6;
+}
+
+.bib-abstract {
+  display: block;
+  margin-top: 1ex;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: smaller;
+  text-align: justify;
+  display: block;
+}
+
+.bib-abstract:before {
+  content: "Abstract: ";
+  font-weight: bold;
+ }
+
+.bib-article {
+}
+
+.bib-author {
+  display: block;
+}
+
+.bib-bibitem {
+  display: block;
+  clear: both;
+  background-color: #ddf;
+  padding: 1ex;
+  margin-bottom: 1em;
+}
+
+.bib-bibitem p {
+  margin: 0;
+  padding: 0;
+}
+
+.bib-bibliography {
+  margin-left: 1em;
+}
+
+.bib-bibliography ul {
+  margin: 0;
+}
+
+.bib-bibtex {
+  background-color: #eef;
+  border-color: purple;
+  border-width: 2px;
+  border-style: solid;
+  font-family: monospace;
+  margin-top: 1.5ex;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: smaller;
+  text-align: left;
+  padding: 1ex;
+  display: none;
+}
+
+.bib-bibtex:before {
+}
+
+.bib-book {
+}
+
+.bib-booklet {
+}
+
+.bib-booktitle {
+  display: block;
+  font-weight: bold;
+}
+
+.bib-editor {
+}
+
+.bib-entry-key {
+  color: #004;
+}
+
+.bib-entry-type {
+  color: purple;
+}
+
+.bib-field {
+  margin-left: 3ex;
+  text-indent: -19ex;
+  padding-left: 19ex;
+}
+
+.bib-field-data {
+  color: #808;
+}
+
+.bib-field-name {
+  color: #004;
+}
+
+.bib-footer {
+  margin-top: 3em;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.bib-iconbox {
+  float: right;
+}
+
+.bib-icon {
+  border: 0;
+  padding-left: 5px;
+}
+
+.bib-inbook {
+}
+
+.bib-incollection {
+}
+
+.bib-inproceedings {
+}
+
+.bib-legend {
+}
+
+.bib-legend:before {
+  content: "Publications with icons are available for download.  The  following legend indicates the file formats available: ";
+}
+
+.bib-legend ul {
+  text-align: center;
+  margin: 0;
+  padding: 1ex 0;
+}
+
+.bib-legend ul>li>abbr {
+  border: 0;
+}
+
+.bib-legend ul>li {
+  border-style: solid;
+  border-width: 2px;
+  border-color: purple;
+  background: purple;
+  color: white;
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+  padding-right: 2ex;
+  margin-right: 1ex;
+  white-space: nowrap;
+}
+
+.bib-legend ul>li>img {
+  vertical-align: middle;
+}
+
+.bib-manual {
+}
+
+.bib-mastersthesis {
+}
+
+.bib-misc {
+}
+
+.bib-phdthesis {
+}
+
+.bib-showhide {
+  margin-top: 2em;
+}
+
+.bib-showhide ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.bib-showhide ul>li {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: purple;
+  font-weight: bold;
+  padding: 1ex;
+  display: inline;
+  margin: 0;
+  margin-right: 1ex;
+}
+
+.bib-showhide ul>li>a {
+  text-decoration: none;
+}
+
+.bib-techreport {
+}
+
+.bib-title {
+  display: block;
+  font-weight: bold;
+}
+
+.bib-unpublished {
+}
+
+.bib-year {
+  border-bottom: solid 2px #B588C6;
+}

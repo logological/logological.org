@@ -1,0 +1,267 @@
+/* $Id: fruity.css,v 1.2 2005/02/18 22:04:27 psy Exp $ */
+
+body {
+  font-family: "Bitstream Vera Mono", "Andale Mono", Courier, 
+               "Courier New", monospace;
+  color: black;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited { 
+  color: blue;
+}
+
+a:hover { 
+  color: red;
+}
+
+em { 
+  text-decoration: underline;
+  font-style: normal;
+}
+
+h1 {
+  border-bottom: dotted 2px black;
+}
+
+.bib-abstract {
+  background-color: white;
+  border-color: black;
+  border-width: 2px;
+  border-style: dotted;
+  display: block;
+  margin-top: 1ex;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: smaller;
+  padding: 1ex;
+  display: none;
+}
+
+.bib-abstract:before {
+  content: "ABSTRACT: ";
+  font-weight: bold;
+  color: blue;
+ }
+
+.bib-article {
+  background-color: #ff8;
+  padding: 1ex;
+}
+
+.bib-author {
+  display: block;
+}
+
+.bib-bibitem {
+  display: block;
+  clear: both;
+  margin-bottom: 1em;
+}
+
+.bib-bibitem p {
+  margin: 0;
+  padding: 0;
+}
+
+.bib-bibliography {
+  margin-left: 1em;
+}
+
+.bib-bibliography ul {
+  margin: 0;
+}
+
+.bib-bibtex {
+  background-color: white;
+  border-color: black;
+  border-width: 2px;
+  border-style: dotted;
+  font-family: "Bitstream Vera Mono", "Andale Mono", Courier, 
+               "Courier New", monospace;
+  margin-top: 1.5ex;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: smaller;
+  text-align: left;
+  padding: 1ex;
+  display: none;
+}
+
+.bib-bibtex:before {
+}
+
+.bib-book {
+  background-color: #ffc0cb;
+  padding: 1ex;
+}
+
+.bib-booklet {
+  background-color: #ffc0cb;
+  padding: 1ex;
+}
+
+.bib-booktitle {
+  display: block;
+  font-weight: bold;
+}
+
+.bib-editor {
+}
+
+.bib-entry-key {
+  color: red;
+}
+
+.bib-entry-type {
+  color: brown;
+}
+
+.bib-field {
+  margin-left: 3ex;
+  text-indent: -19ex;
+  padding-left: 19ex;
+}
+
+.bib-field-data {
+  color: green;
+}
+
+.bib-field-name {
+  color: purple;
+}
+
+.bib-footer {
+  margin-top: 3em;
+  font-size: smaller;
+}
+
+.bib-iconbox {
+  float: right;
+}
+
+.bib-icon {
+  border: 0;
+  padding-left: 5px;
+}
+
+.bib-inbook {
+  background-color: #ff8;
+  padding: 1ex;
+}
+
+.bib-incollection {
+  background-color: #ff8;
+  padding: 1ex;
+}
+
+.bib-inproceedings {
+  background-color: #87cefa;
+  padding: 1ex;
+}
+
+.bib-legend {
+}
+
+.bib-legend:before {
+  content: "Publications with icons are available for download.  The  following legend indicates the file formats available: ";
+}
+
+.bib-legend:after {
+  content: "Entries are colour-coded as follows: articles, azure; books, pink; conference papers, canary; theses, violet; manuals and technical reports, peach; unpublished, silver; miscellaneous, chartreuse."
+}
+
+.bib-legend ul {
+  text-align: center;
+  margin: 0;
+  padding: 1ex 0;
+}
+
+.bib-legend ul>li>abbr {
+  border: 0;
+}
+
+.bib-legend ul>li {
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+  padding-right: 2ex;
+  margin-right: 1ex;
+  white-space: nowrap;
+}
+
+.bib-legend ul>li>img {
+  vertical-align: middle;
+}
+
+.bib-manual {
+  background-color: #ffdead;
+  padding: 1ex;
+}
+
+.bib-mastersthesis {
+  background-color: #dda0dd;
+  padding: 1ex;
+}
+
+.bib-misc {
+  background-color: #7fff00;
+  padding: 1ex;
+}
+
+.bib-phdthesis {
+  background-color: #dda0dd;
+  padding: 1ex;
+}
+
+.bib-showhide {
+  margin-top: 2em;
+}
+
+.bib-showhide ul {
+  text-align: center;
+  font-size: larger;
+  margin: 0;
+  padding: 0;
+}
+
+.bib-showhide ul>li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.bib-showhide ul>li+li {
+  padding-left: 1ex;
+  margin: 0;
+  display: inline;
+  border-left: 1px dotted black;
+}
+
+.bib-showhide ul>li>a {
+  text-decoration: none;
+}
+
+.bib-techreport {
+  background-color: #ffdead;
+  padding: 1ex;
+}
+
+.bib-title {
+  display: block;
+  font-style: italic;
+}
+
+.bib-unpublished {
+  background-color: #d3d3d3;
+  padding: 1ex;
+}
+
+.bib-year {
+  border-bottom: dotted 2px black;
+}
