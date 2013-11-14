@@ -18,10 +18,11 @@
 % - make sure id cite keys are valid for XHTML
 % - add "day" field
 % - allow author/editor for inbook
-% - allow for both isbn and issn in proceedings
 %
 % Changelog since prealpha:
 % - sorted by year, then month
+% - allow for both isbn and issn in proceedings
+% - book covers
 
 ENTRY
   {
@@ -56,6 +57,7 @@ ENTRY
     volume
     year
     pubtype
+    cover
   }
   {}
   {}
@@ -105,6 +107,7 @@ STRINGS
     script.path
     script.showhide
     css.path
+    covers.path
     css.filename
     link
   }
@@ -119,6 +122,7 @@ FUNCTION {init.string.consts}
   "http://www.nothingisreal.com"                           'script.path    	:=
   "showhide.js"			'script.showhide	:=
   "css"				'css.path		:=
+  "http://files.nothingisreal.com/publications/Tristan_Miller/covers"			'covers.path		:=
   null				'current.year		:=
   null				'current.pubtype	:=
 }
@@ -1042,7 +1046,7 @@ FUNCTION {output.pubtype.heading}
           "<p></html>" write$ newline$
 	  "==" pubtype * "==" * write$ newline$
           "<html></p>" write$ newline$
-          "        <ol>" write$ newline$
+          "        <ol class='bib-list'>" write$ newline$
           pubtype 'current.pubtype :=
         }
       if$
@@ -1057,6 +1061,9 @@ FUNCTION {output.bibitem}
 	cite.prefix * write$
   cite$ write$
   "'>" write$
+  newline$
+  "	    <div class='bib-cover-container'><img class='bib-cover' src='"
+  covers.path * "/" * cover * "' /></div>" * write$
   newline$
   type$ "" =
     { "            <div class='" css.prefix * "unknown'>" * write$ }
@@ -1426,7 +1433,12 @@ FUNCTION {format.bvolume}
     { "volume" volume tie.or.space.connect
       series empty$
 	'skip$
-	{ " of " * series emphasize * }
+	{ " of " * series emphasize * 
+	  issn empty$
+	  'skip$
+	  { " (ISSN " * issn * ")" * }
+	  if$
+	}
       if$
       "volume and number" number either.or.check
     }
@@ -2182,7 +2194,7 @@ FUNCTION {sort.format.month}
 }
 
 FUNCTION {presort}
-{ pubtype field.or.null sortify invert
+{ pubtype field.or.null sortify
   "    "
   *
   year field.or.null sortify invert
