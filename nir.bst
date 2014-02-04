@@ -2167,7 +2167,7 @@ FUNCTION {sort.format.month}
                           t #1 #3 substring$ "dec" =
                           or
                           { "01" }
-                          { "13" } % No month specified
+                          { "00" } % No month specified
                         if$
                         }
                       if$
