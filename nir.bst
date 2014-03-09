@@ -30,6 +30,7 @@ ENTRY
     address
     author
     booktitle
+    bookurl
     chapter
     dvi
     edition
@@ -467,7 +468,7 @@ FUNCTION {latex2html.4}
   "\textless"  "&lt;"  find.replace
   "\textlnot"  "&not;"  find.replace
   "\textsurd"  "&radic;"  find.replace
-  "\LaTeXTeX"  "(La)TeX"  find.replace
+  "\LaTeXTeX"  "<span class='latex'>(L<sup>a</sup>)T<sub>e</sub>X</span>"  find.replace
   "\CYRDZHE"  "&#x040F;"  find.replace
   "\CYREREV"  "&#x042D;"  find.replace
   "\CYRSHCH"  "&#x0429;"  find.replace
@@ -486,7 +487,7 @@ FUNCTION {latex2html.5}
   "\textmho"  "&#x2127;"  find.replace
   "\textohm"  "&#x2126;"  find.replace
   "\textyen"  "&yen;"  find.replace
-  "\BibTeX"  "BibTeX"  find.replace
+  "\BibTeX"  "B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span>"  find.replace
   "\CYRDJE"  "&#x0402;"  find.replace
   "\CYRDZE"  "&#x0405;"  find.replace
   "\CYRERY"  "&#x042B;"  find.replace
@@ -534,7 +535,7 @@ FUNCTION {latex2html.6}
   "\CYRYO"  "&#x0401;"  find.replace
   "\CYRYU"  "&#x042E;"  find.replace
   "\CYRZH"  "&#x0416;"  find.replace
-  "\LaTeX"  "LaTeX"  find.replace
+  "\LaTeX"  "<span class='latex'>L<sup>a</sup>T<sub>e</sub>X</span>"  find.replace
   "\Thorn"  "&THORN;"  find.replace
   "\^{\i}"  "&icirc;"  find.replace
   "\^{\j}"  "&#x0135;"  find.replace
@@ -823,7 +824,7 @@ FUNCTION {latex2html.14}
   "\~{o}"  "&otilde;"  find.replace
   "\~{u}"  "&#x0169;"  find.replace
   "\" quote$ * "{}" *  "&die;"  find.replace
-  "\TeX"  "TeX"  find.replace
+  "\TeX"  "<span class='tex'>T<sub>e</sub>X</span>"  find.replace
   "\'{}"  "&acute;"  find.replace
 }
 
@@ -1257,12 +1258,12 @@ FUNCTION {field.or.null}
   if$
 }
 
-FUNCTION {emphasize}
-{ duplicate$ empty$
-    { pop$ "" }
-    { "<em>" swap$ * "</em>" * }
-  if$
-}
+%FUNCTION {emphasize}
+%{ duplicate$ empty$
+%    { pop$ "" }
+%    { "<em>" swap$ * "</em>" * }
+%  if$
+%}
 
 INTEGERS { nameptr namesleft numnames }
 
@@ -1330,6 +1331,28 @@ FUNCTION {format.issn}
 { issn empty$
     { "" }
     { new.block "ISSN " issn * }
+  if$
+}
+
+FUNCTION {format.btitle.link}
+{ "" 'link :=
+  bookurl empty$
+    { "<span class='bib-booktitle'>" booktitle * "</span>" * }
+    {
+      "<span class='bib-booktitle'><a href='" bookurl * "'>" *
+      booktitle * "</a></span>" * 
+    }
+  if$
+}
+
+FUNCTION {format.jtitle.link}
+{ "" 'link :=
+  bookurl empty$
+    {  "<span class='bib-journaltitle'>" journal * "</span>" *}
+    {
+      "<span class='bib-journaltitle'><a href='" bookurl * "'>" *
+      journal * "</a></span>" * 
+    }
   if$
 }
 
@@ -1409,7 +1432,7 @@ FUNCTION {format.date}
 
 FUNCTION {format.btitle}
 {  #1 in.span + 'in.span :=
-  "<span class='" css.prefix * "booktitle'>" * title emphasize *
+  "<span class='" css.prefix * "booktitle'>" * title *
 }
 
 FUNCTION {tie.or.space.connect}
@@ -1433,7 +1456,7 @@ FUNCTION {format.bvolume}
     { "volume" volume tie.or.space.connect
       series empty$
 	'skip$
-	{ " of " * series emphasize * 
+	{ " of " * series * 
 	  issn empty$
 	  'skip$
 	  { " (ISSN " * issn * ")" * }
@@ -1550,8 +1573,8 @@ FUNCTION {format.in.ed.booktitle}
 { booktitle empty$
     { "" }
     { editor empty$
-	{ "In " booktitle emphasize * }
-	{ "In " format.editors * "</span>, " * booktitle emphasize *
+	{ "In " format.btitle.link * }
+	{ "In " format.editors * "</span>, " * format.btitle.link *
 	  in.span #1 - 'in.span :=
         }
       if$
@@ -1596,7 +1619,7 @@ FUNCTION {format.article.crossref}
 	  warning$
 	  ""
 	}
-	{ "In <em>" journal * "</em>" * }
+	{ "In " format.jtitle.link * }
       if$
     }
     { "In " key * }
@@ -1639,7 +1662,7 @@ FUNCTION {format.book.crossref}
 	      crossref * warning$
 	      "" *
 	    }
-	    { "<em>" * series * "</em>" * }
+	    { "<span class='bib-series'>" * series * "</span>" * }
 	  if$
 	}
 	{ key * }
@@ -1660,7 +1683,7 @@ FUNCTION {format.incoll.inproc.crossref}
 	      crossref * warning$
 	      ""
 	    }
-	    { "In <em>" booktitle * "</em>" * }
+	    { "In " format.btitle.link * }
 	  if$
 	}
 	{ "In " key * }
@@ -1678,7 +1701,7 @@ FUNCTION {article}
   format.title "title" output.check
   new.block
   crossref missing$
-    { journal emphasize "journal" output.check
+    { format.jtitle.link "journal" output.check
       format.vol.num.pages output
       format.date "year" output.check
     }
@@ -2287,7 +2310,7 @@ FUNCTION {output.showhide}
   ">Show/hide abstracts</a></li>" * write$ newline$
   "        <li><a href='#' onclick=" quote$ *
   "toggleAll('" * css.prefix * "bibtex')" * quote$ *
-  ">Show/hide BibTeX records</a></li>" * write$ newline$
+  ">Show/hide B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> records</a></li>" * write$ newline$
   "      </ul>" write$ newline$
   "    </div>" write$ newline$
   "<!-- END BIBLET SHOWHIDE -->" write$ newline$
@@ -2333,7 +2356,7 @@ FUNCTION {end.bib}
   "<!-- END BIBLET BIBLIOGRAPHY -->" write$ newline$ newline$
   #0 'in.bibliography :=
   "    <div class='" css.prefix * "footer'>" * write$ newline$
-  "      <hr /><p lang='en'>Generated with BibTeX and the "
+  "      <hr /><p lang='en'>Generated with B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> and the "
   "<a href='http://www.nothingisreal.com/biblet/'>biblet</a>" *
   " bibliography style.</p>" * write$ newline$
   "    </div>" write$ newline$
