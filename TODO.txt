@@ -3,3 +3,7 @@
 * Replace CHEOPS screenshots
 
 * Fix various typos, such as stray backslashes in software pages
+
+* Split "Fun" page into Humour/Misc and Logology?
+
+

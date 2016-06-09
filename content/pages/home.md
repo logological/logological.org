@@ -69,7 +69,7 @@ online under free licenses.</p>
 <a href="https://tu-darmstadt.academia.edu/TristanMiller">
 <i class="ai ai-academia-square fa-3x" title="Academia.edu"></i>
 </a>
-</li>
+</li><br />
 
 <li>
 <a href="https://impactstory.org/u/0000-0002-0749-1100">
