@@ -122,18 +122,6 @@ Optional:
 If `tags` has the word `expanded`, will place an info alert saying that there
 is an expanded abstract or short paper available with this entry.
 
-## Automatic deploy with TravisCI
-
-The site can be automatically built and deployed 
-every time a commit is pushed to the *master* branch.
-See files `.travis.yml` and `.update-website.sh`.
-Inspired by
-[Sleepy Coders](http://sleepycoders.blogspot.com.au/2013/03/sharing-travis-ci-generated-files.html)
-and
-[Mathieu Leplatre](http://blog.mathieu-leplatre.info/publish-your-pelican-blog-on-github-pages-via-travis-ci.html).
-
-[![TravisCI status](http://img.shields.io/travis/leouieda/website.svg?style=flat)](https://travis-ci.org/leouieda/website)
-
 ## License
 
 [![Creative Commons
