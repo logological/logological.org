@@ -8,7 +8,7 @@ SITENAME = u"Tristan Miller"
 SITEKEYWORDS = ', '.join([
     'natural language processing', 'nlp', 'computational linguistics', 'logology', 'free software', 'humour'
     ])
-SITEURL = ''
+#SITEURL = 'http://www.nothingisreal.com'
 REPOURL = 'https://github.com/logological/nothingisreal'
 DESCRIPTION = ""
 BANNER = ""
@@ -28,21 +28,8 @@ DEFAULT_LANG = u'en'
 TIMEZONE = u'Europe/Berlin'
 
 # This goes at the footer of the site
-FOOTER_LEFT = """
-<!-- Powered by <a href="http://getpelican.com/">Pelican</a>,
-<a href="http://python.org">Python</a>,
-and <a href="http://getbootstrap.com/">Bootstrap</a>.
-</br>
-Theme by <a href="https://github.com/leouieda/website">Leonardo Uieda</a>.<br />
-Icons by <a href="http://fontawesome.io/">Font Awesome</a>
-and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
--->
-"""
+FOOTER_LEFT = ""
 FOOTER_RIGHT = """
-<!--Built by <a href="https://travis-ci.org/">Travis CI</a>
-and
-hosted on <a href="https://pages.github.com/">Github Pages</a>.
-</br> -->
 Last modified: {date}<!--{commit}-->
 </br>
 <a href="/credits.html">Credits</a> &bullet;
@@ -64,18 +51,16 @@ STATIC_PATHS = [
     'pdf',
     'misc',
     'extra/CNAME',
-    'extra/.nojekyll',
     'extra/favicon.ico',
     'extra/favicon.png',
 ]
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/.nojekyll': {'path': '.nojekyll'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/favicon.png': {'path': 'favicon.png'},
 }
 
-READERS = {"html": None}
+#READERS = {"html": None}
 
 ARTICLES_FRONT_PAGE = 2
 SUMMARY_MAX_LENGTH = 25

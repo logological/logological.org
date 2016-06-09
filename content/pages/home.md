@@ -43,7 +43,7 @@ online under free licenses.</p>
 
 <div class="row">
 <div class="col-md-2"></div>
-<div class="col-md-8">
+<div class="col-md-10">
 
 <ul class="social">
 
@@ -89,10 +89,16 @@ online under free licenses.</p>
 </a>
 </li>
 
+<li>
+<a href="http://psych0naut.livejournal.com/">
+<i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i>
+</a>
+</li>
+
 </ul>
 
 </div>
-<div class="col-md-2"></div>
+<!--<div class="col-md-2"></div>-->
 </div>
 
 <!--
