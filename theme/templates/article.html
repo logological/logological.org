@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+
+{% block meta %}
+    {% if article.keywords %}
+        <meta name="keywords" contents="{{article.keywords}}" />
+    {% endif %}
+    {% for description in article.description %}
+        <meta name="description" contents="{{description}}" />
+    {% endfor %}
+    {% for tag in article.tags %}
+        <meta name="tags" contents="{{tag}}" />
+    {% endfor %}
+    {% if article.author %}
+        <meta name="author" content="{{ article.author }}"/>
+    {% endif %}
+{% endblock %}
+
+{% block title %}
+    {{ article.title }} | {{ SITENAME }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <p class="category-link">
+    <a href="{{SITEURL}}/{{category}}">{{category|capitalize}}</a> »
+    </p>
+
+    <h1>{{ article.title }}</h1>
+
+    <p class="paper-date-author">
+    {% if article.author %}
+        by {{ article.author }}
+    {% endif %}
+    {% if article.date %}
+        ({{ article.date|strftime('%Y') }})
+    {% endif %}
+    </p>
+
+    <div class="row">
+
+    <div class="col-md-4">
+
+    {% if article.tags and "review" in article.tags %}
+    <div class="alert alert-warning">
+        <strong>
+        This article is unpublished and is currently undergoing peer-review.
+        </strong>
+    </div>
+    {% endif %}
+
+    {% if article.thumbnail %}
+    <img class="paper-thumbnail" src="{{SITEURL}}/{{article.thumbnail}}"></img>
+    {% endif %}
+
+    <h2>Info</h2>
+    <ul class="list-group">
+
+        {% if article.tags and "OA" in article.tags %}
+            <li class="list-group-item active">
+            <i class="ai ai-open-access ai-fw" title="Open-access article"></i>
+            Open-Access
+            </li>
+        {% endif %}
+
+        {% if article.tags and "expanded" in article.tags %}
+            <li class="list-group-item active">
+            <i class="fa fa-file-text fa-fw" title="Expanded abstract or short
+                paper available"></i>
+            Expanded abstract | Short paper
+            </li>
+        {% endif %}
+
+        {% if article.type %}
+            <li class="list-group-item">
+            {% if article.type == "oral" %}
+                <i class="fa fa-comments-o fa-fw"
+                    title="{{article.type}} presentation"></i>
+                {{article.type|capitalize}} presentation
+            {% elif article.type == "poster" %}
+                <i class="fa fa-picture-o fa-fw"
+                    title="{{article.type}} presentation"></i>
+                {{article.type|capitalize}} presentation
+            {% elif article.type == "university course" %}
+                <i class="fa fa-graduation-cap fa-fw" title="{{article.type}}"></i>
+                {{article.type|capitalize}}
+            {% elif article.type == "short course" %}
+                <i class="fa fa-info-circle fa-fw" title="{{article.type}}"></i>
+                {{article.type|capitalize}}
+            {% else %}
+                <i class="fa fa-info-circle fa-fw" title="{{article.type}}"></i>
+                {{article.type|capitalize}}
+            {% endif %}
+            </li>
+        {% endif %}
+
+        {% if article.repository %}
+            <li class="list-group-item">
+            <i class="fa fa-github-square fa-fw" title="Github repository"></i>
+            Source code: <a href="https://github.com/{{article.repository}}">{{article.repository}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.slides %}
+            <li class="list-group-item">
+            <i class="fa fa-desktop fa-fw" title="Download slides"></i>
+            Slides: <a href="http://dx.doi.org/{{article.slides}}">{{article.slides}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.poster %}
+            <li class="list-group-item">
+            <i class="fa fa-picture-o fa-fw" title="Download poster"></i>
+            Poster: <a href="http://dx.doi.org/{{article.poster}}">{{article.poster}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.event %}
+            <li class="list-group-item">
+            <i class="fa fa-users fa-fw" title="Event name"></i>
+            {{article.event}}
+            </li>
+        {% endif %}
+
+        {% if article.institution %}
+            <li class="list-group-item">
+            <i class="fa fa-university fa-fw" title="Institution name"></i>
+            {{article.institution}}
+            </li>
+        {% endif %}
+
+        {% if article.journal %}
+            <li class="list-group-item">
+            <i class="fa fa-book fa-fw" title="Journal name"></i>
+            Journal: {{article.journal}}
+            </li>
+        {% endif %}
+
+        {% if article.doi %}
+            <li class="list-group-item">
+            <i class="fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+            doi: <a href="http://dx.doi.org/{{article.doi}}">{{article.doi}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.supplement %}
+            <li class="list-group-item">
+            <i class="fa fa-paperclip fa-fw" title="Supplementary material"></i>
+            Supplement:
+            <a href="http://dx.doi.org/{{article.supplement}}">{{article.supplement}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.pdf %}
+            <li class="list-group-item">
+            <i class="fa fa-file-pdf-o fa-fw" title="Paper PDF"></i>
+            Article PDF:
+            <a href="{{SITEURL}}/pdf/{{article.pdf}}">{{article.pdf}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.website %}
+            <li class="list-group-item">
+            <i class="fa fa-home fa-fw" title="Website"></i>
+            <a href="{{article.website}}">{{article.website}}</a>
+            </li>
+        {% endif %}
+
+        {% if article.language %}
+            <li class="list-group-item">
+            <i class="fa fa-code fa-fw" title="Programming language"></i>
+            Programming language:
+            {{article.language}}
+            </li>
+        {% endif %}
+
+        {% if article.license %}
+            <li class="list-group-item">
+            <i class="fa fa-file-text fa-fw" title="Open-source license"></i>
+            {{article.license}}
+            License
+            </li>
+        {% endif %}
+    </ul>
+
+    {% if article.doi %}
+        <h2>Article Level Metrics</h2>
+        <div data-badge-details="right" data-badge-type="medium-donut"
+            data-doi="{{article.doi}}" class="altmetric-embed"></div>
+    {% endif %}
+
+    {% if article.citation %}
+        <h2>Citation</h2>
+        <p>{{article.citation}}</p>
+    {% endif %}
+
+    </div>
+
+    <div class="col-md-8">
+
+    {{ article.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
+
+    </div>
+    </div><!-- row -->
+
+    <!-- DISQUS -->
+    {% if DISQUS_SITENAME %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '{{ DISQUS_SITENAME }}'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    {% endif %}
+
+</div> <!-- container -->
+
+{% endblock %}
