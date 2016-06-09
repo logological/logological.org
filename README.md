@@ -3,7 +3,7 @@
 This is the source code for my personal site
 [nothingisreal.com](http://www.nothingisreal.com).
 
-It's built using [Pelican](http://getpelican.com/) and based on the website of [Leonardo Uieda](https://github.com/leouieda/website).
+It's built using [Pelican](http://getpelican.com/) and based on the website of [Leonardo Uieda](https://github.com/leouieda/website-pelican).
 
 ## Dependencies
 
