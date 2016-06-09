@@ -6,22 +6,22 @@ I am the author or a credited contributor to the following software
 packages. Most of the programs are [Free
 Software](http://www.gnu.org/philosophy/free-sw.html).
 
--   [Biblet](/Biblet), a set of BibTeX bibliography styles
+-   [Biblet](/biblet.html), a set of BibTeX bibliography styles
     (bst) which generate XHTML
--   [CHEOPS](/CHEOPS), a computer chess engine
--   [DELORES](/DELORES), a forward-chaining reasoning engine
+-   [CHEOPS](/cheops.html), a computer chess engine
+-   [DELORES](/delores.html), a forward-chaining reasoning engine
     for defeasible logic
--   [DKPro Core](https://code.google.com/p/dkpro-core-asl/), a
+-   [DKPro Core](https://dkpro.github.io/dkpro-core/), a
     collection of UIMA software components for natural language
     processing
--   [DKPro WSD](https://code.google.com/p/dkpro-wsd/), a UIMA framework
+-   [DKPro WSD](https://dkpro.github.io/dkpro-wsd/), a UIMA framework
     for word sense disambiguation
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
 -   [Dvorak international keyboard layout for
-    xkb](http://files.nothingisreal.com/software/dvorak/)
--   [eoconv](/eoconv), a tool which converts text files to
+    xkb](http://files.nothingisreal.com/software/dvorak/dvorak_intl.txt)
+-   [eoconv](/eoconv.html), a tool which converts text files to
     and from various Esperanto text encodings
--   [GPP](/GPP), a general-purpose preprocessor with
+-   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
 -   Various [Mozilla](https://www.mozilla.org/en-US/) projects,
     including the web browser core, the
@@ -31,7 +31,7 @@ Software](http://www.gnu.org/philosophy/free-sw.html).
 -   [TWSI Sense
     Substituter](http://www.langtech.tu-darmstadt.de/software/twsi-sense-substituter/),
     a tool for producing lexical substitutions in English text
--   [UBY](https://code.google.com/p/uby/), a large-scale unified
+-   [UBY](https://dkpro.github.io/dkpro-uby/), a large-scale unified
     lexical-semantic resource for natural language processing based on
     LMF
 -   [WEBWEAVR-III](http://www.cis.uoguelph.ca/~yxiang/ww3/), a Bayesian
