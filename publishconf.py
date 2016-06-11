@@ -10,6 +10,6 @@ import sys
 sys.path.append(os.curdir)
 from conf import *
 
-SITEURL = 'http://www.nothingisreal.com'
+SITEURL = 'https://logological.org'
 RELATIVE_URLS = False
-#DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = True

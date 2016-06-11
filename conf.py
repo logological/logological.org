@@ -8,6 +8,7 @@ SITENAME = u"Tristan Miller"
 SITEKEYWORDS = ', '.join([
     'natural language processing', 'nlp', 'computational linguistics', 'logology', 'free software', 'humour'
     ])
+SITEURL = ''
 #SITEURL = 'http://www.nothingisreal.com'
 REPOURL = 'https://github.com/logological/nothingisreal'
 DESCRIPTION = ""
@@ -63,12 +64,15 @@ EXTRA_PATH_METADATA = {
 
 ARTICLES_FRONT_PAGE = 2
 SUMMARY_MAX_LENGTH = 25
-DEFAULT_PAGINATION = 0
+DEFAULT_PAGINATION = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-# Feeds
-FEED_ALL_RSS = 'rss.xml'
-FEED_ALL_ATOM = False
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 THEME = 'theme'
 
