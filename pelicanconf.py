@@ -47,17 +47,50 @@ CATEGORY_SAVE_AS = '{slug}/index.html'
 
 STATIC_PATHS = [
     'images',
-    'notebooks',
-    'pdf',
-    'misc',
-    'extra/CNAME',
+    'extra/apple-touch-icon-114x114.png',
+    'extra/apple-touch-icon-120x120.png',
+    'extra/apple-touch-icon-144x144.png',
+    'extra/apple-touch-icon-152x152.png',
+    'extra/apple-touch-icon-57x57.png',
+    'extra/apple-touch-icon-60x60.png',
+    'extra/apple-touch-icon-72x72.png',
+    'extra/apple-touch-icon-76x76.png',
+    'extra/favicon-128.png',
+    'extra/favicon-16x16.png',
+    'extra/favicon-196x196.png',
+    'extra/favicon-32x32.png',
+    'extra/favicon-96x96.png',
     'extra/favicon.ico',
     'extra/favicon.png',
+    'extra/favicon.svg',
+    'extra/mstile-144x144.png',
+    'extra/mstile-150x150.png',
+    'extra/mstile-310x150.png',
+    'extra/mstile-310x310.png',
+    'extra/mstile-70x70.png'
 ]
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'},
+    'extra/apple-touch-icon-114x114.png': {'path': 'apple-touch-icon-114x114.png'},
+    'extra/apple-touch-icon-120x120.png': {'path': 'apple-touch-icon-120x120.png'},
+    'extra/apple-touch-icon-144x144.png': {'path': 'apple-touch-icon-144x144.png'},
+    'extra/apple-touch-icon-152x152.png': {'path': 'apple-touch-icon-152x152.png'},
+    'extra/apple-touch-icon-57x57.png': {'path': 'apple-touch-icon-57x57.png'},
+    'extra/apple-touch-icon-60x60.png': {'path': 'apple-touch-icon-60x60.png'},
+    'extra/apple-touch-icon-72x72.png': {'path': 'apple-touch-icon-72x72.png'},
+    'extra/apple-touch-icon-76x76.png': {'path': 'apple-touch-icon-76x76.png'},
+    'extra/favicon-128.png': {'path': 'favicon-128.png'},
+    'extra/favicon-16x16.png': {'path': 'favicon-16x16.png'},
+    'extra/favicon-196x196.png': {'path': 'favicon-196x196.png'},
+    'extra/favicon-32x32.png': {'path': 'favicon-32x32.png'},
+    'extra/favicon-96x96.png': {'path': 'favicon-96x96.png'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/favicon.png': {'path': 'favicon.png'},
+    'extra/favicon.svg': {'path': 'favicon.svg'},
+    'extra/mstile-144x144.png': {'path': 'mstile-144x144.png'},
+    'extra/mstile-150x150.png': {'path': 'mstile-150x150.png'},
+    'extra/mstile-310x150.png': {'path': 'mstile-310x150.png'},
+    'extra/mstile-310x310.png': {'path': 'mstile-310x310.png'},
+    'extra/mstile-70x70.png': {'path': 'mstile-70x70.png'},
 }
 
 #READERS = {"html": None}
@@ -83,10 +116,6 @@ MENUITEMS = [
     ('Papers', '/papers.html'),
     ('Software', '/software.html'),
     ('Fun', '/fun.html'),
-    ('<i class="fa fa-github fa-lg" title="Github"></i>',
-     'https://github.com/logological'),
-    ('<i class="fa fa-twitter fa-lg" title="Twitter"></i>',
-     'https://twitter.com/Logological'),
 ]
 
 PLUGIN_PATHS = ['pelican-plugins']

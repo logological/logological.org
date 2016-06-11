@@ -8,5 +8,10 @@
 
 * 404 page
 
+* Update .htaccess redirects
+
+* Research page
+
+* Fun page
 
 
