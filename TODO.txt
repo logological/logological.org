@@ -6,8 +6,6 @@
 
 * Split "Fun" page into Humour/Misc and Logology?
 
-* 404 page
-
 * Update .htaccess redirects
 
 * Research page
