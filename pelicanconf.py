@@ -67,7 +67,9 @@ STATIC_PATHS = [
     'extra/mstile-150x150.png',
     'extra/mstile-310x150.png',
     'extra/mstile-310x310.png',
-    'extra/mstile-70x70.png'
+    'extra/mstile-70x70.png',
+    'extra/EFBF4915.txt',
+    'extra/BF8A2EE4.txt',
 ]
 EXTRA_PATH_METADATA = {
     'extra/apple-touch-icon-114x114.png': {'path': 'apple-touch-icon-114x114.png'},
@@ -91,6 +93,8 @@ EXTRA_PATH_METADATA = {
     'extra/mstile-310x150.png': {'path': 'mstile-310x150.png'},
     'extra/mstile-310x310.png': {'path': 'mstile-310x310.png'},
     'extra/mstile-70x70.png': {'path': 'mstile-70x70.png'},
+    'extra/EFBF4915.txt': {'path': 'EFBF4915.txt'},
+    'extra/BF8A2EE4.txt': {'path': 'BF8A2EE4.txt'},
 }
 
 #READERS = {"html": None}
@@ -115,8 +119,9 @@ MENUITEMS = [
     ('Publications', '/publications.html'),
     ('Software', '/software.html'),
     ('Teaching', '/teaching.html'),
-    ('Activities', '/activities.html'),
+    #('Activities', '/activities.html'),
     ('Fun', '/fun.html'),
+    ('Miscellany', '/misc.html'),
 ]
 
 PLUGIN_PATHS = ['pelican-plugins']
