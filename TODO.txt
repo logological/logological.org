@@ -10,4 +10,3 @@
 
 * Fun page
 
-* Fix publication list style
