@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 import os
 import sys
 sys.path.append(os.curdir)
-from conf import *
+from pelicanconf import *
 
 SITEURL = 'https://logological.org'
 RELATIVE_URLS = False

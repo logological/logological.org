@@ -90,8 +90,7 @@ MENUITEMS = [
 ]
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['summary',
-           'render_math',
+PLUGINS = ['render_math',
            'sitemap']
 SITEMAP = {
     'format': 'xml',
@@ -100,10 +99,10 @@ SITEMAP = {
         'indexes': 0.5,
         'pages': 0.5},
     'changefreqs': {
-        'articles': 'monthly',
-        'indexes': 'daily',
-        'pages': 'monthly'}
+        'articles': 'weekly',
+        'indexes': 'weekly',
+        'pages': 'weekly'}
 }
 
-RESPONSIVE_IMAGES = False
-FIGURE_NUMBERS = True
+#RESPONSIVE_IMAGES = False
+#FIGURE_NUMBERS = True
