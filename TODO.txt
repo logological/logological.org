@@ -8,8 +8,6 @@
 
 * Update .htaccess redirects
 
-* Research page
-
 * Fun page
 
-
+* Fix publication list style

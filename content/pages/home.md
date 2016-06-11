@@ -47,53 +47,21 @@ online under free licenses.</p>
 
 <ul class="social">
 
-<li>
-<a href="https://github.com/logological">
-<i class="fa fa-github-square fa-3x" title="GitHub"></i>
-</a>
-</li>
+<li><a href="https://github.com/logological"><i class="fa fa-github-square fa-3x" title="GitHub"></i></a></li>
 
-<li>
-<a href="http://orcid.org/0000-0002-0749-1100">
-<i class="ai ai-orcid-square fa-3x" title="ORCID"></i>
-</a>
-</li>
+<li><a href="http://orcid.org/0000-0002-0749-1100"><i class="ai ai-orcid-square fa-3x" title="ORCID"></i></a></li>
 
-<li>
-<a href="https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ">
-<i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i>
-</a>
-</li>
+<li><a href="https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ"><i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i></a></li>
 
-<li>
-<a href="https://tu-darmstadt.academia.edu/TristanMiller">
-<i class="ai ai-academia-square fa-3x" title="Academia.edu"></i>
-</a>
-</li><br />
+<li><a href="https://tu-darmstadt.academia.edu/TristanMiller"><i class="ai ai-academia-square fa-3x" title="Academia.edu"></i></a></li><br />
 
-<li>
-<a href="https://impactstory.org/u/0000-0002-0749-1100">
-<i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i>
-</a>
-</li>
+<li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>
 
-<li>
-<a href="https://www.linkedin.com/in/tristan-miller-032b327">
-<i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i>
-</a>
-</li>
+<li><a href="https://www.linkedin.com/in/tristan-miller-032b327"><i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i></a></li>
 
-<li>
-<a href="https://twitter.com/Logological">
-<i class="fa fa-twitter-square fa-3x" title="Twitter"></i>
-</a>
-</li>
+<li><a href="https://twitter.com/Logological"><i class="fa fa-twitter-square fa-3x" title="Twitter"></i></a></li>
 
-<li>
-<a href="http://psych0naut.livejournal.com/">
-<i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i>
-</a>
-</li>
+<li><a href="http://psych0naut.livejournal.com/"><i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i></a></li>
 
 </ul>
 
@@ -110,3 +78,9 @@ My <a href="http://orcid.org">ORCID</a> number is
 
 </div>
 </div><!-- row -->
+
+<h1>Recent and upcoming activities</h1>
+
+* July 9, 2016: Invited tutorial at the **[16th International Summer School and Symposium on Humour and Laughter](http://humoursummerschool.org/16/)** in Brașov
+* May 25, 2016: Poster presentation at the **[10th Language Resources and Evaluation Conference (LREC 2016)](http://lrec2016.lrec-conf.org/)** in Portorož
+* May 12, 2016: Invited research seminar at the **[Stylistics Research Centre, University of Huddersfield](http://www.hud.ac.uk/research/researchcentres/src/)**

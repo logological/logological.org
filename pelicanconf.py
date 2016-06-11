@@ -112,9 +112,10 @@ THEME = 'theme'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('Research', '/research.html'),
-    ('Papers', '/papers.html'),
+    ('Publications', '/publications.html'),
     ('Software', '/software.html'),
+    ('Teaching', '/teaching.html'),
+    ('Activities', '/activities.html'),
     ('Fun', '/fun.html'),
 ]
 
