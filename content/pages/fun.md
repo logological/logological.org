@@ -31,7 +31,7 @@ and other magazines.
     a website that randomly generates authentic Shakespearean sonnets
     (a collaboration with
     [Dave Morice](http://www.amazon.com/Dave-Morice/e/B001K8LX2K/ref=sr_ntt_srch_lnk_4?qid=1417181543&sr=8-4))
-* A selection of my articles from *Word Ways* (open access from two years after the date of publication)
+* A selection of my logological articles from *Word Ways* (open access from two years after the date of publication):
     - [Pessimal spelling alphabets](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5233&context=wordways)
     - [Russian–English homoglyphs, homographs, and homographic translations](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5241&context=wordways)
     - [Dvorak typewriter words](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5272&context=wordways)
