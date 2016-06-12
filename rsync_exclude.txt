@@ -2,3 +2,12 @@
 photos/
 sonnet/
 limerick/
+courses/
+icons/
+margret/
+nadya/
+saga/
+sagesdesk/
+ttrss/
+miller_cv.pdf
+mentifex*

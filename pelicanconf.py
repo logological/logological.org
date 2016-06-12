@@ -5,12 +5,12 @@ import datetime
 AUTHOR = u'Tristan Miller'
 SITETITLE = u"<b>Tristan Miller</b>"
 SITENAME = u"Tristan Miller"
-SITEKEYWORDS = ', '.join([
-    'natural language processing', 'nlp', 'computational linguistics', 'logology', 'free software', 'humour'
-    ])
+#SITEKEYWORDS = ', '.join([
+#    'natural language processing', 'nlp', 'computational linguistics', 'logology', 'free software', 'humour'
+#    ])
 SITEURL = ''
-#SITEURL = 'http://www.nothingisreal.com'
-REPOURL = 'https://github.com/logological/nothingisreal'
+
+REPOURL = 'https://github.com/logological/logological.org'
 DESCRIPTION = ""
 BANNER = ""
 BUILD_TIME = datetime.date.today().strftime(format='%Y-%m-%d')
@@ -25,7 +25,8 @@ if git_hash:
             url=REPOURL, commit=git_hash, commit_link=git_hash[:7])
 
 # Language and time
-DEFAULT_LANG = u'en'
+DEFAULT_DATE = 'fs'
+DEFAULT_LANG = u'en-ca'
 TIMEZONE = u'Europe/Berlin'
 
 # This goes at the footer of the site

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="{% block lang %}{{ DEFAULT_LANG }}{% endblock lang %}">
 <head>
 {% block head %}
     <meta charset="utf-8" />
@@ -52,7 +52,7 @@
 
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" lang="{{ DEFAULT_LANG }}">
 <div class="container">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed"
@@ -78,7 +78,7 @@
 {% block content %}
 {% endblock %}
 
-<footer>
+<footer lang="{{ DEFAULT_LANG }}">
 <div class="container">
     <div class="row">
         <div class="col-md-4">
