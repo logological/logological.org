@@ -1,0 +1,4 @@
+# A list of patterns to exclude from rsync deployment
+photos/
+sonnet/
+limerick/
