@@ -13,3 +13,4 @@ miller_cv.pdf
 mentifex*
 robots.txt
 .htaccess
+miller_cv.pdf

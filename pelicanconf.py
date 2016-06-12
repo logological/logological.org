@@ -119,6 +119,7 @@ MENUITEMS = [
     ('Publications', '/publications.html'),
     ('Software', '/software.html'),
     ('Teaching', '/teaching.html'),
+    ('CV', '/miller_cv.pdf'),
     #('Activities', '/activities.html'),
     ('Fun', '/fun.html'),
     ('Miscellany', '/misc.html'),
