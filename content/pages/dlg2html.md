@@ -20,7 +20,7 @@ Examples
 
 For an example of a DLG Pro message base which has been converted to
 HTML using dlg2html, please visit the [Sage's Desk BBS AD&D
-Campaign](http://www.nothingisreal.com/sagesdesk/).
+Campaign](http://logological.org/sagesdesk/).
 
 Obtaining dlg2html
 ------------------

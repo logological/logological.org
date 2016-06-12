@@ -23,7 +23,7 @@ teaching material
 (code, data, lecture notes, etc.)
 online under free licenses.</p>
 
-<p>For more information, you can consult <a title="curriculum vitæ for Tristan Miller" href="http://www.nothingisreal.com/miller_cv.pdf">my curriculum vitæ</a>.</p>
+<p>For more information, you can consult <a title="curriculum vitæ for Tristan Miller" href="http://logological.org/miller_cv.pdf">my curriculum vitæ</a>.</p>
 
 </div>
 
