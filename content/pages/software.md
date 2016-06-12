@@ -58,13 +58,13 @@ various laptops.
 -   [GNU/Linux on a Lenovo ThinkPad
     T61](/gnu_on_laptops/GNULinux_on_a_Lenovo_ThinkPad_T61.html)
 -   [OpenSUSE 10.3 on a Dell Inspiron
-    1525](/gnu_on_laptops/OpenSUSE_10.3_on_a_Dell_Inspiron_1525.html)
--   [OpenSUSE 11.3 on a Dell Inspiron
-    1525](/gnu_on_laptops/OpenSUSE_11.3_on_a_Dell_Inspiron_1525.html)
+    1525](/gnu_on_laptops/OpenSUSE_10_3_on_a_Dell_Inspiron_1525.html)
 -   [OpenSUSE 11.1 on an Asus Eee
-    901](/gnu_on_laptops/OpenSUSE_11.1_on_an_Asus_Eee_901.html)
+    901](/gnu_on_laptops/OpenSUSE_11_1_on_an_Asus_Eee_901.html)
+-   [OpenSUSE 11.3 on a Dell Inspiron
+    1525](/gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525.html)
 -   [OpenSUSE 13.2 on an Acer TravelMate
-    B115-M](/gnu_on_laptops/OpenSUSE_13.2_on_an_Acer_TravelMate_B115-M.html)
+    B115-M](/gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html)
 
 <!--
 QA

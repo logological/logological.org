@@ -1,0 +1,132 @@
+DefaultLanguage en-ca
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\ HTTP/
+RewriteRule ^(.*)index$ https://logological.org/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ https://logological.org/$1 [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ https://logological.org/$1 [L,R=301]
+RewriteRule ^([-a-zA-Z0-9_/]+)$ /$1.html [L]
+
+# Error documents
+ErrorDocument 401 /401.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# Ancient sites no longer here
+Redirect gone /rotten
+Redirect gone /bastard
+
+# Old nothingisreal.com pages that people may conceivably still have bookmarked
+Redirect permanent /mentifex /mentifex_faq.html
+Redirect permanent /girlfriend/index.de.html /freundin
+Redirect permanent /girlfriend/index /girlfriend
+Redirect permanent /girlfriend/index.en.html /girlfriend
+Redirect permanent /girlfriend/index.html /girlfriend
+Redirect permanent /cheops/index.en.html /cheops
+Redirect permanent /cheops/index.html /cheops
+Redirect permanent /biblet/index.en.html /biblet
+Redirect permanent /biblet/index.html /biblet
+Redirect permanent /cugs/index.en.html /cugs
+Redirect permanent /cugs/index.html /cugs
+Redirect permanent /dlg2html/index.en.html /dlg2html
+Redirect permanent /dlg2html/index.html /dlg2html
+Redirect permanent /delores/index.en.html /delores
+Redirect permanent /delores/index.html /delores
+Redirect permanent /gpp/index.en.html /gpp
+Redirect permanent /gpp/index.html /gpp
+Redirect permanent /eoconv/index.en.html /eoconv
+Redirect permanent /eoconv/index.html /eoconv
+
+# Redirects from dfki.de
+RedirectMatch permanent /dfki/.* /
+
+# Redirects from de.nothingisreal.com
+Redirect permanent /wiki/Warum_ich_niemals_eine_Freundin_haben_werde /freundin
+Redirect permanent /wiki/Warum_ich_niemals_eine_Freunden_haben_werde /freundin
+Redirect permanent /wiki/Warum_ich_nie_eine_Freundin_haben_werde /freundin
+Redirect permanent /wiki/Hauptseite /
+Redirect permanent /wiki/Humor /fun
+Redirect permanent /wiki/Kontact /
+Redirect permanent /wiki/Tristan_Miller /
+Redirect permanent /wiki/About_me /
+Redirect permanent /wiki/%22Tristan_Miller%22_in_various_scripts /
+
+# Redirects from en.nothingisreal.com
+Redirect permanent /wiki/About_me /
+Redirect permanent /wiki/Advice_for_German_Writers_of_English_Scientific_Prose /advice
+Redirect permanent /wiki/Autocomplete_maps /autocomplete
+Redirect permanent /wiki/Biblet /biblet
+Redirect permanent /wiki/Blog http://psych0naut.livejournal.com/
+Redirect gone /wiki/Budapest_Restaurant_Reviews
+Redirect permanent /wiki/CHEOPS /cheops
+Redirect gone /wiki/CS_Superchick
+Redirect gone /wiki/Cartoon_caption_contest
+Redirect permanent /wiki/Commodore_Users_Group_of_Saskatchewan /cugs
+Redirect permanent /wiki/Contact /
+Redirect permanent /wiki/Contact_information /
+Redirect permanent /wiki/Contact_me /
+Redirect permanent /wiki/DELORES /delores
+Redirect permanent /wiki/Dlg2html /dlg2html
+Redirect permanent /wiki/Documents /
+Redirect gone /wiki/Dvorak_typewriter_words
+Redirect gone /wiki/Elemental_words_revisited
+Redirect permanent /wiki/Eoconv /eoconv
+Redirect permanent /wiki/Fan_mail_for_%22Why_I_Will_Never_Have_A_Girlfriend%22 /fan_mail
+Redirect permanent /wiki/GNU/Linux_on_a_Dell_Inspiron_1525 /gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525
+Redirect permanent /wiki/GNU/Linux_on_a_Lenovo_ThinkPad_T61 /gnu_on_laptops/GNULinux_on_a_Lenovo_ThinkPad_T61
+Redirect permanent /wiki/GNU/Linux_on_a_Samsung_X20 /gnu_on_laptops/GNULinux_on_a_Samsung_X20
+Redirect permanent /wiki/GNU/Linux_on_a_Sony_Vaio_PCG-FX801 /gnu_on_laptops/GNULinux_on_a_Sony_Vaio_PCG-FX801
+Redirect permanent /wiki/GNU/Linux_on_an_IBM_Thinkpad_i1452 /gnu_on_laptops/GNULinux_on_an_IBM_ThinkPad_i1452
+Redirect permanent /wiki/GPP /gpp
+Redirect permanent /wiki/Haiku /haiku
+Redirect gone /wiki/Higher-order_contronyms
+Redirect permanent /wiki/Humour /fun
+Redirect gone /wiki/Icelandic_two-letter_words
+Redirect gone /wiki/Kevin%27s_Iatrogenic_Escapade
+Redirect permanent /wiki/Logology /fun
+Redirect permanent /wiki/Main_Page /
+Redirect permanent /wiki/Miscellaneous_documents /misc
+Redirect gone /wiki/Musiku
+Redirect gone /wiki/My_music
+Redirect permanent /wiki/OpenSUSE_10.3_on_a_Dell_Inspiron_1525 /gnu_on_laptops/OpenSUSE_10_3_on_a_Dell_Inspiron_1525
+Redirect permanent /wiki/OpenSUSE_11.1_on_an_Asus_Eee_901 /gnu_on_laptops/OpenSUSE_11_1_on_an_Asus_Eee_901
+Redirect permanent /wiki/OpenSUSE_11.3_on_a_Dell_Inspiron_1525 /gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525
+Redirect permanent /wiki/OpenSUSE_13.2_on_an_Acer_TravelMate_B115-M /gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M
+Redirect gone /wiki/Pessimal_spelling_alphabets
+Redirect permanent /wiki/Please_don%27t_send_me_Microsoft_Word_documents /word
+Redirect permanent /wiki/Publications_by_Tristan_Miller /publications
+Redirect permanent /wiki/Research /publications
+Redirect permanent /wiki/Research_publications_by_Tristan_Miller /publications
+Redirect gone /wiki/Russian%E2%80%93English_homoglyphs,_homographs,_and_homographic_translations
+Redirect permanent /wiki/School_newspapers /school_newspapers
+Redirect permanent /wiki/Sex_Pistols_impersonations /sex_pistols
+Redirect gone /wiki/Socialism
+Redirect permanent /wiki/Software /software
+Redirect permanent /wiki/The_Arthur_T._Murray/Mentifex_FAQ /mentifex_faq.html
+Redirect permanent /wiki/Tristan_Miller /
+Redirect permanent /wiki/What_is_%22signature.asc%22%3F /signature
+Redirect gone /wiki/Where_in_the_world_am_I%3F
+Redirect permanent /wiki/Why_I_Will_Never_Have_A_Girlfriend /girlfriend
+Redirect permanent /wiki/Why_I_Will_Never_Have_a_Girlfriend /girlfriend
+Redirect permanent /wiki/Writing /
+
+# Miscellaneous
+Redirect permanent /photos/pets/Frettchen/London_2009-12/ /photos/pets/Frettchen/London_2009-12-23/
+Redirect permanent /lipograms /fun
+#Redirect permanent /phd.pdf http://files.nothingisreal.com/publications/Tristan_Miller/miller2016adjusting.pdf
+#Redirect seeother /photos/Iceland/Iceland_2010-01/Reykjavík/tn/img_0800.med.jpg http://images.radiotimes.com/namedimage/Who_are_the_White_Walkers_in_Game_of_Thrones_.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/78100.jpg
+
+# Temporary stuff
+Redirect /miller_cv.pdf http://www.nothingisreal.com/miller_cv.pdf
+Redirect /sonnet http://www.nothingisreal.com/sonnet
+Redirect /courses http://www.nothingisreal.com/courses
+Redirect /sagesdesk http://www.nothingisreal.com/sagesdesk

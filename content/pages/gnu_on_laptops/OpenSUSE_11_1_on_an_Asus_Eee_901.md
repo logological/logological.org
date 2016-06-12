@@ -1,5 +1,5 @@
 Title: openSUSE 11.1 on an ASUS Eee 901
-save_as: gnu_on_laptops/OpenSUSE_11.1_on_an_Asus_Eee_901.html
+save_as: gnu_on_laptops/OpenSUSE_11_1_on_an_Asus_Eee_901.html
 
 # openSUSE 11.1 on an ASUS Eee 901
 
