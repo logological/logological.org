@@ -4,9 +4,5 @@
 
 * Fix various typos, such as stray backslashes in software pages
 
-* Split "Fun" page into Humour/Misc and Logology?
-
 * Update .htaccess redirects
-
-* Fun page
 

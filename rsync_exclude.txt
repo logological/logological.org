@@ -11,3 +11,5 @@ sagesdesk/
 ttrss/
 miller_cv.pdf
 mentifex*
+robots.txt
+.htaccess
