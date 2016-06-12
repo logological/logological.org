@@ -18,8 +18,8 @@ RewriteRule ^([-a-zA-Z0-9_/]+)$ /$1.html [L]
 
 # Error documents
 ErrorDocument 401 /401.html
-ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
+ErrorDocument 410 /410.html
 
 # Ancient sites no longer here
 Redirect gone /rotten
