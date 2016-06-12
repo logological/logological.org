@@ -9,13 +9,13 @@ It's built using [Pelican](http://getpelican.com/) and based on the website of [
 
 You'll need the following to build the website:
 
-* Pelican (3.5.0)
-* markdown (2.4)
-* beautifulsoup4 (4.3.2)
+* Pelican
+* markdown
+* beautifulsoup4
 
 You can install these libraries using `pip`:
 
-    pip install pelican==3.5.0 markdown==2.4 beautifulsoup4==4.3.2
+    pip install pelican markdown beautifulsoup4
 
 After cloning this repository, you'll need to initialize the git submodules
 for the `pelican-plugins`:
@@ -30,14 +30,19 @@ This only needs to be done once.
 
 Use the `Makefile`:
 
-    make
+    make html
     make serve
 
 The command `make serve` will start a simple server at the `output` dir
 where the built HTML files are.
-Point your browser to [http://127.0.0.1:8001](http://127.0.0.1:8001)
+Point your browser to [http://localhost:8000](http://localhost:8000)
 to view the site.
 Use `Ctrl+C` to kill the server.
+
+## Deploying the site
+
+    make publish
+    make deploy
 
 ## The theme
 
@@ -53,6 +58,7 @@ You can still use it by copying the `theme` folder to your own project.
 Leonardo can't guarantee that things will work without his specific folder struture in
 `content`.
 
+<!--
 ## Adding an article/talk/course/software
 
 The papers, talks, courses and software entries are basically blog posts, each
@@ -121,6 +127,7 @@ Optional:
 
 If `tags` has the word `expanded`, will place an info alert saying that there
 is an expanded abstract or short paper available with this entry.
+-->
 
 ## License
 
