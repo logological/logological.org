@@ -33,7 +33,7 @@ The source code and openSUSE RPMs can be found at
 [<http://files.nothingisreal.com/software/dlg2html/>](http://files.nothingisreal.com/software/dlg2html/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
-key](/:Media:EFBF4915.txt).
+key](/BF8A2EE4.txt).
 
 For convenience,
 [dlg2html.tar.bz2](http://files.nothingisreal.com/software/dlg2html/dlg2html.tar.bz2)
@@ -43,4 +43,4 @@ Author
 ------
 
 dlg2html was conceived and written by [Tristan
-Miller](/) \<<psychonaut@nothingisreal.com>\>.
+Miller](/).

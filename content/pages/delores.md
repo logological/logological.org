@@ -29,7 +29,7 @@ DELORES is distributed as C source code only, and is available at
 [<http://files.nothingisreal.com/software/delores/>](http://files.nothingisreal.com/software/delores/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
-key](/:Media:EFBF4915.txt).
+key](/BF8A2EE4.txt).
 
 For convenience,
 [delores.tar.bz2](http://files.nothingisreal.com/software/delores/delores.tar.bz2)

@@ -6,21 +6,37 @@ I am the author or a credited contributor to the following software
 packages. Most of the programs are [Free
 Software](http://www.gnu.org/philosophy/free-sw.html).
 
--   [Biblet](/biblet.html), a set of BibTeX bibliography styles
-    (bst) which generate XHTML
--   [CHEOPS](/cheops.html), a computer chess engine
--   [DELORES](/delores.html), a forward-chaining reasoning engine
-    for defeasible logic
+## Natural language processing
+
+-   [DKPro WSD](https://dkpro.github.io/dkpro-wsd/), a UIMA framework
+    for word sense disambiguation
 -   [DKPro Core](https://dkpro.github.io/dkpro-core/), a
     collection of UIMA software components for natural language
     processing
--   [DKPro WSD](https://dkpro.github.io/dkpro-wsd/), a UIMA framework
-    for word sense disambiguation
+-   [UBY](https://dkpro.github.io/dkpro-uby/), a large-scale unified
+    lexical-semantic resource for natural language processing based on
+    LMF
+-   [TWSI Sense
+    Substituter](http://www.langtech.tu-darmstadt.de/software/twsi-sense-substituter/),
+    a tool for producing lexical substitutions in English text
+-   [eoconv](/eoconv.html), a tool which converts text files to
+    and from various Esperanto text encodings
+
+## Reasoning systems
+
+-   [DELORES](/delores.html), a forward-chaining reasoning engine
+    for defeasible logic
+-   [WEBWEAVR-III](http://www.cis.uoguelph.ca/~yxiang/ww3/), a Bayesian
+    network research toolkit
+
+## Miscellaneous
+
+-   [Biblet](/biblet.html), a set of BibTeX bibliography styles
+    (bst) which generate XHTML
+-   [CHEOPS](/cheops.html), a computer chess engine
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
 -   [Dvorak international keyboard layout for
     xkb](http://files.nothingisreal.com/software/dvorak/dvorak_intl.txt)
--   [eoconv](/eoconv.html), a tool which converts text files to
-    and from various Esperanto text encodings
 -   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
 -   Various [Mozilla](https://www.mozilla.org/en-US/) projects,
@@ -28,16 +44,8 @@ Software](http://www.gnu.org/philosophy/free-sw.html).
     [Firefox](https://www.mozilla.org/en-US/firefox/new/) browser, and
     the [SeaMonkey](http://www.seamonkey-project.org/) Internet
     application suite
--   [TWSI Sense
-    Substituter](http://www.langtech.tu-darmstadt.de/software/twsi-sense-substituter/),
-    a tool for producing lexical substitutions in English text
--   [UBY](https://dkpro.github.io/dkpro-uby/), a large-scale unified
-    lexical-semantic resource for natural language processing based on
-    LMF
--   [WEBWEAVR-III](http://www.cis.uoguelph.ca/~yxiang/ww3/), a Bayesian
-    network research toolkit
 
-## Documentation
+# Documentation
 
 I have written some documentation on getting GNU/Linux to work on
 various laptops.

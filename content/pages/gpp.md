@@ -36,7 +36,7 @@ The source code can be found at
 [<http://files.nothingisreal.com/software/gpp/>](http://files.nothingisreal.com/software/gpp/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
-key](/:Media:EFBF4915.txt).
+key](/BF8A2EE4.txt).
 
 For convenience,
 [gpp.tar.bz2](http://files.nothingisreal.com/software/gpp/gpp.tar.bz2)

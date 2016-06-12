@@ -1,8 +1,2 @@
-* Fix links to PGP key (and search for /:Media: generally)
-
-* Replace CHEOPS screenshots
-
-* Fix various typos, such as stray backslashes in software pages
-
 * Update .htaccess redirects
 

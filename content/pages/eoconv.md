@@ -7,8 +7,8 @@ the following Esperanto text encodings:
 
 -   ASCII postfix h notation
 -   ASCII postfix x notation
--   ASCII postfix caret (\^) notation
--   ASCII prefix caret (\^) notation
+-   ASCII postfix caret (^) notation
+-   ASCII prefix caret (^) notation
 -   ISO-8859-3
 -   Unicode (UTF-7, UTF-8, UTF-16, UTF-32)
 -   HTML entities (decimal or hexadecimal)
@@ -30,7 +30,7 @@ The source code and SUSE RPMs can be found at
 [<http://files.nothingisreal.com/software/eoconv/>](http://files.nothingisreal.com/software/eoconv/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
-key](/:Media:EFBF4915.txt).
+key](/BF8A2EE4.txt).
 
 For convenience,
 [eoconv.tar.bz2](http://files.nothingisreal.com/software/eoconv/eoconv.tar.bz2)
@@ -47,5 +47,4 @@ page, and text document.
 Authors
 -------
 
-eoconv was conceived and written by [Tristan
-Miller](/) \<<psychonaut@nothingisreal.com>\>.
+eoconv was conceived and written by [Tristan Miller](/).

@@ -29,7 +29,7 @@ The source code and openSUSE RPMs can be found at
 [<http://files.nothingisreal.com/software/cheops/>](http://files.nothingisreal.com/software/cheops/).
 MD5/SHA1 hashes and OpenPGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
-key](/:Media:EFBF4915.txt).
+key](/BF8A2EE4.txt).
 
 For convenience,
 [cheops.tar.bz2](http://files.nothingisreal.com/software/cheops/cheops.tar.bz2)
@@ -58,16 +58,15 @@ You can browse through the [online HTML
 documentation](http://files.nothingisreal.com/software/cheops/cheops.html).
 The source distribution includes the documention.
 
-<!--
 Screenshots
 -----------
 
-Configuring the computer opponent: ![alt text](images/Cheops1.png =250x)
-Game in progress: ![alt text](images/Cheops2.png)
--->
+<table>
+<tr><td><a href="/images/Cheops1.png"><img src="/images/Cheops1.png" width="250" style="margin-right: 1em;" /></a></td><td><a href="/images/Cheops2.png"><img src="/images/Cheops2.png" width="250" /></a></td></tr>
+<tr><td>Configuring the computer opponent</td><td>Game in progress</td></tr>
+</table>
 
 Author
 ------
 
-CHEOPS was conceived and written by [Tristan
-Miller](/) \<<psychonaut@nothingisreal.com>\>.
+CHEOPS was conceived and written by [Tristan Miller](/).
