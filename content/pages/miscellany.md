@@ -13,6 +13,8 @@ don't really fit into any other section.
 <dd>Information on a now-defunct Commodore users' group</dd>
 <dt>[The Arthur T. Murray/Mentifex FAQ](/mentifex_faq.html)</dt>
 <dd>Information on a prominent net.kook</dd>
+<dt>[My photos](/photos)</dt>
+<dd>Photos from my travels</dd>
 <dt>[School newspapers](/school_newspapers.html)</dt>
 <dd>Newspapers I published in elementary and high school</dd>
 <dt>[Please don't send me Microsoft Word documents](/word.html)</dt>
