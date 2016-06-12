@@ -128,5 +128,7 @@ Redirect permanent /lipograms /fun
 # Temporary stuff
 Redirect /miller_cv.pdf http://www.nothingisreal.com/miller_cv.pdf
 Redirect /sonnet http://www.nothingisreal.com/sonnet
+Redirect /photos http://www.nothingisreal.com/photos
 Redirect /courses http://www.nothingisreal.com/courses
 Redirect /sagesdesk http://www.nothingisreal.com/sagesdesk
+Redirect /mentifex_faq http://www.nothingisreal.com/mentifex_faq.html
