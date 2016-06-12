@@ -80,12 +80,3 @@ Free Software projects:
 -   [My freedesktop.org (LibreOffice, X.Org, etc.)
     bugs](https://bugs.freedesktop.org/buglist.cgi?emailreporter1=1&list_id=301336&emailtype1=substring&query_format=advanced&email1=psychonaut%40nothingisreal.com)
 -->
-
-## Tech evangelism
-
-[Please don't send me Microsoft Word documents](/word.html)
-:   An article on why it is a bad idea to use Microsoft Word as a
-    document interchange format
-[What is "signature.asc"?](/signature.html)
-:   Read this if you received an e-mail from me which appears to have an
-    attachment named `signature.asc`
