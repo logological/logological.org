@@ -48,6 +48,7 @@ and other magazines.
 These papers are mainly for fun, though some of them have some serious research content:
 
 * [Why I will never have a girlfriend](/girlfriend.html) (published in *The Annals of Improbable Research*, 2002)
+* [Warum ich niemals eine Freundin haben werde](/freundin.html), a German translation of the above
 * [Knight-graphable words](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5379&context=wordways) (with Mike Keith; published in *Word Ways: The Journal of Recreational Linguistics*, February 2015)
 * [A255436: Number of distinct, connected, order-*n* subgraphs of the infinite knight's graph](https://oeis.org/A255436) (published in *The On-line Encyclopedia of Integer Sequences*, February 2015)
 * [New puzzles on knight-graphable words](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5405&context=wordways) (with Mike Keith; published in *Word Ways: The Journal of Recreational Linguistics*, May 2015)
