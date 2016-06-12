@@ -81,8 +81,9 @@
 <footer lang="{{ DEFAULT_LANG }}">
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
-            {{ FOOTER_LEFT }}
+      <!-- {{ FOOTER_LEFT }} -->
+      <div class="col-md-4">
+	  Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %}
         </div>
         <div class="col-md-4">
             {{ FOOTER_MIDDLE }}

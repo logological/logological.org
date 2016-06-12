@@ -30,9 +30,8 @@ DEFAULT_LANG = u'en-ca'
 TIMEZONE = u'Europe/Berlin'
 
 # This goes at the footer of the site
-FOOTER_LEFT = ""
+FOOTER_LEFT = "" # Superseded; see base.html
 FOOTER_RIGHT = """
-Last modified: {date}<!--{commit}--><br />
 <a href="/credits.html">Credits</a> &bullet;
 <a href="{repo}">Source</a>
 """.format(date=BUILD_TIME, commit=COMMIT, repo=REPOURL, repo_name=REPOURL[8:])
