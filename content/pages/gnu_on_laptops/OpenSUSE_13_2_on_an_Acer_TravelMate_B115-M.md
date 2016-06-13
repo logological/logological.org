@@ -4,7 +4,7 @@ save_as: gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html
 # openSUSE 13.2 on an Acer TravelMate B115-M
 
 This document describes how I installed and configured
-[GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) (64-bit [openSUSE
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) (64-bit [openSUSE
 13.2](http://www.opensuse.org/) distribution) on an [Acer Travelmate
 B115-M](http://www.acer.de/ac/de/DE/content/professional-model/NX.VA1EG.002)
 netbook.

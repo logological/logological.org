@@ -4,7 +4,7 @@ save_as: gnu_on_laptops/GNULinux_on_an_IBM_ThinkPad_i1452.html
 # GNU/Linux on an IBM ThinkPad i1452
 
 This document describes how I installed and configured
-[GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) (henceforth
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) (henceforth
 "Linux") on an IBM ThinkPad i1452 in November 1999. Because the
 instructions contained herein are based largely on personal experience,
 and because they were written several years ago, they should not to be

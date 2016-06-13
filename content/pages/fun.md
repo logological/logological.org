@@ -27,7 +27,7 @@ a regular contributor of language-themed articles and puzzles to
 *[Word Ways: The Journal of Recreational Linguistics](http://www.wordways.com/)*,
 and other magazines.
 
-* [Shakespeare's Sonnet Generator](http://logological.org/sonnet/),
+* [Shakespeare's Sonnet Generator](https://logological.org/sonnet/),
     a website that randomly generates authentic Shakespearean sonnets
     (a collaboration with
     [Dave Morice](http://www.amazon.com/Dave-Morice/e/B001K8LX2K/ref=sr_ntt_srch_lnk_4?qid=1417181543&sr=8-4))

@@ -11,32 +11,32 @@ referenced messages; a message index is also produced. dlg2html works
 with terminal dumps of DLG message boards, which means you do not need
 access to the actual BBS files to perform the conversion.
 
-dlg2html is [Free Software](http://www.gnu.org/philosophy/free-sw.html).
+dlg2html is [Free Software](https://www.gnu.org/philosophy/free-sw.html).
 It is distributed under the terms of the [GNU General Public
-Licence](http://www.gnu.org/copyleft/gpl.html).
+Licence](https://www.gnu.org/copyleft/gpl.html).
 
 Examples
 --------
 
 For an example of a DLG Pro message base which has been converted to
 HTML using dlg2html, please visit the [Sage's Desk BBS AD&D
-Campaign](http://logological.org/sagesdesk/).
+Campaign](https://logological.org/sagesdesk/).
 
 Obtaining dlg2html
 ------------------
 
 The latest version of dlg2html is **1.1**, released on 2013-10-13. A
 list of changes from previous versions can be found in the [change
-log](http://files.nothingisreal.com/software/dlg2html/NEWS).
+log](https://files.nothingisreal.com/software/dlg2html/NEWS).
 
 The source code and openSUSE RPMs can be found at
-[<http://files.nothingisreal.com/software/dlg2html/>](http://files.nothingisreal.com/software/dlg2html/).
+[<https://files.nothingisreal.com/software/dlg2html/>](https://files.nothingisreal.com/software/dlg2html/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
 key](/BF8A2EE4.txt).
 
 For convenience,
-[dlg2html.tar.bz2](http://files.nothingisreal.com/software/dlg2html/dlg2html.tar.bz2)
+[dlg2html.tar.bz2](https://files.nothingisreal.com/software/dlg2html/dlg2html.tar.bz2)
 is always a link to the latest version.
 
 Author

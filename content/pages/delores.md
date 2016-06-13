@@ -14,25 +14,25 @@ incremental transformation of defeasible theories, and systematically
 uses new atoms and new defeasible rules to simulate the eliminated
 features.
 
-DELORES is [Free Software](http://www.gnu.org/philosophy/free-sw.html).
+DELORES is [Free Software](https://www.gnu.org/philosophy/free-sw.html).
 It is distributed under the terms of the [GNU General Public
-Licence](http://www.gnu.org/copyleft/gpl.html).
+Licence](https://www.gnu.org/copyleft/gpl.html).
 
 Obtaining DELORES
 -----------------
 
 The latest version of DELORES is **0.91**, released on 2003-12-18. A
 list of changes from previous versions can be found in the [change
-log](http://files.nothingisreal.com/software/delores/NEWS).
+log](https://files.nothingisreal.com/software/delores/NEWS).
 
 DELORES is distributed as C source code only, and is available at
-[<http://files.nothingisreal.com/software/delores/>](http://files.nothingisreal.com/software/delores/).
+[<https://files.nothingisreal.com/software/delores/>](https://files.nothingisreal.com/software/delores/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
 key](/BF8A2EE4.txt).
 
 For convenience,
-[delores.tar.bz2](http://files.nothingisreal.com/software/delores/delores.tar.bz2)
+[delores.tar.bz2](https://files.nothingisreal.com/software/delores/delores.tar.bz2)
 is always a link to the latest version.
 
 Documentation
@@ -40,7 +40,7 @@ Documentation
 
 The distribution includes a Unix man page plus a Programmer's Guide (in
 LaTeX, DVI, and PDF formats). You can also read the [online HTML
-documentation](http://files.nothingisreal.com/software/delores/delores.html).
+documentation](https://files.nothingisreal.com/software/delores/delores.html).
 
 For more information on DELORES and defeasible logic, please visit
 [Michael Maher's publications

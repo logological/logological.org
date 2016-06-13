@@ -193,7 +193,7 @@ have also posted:
     by [Jonathan de Boyne
     Pollard](http://homepages.tesco.net/~J.deBoynePollard/)
 -   [We can put an end to Word
-    attachments](http://www.gnu.org/philosophy/no-word-attachments.html)
+    attachments](https://www.gnu.org/philosophy/no-word-attachments.html)
     by [Richard Stallman](http://www.stallman.org/) of the [Free
     Software Foundation](http://www.fsf.org/)
 -   [Avoid e-mail attachments, especially Microsoft
@@ -236,7 +236,7 @@ paradigms:
     by [Conrad Taylor](http://www.conradiator.com/)
 
 Here are links to some
-[Free](http://www.gnu.org/philosophy/free-sw.html) document preparation
+[Free](https://www.gnu.org/philosophy/free-sw.html) document preparation
 programs which do not use the word processing paradigm:
 
 -   [LaTeX](http://www.latex-project.org/) is extremely popular among
@@ -274,7 +274,7 @@ A version of this article appears in the following publication:
 <ol class='bib-list'>
 <li class='bib-bibitem' id='cite-miller2006please'>
 <div class='bib-cover-container'><img class='bib-cover'
-src='http://files.nothingisreal.com/publications/Tristan_Miller/covers/nonj200609.png'
+src='https://files.nothingisreal.com/publications/Tristan_Miller/covers/nonj200609.png'
 /></div>
 <div class='bib-article'>
 <p><span class='bib-author'>Tristan Miller.</span>

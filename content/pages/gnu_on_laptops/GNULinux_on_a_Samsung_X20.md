@@ -4,7 +4,7 @@ save_as: gnu_on_laptops/GNULinux_on_a_Samsung_X20.html
 # GNU/Linux on a Samsung X20
 
 This document describes how I installed and configured
-[GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) ([SuSE
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) ([SuSE
 9.3](http://www.suse.com/) distribution) on a [Samsung
 X20](http://www.samsungpc.com/products/x20/x20.htm) laptop.
 

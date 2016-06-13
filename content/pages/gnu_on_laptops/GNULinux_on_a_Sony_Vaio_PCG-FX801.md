@@ -5,7 +5,7 @@ save_as: gnu_on_laptops/GNULinux_on_a_Sony_Vaio_PCG-FX801.html
 # GNU/Linux on a Sony Vaio PCG-FX801
 
 This document describes how I installed and configured
-[GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) ([SuSE
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) ([SuSE
 9.0](http://www.suse.com/) distribution) on a Sony Vaio PCG-FX801
 laptop.
 

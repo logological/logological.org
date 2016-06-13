@@ -6,19 +6,19 @@ GPP is a general-purpose preprocessor with customizable syntax, suitable
 for a wide range of preprocessing tasks. Its independence from any one
 programming language makes it much more versatile than the C
 preprocessor (cpp), while its syntax is lighter and more flexible than
-that of [GNU m4](http://www.gnu.org/software/m4/). There are built-in
+that of [GNU m4](https://www.gnu.org/software/m4/). There are built-in
 macros for use with C/C++, LaTeX, HTML, XHTML, and Prolog files.
 
-GPP is [Free Software](http://www.gnu.org/philosophy/free-sw.html). It
+GPP is [Free Software](https://www.gnu.org/philosophy/free-sw.html). It
 is distributed under the terms of the [GNU General Public
-Licence](http://www.gnu.org/copyleft/gpl.html).
+Licence](https://www.gnu.org/copyleft/gpl.html).
 
 Downloading
 -----------
 
 The latest version of GPP is **2.24**, released on 2004-09-19. A list of
 changes from previous versions can be found in the [change
-log](http://files.nothingisreal.com/software/gpp/NEWS).
+log](https://files.nothingisreal.com/software/gpp/NEWS).
 
 **NOTE:** GPP 2.1a is an incompletely documented and dead branch of the
 GPP development tree. Most of the differences from the previous version,
@@ -33,13 +33,13 @@ stable, current releases.
 ### Source code
 
 The source code can be found at
-[<http://files.nothingisreal.com/software/gpp/>](http://files.nothingisreal.com/software/gpp/).
+[<https://files.nothingisreal.com/software/gpp/>](https://files.nothingisreal.com/software/gpp/).
 MD5/SHA1 hashes and PGP signatures are available there too. For the
 latter, you will need my [OpenPGP signing
 key](/BF8A2EE4.txt).
 
 For convenience,
-[gpp.tar.bz2](http://files.nothingisreal.com/software/gpp/gpp.tar.bz2)
+[gpp.tar.bz2](https://files.nothingisreal.com/software/gpp/gpp.tar.bz2)
 is always a link to the latest version.
 
 ### Ports and binary packages
@@ -70,7 +70,7 @@ Documentation
 -------------
 
 You can browse through the [online HTML
-documentation](http://files.nothingisreal.com/software/gpp/gpp.html).
+documentation](https://files.nothingisreal.com/software/gpp/gpp.html).
 The source distribution includes the documention as an HTML file, man
 page, and LaTeX document.
 

@@ -4,7 +4,7 @@ save_as: gnu_on_laptops/GNULinux_on_a_Lenovo_ThinkPad_T61.html
 # GNU/Linux on a Lenovo ThinkPad T61
 
 This document describes how I installed and configured
-[GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) ([openSUSE
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) ([openSUSE
 10.3](http://www.opensuse.com/) distribution) on a [Lenovo ThinkPad
 T61](http://www5.pc.ibm.com/uk/products.nsf/Products?openagent&brand=Thinkpad&series=ThinkPad+T+Series)
 laptop.

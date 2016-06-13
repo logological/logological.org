@@ -30,8 +30,8 @@ together material from various sources:
 You can see scans of two issues by following the image links below.
 
 <div style="text-align: center">
-<a href="http://files.nothingisreal.com/publications/Okie/Okie_Dokie_Journal_1.pdf"><img width="200" title="The Okie Dokie Journal, № 1 (1987)" src="images/Okie_Dokie_Journal_1_cover.png" /></a>
-<a href="http://files.nothingisreal.com/publications/Okie/Okie_Dokie_Journal_2.pdf"><img width="200" title="The Okie Dokie Journal, № 2 (1987 or 1988)" src="images/Okie_Dokie_Journal_2_cover.png" /></a>
+<a href="https://files.nothingisreal.com/publications/Okie/Okie_Dokie_Journal_1.pdf"><img width="200" title="The Okie Dokie Journal, № 1 (1987)" src="images/Okie_Dokie_Journal_1_cover.png" /></a>
+<a href="https://files.nothingisreal.com/publications/Okie/Okie_Dokie_Journal_2.pdf"><img width="200" title="The Okie Dokie Journal, № 2 (1987 or 1988)" src="images/Okie_Dokie_Journal_2_cover.png" /></a>
 </div>
 
 *The Mini-Post*
@@ -46,7 +46,7 @@ publishing software for the Apple Macintosh 128K.) You can see a scan of
 the first issue by following the image link below.
 
 <div style="text-align: center">
-<a href="http://files.nothingisreal.com/publications/Okie/Mini-Post_1.pdf"><img width="200" title="The Okie Dokie Journal, № 1 (1987)" src="images/Mini-Post_1_cover.png" /></a>
+<a href="https://files.nothingisreal.com/publications/Okie/Mini-Post_1.pdf"><img width="200" title="The Okie Dokie Journal, № 1 (1987)" src="images/Mini-Post_1_cover.png" /></a>
 </div>
 
 *And Now For Something Completely Different…*

@@ -18,7 +18,7 @@ tools.
 
 Biblet has not yet been formally released. However, a [pre-alpha version
 of
-Biblet](http://files.nothingisreal.com/software/biblet/biblet-prealpha.tar.bz2)
+Biblet](https://files.nothingisreal.com/software/biblet/biblet-prealpha.tar.bz2)
 is available to download, as are the [slides from a Practical TeX 2005
 talk on
-Biblet](http://files.nothingisreal.com/software/biblet/biblet_slides.pdf).
+Biblet](https://files.nothingisreal.com/software/biblet/biblet_slides.pdf).

@@ -4,7 +4,7 @@ title: Software
 
 I am the author or a credited contributor to the following software
 packages. Most of the programs are [Free
-Software](http://www.gnu.org/philosophy/free-sw.html).
+Software](https://www.gnu.org/philosophy/free-sw.html).
 
 ## Natural language processing
 
@@ -36,7 +36,7 @@ Software](http://www.gnu.org/philosophy/free-sw.html).
 -   [CHEOPS](/cheops.html), a computer chess engine
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
 -   [Dvorak international keyboard layout for
-    xkb](http://files.nothingisreal.com/software/dvorak/dvorak_intl.txt)
+    xkb](https://files.nothingisreal.com/software/dvorak/dvorak_intl.txt)
 -   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
 -   Various [Mozilla](https://www.mozilla.org/en-US/) projects,

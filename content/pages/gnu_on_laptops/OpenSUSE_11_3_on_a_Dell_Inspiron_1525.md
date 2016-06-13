@@ -4,7 +4,7 @@ save_as: gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525.html
 # openSUSE 11.3 on a Dell Inspiron 1525
 
 This document describes how I installed and configured
-[GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) (64-bit [openSUSE
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) (64-bit [openSUSE
 11.3](http://www.opensuse.org/) distribution) on a [Dell Inspiron
 1525](http://support.dell.com/support/edocs/systems/ins1525/en/index.htm)
 laptop. You may also be interested in [my previous guide to installing

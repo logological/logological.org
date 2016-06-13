@@ -7,7 +7,7 @@ Here are some miscellaneous documents and websites I've produced which
 don't really fit into any other section.
 
 </dl>
-<dt>[Advice for German Writers of English Scientific Prose](http://files.nothingisreal.com/publications/Tristan_Miller/advice.pdf)</dt>
+<dt>[Advice for German Writers of English Scientific Prose](https://files.nothingisreal.com/publications/Tristan_Miller/advice.pdf)</dt>
 <dd>A short guide to English technical and scientific writing directed specifically to German speakers.</dd>
 <dt>[Commodore Users Group of Saskatchewan](/cugs.html)</dt>
 <dd>Information on a now-defunct Commodore users' group</dd>
