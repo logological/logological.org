@@ -56,11 +56,11 @@ online under free licenses.</p>
 
 <li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>
 
+<li><a href="http://psych0naut.livejournal.com/"><i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i></a></li>
+
 <li><a href="https://www.linkedin.com/in/tristan-miller-032b327"><i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i></a></li>
 
 <li><a href="https://twitter.com/Logological"><i class="fa fa-twitter-square fa-3x" title="Twitter"></i></a></li>
-
-<li><a href="http://psych0naut.livejournal.com/"><i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i></a></li>
 
 </ul>
 
