@@ -1,9 +1,11 @@
-# Souce code for nothingisreal.com
+# Souce code for logological.org
 
 This is the source code for my personal site
-[nothingisreal.com](http://www.nothingisreal.com).
+[logological.org](https://logological.org/).
 
-It's built using [Pelican](http://getpelican.com/) and based on the website of [Leonardo Uieda](https://github.com/leouieda/website-pelican).
+It's built using [Pelican](http://getpelican.com/) and based on the
+website of
+[Leonardo Uieda](https://github.com/leouieda/website-pelican).
 
 ## Dependencies
 
@@ -17,8 +19,8 @@ You can install these libraries using `pip`:
 
     pip install pelican markdown beautifulsoup4
 
-After cloning this repository, you'll need to initialize the git submodules
-for the `pelican-plugins`:
+After cloning this repository, you'll need to initialize the git
+submodules for the `pelican-plugins`:
 
     cd pelican-plugins
     git submodule init
@@ -33,11 +35,10 @@ Use the `Makefile`:
     make html
     make serve
 
-The command `make serve` will start a simple server at the `output` dir
-where the built HTML files are.
-Point your browser to [http://localhost:8000](http://localhost:8000)
-to view the site.
-Use `Ctrl+C` to kill the server.
+The command `make serve` will start a simple server at the `output`
+dir where the built HTML files are.  Point your browser to
+[http://localhost:8000](http://localhost:8000) to view the site.  Use
+`Ctrl+C` to kill the server.
 
 ## Deploying the site
 
@@ -52,20 +53,19 @@ Icons are provided by [FontAwesome](http://fontawesome.io/) and
 [Academicons](http://jpswalsh.github.io/academicons/).
 
 The Jinja2 templates and CSS are located in the `theme` folder.
-Leonardo really should make this theme more generic and provide it to the world.
-But, you know, time and things.
-You can still use it by copying the `theme` folder to your own project.
-Leonardo can't guarantee that things will work without his specific folder struture in
-`content`.
+Leonardo really should make this theme more generic and provide it to
+the world.  But, you know, time and things.  You can still use it by
+copying the `theme` folder to your own project.  Leonardo can't
+guarantee that things will work without his specific folder struture
+in `content`.
 
 <!--
 ## Adding an article/talk/course/software
 
-The papers, talks, courses and software entries are basically blog posts, each
-in a different category.
-Categories are defined as folders in `content`.
-Each entry gets it's own `.md` file.
-The site theme takes a lot of extra metadata in the post to make the "Info"
+The papers, talks, courses and software entries are basically blog
+posts, each in a different category.  Categories are defined as
+folders in `content`.  Each entry gets it's own `.md` file.  The site
+theme takes a lot of extra metadata in the post to make the "Info"
 section of each entry.
 
 To add a new entry, create the `.md` file in the corresponding category.
@@ -94,10 +94,9 @@ Optional:
     pdf: paper-tle.pdf
     tags: OA, review
 
-The `tags` metadata has special entries: `OA` and `review`.
-An entry with the `OA` tag will be marked as open-acess.
-Setting the `review` tag will mark the entry as under peer-review
-(unpublished).
+The `tags` metadata has special entries: `OA` and `review`.  An entry
+with the `OA` tag will be marked as open-acess.  Setting the `review`
+tag will mark the entry as under peer-review (unpublished).
 
 The PDF file should be provided in the `content/pdf` folder.
 
@@ -125,14 +124,14 @@ Optional:
     thumbnail: images/thumb/seg2012.png
     citation: Uieda, L., and V. C. F. Barbosa (2012), Use of the "shape-of-anomaly" data misfit in 3D inversion by planting anomalous densities, SEG Technical Program Expanded Abstracts, pp. 1-6, doi:10.1190/segam2012-0383.1
 
-If `tags` has the word `expanded`, will place an info alert saying that there
-is an expanded abstract or short paper available with this entry.
+If `tags` has the word `expanded`, will place an info alert saying
+that there is an expanded abstract or short paper available with this
+entry.
+
 -->
 
 ## License
 
-[![Creative Commons
-License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 The theme and source code (but not the content!) is licensed under a
-[Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
