@@ -52,6 +52,7 @@
 
 <body>
 
+{% block navbar %}
 <nav class="navbar navbar-inverse" lang="{{ DEFAULT_LANG }}">
 <div class="container">
     <div class="navbar-header">
@@ -66,14 +67,17 @@
         <a class="navbar-brand" href="{{ SITEURL }}">{{ SITETITLE }}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            {% for title, link in MENUITEMS %}
-                <li><a href="{{ link }}">{{ title }}</a></li>
-            {% endfor %}
+      <ul class="nav navbar-nav">
+	{% block menu %}
+           {% for title, link in MENUITEMS %}
+           <li><a href="{{ link }}">{{ title }}</a></li>
+           {% endfor %}
+	{% endblock %}
         </ul>
     </div><!--/.nav-collapse -->
 </div>
 </nav>
+{% endblock %}
 
 {% block content %}
 {% endblock %}
