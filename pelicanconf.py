@@ -129,7 +129,9 @@ MENUITEMS = [
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math',
-           'sitemap']
+           'sitemap',
+           'filetime_from_git',
+]
 SITEMAP = {
     'format': 'xml',
     'priorities': {
