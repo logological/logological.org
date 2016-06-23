@@ -15,15 +15,6 @@ DESCRIPTION = ""
 BANNER = ""
 BUILD_TIME = datetime.date.today().strftime(format='%Y-%m-%d')
 
-# Get the current git commit hash
-COMMIT = ''
-process = subprocess.Popen('git rev-parse HEAD'.split(), cwd='.',
-                           stdout=subprocess.PIPE)
-git_hash = process.communicate()[0].strip().decode('utf-8')
-if git_hash:
-    COMMIT = ' (<a href="{url}/commit/{commit}">{commit_link}</a>)'.format(
-            url=REPOURL, commit=git_hash, commit_link=git_hash[:7])
-
 # Language and time
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en-ca'
@@ -33,8 +24,8 @@ TIMEZONE = u'Europe/Berlin'
 FOOTER_LEFT = "" # Superseded; see base.html
 FOOTER_RIGHT = """
 <a href="/credits.html">Credits</a> &bullet;
-<a href="{repo}">Source</a>
-""".format(date=BUILD_TIME, commit=COMMIT, repo=REPOURL, repo_name=REPOURL[8:])
+<a title="{repo_name} on GitHub" href="{repo}">Source</a>
+""".format(repo=REPOURL, repo_name=REPOURL[19:])
 
 # Where to put generated files
 ARTICLE_URL = '{category}/{slug}.html'
