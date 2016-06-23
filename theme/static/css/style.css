@@ -33,6 +33,10 @@ h3 {
     color: #333;
 }
 
+.navbar-brand {
+    font-weight: bold;
+}
+
 .navbar-inverse {
     border: none;
     margin-bottom: 0px;

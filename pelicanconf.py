@@ -3,7 +3,7 @@ import subprocess
 import datetime
 
 AUTHOR = u'Tristan Miller'
-SITETITLE = u"<b>Tristan Miller</b>"
+SITETITLE = u"Tristan Miller"
 SITENAME = u"Tristan Miller"
 #SITEKEYWORDS = ', '.join([
 #    'natural language processing', 'nlp', 'computational linguistics', 'logology', 'free software', 'humour'
