@@ -4,7 +4,7 @@ save_as: puns.html
 
 # SemEval-2017 Shared Task:<br />Detection and Interpretation of English Puns
 
-<a href="/images/SemEval-2017_20160623_flyer.pdf"><img src="/images/SemEval-2017_20160623_flyer.png" title="Publicity poster/flyer for the SemEval-2017 shared task to detection and interpretation of English puns" alt="[A publicity poster/flyer advertising the SemEval-2017 shared task to detection and interpretation of English puns" style="float:right; border: thin solid black; margin-left: 1em; width: 200px;" /></a>
+<a href="/images/SemEval-2017_20160623_flyer.pdf"><img src="/images/SemEval-2017_20160623_flyer.png" title="Publicity poster/flyer for the SemEval-2017 shared task to detection and interpretation of English puns" alt="[A publicity poster/flyer advertising the SemEval-2017 shared task to detection and interpretation of English puns" style="float:right; border: thin solid black; margin-left: 1em; width: 300px;" /></a>
 
 Researchers and industry professionals are invited to participate in a
 shared task on the computational detection and interpretation of
