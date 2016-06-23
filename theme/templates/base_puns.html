@@ -30,11 +30,11 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/cosmo.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/simplex.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/biblet.css">
     <!--Include the Source Sans Pro Google fonts CSS-->
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/sourcesanspro/sourcesanspro.css">
+    <!-- <link rel="stylesheet" href="{{ SITEURL }}/theme/sourcesanspro/sourcesanspro.css"> -->
     <!--Include the Font Awesome and Academicons CSS-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/font-awesome.min.css">
@@ -84,18 +84,18 @@
 
 <footer lang="{{ DEFAULT_LANG }}">
 <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-	<!-- {{ FOOTER_LEFT }} -->
-	Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %}
-      </div>
-      <div class="col-md-4">
-        <!-- {{ FOOTER_MIDDLE }} -->
-      </div>
-      <div class="col-md-4">
-        {{ FOOTER_RIGHT }}
-      </div>
+  <div class="row">
+    <div class="col-md-4">
+      <!-- {{ FOOTER_LEFT }} -->
+      Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %}
     </div>
+    <div class="col-md-4">
+      <!--  {{ FOOTER_MIDDLE }} -->
+    </div>
+    <div class="col-md-4">
+      {{ FOOTER_RIGHT }}
+    </div>
+  </div>
 </div>
 </footer>
 

@@ -1,10 +1,11 @@
 title: Credits
 
-<h1>Credits</h1>
+# Credits
 
-<p>This website is powered by <a href="http://getpelican.com/">Pelican</a>,
-<a href="http://python.org">Python</a>,
-and <a href="http://getbootstrap.com/">Bootstrap</a>.<br />
-The design is based on the <a href="https://bootswatch.com/cosmo/bootstrap.min.css">Cosmo</a> Bootswatch theme, as modified by <a href="https://github.com/leouieda/website-pelican">Leonardo Uieda</a>.<br />
-Icons by <a href="http://fontawesome.io/">Font Awesome</a>
-and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.</p>
+This website is powered by [Pelican](http://getpelican.com/),
+[Python](https://www.python.org/), and
+[Bootstrap](https://getbootstrap.com/).<br /> The design is based on
+the [Bootswatch](https://bootswatch.com/) themes, as modified by
+[Leonardo Uieda](https://github.com/leouieda/website-pelican).<br />
+Icons by [Font Awesome](http://fontawesome.io/) and
+[Academicons](https://jpswalsh.github.io/academicons/).
