@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}
+     {{ page.title}}
+{% endblock %}
+
+{% block navbar_title_link %}/puns{% endblock %}
+{% block navbar_title %}Home{% endblock %}
+
+{% block menu %}
+<li><a href="/puns/task.html">Task description</a></li>
+<li><a href="/puns/data.html">Data and resources</a></li>
+<li><a href="/puns/references.html">References</a></li>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    {{ page.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
+
+</div>
+
+{% endblock %}
+
+{% block modified %}{{ page.modified|strftime('%Y-%m-%d %H:%M %Z') }}{% endblock %}
