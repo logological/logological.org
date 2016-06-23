@@ -12,52 +12,44 @@ website of
 You'll need the following to build the website:
 
 * Pelican
-* markdown
-* beautifulsoup4
+* Markdown
+* GitPython
 
-You can install these libraries using `pip`:
+You can install these libraries using `pip3`:
 
-    pip install pelican markdown beautifulsoup4
+    pip3 install pelican markdown gitpython
 
-After cloning this repository, you'll need to initialize the git
-submodules for the `pelican-plugins`:
+After cloning this repository, you'll need to initialize the Git
+submodules for the Pelican plugins:
 
     cd pelican-plugins
     git submodule init
     git submodule update
 
-This only needs to be done once.
-
 ## Compiling the site
 
-Use the `Makefile`:
+Use the Makefile:
 
     make html
     make serve
 
-The command `make serve` will start a simple server at the `output`
-dir where the built HTML files are.  Point your browser to
+The command `make serve` will start a simple server for the `output`
+directory where the generated HTML files are.  Point your browser to
 [http://localhost:8000](http://localhost:8000) to view the site.  Use
 `Ctrl+C` to kill the server.
 
 ## Deploying the site
 
-    make publish
     make deploy
 
 ## The theme
 
 The website theme is made using [bootstrap](http://getbootstrap.com/)
-and tweaked from the Cosmo [Bootswatch](http://bootswatch.com/) theme.
+and tweaked from the [Bootswatch](http://bootswatch.com/) themes.
 Icons are provided by [FontAwesome](http://fontawesome.io/) and
 [Academicons](http://jpswalsh.github.io/academicons/).
 
 The Jinja2 templates and CSS are located in the `theme` folder.
-Leonardo really should make this theme more generic and provide it to
-the world.  But, you know, time and things.  You can still use it by
-copying the `theme` folder to your own project.  Leonardo can't
-guarantee that things will work without his specific folder struture
-in `content`.
 
 <!--
 ## Adding an article/talk/course/software
