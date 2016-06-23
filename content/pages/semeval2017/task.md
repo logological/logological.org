@@ -1,6 +1,6 @@
 Title: Task Description | SemEval-2017 Shared Task on Puns
 template: page_puns
-save_as: puns/task.html
+save_as: semeval2017/task.html
 
 # Task description
 
