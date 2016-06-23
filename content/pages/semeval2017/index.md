@@ -27,8 +27,8 @@ The following schedule is adapted from the [SemEval-2017 call for task proposals
 
 <table class="table-condensed">
 <tr><td>July 1, 2016</td><td>Trial data ready</td></tr>
-<tr><td>January 10, 2016</td><td>Evaluation start</td></tr>
-<tr><td>January 31, 2016</td><td>Evaluation end</td></tr>
+<tr><td>January 10, 2017</td><td>Evaluation start</td></tr>
+<tr><td>January 31, 2017</td><td>Evaluation end</td></tr>
 <tr><td>February 28, 2017</td><td>Paper submission due</td></tr>
 <tr><td>March 31, 2017</td><td>Paper reviews due</td></tr>
 <tr><td>April 30, 2017</td><td>Camera-ready submission due</td></tr>
