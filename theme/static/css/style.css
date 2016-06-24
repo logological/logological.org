@@ -122,3 +122,12 @@ img {
     padding-left: 45px;
     padding-right: 45px;
 }
+
+.github-fork-ribbon:before {
+  /* Set the base colour */
+  background-color: #000;
+}
+
+.github-fork-ribbon:after {
+    padding: 0;
+}
