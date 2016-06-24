@@ -61,10 +61,8 @@ available from [FreshPorts](http://www.freshports.org).
 #### Darwin, Mac OS X
 
 A [GPP portfile for Darwin/Mac OS
-X](http://darwinports.opendarwin.org/darwinports/dports/lang/gpp/Portfile)
-is available at the [DarwinPorts](http://darwinports.opendarwin.org/)
-website. See also [How To Install GPP on Mac OS
-X](http://gpp.darwinports.com/) for an installation guide.
+X](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
+is available from [MacPorts](https://www.macports.org/).
 
 Documentation
 -------------
