@@ -32,15 +32,9 @@ stable, current releases.
 
 ### Source code
 
-The source code can be found at
-[<https://files.nothingisreal.com/software/gpp/>](https://files.nothingisreal.com/software/gpp/).
-MD5/SHA1 hashes and PGP signatures are available there too. For the
-latter, you will need my [OpenPGP signing
-key](/BF8A2EE4.txt).
+The source code can be found at [https://github.com/logological/gpp/](https://github.com/logological/gpp/).
 
-For convenience,
-[gpp.tar.bz2](https://files.nothingisreal.com/software/gpp/gpp.tar.bz2)
-is always a link to the latest version.
+<a class="github-fork-ribbon" href="https://github.com/logological/gpp/" title="Fork me on GitHub">Fork me on GitHub</a>
 
 ### Ports and binary packages
 
