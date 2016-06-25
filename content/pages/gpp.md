@@ -46,6 +46,6 @@ page, and LaTeX document.
 Authors
 -------
 
-GPP was originally written by [Denis
-Auroux](http://www-math.mit.edu/~auroux/). Since version 2.12 it has
-been maintained by [Tristan Miller](/).
+GPP was originally written by
+[Denis Auroux](https://math.berkeley.edu/~auroux/). Since version 2.12
+it has been maintained by [Tristan Miller](/).
