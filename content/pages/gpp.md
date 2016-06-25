@@ -10,25 +10,16 @@ that of [GNU m4](https://www.gnu.org/software/m4/). There are built-in
 macros for use with C/C++, LaTeX, HTML, XHTML, and Prolog files.
 
 GPP is [Free Software](https://www.gnu.org/philosophy/free-sw.html). It
-is distributed under the terms of the [GNU General Public
-Licence](https://www.gnu.org/copyleft/gpl.html).
+is distributed under the terms of the [GNU Lesser General Public
+Licence](https://www.gnu.org/copyleft/lgpl.html).
 
 Downloading
 -----------
 
-The latest version of GPP is **2.24**, released on 2004-09-19. A list of
-changes from previous versions can be found in the [change
-log](https://files.nothingisreal.com/software/gpp/NEWS).
-
-**NOTE:** GPP 2.1a is an incompletely documented and dead branch of the
-GPP development tree. Most of the differences from the previous version,
-2.1, are internal changes to speed up performance when processing
-particularly complicated macros. These changes will probably eventually
-be merged with the main development tree (version 2.12 and beyond).
-
-Unless you are using very tricky macros and are particularly concerned
-about execution speed, you would probably be better off with one of the
-stable, current releases.
+The latest stable version of GPP is **2.24**, released on
+2004-09-19. A list of changes from previous versions can be found in
+the
+[change log](https://raw.githubusercontent.com/logological/gpp/2b8187535c28185ad418e1d17960ba1441b46ae0/NEWS).
 
 ### Source code
 
@@ -38,25 +29,11 @@ The source code can be found at [https://github.com/logological/gpp/](https://gi
 
 ### Ports and binary packages
 
-#### RPMs
+Binary packages are available for several systems:
 
-#### Debian GNU/Linux
-
-A [GPP package for Debian GNU/Linux](http://packages.debian.org/gpp) has
-been created by [Lucas Wall](http://www.kadath.com.ar/). Debian users
-can obtain and install this package the same way they do for any other
-Debian package.
-
-#### FreeBSD
-
-A [FreeBSD port of GPP](http://www.freshports.org/textproc/gpp/) is
-available from [FreshPorts](http://www.freshports.org).
-
-#### Darwin, Mac OS X
-
-A [GPP portfile for Darwin/Mac OS
-X](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
-is available from [MacPorts](https://www.macports.org/).
+* [Darwin/Mac OS X](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
+* [Debian GNU/Linux](http://packages.debian.org/gpp)
+* [FreeBSD](http://www.freshports.org/textproc/gpp/)
 
 Documentation
 -------------
