@@ -52,29 +52,23 @@ phonological properties.
 
 ## Task summary
 
-Following is a tentative description of the subtasks.
+Participants will be provided with two data sets:
 
-Participants will be provided with two data sets.  The first data set
+<dl>
+<dt>Data set 1: Homographic puns.</dt><dd>The first data set
 will contain several thousand short contexts (jokes, slogans,
-aphorisms, *etc.*). In some of these contexts, a single word will be
-used as a homographic pun; in the rest, there will be no pun.  The
+aphorisms, <em>etc.</em>). In some of these contexts, a single word will be
+used as a homographic pun; in the rest, there will be no pun.
+<dt>Data set 2: Heterographic puns.</dt><dd>The
 second data set will be similar to the first, except that the puns
-will be heterographic rather than homographic.  For one or both data
-sets, participating systems will compete in any or all of four
-subtasks, in three consecutive evaluation phases:
+will be heterographic rather than homographic.</dd>
+</dl>
+
+For one or both data sets, participating systems will compete in any
+or all of three subtasks, evaluated in consecutive stages:
 
 <dl>
-<dt>Phase A.</dt><dd>In this phase, participants are given an entire raw data set.</dd>
-<dl>
-<dt>Subtask 1: Coarse-grained pun detection.</dt><dd>For each context, the system must decide whether or not it contains a pun.</dd>
-<dt>Subtask 2: Fine-grained pun detection.</dt><dd>For each context, the system must decide which one word (if any) is the pun.</dd>
-</dl>
-<dt>Phase B.</dt><dd>In this phase, the contexts not containing puns are removed from the data set.</dd>
-  <dl>
-  <dt>Subtask 3: Pun location.</dt><dd>For each context, the system must identify which word is the pun.</dd>
-  </dl>
-<dt>Phase C.</dt><dd>In this phase, the pun word in each context is marked, and contexts where the pun's two meanings are not found in WordNet are removed from the data set.</dd>
-  <dl>
-  <dt>Subtask 4: Pun interpretation.</dt><dd>For each context, the system must annotate the two meanings of the given pun by reference to WordNet sense keys.</dd>
-  </dl>
+<dt>Subtask 1: Pun detection.</dt><dd>For this subtask, participants are given an entire raw data set.  For each context, the system must decide whether or not it contains a pun.</dd>
+<dt>Subtask 2: Pun location.</dt><dd>For this subtask, the contexts not containing puns are removed from the data set.  For each context, the system must identify which word is the pun.</dd>
+<dt>Subtask 3: Pun interpretation.</dt><dd>For this subtask, the pun word in each context is marked, and contexts where the pun's two meanings are not found in WordNet are removed from the data set.  For each context, the system must annotate the two meanings of the given pun by reference to WordNet sense keys.</dd>
 </dl>

@@ -14,7 +14,7 @@ currently under construction.  Both data sets will be provided in an
 XML format similar to that used in previous Senseval/SemEval WSD
 tasks.
 
-For Subtask 4, participants must apply senses from version 3.1 of
+For Subtask 3, participants must apply senses from version 3.1 of
 [WordNet](https://wordnet.princeton.edu/), an electronic semantic
 network.  However, they are not limited to the use of WordNet for this
 subtask, nor for any other subtasks.  For all subtasks involving the
