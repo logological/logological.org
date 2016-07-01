@@ -41,5 +41,5 @@ sound similarity will be made freely available to participants.
 
 ## Download
 
-* Trial data will be available for download soon.  Test data will not
-  be released until the evaluation begins.
+* [Trial data](/semeval2017/semeval2017_pun_task.tar.xz)
+* Test data will not be released until the evaluation begins
