@@ -18,6 +18,7 @@ Linguistics](http://www.aclweb.org/).
 
 ## News
 
+* July 1, 2016 – Trial data is now available for download from the [data and resources](semeval2017/data) page.
 * June 23, 2016 – A [publicity poster/flyer](/images/SemEval-2017_20160623_flyer.pdf) is available.  Please print some out and help publicize our task!
 * June 22, 2016 – Our task website has been launched at a temporary home.
 
