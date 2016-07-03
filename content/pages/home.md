@@ -81,6 +81,6 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 * Summer 2017: Co-chair, **[Shared Task on Detection and Interpretation of English Puns](/puns.html)** at **[SemEval-2017](https://groups.google.com/forum/#!topic/semeval3/zAJa6iJXoAs)**, location TBA
-* July 9, 2016: Invited tutorial at the **[16th International Summer School and Symposium on Humour and Laughter](http://humoursummerschool.org/16/)** in Brașov
+* July 8, 2016: Invited tutorial at the **[16th International Summer School and Symposium on Humour and Laughter](http://humoursummerschool.org/16/)** in Brașov
 * May 25, 2016: Poster presentation at the **[10th Language Resources and Evaluation Conference (LREC 2016)](http://lrec2016.lrec-conf.org/)** in Portorož
 * May 12, 2016: Invited research seminar at the **[Stylistics Research Centre, University of Huddersfield](http://www.hud.ac.uk/research/researchcentres/src/)**
