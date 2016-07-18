@@ -62,6 +62,7 @@ STATIC_PATHS = [
     'extra/.htaccess',
     'extra/EFBF4915.txt',
     'extra/BF8A2EE4.txt',
+    'extra/keybase.txt',
     'extra/semeval2017_pun_task.tar.xz',
 ]
 EXTRA_PATH_METADATA = {
@@ -89,6 +90,7 @@ EXTRA_PATH_METADATA = {
     'extra/.htaccess': {'path': '.htaccess'},
     'extra/EFBF4915.txt': {'path': 'EFBF4915.txt'},
     'extra/BF8A2EE4.txt': {'path': 'BF8A2EE4.txt'},
+    'extra/keybase.txt': {'path': 'keybase.txt'},
     'extra/semeval2017_pun_task.tar.xz': {'path': 'semeval2017/semeval2017_pun_task.tar.xz'},
 }
 

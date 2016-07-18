@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/logological
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://logological.org
+  * I am logological (https://keybase.io/logological) on keybase.
+  * I have a public key with fingerprint D961 5C87 451D A2BC EB90  1204 36EE C05B BF8A 2EE4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01015992ca9c09e137d6e31c95e93081ee580c6f6c068825ce2c318ed6098d0627c30a",
+            "fingerprint": "d9615c87451da2bceb90120436eec05bbf8a2ee4",
+            "host": "keybase.io",
+            "key_id": "36eec05bbf8a2ee4",
+            "kid": "01015992ca9c09e137d6e31c95e93081ee580c6f6c068825ce2c318ed6098d0627c30a",
+            "uid": "2a3ba2ef4fd29766cc01afe78aeeee19",
+            "username": "logological"
+        },
+        "service": {
+            "hostname": "logological.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468857788,
+    "expire_in": 157680000,
+    "prev": "d4adb90c416411a818b7dcaaaaf910403ef3c2e0f67cc28da2a271f88ad9facc",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGtUm1QVFUYXkwCljFkJFg+cvIOoCgw99y9n0tqpERkYgmbKepy77nnLtdd9tLu
+wgq0Y6WIGNJqElOMCsKkRR9DUzZQFqWCkjkBAyM4g6UMQh+MmAKBSPcy9at+9s6c
+OXPO+zzP++lb9JBO70ePteV8czB5yO/7UUG3pXL2QikmKGIxZirFbGj+QnYRudwW
+myxiJgwHOKA4joA8B3EOASMj0sgIIEchzoizACGKxSEt0RCnWZagICKgEbBIpHGO
+FXGaYKAR57FETJIdVuQscMoOtyorcjSgIMuQFBB5QoBI4HBA4KSRRgjilCBILE8g
+RKrEPMWlMdTkBN6FkmVF/VMflvn0/gP/P+ddOC9H8EZBDSCRkkhwDE1DiANeQgzL
+I9UApwFdyOng85GKtitWRT0y5O2YNxFTHUUyRFpvtWL+DUpWnFZVocCpuBWo2FVn
+nttd4DJpZHdxgYb2IMHyt45FkB2i2k2VUYScLllxYCagIqFb1oQBqRZEMQzLJmJo
+d4HsRBZZQ1AMzeKqaXFQkTaDnSQvqn2HJKBJAHgWsAIjQl41iQM4iRuRZIQEwiWa
+gZBg1UHxBAMkluVFTuIhxLTSXnYomIlU8+StqqZLtjp4d6ETYV59xYKYhTo/ve5h
+/wXanun0QYv/Wb7w/pC5FzsDJ8d+iGpojxyu6E9/aho83tES2lcT937aISIuqFwZ
+Mqe/YX061O0xH0yqmGILK5Os8bb+m209eyMWvVue0xWbsCw9P/f5wb79VT21Y1MD
+NfkXP7IPBiFQ/oLJaz63MsFzL3Dtx6d9vZ0huRGbcprNv1vkzr2xyiebGyKnM17b
+MHP6meAqM8F9eXaifF3eiDU9fOHlD1/JiNze8Nbi2/fXHDgu7i7+cXsr3zK73r91
+dNW6P1Oas+YC+Q0bH70xvvLM3bSmzErv0VpDUmxZBzFaMrk8F/5kZq+F+RpPei5M
+LokIvdKzn7DBzEcS7w6/PhB25Z0/fOOp1YbVNl+XZ9TpX3vrzV+OB6dN2PbsU3xn
+sr+4XMSeX14y02Q4OtczvXRmR9X6ZT9TNwP65jaPRx9pq3vyzi1haDYmsjXmTknd
+QMNAbfj1czsvbQwee/WQp0XiD3c3tsfXG7Km3t519vbYY/vSdoHoCbs+tXT6fsJn
+NbO6vk9jRujuNYZT1BOGpmNdvdfJaP7knDHqQXaEX8BXQyVh2Yczpq+GkPXfXtRz
+0Vmr2t3e/m1fp8pldYWXOib3UFUpiSsqjo285K7/9cbn+uqtxA7kIp9VUsru9Uat
+HclL/e5qXHN+2onIzHTCsykj65Q36PyK9mHhvQeNS08kbyuqBh8EP9d9DYv/bYtM
+LykZDFgdvPXIXw==
+=yxGW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/logological
+
+==================================================================
