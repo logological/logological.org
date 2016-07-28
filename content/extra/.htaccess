@@ -362,3 +362,12 @@ Redirect /photos http://www.nothingisreal.com/photos
 Redirect /courses http://www.nothingisreal.com/courses
 Redirect /sagesdesk http://www.nothingisreal.com/sagesdesk
 Redirect /mentifex_faq http://www.nothingisreal.com/mentifex_faq.html
+
+# Redirect SemEval-2017 Task 7 site
+Redirect permanent /puns http://alt.qcri.org/semeval2017/task7/
+Redirect permanent /semeval2017/task http://alt.qcri.org/semeval2017/task7/
+Redirect permanent /semeval2017/data http://alt.qcri.org/semeval2017/task7/index.php?id=data-and-resources
+Redirect permanent /semeval2017/references http://alt.qcri.org/semeval2017/task7/index.php?id=references
+Redirect permanent /semeval2017/semeval2017_pun_task.tar.xz http://alt.qcri.org/semeval2017/task7/data/uploads/semeval2017_pun_task.tar.xz
+Redirect permanent /images/SemEval-2017_20160623_flyer.png http://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.png
+Redirect permanent /images/SemEval-2017_20160623_flyer.pdf http://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.pdf
