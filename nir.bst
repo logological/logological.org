@@ -119,11 +119,11 @@ FUNCTION {init.string.consts}
   "bib-"			'css.prefix		:=
   "cite-"			'cite.prefix		:=
   ""			'heading.prefix		:=
-  "http://www.nothingisreal.com/icons/nuvola-1.0/48x48"	'icon.path		:=
-  "http://www.nothingisreal.com"                           'script.path    	:=
+  "https://www.nothingisreal.com/icons/nuvola-1.0/48x48"	'icon.path		:=
+  "https://www.nothingisreal.com"                           'script.path    	:=
   "showhide.js"			'script.showhide	:=
   "css"				'css.path		:=
-  "http://files.nothingisreal.com/publications/Tristan_Miller/covers"			'covers.path		:=
+  "https://files.nothingisreal.com/publications/Tristan_Miller/covers"			'covers.path		:=
   null				'current.year		:=
   null				'current.pubtype	:=
 }
@@ -2330,7 +2330,7 @@ FUNCTION {begin.bib}
   "  <head>" write$ newline$
   "    <title>My publications</title>" write$ newline$
   "    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />" write$ newline$
-  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- http://www.nothingisreal.com/biblet/' />" write$ newline$
+  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- https://www.nothingisreal.com/biblet/' />" write$ newline$
 %  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
 %    script.showhide * url.escape * "' />" * write$ newline$
   output.links
@@ -2357,7 +2357,7 @@ FUNCTION {end.bib}
   #0 'in.bibliography :=
   "    <div class='" css.prefix * "footer'>" * write$ newline$
   "      <hr /><p lang='en'>Generated with B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> and the "
-  "<a href='http://www.nothingisreal.com/biblet/'>biblet</a>" *
+  "<a href='https://www.nothingisreal.com/biblet/'>biblet</a>" *
   " bibliography style.</p>" * write$ newline$
   "    </div>" write$ newline$
   "  </body>" write$ newline$
