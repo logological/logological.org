@@ -76,11 +76,12 @@ We will use the following protocol:
 3. I will call out the name of each participant in order.  When your
    name is called, confirm whether your key's fingerprint and owner
    are correctly listed on your hard copy and on the screen.  When
-   someone else's name is called, listen for their confirmation, and
-   if they give it, place a checkmark in the "key info" column next to
-   their key in your list.  (We do this step to make sure that
-   everyone has the same copy of the list, and that it contains the
-   correct information.)
+   someone else's name is called, check that the fingerprint of theirs
+   on the screen is the same as the one on your list.  Listen for the
+   participant's confirmation, and if they give it, place a checkmark
+   in the "key info" column next to their key in your list.  (We do
+   this step to make sure that everyone has the same copy of the list,
+   and that it contains the correct information.)
 
 4. Once all the key data has been confirmed, the line of participants
    folds over on itself to form a double line.  So now the first
