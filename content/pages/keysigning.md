@@ -3,8 +3,9 @@ save_as: keysigning.html
 
 # Key-signing party
 
-An OpenPGP key-signing party will be held on Thursday, 8 September at
-12:00 in room S2|02 A126 of Technische Universität Darmstadt.
+An OpenPGP key-signing party will be held on **Thursday, 8 September
+at 12:00** in
+**[room A126 of building S2|02 (Hochschulstraße 10, 64289 Darmstadt) of Technische Universität Darmstadt](http://www.openstreetmap.org/?mlat=49.87721&mlon=8.65513#map=17/49.87721/8.65513&layers=N)**.
 Everyone is welcome to attend, whether or not they previously signed
 up, so feel free to forward this page to friends or colleagues.
 
@@ -25,8 +26,8 @@ Refer to the websites listed above if you need help.
 
 E-mail your public key to me, Tristan Miller, at
 [miller@ukp.informatik.tu-darmstadt.de](mailto:miller@ukp.informatik.tu-darmstadt.de)
-as soon as possible, but in any event before 16:00 on Wednesday, 7
-September.  To do this with GnuPG, use the following command:
+as soon as possible, but in any event **before 16:00 on Wednesday, 7
+September**.  To do this with GnuPG, use the following command:
 
     $ gpg --armor --export MY_KEY_ID > MY_KEY_ID.asc
 
@@ -54,7 +55,7 @@ Everyone should bring the following to the party:
         $ gpg --fingerprint MY_KEY_ID
 
 * **No computer!**  Do not bring or use laptops, tablets, or smartphones
-  at the party.  The party is only for identifying paricipants and
+  at the party.  The party is only for identifying participants and
   connecting them to keys; the actual signing of keys will take place
   *after* the party, in the security of your own home or office.
 
