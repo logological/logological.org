@@ -119,11 +119,12 @@ Here is a suggested workflow:
 
 3. Now pull out your hard copy of the key list from the party.  For
    every key on the list where you made both checkmarks, check that
-   the fingerprint in the keyring matches the one on the list:
+   the owner and fingerprint given in the keyring match the ones on
+   the list:
 
         $ gpg --fingerprint KEY_ID
 
-4. If the fingerprints match, then sign the key:
+4. If the owners and fingerprints match, then sign the key:
 
         $ gpg --sign-key KEY_ID
 
