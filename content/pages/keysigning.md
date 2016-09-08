@@ -36,7 +36,7 @@ Then attach `MY_KEY_ID.asc`, or copy and paste its contents, in an
 e-mail message to me.  I will make a list of all the keys and
 distribute it at the party.  On this web page I will also make
 available
-**[a GnuPG keyring containing all the keys](https://logological.org/party_keyring.gpg)**.
+**[a GnuPG keyring containing all the keys](/party_keyring.gpg)**.
 
 
 ## What to bring to the party
@@ -109,8 +109,9 @@ Back at your home or office computer, you should sign and republish
 all the keys (and only those keys) that you verified at the party.
 Here is a suggested workflow:
 
-1. Download the GnuPG keyring that I will post on this page after the
-   party.  It should contain all the keys from the list.
+1. Download the [GnuPG keyring](/party_keyring.gpg) that I will post
+   on this page after the party.  It should contain all the keys from
+   the list.
 
         $ wget https://logological.org/party_keyring.gpg
 
