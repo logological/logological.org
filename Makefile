@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=ssh.logological.org
+SSH_HOST=onza
 SSH_PORT=22
-SSH_USER=frettchen
-SSH_TARGET_DIR=logological.org
+SSH_USER=psy
+SSH_TARGET_DIR=www/logological.org
 
 S3_BUCKET=my_s3_bucket
 
