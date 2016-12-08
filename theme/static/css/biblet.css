@@ -231,7 +231,7 @@
 }
 
 .tex sub, .latex sub {
-  vertical-align: -0.5ex;
+  vertical-align: -0.05ex;
   margin-left: -0.1667em;
   margin-right: -0.125em;
 }
@@ -241,8 +241,8 @@
 }
 
 .latex sup {
-  font-size: 0.85em;
-  vertical-align: 0.15em;
+  font-size: 0.65em;
+  vertical-align: -0.05em;
   margin-left: -0.36em;
   margin-right: -0.15em;
 }
