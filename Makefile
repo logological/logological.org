@@ -1,11 +1,13 @@
-miller.bbl:	miller.aux miller.bib nir.bst
-	bibtex miller
+all: miller.bbl polemics.bbl logology.bbl
 
-#miller.bib:	academic.bib polemic.bib humour.bib
+%.bbl: %.aux ../%.bib nir.bst
+	bibtex $<
+
+#all.bib:	miller.bib polemics.bib logology.bib
 #	cat $+ > $@
 
-miller.aux:	miller.tex
-	pdflatex miller
+%.aux: %.tex
+	pdflatex $<
 
 scp:
-	scp miller.bib vps:files.nothingisreal.com/publications/Tristan_Miller/miller.bib
+	scp miller.bib onza:www/files.nothingisreal.com/publications/Tristan_Miller/miller.bib
