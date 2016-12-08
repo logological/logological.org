@@ -120,10 +120,10 @@ FUNCTION {init.string.consts}
   "cite-"			'cite.prefix		:=
   ""			'heading.prefix		:=
   "https://www.nothingisreal.com/icons/nuvola-1.0/48x48"	'icon.path		:=
-  "https://www.nothingisreal.com"                           'script.path    	:=
+  "/theme/js"                           'script.path    	:=
   "showhide.js"			'script.showhide	:=
   "css"				'css.path		:=
-  "https://files.nothingisreal.com/publications/Tristan_Miller/covers"			'covers.path		:=
+  "/images/covers"			'covers.path		:=
   null				'current.year		:=
   null				'current.pubtype	:=
 }
@@ -1035,7 +1035,8 @@ FUNCTION {output.icons}
 
 FUNCTION {output.pubtype.heading}
 {  pubtype missing$
-    { "Missing pubtype in " cite$ * warning$
+     {
+       "Missing pubtype in " cite$ * warning$
     }
     { current.pubtype pubtype =
         'skip$
@@ -2331,8 +2332,8 @@ FUNCTION {begin.bib}
 %  "    <title>My publications</title>" write$ newline$
 %  "    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />" write$ newline$
 %  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- https://www.nothingisreal.com/biblet/' />" write$ newline$
-%  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
-%    script.showhide * url.escape * "' />" * write$ newline$
+  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
+    script.showhide * url.escape * "' /></script>" * write$ newline$
 %  output.links
 %  "  </head>" write$ newline$
 %  "  <body>" write$ newline$
@@ -2341,6 +2342,7 @@ FUNCTION {begin.bib}
   output.showhide newline$
   "<!-- BEGIN BIBLET BIBLIOGRAPHY -->" write$ newline$
   "    <div class='" css.prefix * "bibliography'>" * write$ newline$
+  "        <ol class='bib-list'>" write$ newline$
   #1 'in.bibliography :=
 }
 

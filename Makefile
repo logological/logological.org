@@ -1,5 +1,7 @@
 all: miller.bbl polemics.bbl logology.bbl
 
+.PRECIOUS: %.aux
+
 %.bbl: %.aux ../%.bib nir.bst
 	bibtex $<
 
