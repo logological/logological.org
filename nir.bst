@@ -1,7 +1,7 @@
 % BibTeX nir bibliography style, based on `biblet'
 %
 % Copyright (C) 1985 Oren Patashnik
-% Copyright (C) 2013 Tristan Miller
+% Copyright (C) 2016 Tristan Miller
 %                    psychonaut@nothingisreal.com
 %                    http://www.nothingisreal.com/biblet/
 %
@@ -2324,19 +2324,19 @@ FUNCTION {begin.bib}
   if$
 
   % HTML header
-  "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>" write$ newline$
-  "<!-- \end{document} -->" write$ newline$
-  "<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>" write$ newline$
-  "  <head>" write$ newline$
-  "    <title>My publications</title>" write$ newline$
-  "    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />" write$ newline$
-  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- https://www.nothingisreal.com/biblet/' />" write$ newline$
+%  "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>" write$ newline$
+%  "<!-- \end{document} -->" write$ newline$
+%  "<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>" write$ newline$
+%  "  <head>" write$ newline$
+%  "    <title>My publications</title>" write$ newline$
+%  "    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />" write$ newline$
+%  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- https://www.nothingisreal.com/biblet/' />" write$ newline$
 %  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
 %    script.showhide * url.escape * "' />" * write$ newline$
-  output.links
-  "  </head>" write$ newline$
-  "  <body>" write$ newline$
-  "    <h1>My publications</h1>" write$ newline$ newline$
+%  output.links
+%  "  </head>" write$ newline$
+%  "  <body>" write$ newline$
+%  "    <h1>My publications</h1>" write$ newline$ newline$
 %  output.legend newline$
   output.showhide newline$
   "<!-- BEGIN BIBLET BIBLIOGRAPHY -->" write$ newline$
@@ -2360,8 +2360,8 @@ FUNCTION {end.bib}
   "<a href='https://www.nothingisreal.com/biblet/'>biblet</a>" *
   " bibliography style.</p>" * write$ newline$
   "    </div>" write$ newline$
-  "  </body>" write$ newline$
-  "</html>" write$ newline$
+%  "  </body>" write$ newline$
+%  "</html>" write$ newline$
 }
 
 EXECUTE {end.bib}
