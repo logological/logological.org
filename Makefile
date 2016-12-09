@@ -1,4 +1,4 @@
-all: miller.bbl polemics.bbl logology.bbl
+all: miller.bbl polemics.bbl recreational.bbl
 
 .PRECIOUS: %.aux
 
@@ -12,4 +12,4 @@ all: miller.bbl polemics.bbl logology.bbl
 	pdflatex $<
 
 scp:
-	scp miller.bib onza:www/files.nothingisreal.com/publications/Tristan_Miller/miller.bib
+	scp miller.bib polemics.bib recreational.bib onza:www/files.nothingisreal.com/publications/Tristan_Miller/miller.bib
