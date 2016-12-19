@@ -21,20 +21,14 @@ Licence](https://www.gnu.org/copyleft/gpl.html).
 Downloading
 -----------
 
-The latest version of eoconv is **1.4**, released on 2013-10-15. It
-requires **Perl 5.6** or higher. A list of changes from previous
-versions can be found in the [change
-log](https://files.nothingisreal.com/software/eoconv/NEWS).
+The latest stable version of eoconv is **1.4**, released on
+2013-10-15. It requires **Perl 5.6** or higher. A list of changes from
+previous versions can be found in the
+[change log](https://raw.githubusercontent.com/logological/eoconv/master/NEWS).
 
-The source code and SUSE RPMs can be found at
-[<https://files.nothingisreal.com/software/eoconv/>](https://files.nothingisreal.com/software/eoconv/).
-MD5/SHA1 hashes and PGP signatures are available there too. For the
-latter, you will need my [OpenPGP signing
-key](/BF8A2EE4.txt).
+The source code can be found at [https://github.com/logological/eoconv/](https://github.com/logological/eoconv/).
 
-For convenience,
-[eoconv.tar.bz2](https://files.nothingisreal.com/software/eoconv/eoconv.tar.bz2)
-is always a link to the latest version.
+<a class="github-fork-ribbon" href="https://github.com/logological/eoconv/" title="Fork me on GitHub">Fork me on GitHub</a>
 
 Documentation
 -------------
