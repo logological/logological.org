@@ -78,10 +78,19 @@ My <a href="http://orcid.org">ORCID</a> number is
 </div>
 </div><!-- row -->
 
+<div class="row">
+
+<div class="col-md-12">
+
 <h1>Recent and upcoming activities</h1>
 
-* Summer 2017: Co-chair, **[Shared Task on Detection and Interpretation of English Puns](/puns.html)** at **[SemEval-2017](https://groups.google.com/forum/#!topic/semeval3/zAJa6iJXoAs)**, location TBA
-* September 8, 2016: **[OpenPGP key-signing party](/keysigning)** at Technische Universität Darmstadt
-* July 7, 2016: Invited tutorial at the **[16th International Summer School and Symposium on Humour and Laughter](http://humoursummerschool.org/16/)** in Brașov
-* May 25, 2016: Poster presentation at the **[10th Language Resources and Evaluation Conference (LREC 2016)](http://lrec2016.lrec-conf.org/)** in Portorož
-* May 12, 2016: Invited research seminar at the **[Stylistics Research Centre, University of Huddersfield](http://www.hud.ac.uk/research/researchcentres/src/)**
+<ul>
+<li>August 3–4, 2017: Co-chair, <strong><a href="http://alt.qcri.org/semeval2017/task7/">Shared Task on Detection and Interpretation of English Puns</a></strong> at <strong><a href="http://alt.qcri.org/semeval2017/">SemEval-2017</a></strong>, Vancouver</li>
+<li>September 8, 2016: <strong><a href="/keysigning">OpenPGP key-signing party</a></strong> at Technische Universität Darmstadt</li>
+<li>July 7, 2016: Invited tutorial at the <strong><a href="http://humoursummerschool.org/16/">16th International Summer School and Symposium on Humour and Laughter</a></strong> in Brașov</li>
+<li>May 25, 2016: Poster presentation at the <strong><a href="http://lrec2016.lrec-conf.org/">10th Language Resources and Evaluation Conference (LREC 2016)</a></strong> in Portorož</li>
+<li>May 12, 2016: Invited research seminar at the <strong><a href="http://www.hud.ac.uk/research/researchcentres/src/">Stylistics Research Centre, University of Huddersfield</a></strong></li>
+</ul>
+
+</div>
+</div>
