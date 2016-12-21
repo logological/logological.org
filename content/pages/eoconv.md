@@ -26,9 +26,18 @@ The latest stable version of eoconv is **1.4**, released on
 previous versions can be found in the
 [change log](https://raw.githubusercontent.com/logological/eoconv/master/NEWS).
 
+### Source code
+
 The source code can be found at [https://github.com/logological/eoconv/](https://github.com/logological/eoconv/).
 
 <a class="github-fork-ribbon" href="https://github.com/logological/eoconv/" title="Fork me on GitHub">Fork me on GitHub</a>
+
+### Packages
+
+Packages are available for several systems, including:
+
+* [Debian GNU/Linux](https://packages.debian.org/search?keywords=eoconv)
+* [Ubuntu](http://packages.ubuntu.com/search?keywords=eoconv)
 
 Documentation
 -------------

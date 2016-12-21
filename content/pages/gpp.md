@@ -29,11 +29,12 @@ The source code can be found at [https://github.com/logological/gpp/](https://gi
 
 ### Ports and binary packages
 
-Binary packages are available for several systems:
+Binary packages are available for several systems, including:
 
-* [Darwin/Mac OS X](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
 * [Debian GNU/Linux](http://packages.debian.org/gpp)
 * [FreeBSD](http://www.freshports.org/textproc/gpp/)
+* [macOS](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
+* [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
 
 Documentation
 -------------
