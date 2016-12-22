@@ -1,4 +1,4 @@
-% BibTeX nir bibliography style, based on `biblet'
+% BibTeX logological bibliography style, based on `biblet'
 %
 % Copyright (C) 1985 Oren Patashnik
 % Copyright (C) 2016 Tristan Miller
@@ -18,6 +18,7 @@
 % - make sure id cite keys are valid for XHTML
 % - add "day" field
 % - allow author/editor for inbook
+% - add "doi" field
 %
 % Changelog since prealpha:
 % - sorted by year, then month

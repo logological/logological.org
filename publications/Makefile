@@ -1,15 +1,15 @@
-all: miller.bbl polemics.bbl recreational.bbl
+all: miller.bbl miller-polemics.bbl miller-recreational.bbl
 
 .PRECIOUS: %.aux
 
-%.bbl: %.aux ../%.bib nir.bst
+%.bbl: %.aux ../%.bib logological.bst
 	bibtex $<
 
-#all.bib:	miller.bib polemics.bib logology.bib
-#	cat $+ > $@
+all.bib: miller.bib miller-polemics.bib miller-recreational.bib
+	cat $+ > $@
 
 %.aux: %.tex
 	pdflatex $<
 
-scp:
-	scp miller.bib polemics.bib recreational.bib onza:www/files.nothingisreal.com/publications/Tristan_Miller/miller.bib
+deploy:
+	scp miller.bib miller-polemics.bib miller-recreational.bib onza:www/files.nothingisreal.com/publications/Tristan_Miller/
