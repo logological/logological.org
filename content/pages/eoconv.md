@@ -21,14 +21,19 @@ Licence](https://www.gnu.org/copyleft/gpl.html).
 Downloading
 -----------
 
-The latest stable version of eoconv is **1.4**, released on
-2013-10-15. It requires **Perl 5.6** or higher. A list of changes from
-previous versions can be found in the
-[change log](https://raw.githubusercontent.com/logological/eoconv/master/NEWS).
+The [latest stable
+version](https://github.com/logological/eoconv/releases/latest) of
+eoconv is **1.5**, released on 2016-12-22. It requires **Perl 5.20**
+or higher. A list of changes from previous versions can be found in
+the [change
+log](https://raw.githubusercontent.com/logological/eoconv/master/NEWS).
 
 ### Source code
 
-The source code can be found at [https://github.com/logological/eoconv/](https://github.com/logological/eoconv/).
+You can download [source packages for the current or previous
+releases](https://github.com/logological/eoconv/releases).  You can
+also [browse, download, or clone the development version on
+GitHub](https://github.com/logological/eoconv/).
 
 <a class="github-fork-ribbon" href="https://github.com/logological/eoconv/" title="Fork me on GitHub">Fork me on GitHub</a>
 
