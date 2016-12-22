@@ -1,9 +1,12 @@
+default: refresh ../content/pages/publications.html
+
 ../content/pages/publications.html: miller.bbl publications.template.html
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
 
-all: miller.bbl miller-polemics.bbl miller-recreational.bbl
+refresh:
+	cd resume && git pull
 
-.PRECIOUS: %.aux
+all: miller.bbl miller-polemics.bbl miller-recreational.bbl
 
 %.bbl: %.aux resume/%.bib logological.bst
 	bibtex $<
@@ -16,3 +19,7 @@ all.bib: miller.bib miller-polemics.bib miller-recreational.bib
 
 clean:
 	rm -f {miller,miller-polemics,miller-recreational}.{aux,bbl,blg,log}
+
+.PRECIOUS: %.aux
+
+.PHONY: refresh clean
