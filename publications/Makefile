@@ -1,8 +1,11 @@
+../content/pages/publications.html: miller.bbl publications.template.html
+	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
+
 all: miller.bbl miller-polemics.bbl miller-recreational.bbl
 
 .PRECIOUS: %.aux
 
-%.bbl: %.aux ../%.bib logological.bst
+%.bbl: %.aux resume/%.bib logological.bst
 	bibtex $<
 
 all.bib: miller.bib miller-polemics.bib miller-recreational.bib
@@ -11,5 +14,5 @@ all.bib: miller.bib miller-polemics.bib miller-recreational.bib
 %.aux: %.tex
 	pdflatex $<
 
-deploy:
-	scp miller.bib miller-polemics.bib miller-recreational.bib onza:www/files.nothingisreal.com/publications/Tristan_Miller/
+clean:
+	rm -f {miller,miller-polemics,miller-recreational}.{aux,bbl,blg,log}
