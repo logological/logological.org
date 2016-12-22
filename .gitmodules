@@ -1,3 +1,6 @@
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = git://github.com/getpelican/pelican-plugins.git
+[submodule "publications/resume"]
+	path = publications/resume
+	url = psy@pi:git/resume.git
