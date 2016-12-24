@@ -52,5 +52,6 @@ Maher](https://www.unsw.adfa.edu.au/australian-centre-for-cyber-security/associa
 Miller](/). Development of DELORES was
 supported by the Australian Research Council under grant A49803544.
 
-Please report bugs to [Tristan
-Miller](mailto:psychonaut@nothingisreal.com).
+Please report bugs to the
+[GitHub issue tracker](https://github.com/logological/delores/issues)
+or by e-mail to [Tristan Miller](mailto:psychonaut@nothingisreal.com).
