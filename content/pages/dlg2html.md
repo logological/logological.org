@@ -22,22 +22,27 @@ For an example of a DLG Pro message base which has been converted to
 HTML using dlg2html, please visit the [Sage's Desk BBS AD&D
 Campaign](https://logological.org/sagesdesk/).
 
-Obtaining dlg2html
-------------------
+Downloading
+-----------
 
 The latest version of dlg2html is **1.1**, released on 2013-10-13. A
 list of changes from previous versions can be found in the [change
 log](https://files.nothingisreal.com/software/dlg2html/NEWS).
 
-The source code and openSUSE RPMs can be found at
-[<https://files.nothingisreal.com/software/dlg2html/>](https://files.nothingisreal.com/software/dlg2html/).
-MD5/SHA1 hashes and PGP signatures are available there too. For the
-latter, you will need my [OpenPGP signing
-key](/BF8A2EE4.txt).
+### Source code
 
-For convenience,
-[dlg2html.tar.bz2](https://files.nothingisreal.com/software/dlg2html/dlg2html.tar.bz2)
-is always a link to the latest version.
+You can download source packages for the current and previous releases
+on [GitHub](https://github.com/logological/dlg2html/releases) or
+[nothingisreal.com](https://files.nothingisreal.com/software/dlg2html/).
+You can also
+[browse, download, or clone the development version on GitHub](https://github.com/logological/dlg2html/).
+
+<a class="github-fork-ribbon" href="https://github.com/logological/dlg2html/" title="Fork me on GitHub">Fork me on GitHub</a>
+
+### Binary packages
+
+OpenSUSE RPMs can be found at
+[<https://files.nothingisreal.com/software/dlg2html/>](https://files.nothingisreal.com/software/dlg2html/).
 
 Author
 ------

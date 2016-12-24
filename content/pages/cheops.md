@@ -18,38 +18,42 @@ CHEOPS is [Free Software](https://www.gnu.org/philosophy/free-sw.html).
 It can be freely used, modified, and distributed under the terms of the
 [GNU General Public Licence](https://www.gnu.org/copyleft/gpl.html).
 
-Obtaining CHEOPS
-----------------
+Downloading
+-----------
 
 The latest version of CHEOPS is **1.2**, released on 2015-02-01. A list
 of changes from previous versions can be found in the [change
 log](https://files.nothingisreal.com/software/cheops/NEWS).
 
-The source code and openSUSE RPMs can be found at
-[<https://files.nothingisreal.com/software/cheops/>](https://files.nothingisreal.com/software/cheops/).
-MD5/SHA1 hashes and OpenPGP signatures are available there too. For the
-latter, you will need my [OpenPGP signing
-key](/BF8A2EE4.txt).
+### Source code
 
-For convenience,
-[cheops.tar.bz2](https://files.nothingisreal.com/software/cheops/cheops.tar.bz2)
-is always a link to the latest version.
+You can download source packages for the current and previous releases
+on [GitHub](https://github.com/logological/cheops/releases) or
+[nothingisreal.com](https://files.nothingisreal.com/software/cheops/).
+You can also
+[browse, download, or clone the development version on GitHub](https://github.com/logological/cheops/).
 
-### Third-party binaries
+<a class="github-fork-ribbon" href="https://github.com/logological/cheops/" title="Fork me on GitHub">Fork me on GitHub</a>
 
-The following builds are produced and hosted by third parties. I take no
-responsibility for them.
+### Ports and binary packages
 
--   [Michael Yee](http://web.mit.edu/myee/www/) has produced a
+Binary packages are available for several systems:
+
+* [openSUSE](https://files.nothingisreal.com/software/cheops/)
+* Microsoft Windows:
+    * [Michael Yee](http://web.mit.edu/myee/www/) has produced a
     [UCI-enabled](/:w:Universal_Chess_Interface) build of
-    **[CHEOPS 1.1 for Microsoft
-    Windows](http://web.mit.edu/myee/www/chess/cheops-1.1uci.zip)**.
--   [Daniel José Queraltó](http://www.andscacs.com/) has produced a
-    build of **[CHEOPS 1.2 for Microsoft
-    Windows](http://www.andscacs.com/cheops_1.2/cheops_1.2.rar)**. (On
-    some systems, you may need to also install Microsoft's [Visual C++
-    runtime
-    packages](http://www.microsoft.com/en-us/download/details.aspx?id=40784).)
+    **[CHEOPS 1.1 for Microsoft Windows](http://web.mit.edu/myee/www/chess/cheops-1.1uci.zip)**.
+    * [Daniel José Queraltó](http://www.andscacs.com/) has produced a
+    build of
+    **[CHEOPS 1.2 for Microsoft Windows](http://www.andscacs.com/cheops_1.2/cheops_1.2.rar)**. (On
+    some systems, you may need to also install Microsoft's
+    [Visual C++ runtime packages](http://www.microsoft.com/en-us/download/details.aspx?id=40784).)
+
+Note that, except for the openSUSE packages, these packages are
+produced and hosted by third parties. I take no responsibility for
+them.
+
 
 Documentation
 -------------

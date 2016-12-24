@@ -41,6 +41,10 @@ Binary packages are available for several systems, including:
 * [openSUSE](https://files.nothingisreal.com/software/gpp/)
 * [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
 
+Note that, except for the openSUSE packages, these packages are
+produced and hosted by third parties. I take no responsibility for
+them.
+
 Documentation
 -------------
 

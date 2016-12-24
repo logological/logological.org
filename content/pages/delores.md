@@ -18,22 +18,20 @@ DELORES is [Free Software](https://www.gnu.org/philosophy/free-sw.html).
 It is distributed under the terms of the [GNU General Public
 Licence](https://www.gnu.org/copyleft/gpl.html).
 
-Obtaining DELORES
------------------
+Downloading
+-----------
 
 The latest version of DELORES is **0.91**, released on 2003-12-18. A
 list of changes from previous versions can be found in the [change
 log](https://files.nothingisreal.com/software/delores/NEWS).
 
-DELORES is distributed as C source code only, and is available at
-[<https://files.nothingisreal.com/software/delores/>](https://files.nothingisreal.com/software/delores/).
-MD5/SHA1 hashes and PGP signatures are available there too. For the
-latter, you will need my [OpenPGP signing
-key](/BF8A2EE4.txt).
+You can download source packages for the current and previous releases
+on [GitHub](https://github.com/logological/delores/releases) or
+[nothingisreal.com](https://files.nothingisreal.com/software/delores/).
+You can also
+[browse, download, or clone the development version on GitHub](https://github.com/logological/delores/).
 
-For convenience,
-[delores.tar.bz2](https://files.nothingisreal.com/software/delores/delores.tar.bz2)
-is always a link to the latest version.
+<a class="github-fork-ribbon" href="https://github.com/logological/delores/" title="Fork me on GitHub">Fork me on GitHub</a>
 
 Documentation
 -------------

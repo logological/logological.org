@@ -46,6 +46,10 @@ Packages are available for several systems, including:
 * [openSUSE Tumbleweed](https://files.nothingisreal.com/software/eoconv/)
 * [Ubuntu](http://packages.ubuntu.com/search?keywords=eoconv)
 
+Note that, except for the openSUSE packages, these packages are
+produced and hosted by third parties. I take no responsibility for
+them.
+
 Documentation
 -------------
 
