@@ -39,10 +39,10 @@ You can also
 
 <a class="github-fork-ribbon" href="https://github.com/logological/dlg2html/" title="Fork me on GitHub">Fork me on GitHub</a>
 
-### Binary packages
+### Packages
 
-OpenSUSE RPMs can be found at
-[<https://files.nothingisreal.com/software/dlg2html/>](https://files.nothingisreal.com/software/dlg2html/).
+OpenSUSE and SUSE Linux Enterprise RPMs can be found at
+[<http://download.opensuse.org/repositories/home:/psych0naut/>](http://download.opensuse.org/repositories/home:/psych0naut/).
 
 Author
 ------
