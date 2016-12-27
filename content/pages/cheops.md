@@ -21,7 +21,7 @@ It can be freely used, modified, and distributed under the terms of the
 Downloading
 -----------
 
-The latest version of CHEOPS is **1.2**, released on 2015-02-01. A list
+The latest version of CHEOPS is **1.3**, released on 2016-12-27. A list
 of changes from previous versions can be found in the [change
 log](https://files.nothingisreal.com/software/cheops/NEWS).
 
@@ -39,7 +39,7 @@ You can also
 
 Binary packages are available for several systems:
 
-* [openSUSE](https://files.nothingisreal.com/software/cheops/)
+* [OpenSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/home:/psych0naut/)
 * Microsoft Windows:
     * [Michael Yee](http://web.mit.edu/myee/www/) has produced a
     [UCI-enabled](/:w:Universal_Chess_Interface) build of
@@ -50,9 +50,8 @@ Binary packages are available for several systems:
     some systems, you may need to also install Microsoft's
     [Visual C++ runtime packages](http://www.microsoft.com/en-us/download/details.aspx?id=40784).)
 
-Note that, except for the openSUSE packages, these packages are
-produced and hosted by third parties. I take no responsibility for
-them.
+Note that, except for the SUSE packages, these packages are produced
+and hosted by third parties. I take no responsibility for them.
 
 
 Documentation
