@@ -16,8 +16,8 @@ Licence](https://www.gnu.org/copyleft/lgpl.html).
 Downloading
 -----------
 
-The latest stable version of GPP is **2.24**, released on
-2004-09-19. A list of changes from previous versions can be found in
+The latest stable version of GPP is **2.25**, released on
+2016-12-27. A list of changes from previous versions can be found in
 the
 [change log](https://files.nothingisreal.com/software/gpp/NEWS).
 
@@ -38,12 +38,11 @@ Binary packages are available for several systems, including:
 * [Debian GNU/Linux](http://packages.debian.org/gpp)
 * [FreeBSD](http://www.freshports.org/textproc/gpp/)
 * [macOS](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
-* [openSUSE](https://files.nothingisreal.com/software/gpp/)
+* [OpenSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/home:/psych0naut/)
 * [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
 
-Note that, except for the openSUSE packages, these packages are
-produced and hosted by third parties. I take no responsibility for
-them.
+Note that, except for the SUSE packages, these packages are produced
+and hosted by third parties. I take no responsibility for them.
 
 Documentation
 -------------
