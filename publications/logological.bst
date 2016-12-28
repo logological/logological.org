@@ -106,8 +106,6 @@ STRINGS
     current.year
     icon.path
     record.marker
-    script.path
-    script.showhide
     css.path
     covers.path
     css.filename
@@ -121,8 +119,6 @@ FUNCTION {init.string.consts}
   "cite-"			'cite.prefix		:=
   ""			'heading.prefix		:=
   "https://www.nothingisreal.com/icons/nuvola-1.0/48x48"	'icon.path		:=
-  "/theme/js"                           'script.path    	:=
-  "showhide.js"			'script.showhide	:=
   "css"				'css.path		:=
   "/images/covers"			'covers.path		:=
   null				'current.year		:=
@@ -2333,14 +2329,14 @@ FUNCTION {begin.bib}
 %  "    <title>My publications</title>" write$ newline$
 %  "    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />" write$ newline$
 %  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- https://www.nothingisreal.com/biblet/' />" write$ newline$
-  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
-    script.showhide * url.escape * "' /></script>" * write$ newline$
+%  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
+%    script.showhide * url.escape * "' /></script>" * write$ newline$
 %  output.links
 %  "  </head>" write$ newline$
 %  "  <body>" write$ newline$
 %  "    <h1>My publications</h1>" write$ newline$ newline$
 %  output.legend newline$
-  output.showhide newline$
+%  output.showhide newline$
   "<!-- BEGIN BIBLET BIBLIOGRAPHY -->" write$ newline$
   "    <div class='" css.prefix * "bibliography'>" * write$ newline$
   "        <ol class='bib-list'>" write$ newline$
