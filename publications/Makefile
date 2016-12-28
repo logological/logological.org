@@ -4,7 +4,7 @@ default: refresh ../content/pages/publications.html
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
 
 refresh:
-	cd resume && git pull
+	cd resume && git pull origin master
 
 all: miller.bbl miller-polemics.bbl miller-recreational.bbl
 
