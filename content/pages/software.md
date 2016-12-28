@@ -36,7 +36,7 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
 -   [CHEOPS](/cheops.html), a computer chess engine
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
 -   [Dvorak international keyboard layout for
-    xkb](https://files.nothingisreal.com/software/dvorak/dvorak_intl.txt)
+    xkb](https://github.com/logological/dvorak)
 -   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
 -   Various [Mozilla](https://www.mozilla.org/en-US/) projects,
