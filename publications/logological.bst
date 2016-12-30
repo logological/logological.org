@@ -18,12 +18,12 @@
 % - make sure id cite keys are valid for XHTML
 % - add "day" field
 % - allow author/editor for inbook
-% - add "doi" field
 %
 % Changelog since prealpha:
 % - sorted by year, then month
 % - allow for both isbn and issn in proceedings
 % - book covers
+% - add "doi" field
 
 ENTRY
   {
@@ -33,6 +33,8 @@ ENTRY
     booktitle
     bookurl
     chapter
+    cover
+    doi
     dvi
     edition
     editor
@@ -47,6 +49,7 @@ ENTRY
     number
     organization
     pages
+    pubtype
     pdf
     ps
     publisher
@@ -58,8 +61,6 @@ ENTRY
     html
     volume
     year
-    pubtype
-    cover
   }
   {}
   {}
@@ -1175,6 +1176,7 @@ FUNCTION {output.entries}
 
   "isbn" isbn output.entry
   "issn" issn output.entry
+  "doi" doi output.entry
   "note" note output.entry
 }
 
@@ -1315,6 +1317,14 @@ FUNCTION {format.editors}
 	{ ", editor" * }
       if$
     }
+  if$
+}
+
+FUNCTION {format.doi}
+{ doi empty$
+    { "" }
+    { new.block "DOI: <a href='https://dx.doi.org/" doi * "'>" *
+      doi * "</a>" * }
   if$
 }
 
@@ -1709,6 +1719,8 @@ FUNCTION {article}
   if$
   format.issn output
   new.block
+  format.doi output
+  new.block
   note output
   fin.entry
 }
@@ -1744,6 +1756,8 @@ FUNCTION {book}
   format.date "year" output.check
   new.block
   format.isbn output
+  new.block
+  format.doi output
   note output
   fin.entry
 }
@@ -1758,6 +1772,8 @@ FUNCTION {booklet}
   address output
   format.date output
   format.isbn output
+  new.block
+  format.doi output
   new.block
   note output
   fin.entry
@@ -1794,6 +1810,8 @@ FUNCTION {inbook}
   format.date "year" output.check
   format.isbn output
   new.block
+  format.doi output
+  new.block
   note output
   fin.entry
 }
@@ -1820,6 +1838,8 @@ FUNCTION {incollection}
     }
   if$
   format.isbn output
+  new.block
+  format.doi output
   new.block
   note output
   fin.entry
@@ -1855,6 +1875,8 @@ FUNCTION {inproceedings}
     }
   if$
   format.isbn output
+  new.block
+  format.doi output
   new.block
   note output
   fin.entry
@@ -1907,6 +1929,8 @@ FUNCTION {mastersthesis}
   address output
   format.date "year" output.check
   new.block
+  format.doi output
+  new.block
   note output
   fin.entry
 }
@@ -1921,6 +1945,9 @@ FUNCTION {misc}
   format.date output
   new.block
   format.issn output
+  new.block
+  format.doi output
+  new.block
   note output
   fin.entry
   empty.misc.check
@@ -1936,6 +1963,8 @@ FUNCTION {phdthesis}
   school "school" output.check
   address output
   format.date "year" output.check
+  new.block
+  format.doi output
   new.block
   note output
   fin.entry
@@ -1973,6 +2002,8 @@ FUNCTION {proceedings}
   if$
   format.isbn output
   new.block
+  format.doi output
+  new.block
   note output
   fin.entry
 }
@@ -1987,6 +2018,8 @@ FUNCTION {techreport}
   institution "institution" output.check
   address output
   format.date "year" output.check
+  new.block
+  format.doi output
   new.block
   note output
   fin.entry
