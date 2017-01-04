@@ -1034,7 +1034,7 @@ FUNCTION {output.icons}
 FUNCTION {output.pubtype.heading}
 {  pubtype missing$
      {
-       "Missing pubtype in " cite$ * warning$
+       %"Missing pubtype in " cite$ * warning$
     }
     { current.pubtype pubtype =
         'skip$

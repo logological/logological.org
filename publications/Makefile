@@ -1,6 +1,9 @@
-default: refresh ../content/pages/publications.html
+default: refresh ../content/pages/publications.html ../content/pages/publications-recreational.html
 
-../content/pages/publications.html: miller.bbl publications.template.html
+../content/pages/publications.html: miller.bbl publications.html
+	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
+
+../content/pages/publications-recreational.html: miller-recreational.bbl publications-recreational.html
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
 
 refresh:
