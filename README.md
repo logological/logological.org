@@ -9,15 +9,23 @@ website of
 
 ## Dependencies
 
-You'll need the following to build the website:
+You'll need the following Python libraries to build the website:
 
 * Pelican
 * Markdown
 * GitPython
 
-You can install these libraries using `pip3`:
+You can install them using `pip3`:
 
-    pip3 install pelican markdown gitpython
+    sudo pip3 install pelican markdown gitpython
+
+But if your OS's package manager handles Python libaries, it's better
+to use it instead.  For example, on openSUSE Tumbleweed, you can get
+the latest releases of everything with `zypper`:
+
+	sudo zypper ar --refresh --check http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Tumbleweed/ devel:languages:python
+	sudo zypper dup --from devel:languages:python
+	sudo zypper in python-pelican python-Markdown python-GitPython
 
 After cloning this repository, you'll need to initialize the Git
 submodules for the Pelican plugins:
