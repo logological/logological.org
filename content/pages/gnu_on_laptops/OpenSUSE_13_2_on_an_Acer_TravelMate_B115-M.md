@@ -4,9 +4,9 @@ save_as: gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html
 # openSUSE 13.2 on an Acer TravelMate B115-M
 
 This document describes how I installed and configured
-[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) (64-bit [openSUSE
-13.2](http://www.opensuse.org/) distribution) on an [Acer Travelmate
-B115-M](http://www.acer.de/ac/de/DE/content/professional-model/NX.VA1EG.002)
+[GNU/Linux](https://www.gnu.org/gnu/linux-and-gnu.html) (64-bit
+[openSUSE 13.2](http://www.opensuse.org/) distribution) on an
+[Acer Travelmate B115-M](http://www.acer.de/ac/de/DE/content/professional-model/NX.VA1EG.002)
 netbook.
 
 Technical specifications
@@ -21,7 +21,7 @@ with mostly matching specifications.
 
 <table>
 <tr><th>Component</th><th>Details</th></tr>
-<tr><td>CPU                              </td><td>[Intel Pentium Quad-Core N3530](http://ark.intel.com/products/81074/Intel-Pentium-Processor-N3530-2M-Cache-up-to-2_58-GHz) (2.58 GHz mit Intel Turbo-Boost 2.0, 2MB Intel Smart-Cache)</td></tr>
+<tr><td>CPU                              </td><td><a href="http://ark.intel.com/products/81074/Intel-Pentium-Processor-N3530-2M-Cache-up-to-2_58-GHz">Intel Pentium Quad-Core N3530</a> (2.58 GHz mit Intel Turbo-Boost 2.0, 2MB Intel Smart-Cache)</td></tr>
 <tr><td>RAM                              </td><td>4 GB DDR3L SDRAM (expandable to 8 GB)</td></tr>
 <tr><td>Hard disk                        </td><td>250 GB 5400 RPM SATA</td></tr>
 <tr><td>Display                          </td><td>11.6" Comfyview; 1366×768 (HD) resolution</td></tr>
