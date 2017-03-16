@@ -31,12 +31,7 @@ with mostly matching specifications.
 <tr><td>Sound                            </td><td>ValleyView High Definition Audio Controller</td></tr>
 <tr><td>Touchpad                         </td><td>unknown model</td></tr>
 <tr><td>Integrated camera                </td><td>unknown model</td></tr>
-<tr><td>Ports                            </td><td>2× USB 2.0</td></tr>
-<tr><td>  1× USB 3.0</td><td>&nbsp;</td></tr>
-<tr><td>  RJ45 (Ethernet)</td><td>&nbsp;</td></tr>
-<tr><td>  SD card reader</td><td>&nbsp;</td></tr>
-<tr><td>  HDMI</td><td>&nbsp;</td></tr>
-<tr><td>  combination headphone/microphone</td><td>&nbsp;</td></tr>
+<tr><td>Ports                            </td><td>2× USB 2.0<br>1× USB 3.0<br>RJ45 (Ethernet)<br>SD card reader<br>HDMI<br>combination headphone/microphone</td></tr>
 </table>
 
 Summary
