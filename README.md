@@ -24,6 +24,7 @@ to use it instead.  For example, on openSUSE Tumbleweed, you can get
 the latest releases of everything with `zypper`:
 
 	sudo zypper ar --refresh --check http://download.opensuse.org/repositories/devel:/languages:/python3/openSUSE_Tumbleweed/ devel:languages:python3
+	sudo zypper ar --refresh --check http://download.opensuse.org/repositories/home:/geewass:/python3/openSUSE_Tumbleweed/ home:geewass:python3
 	sudo zypper dup --from devel:languages:python3
 	sudo zypper in python3-pelican python3-Markdown python3-GitPython
 
