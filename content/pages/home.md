@@ -87,6 +87,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 <ul>
 <li>October 17, 2017: Invited lecture at the <strong><a href="https://www.linguistics.rub.de/">Department of Linguistics, Ruhr-Universität Bochum</a></strong></li>
 <li>August 3–4, 2017: Co-chair, <strong><a href="http://alt.qcri.org/semeval2017/task7/">Shared Task on Detection and Interpretation of English Puns</a></strong> at <strong><a href="http://alt.qcri.org/semeval2017/">SemEval-2017</a></strong>, Vancouver</li>
+<li>May 22–26, 2017: NLP workshop series, <strong><a href="https://cs.hse.ru/en/ai/">School of Data Analytics and Artificial Intelligence, National Research University – Higher School of Economics</a></strong>, Moscow</li>
 <li>September 8, 2016: <strong><a href="/keysigning">OpenPGP key-signing party</a></strong> at Technische Universität Darmstadt</li>
 <li>July 7, 2016: Invited tutorial at the <strong><a href="http://humoursummerschool.org/16/">16th International Summer School and Symposium on Humour and Laughter</a></strong> in Brașov</li>
 <li>May 25, 2016: Poster presentation at the <strong><a href="http://lrec2016.lrec-conf.org/">10th Language Resources and Evaluation Conference (LREC 2016)</a></strong> in Portorož</li>
