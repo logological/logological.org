@@ -126,7 +126,7 @@ options = {dataonly=true},
 
 ## Emacs and AUCTeX
 
-### How can I make AUCTeX ignore "mismatched" \index parentheses?
+### How can I make AUCTeX ignore "mismatched" `\index` parentheses?
 
 ```elisp
 (eval-after-load "latex"
