@@ -66,6 +66,10 @@ various laptops.
 -   [OpenSUSE 13.2 on an Acer TravelMate
     B115-M](/gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html)
 
+And other miscellaneous documents:
+
+-   [FAQ](/faq.html), a list of questions I am frequently asking myself
+
 <!--
 QA
 --

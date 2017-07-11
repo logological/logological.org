@@ -144,3 +144,12 @@ SITEMAP = {
 #RESPONSIVE_IMAGES = False
 #FIGURE_NUMBERS = True
 DIRECT_TEMPLATES = ['index']
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
