@@ -142,6 +142,12 @@ options = {dataonly=true},
 
 ## KDE
 
+### How can I log out of KDE remotely (or from the command line)?
+
+```bash
+qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+```
+
 ### How can I get applications to display dates in ISO 8601 (YYYY-MM-DD) format?
 
 As of Plasma 5, it is no longer possible to fine-tune the system
@@ -215,4 +221,22 @@ be acquired.)
 
 ```bash
 du -h | sort -h
+```
+
+### How do I grep for non-ASCII characters?
+
+```bash
+grep --color='auto' -P -n "[\x80-\xFF]"
+```
+
+### How do I find out what GNU/Linux distribution I am using?
+
+Try one of the following:
+
+```
+cat /etc/*-release
+```
+
+```
+lsb_release -a
 ```
