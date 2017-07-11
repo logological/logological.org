@@ -3,8 +3,8 @@ save_as: faq.html
 
 # Frequently Asked Questions
 
-This page compiles questions on technical issues that I am frequently
-asking myself, along with the answers.
+This page compiles questions on technical issues that I am (or was)
+frequently asking myself, along with the answers.
 
 ## LaTeX
 
@@ -21,7 +21,7 @@ should be used instead:
 \usepackage{newtxmath} % Use Times for math
 ```
 
-### How can I allow Biblatex to break DOIs?
+### How can I allow Biblatex to perform arbitrary word breaks in DOIs?
 
 ```latex
 \setcounter{biburlnumpenalty}{100} % Allow breaking at numbers (for DOIs)
@@ -102,7 +102,7 @@ Instead of using the `volume` field, put the volume number in the
   {title}{\emph{#1\isdot}}
 ```
 
-### How can I print a full long citation (including all authors)?
+### How can I make Biblatex print a full long citation (including all authors)?
 
 ```latex
 % Full long citations (including all authors)
@@ -172,3 +172,47 @@ saved and restored by `ksmserver`.
 
 For further discussion, see
 [KDE Bug 340982](https://bugs.kde.org/show_bug.cgi?id=340982).
+
+### How can I change the height of the Application Launcher (Kickoff)?
+
+In Plasma 5, popups such as the Application Launcher can be resized by
+holding down the Alt key and dragging with the right mouse button.
+Unfortunately, the new size is not persistent across logins.  (See
+[KDE Bug 332512](https://bugs.kde.org/show_bug.cgi?id=332512).)
+
+Persistently changing the size of the Application Launcher requires
+changing the values of `Layout.minimumWidth` and/or
+`Layout.minimumHeight` in its `FullRepresentation.qml` file, which by
+default lives in
+`/usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui`.
+Changing this file will change the Application Launcher size for all
+users (which may or may not be what you want).  However, the changes
+may get overwritten whenever Plasma is upgraded.
+
+To change the size of the Application Launcher for a single user, copy
+`/usr/share/plasma/plasmoids/org.kde.plasma.kickoff/` to
+`$HOME/.local/share/plasma/plasmoids/org.kde.plasma.mykickoff/` and
+edit the `contents/ui/FullRepresentation.qml` file in the latter
+directory.
+
+Source:
+[Menu size. Resize or going to be Resizable?](https://forum.kde.org/viewtopic.php?f=289&t=128771)
+
+## Shell scripting
+
+### How do I make sure that only one instance of a program is running?
+
+Use a lock file:
+
+```bash
+/usr/bin/flock -n /path/to/lockfile -c /path/to/program
+```
+
+(Omit the `-n` if you want to wait rather than fail if the lock cannot
+be acquired.)
+
+### How can I sort the output of `du -h` by size?
+
+```bash
+du -h | sort -h
+```
