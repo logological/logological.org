@@ -94,7 +94,7 @@ ssh_upload:
 	scp -P $(SSH_PORT) publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):www/files.nothingisreal.com/publications/Tristan_Miller/
 
 rsync_upload:
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):www/files.nothingisreal.com/publications/Tristan_Miller/ --cvs-exclude --exclude-from=rsync_exclude.txt
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvzzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvzzc publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):www/files.nothingisreal.com/publications/Tristan_Miller/ --cvs-exclude --exclude-from=rsync_exclude.txt
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications
