@@ -240,3 +240,36 @@ cat /etc/*-release
 ```
 lsb_release -a
 ```
+
+## Git
+
+### How do I convert an SVN repository to Git when the SVN directory was renamed at some point in the history?
+
+If you don't know the old directory name, do a `svn checkout` of the
+new directory first and examine the log with `svn log -v`.  Next clone
+the old and new directories using `git svn clone` or `svn2git`, and
+add the old repository as a remote of the new repository:
+
+```bash
+mkdir old-dir new-dir
+cd old-dir
+svn2git --notrunk --notags --nobranches --verbose old-svn-dir
+cd ../new-dir
+svn2git --notruck --notags --nobranches --verbose new-svn-dir
+git remote add old ../old-dir
+git fetch old
+```
+
+Now do a `git log` and note the oldest commit of the `master` branch,
+and do a `git log old` and note the newest commit of the `old` branch.
+Then join the two branches and clean up the repository:
+
+```bash
+git replace oldest_commit_of_master newest_commit_of_old
+git filter-branch
+git remote rm old
+rm -rf .git/refs/replace
+```
+
+Source:
+[How do I keep SVN history in Git when trunk has moved?](https://stackoverflow.com/a/24296764/906070)
