@@ -39,6 +39,13 @@ rm -rf .git/refs/replace
 Source:
 [How do I keep SVN history in Git when trunk has moved?](https://stackoverflow.com/a/24296764/906070)
 
+### How do I delete all untracked and ignored files?
+
+```bash
+git clean -x -d --dry-run # Check the output
+git clean -x -d --force
+```
+
 ## Shell scripting
 
 ### How do I make sure that only one instance of a program is running?
