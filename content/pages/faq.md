@@ -248,7 +248,10 @@ lsb_release -a
 If you don't know the old directory name, do a `svn checkout` of the
 new directory first and examine the log with `svn log -v`.  Next clone
 the old and new directories using `git svn clone` or `svn2git`, and
-add the old repository as a remote of the new repository:
+add the old repository as a remote of the new repository.  Then do a
+`git log` and note the oldest commit of the `master` branch, and do a
+`git log old` and note the newest commit of the `old` branch.  Then
+join the two branches and clean up the repository.  All together:
 
 ```bash
 mkdir old-dir new-dir
@@ -258,14 +261,9 @@ cd ../new-dir
 svn2git --notruck --notags --nobranches --verbose new-svn-dir
 git remote add old ../old-dir
 git fetch old
-```
-
-Now do a `git log` and note the oldest commit of the `master` branch,
-and do a `git log old` and note the newest commit of the `old` branch.
-Then join the two branches and clean up the repository:
-
-```bash
-git replace oldest_commit_of_master newest_commit_of_old
+OLDEST_COMMIT_OF_MASTER=$(git log --format=format:%H | tail -1)
+NEWEST_COMMIT_OF_OLD=$(git log --format=format:%H old/master | tail -1)
+git replace "$OLDEST_COMMIT_OF_MASTER" "$NEWEST_COMMIT_OF_OLD"
 git filter-branch
 git remote rm old
 rm -rf .git/refs/replace
