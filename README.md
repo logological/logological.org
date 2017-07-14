@@ -9,6 +9,9 @@ website of
 
 ## Dependencies
 
+When cloning this repository, make sure to use the `--recursive`
+option in order to initialize the submodules.
+
 You'll need the following Python libraries to build the website:
 
 * Pelican
@@ -27,13 +30,6 @@ the latest releases of everything with `zypper`:
 	sudo zypper ar --refresh --check http://download.opensuse.org/repositories/home:/geewass:/python3/openSUSE_Tumbleweed/ home:geewass:python3
 	sudo zypper dup --from devel:languages:python3
 	sudo zypper in python3-pelican python3-Markdown python3-GitPython
-
-After cloning this repository, you'll need to initialize the Git
-submodules for the Pelican plugins:
-
-    cd pelican-plugins
-    git submodule init
-    git submodule update
 
 ## Compiling the site
 
