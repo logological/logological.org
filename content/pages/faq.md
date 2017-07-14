@@ -262,7 +262,7 @@ svn2git --notruck --notags --nobranches --verbose new-svn-dir
 git remote add old ../old-dir
 git fetch old
 OLDEST_COMMIT_OF_MASTER=$(git log --format=format:%H | tail -1)
-NEWEST_COMMIT_OF_OLD=$(git log --format=format:%H old/master | tail -1)
+NEWEST_COMMIT_OF_OLD=$(git log --format=format:%H old/master | head -1)
 git replace "$OLDEST_COMMIT_OF_MASTER" "$NEWEST_COMMIT_OF_OLD"
 git filter-branch
 git remote rm old
