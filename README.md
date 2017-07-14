@@ -54,8 +54,6 @@ and tweaked from the [Bootswatch](http://bootswatch.com/) themes.
 Icons are provided by [FontAwesome](http://fontawesome.io/) and
 [Academicons](http://jpswalsh.github.io/academicons/).
 
-The Jinja2 templates and CSS are located in the `theme` folder.
-
 <!--
 ## Adding an article/talk/course/software
 
