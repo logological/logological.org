@@ -99,7 +99,7 @@ lsb_release -a
              (lambda () (setq fill-column 999999)))
 ```
 
-## System administration (openSUSE)
+## System administration
 
 ### How do I find which RPM provides a given file?
 
@@ -107,10 +107,26 @@ lsb_release -a
 rpm -qf /path/to/file
 ```
 
-### How can I install the build dependencies of a package?
+### How can I install the build dependencies of a package with Zypper?
 
 ```bash
 zypper si -d packagename
+```
+
+### How can I keep track of programs I install to `/usr/local`?
+
+Certain discourteous programs do not provide an `uninstall` target in
+their Makefiles.  A solution is to install these programs to a
+dedicated prefix, and then use
+[GNU Stow](https://www.gnu.org/software/stow/) to add symlinks to the
+system directories:
+
+```bash
+./configure --prefix=/usr/local/stow/PROGRAM_NAME --libdir=/usr/local/stow/PROGRAM_NAME/lib64
+make
+sudo make install
+cd /usr/local/stow
+sudo stow PROGRAM_NAME
 ```
 
 ## KDE
