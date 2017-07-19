@@ -99,6 +99,20 @@ lsb_release -a
              (lambda () (setq fill-column 999999)))
 ```
 
+## System administration (openSUSE)
+
+### How do I find which RPM provides a given file?
+
+```bash
+rpm -qf /path/to/file
+```
+
+### How can I install the build dependencies of a package?
+
+```bash
+zypper si -d packagename
+```
+
 ## KDE
 
 ### How can I log out of KDE remotely (or from the command line)?
