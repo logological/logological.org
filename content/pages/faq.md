@@ -75,13 +75,25 @@ grep --color='auto' -P -n "[\x80-\xFF]"
 
 Try one of the following:
 
-```
+```bash
 cat /etc/*-release
 ```
 
-```
+```bash
 lsb_release -a
 ```
+
+## Networking
+
+### How can I tunnel my web browsing through an SSH connection?
+
+First, make an SSH connection as follows:
+
+```bash
+ssh -D SOME_PORT SOME_HOST
+```
+
+Then configure your browser to use 127.0.0.1:SOME_PORT as a SOCKS v5 proxy.
 
 ## Emacs
 
