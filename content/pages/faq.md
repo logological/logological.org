@@ -95,6 +95,20 @@ ssh -D SOME_PORT SOME_HOST
 
 Then configure your browser to use 127.0.0.1:SOME_PORT as a SOCKS v5 proxy.
 
+### How can I launch a VPN connection on a remote host without losing my SSH connection?
+
+Say you are connected to a remote host via SSH, and want to launch a
+VPN connection on that host where the connection replaces the default
+gateway.  Normally this will cause the SSH connection to hang.  To
+avoid this, first add a routing rule such that connections to the SSH
+client always use the original gateway:
+
+```bash
+sudo route add -host ${SSH_CLIENT%% *} gw $(/sbin/ip route | awk '/default/ { print $3 }')
+```
+
+Source: [Prevent SSH connection lost after logging into VPN on server machine](https://serverfault.com/a/649855/379227)
+
 ## Emacs
 
 ### How can I make AUCTeX ignore "mismatched" `\index` parentheses?
