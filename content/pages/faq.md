@@ -240,7 +240,7 @@ should be used instead:
 \setcounter{biburlnumpenalty}{100} % Allow breaking at numbers (for DOIs)
 ```
 
-### How can I get Biblatex to print a longer dash for repeated authors?
+### How can I make Biblatex print a longer dash for repeated authors?
 
 ```latex
 \usepackage[dashed=true]{biblatex}
@@ -336,3 +336,40 @@ Instead of using the `volume` field, put the volume number in the
 ```bibtex
 options = {dataonly=true},
 ```
+
+### How can I export graphics from PowerPoint or LibreOffice for use with LaTeX?
+
+PowerPoint 2010 has the ability to export to PDF, but this works only
+for entire slides.  To export a single selection, use the following
+procedure:
+
+1. Right-click on the graphic.  Select *Size and position…* →
+   *Size*. Note the height and width. Press Close.
+2. Copy the graphic (<kbd>Ctrl</kbd>+<kbd>C</kbd>).
+3. Create a new presentation (<kbd>Ctrl</kbd>+<kbd>N</kbd>).
+4. *Design* → *Page Setup*. Change the height and width to the values
+   you noted previously. (You may need to add a few millimetres to
+   each dimension.) Press OK.
+5. Right-click on the slide and select *Paste Options: Picture*.
+6. *File* → *Save & Send* → *Create PDF/XPS Document* → *Create
+   PDF/XPS*.
+7. Set "Save as type" to "PDF (*.pdf)". Enter a filename and press the
+   "Publish" button.
+
+The various LibreOffice programs (Draw, Impress, etc.) claim to be
+able to export a selection to PDF, but
+[a longstanding bug](https://bugs.documentfoundation.org/show_bug.cgi?id=40163)
+prevents this from working.  Instead, they export the entire page,
+much like PowerPoint 2010.  There are a number of possible
+workarounds:
+
+* Adjust the size of the page to the size of the selection, using a
+  procedure similar to that for PowerPoint 2010 above.  Then export
+  the page to PDF.
+* Export instead to EPS.  (Recent versions of Tex Live's `pdflatex`
+  automatically convert EPS to PDF.  Alternatively, the graphic can be
+  manually converted with the `epstopdf` script included with TeX
+  Live.)
+* Export the page to PDF, then crop the PDF using a tool such as
+  [BRISS](http://briss.sourceforge.net/) or
+  [PDFCrop](http://pdfcrop.sourceforge.net/).
