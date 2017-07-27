@@ -373,3 +373,23 @@ workarounds:
 * Export the page to PDF, then crop the PDF using a tool such as
   [BRISS](http://briss.sourceforge.net/) or
   [PDFCrop](http://pdfcrop.sourceforge.net/).
+
+## PDFs
+
+### How can I set the logical numbering and numbering style in a PDF?
+
+Open the PDF file with a text editor and search for the `/Catalog`
+entry.  Then append a `/Pagelabels` entry as follows:
+
+```postscript
+/PageLabels << /Nums [
+0 << /P (cover) >> % labels 1st page with the string "cover"
+1 << /S /r >> % numbers pages 2-6 in small roman numerals
+6 << /S /D >> % numbers pages 7-x in decimal arabic numerals
+]
+>>
+```
+
+Note that physical pages are numbered starting from 0.
+
+Source: [Renumber pages of a PDF](https://askubuntu.com/a/347338/374117)
