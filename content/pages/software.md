@@ -69,6 +69,7 @@ various laptops.
 And other miscellaneous documents:
 
 -   [FAQ](/faq.html), a list of questions I am frequently asking myself
+-   [Software I use](/software_i_use.html), for those who want to hear my tech evangelism
 
 <!--
 QA
