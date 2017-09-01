@@ -23,10 +23,11 @@ the
 
 ### Source code
 
-You can download source packages for the current and previous releases
-on [GitHub](https://github.com/logological/gpp/releases) or
-[nothingisreal.com](https://files.nothingisreal.com/software/gpp/).
-You can also
+You can download portable source packages for the current and previous
+releases on [GitHub](https://github.com/logological/gpp/releases)
+or [nothingisreal.com](https://files.nothingisreal.com/software/gpp/).
+You can
+also
 [browse, download, or clone the development version on GitHub](https://github.com/logological/gpp/).
 
 <a class="github-fork-ribbon" href="https://github.com/logological/gpp/" title="Fork me on GitHub">Fork me on GitHub</a>
@@ -38,11 +39,12 @@ Binary packages are available for several systems, including:
 * [Debian GNU/Linux](http://packages.debian.org/gpp)
 * [FreeBSD](http://www.freshports.org/textproc/gpp/)
 * [macOS](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
-* [OpenSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/home:/psych0naut/)
+* [openSUSE](http://download.opensuse.org/repositories/home:/psych0naut/)
 * [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
 
-Note that, except for the SUSE packages, these packages are produced
-and hosted by third parties. I take no responsibility for them.
+Note that, except for the openSUSE packages, these packages are
+produced and hosted by third parties. I take no responsibility for
+them.
 
 Documentation
 -------------
