@@ -39,12 +39,11 @@ Binary packages are available for several systems, including:
 * [Debian GNU/Linux](http://packages.debian.org/gpp)
 * [FreeBSD](http://www.freshports.org/textproc/gpp/)
 * [macOS](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
-* [openSUSE](http://download.opensuse.org/repositories/home:/psych0naut/)
+* [openSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/devel:/tools/)
 * [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
 
-Note that, except for the openSUSE packages, these packages are
-produced and hosted by third parties. I take no responsibility for
-them.
+Note that these packages are produced and hosted by third parties. I
+take no responsibility for them.
 
 Documentation
 -------------
