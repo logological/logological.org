@@ -125,6 +125,18 @@ Source: [Prevent SSH connection lost after logging into VPN on server machine](h
              (lambda () (setq fill-column 999999)))
 ```
 
+### How can I teach AUCTeX about new styles and classes?
+
+If your document uses a custom LaTeX style or class, AUCTeX won't
+apply the correct style hooks.  You need to create a custom Elisp
+style file specifying these hooks.  You can try having AUCTeX
+automatically generate such a style file by running `M-x
+TeX-auto-generate`.  You'll first be prompted for the path to the
+LaTeX style or class file, and then to the AUCTeX style directory
+(normally `$HOME/.emacs.d/auctex/style`) for output.  The generated
+style file will have the same basename as the input file, but with a
+`.el` suffix.  Open it and edit it as necessary.
+
 ## System administration
 
 ### How do I find which RPM provides a given file?
