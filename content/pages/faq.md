@@ -137,6 +137,51 @@ LaTeX style or class file, and then to the AUCTeX style directory
 style file will have the same basename as the input file, but with a
 `.el` suffix.  Open it and edit it as necessary.
 
+### How can I tell AUCTeX to display my viewer on a remote display?
+
+A dual-monitor setup is convenient for having many windows open
+simultaneously. For example, it is common to have an Emacs window
+editing a LaTeX file on one monitor and a PDF viewer to view the
+output on the other monitor. But sometimes all you have are two
+separate machines, each with a single monitor (such as two laptops, or
+a laptop and a desktop).  If you have
+the [xpra](https://www.xpra.org/) tool installed on both machines, you
+can emulate a dual-monitor setup.
+
+Let's assume that you want to run Emacs on the machine `desktop` and
+have the PDF viewer display on the machine `laptop`. First, start an
+xpra server on `desktop` using a display port of your choice:
+
+```bash
+[user@desktop]$ xpra start :700
+```
+
+Next, have `laptop` attach to `desktop`'s xpra server:
+
+```bash
+[user@laptop]$ xpra attach ssh:user@desktop:700
+```
+
+Finally, in the Emacs running in `desktop`, start launching the PDF
+viewer using the usual `C-c C-c View`.  When prompted for the command,
+insert `DISPLAY=:700` at the beginning of the line.  For example:
+
+```bash
+DISPLAY=:700 okular --unique foo.pdf
+```
+
+The nice thing about this is that it works with SyncTeX.  That is, you
+can still type `C-c C-v` anywhere in your source document on
+`desktop`, and the PDF viewer on `laptop` will jump to the
+corresponding location in the PDF.  Conversely, you can shift+click
+(or control+click, depending on the viewer) in the PDF viewer on
+`laptop`, and the Emacs running on `desktop` will jump to the
+corresponding source line.
+
+When you are done editing, you can run `xpra stop :700` on `desktop`
+to stop the xpra server.  The client on `laptop` will automatically
+detach itself.
+
 ## System administration
 
 ### How do I find which RPM provides a given file?
