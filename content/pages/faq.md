@@ -46,6 +46,17 @@ git clean -x -d --dry-run # Check the output
 git clean -x -d --force
 ```
 
+### How do I clear Git's credential cache in Plasma 5?
+
+If you have the `SSH_ASKPASS` evironment variable set to
+`ksshaskpass`, then Git will use Ksshaskpass to prompt for credentials
+and then store these with KWallet.  Future pushes and fetches will
+automatically use the credentials from KWallet.  To remove or change
+these credentials, you need to do this from KWallet.  On Plasma 5, you
+can do this by launching `kwalletmanager5 --show`.  (Do not run
+`kwalletmanager`; this opens your KDE 4 wallet.)  The Git credentials
+are stored in the `ksshaskpass` folder.
+
 ## Shell scripting
 
 ### How do I make sure that only one instance of a program is running?
