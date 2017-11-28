@@ -461,3 +461,14 @@ entry.  Then append a `/Pagelabels` entry as follows:
 Note that physical pages are numbered starting from 0.
 
 Source: [Renumber pages of a PDF](https://askubuntu.com/a/347338/374117)
+
+### How can I convert a PDF to a different page size?
+
+You can
+use
+[pdfjam](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/) (also
+distributed with TeX Live).  For example, to convert any PDF to A4:
+
+```bash
+pdfjam --outfile out.pdf --paper a4paper in.pdf
+```
