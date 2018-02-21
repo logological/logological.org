@@ -86,7 +86,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 
 <ul>
 <li>June 25–29, 2018: Panel on Humor and Artificial Intelligence, <strong><a href="https://www.folklore.ee/rl/fo/konve/ishs2018/">30th International Society for Humor Studies Conference (ISHS 2018)</a></strong>, Tallinn</li>
-<li>February 16–17, 2018: Invited talk, <strong><a href="https://easychair.org/cfp/ConTIn6">6th Conference on Text Interpretation (ConTIn-6)</a></strong>, Tyumen</li>
+<li>February 16, 2018: Invited talk, <strong><a href="https://easychair.org/cfp/ConTIn6">6th Conference on Text Interpretation (ConTIn-6)</a></strong>, Tyumen</li>
 <li>October 17, 2017: Invited lecture at the <strong><a href="https://www.linguistics.rub.de/">Department of Linguistics, Ruhr-Universität Bochum</a></strong></li>
 <li>September 27, 2017: Academic writing in English workshop, <strong><a href="https://www.tk.informatik.tu-darmstadt.de/de/telecooperation-group/">Telecooperation Group, Technische Universität Darmstadt</a></strong>, Ronneburg</li>
 <li>August 3–4, 2017: Co-chair, <strong><a href="http://alt.qcri.org/semeval2017/task7/">Shared Task on Detection and Interpretation of English Puns</a></strong> at <strong><a href="http://alt.qcri.org/semeval2017/">SemEval-2017</a></strong>, Vancouver</li>
