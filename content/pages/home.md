@@ -85,14 +85,14 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 <ul>
-<li>June 2–7, 2019: Area chair for Resources and Evaluation, <strong><a href="http://naacl2019.org/">17th Meeting of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2019)</a></strong>, Minneapolis</li>
+<li>June 2–7, 2019: Area co-chair for Resources and Evaluation, <strong><a href="http://naacl2019.org/">17th Meeting of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2019)</a></strong>, Minneapolis</li>
 <li>July 15–20, 2018: Area co-chair for Multilinguality, <strong><a href="http://acl2018.org/">56th Annual Meeting of the Association for Computational Linguistics (ACL 2018)</a></strong>, Melbourne</li>
 <li>June 27, 2018: Co-convener and session chair, Panel on Humor and Artificial Intelligence, <strong><a href="https://www.folklore.ee/rl/fo/konve/ishs2018/">30th International Society for Humor Studies Conference (ISHS 2018)</a></strong>, Tallinn</li>
 <li>May 7, 2018: Invited colloquium at the <strong><a href="https://www.uni-potsdam.de/ling/index.html">Linguistics Department, University of Potsdam</a></strong></li>
 <li>April 13, 2018: Academic writing in English workshop, <strong><a href="https://www.informatik.tu-darmstadt.de/">Research Training Group GRK 1994: Adaptive Preparation of Information from Heterogeneous Sources (AIPHES)</a></strong>, Technische Universität Darmstadt</li>
 <li>February 16, 2018: Invited talk, <strong><a href="https://easychair.org/cfp/ConTIn6">6th Conference on Text Interpretation (ConTIn-6)</a></strong>, Tyumen</li>
-<li>October 17, 2017: Invited lecture at the <strong><a href="https://www.linguistics.rub.de/">Department of Linguistics, Ruhr-Universität Bochum</a></strong></li>
 <!--
+<li>October 17, 2017: Invited lecture at the <strong><a href="https://www.linguistics.rub.de/">Department of Linguistics, Ruhr-Universität Bochum</a></strong></li>
 <li>September 27, 2017: Academic writing in English workshop, <strong><a href="https://www.tk.informatik.tu-darmstadt.de/de/telecooperation-group/">Telecooperation Group, Technische Universität Darmstadt</a></strong>, Ronneburg</li>
 <li>August 3–4, 2017: Co-chair, <strong><a href="http://alt.qcri.org/semeval2017/task7/">Shared Task on Detection and Interpretation of English Puns</a></strong> at <strong><a href="http://alt.qcri.org/semeval2017/">SemEval-2017</a></strong>, Vancouver</li>
 <li>May 22–26, 2017: Invited workshop/seminar series, <strong><a href="https://cs.hse.ru/en/ai/">School of Data Analysis and Artificial Intelligence, National Research University – Higher School of Economics</a></strong>, Moscow</li>
