@@ -86,6 +86,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 
 <ul>
 <li>June 2–7, 2019: Area co-chair for Resources and Evaluation, <strong><a href="http://naacl2019.org/">17th Meeting of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2019)</a></strong>, Minneapolis</li>
+<li>June 24–29, 2019: Co-convener, <a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/literatureLanguages/newsandevents/2019-ISHS-Conference/HumorAI.aspx">Panel on Humor and Artificial Intelligence</a>, <strong><a href="http://www.tamuc.edu/ishs2019">31st International Society for Humor Studies Conference (ISHS 2019)</a></strong>, Austin</li>
 <li>July 15–20, 2018: Area co-chair for Multilinguality, <strong><a href="http://acl2018.org/">56th Annual Meeting of the Association for Computational Linguistics (ACL 2018)</a></strong>, Melbourne</li>
 <li>June 27, 2018: Co-convener and session chair, Panel on Humor and Artificial Intelligence, <strong><a href="https://www.folklore.ee/rl/fo/konve/ishs2018/">30th International Society for Humor Studies Conference (ISHS 2018)</a></strong>, Tallinn</li>
 <li>May 7, 2018: Invited colloquium at the <strong><a href="https://www.uni-potsdam.de/ling/index.html">Linguistics Department, University of Potsdam</a></strong></li>
