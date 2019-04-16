@@ -47,7 +47,7 @@ My research interests include word sense disambiguation, lexical substitution, a
 
 <li><a href="https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ"><i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i></a></li>
 
-<li><a href="https://tu-darmstadt.academia.edu/TristanMiller"><i class="ai ai-academia-square fa-3x" title="Academia.edu"></i></a></li>
+<li><a href="https://ofai.academia.edu/TristanMiller"><i class="ai ai-academia-square fa-3x" title="Academia.edu"></i></a></li>
 
 <li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>
 
