@@ -16,12 +16,7 @@ save_as: index.html
 You've reached the home page of <strong>Tristan Miller</strong>.  I'm a computational linguist working mainly in the area of lexical semantics.
 My research interests include word sense disambiguation, lexical substitution, and computational detection and interpretation of humour.</p>
 
-<p>Since 2011 I have been working as a research scientist at the <a href="https://www.ukp.tu-darmstadt.de/" title="Ubiquitous Knowledge Processing Lab">Ubiquitous Knowledge Processing Lab</a> in the <a href="https://www.informatik.tu-darmstadt.de/" title="Department of Computer Science, Technische Universität Darmstadt">Department of Computer Science</a> of <a lang="de" title="Technische Universität Darmstadt" href="https://www.tu-darmstadt.de/">Technische Universität Darmstadt</a>.  In the spirit of
-<a title="open science" href="https://en.wikipedia.org/wiki/Open_science">open science</a>,
-I share my research and
-teaching material
-(code, data, lecture notes, etc.)
-online under free licenses.</p>
+<p>Since 2019 I have been working as a research scientist in the <a href="http://ofai.at/research/interact/index.html" title="Language and Interaction Technologies Group">Language and Interaction Technologies Group</a> of the <a href="http://ofai.at/" title="Austrian Research Institute for Artificial Intelligence">Austrian Research Institute for Artificial intelligence</a> (OFAI).  In the spirit of <a title="open science" href="https://en.wikipedia.org/wiki/Open_science">open science</a>, I share my research and teaching material (code, data, lecture notes, etc.) online under free licenses.</p>
 
 <p>For more information, you can consult <a title="curriculum vitæ for Tristan Miller" href="https://logological.org/miller_cv.pdf">my curriculum vitæ</a>.</p>
 
@@ -33,10 +28,10 @@ online under free licenses.</p>
 
 <ul class="fa-ul">
 <li><i class="fa-li fa fa-envelope"></i> <a title="Tristan Miller" href="mailto:tristan@logological.org">tristan@logological.org</a>&nbsp;<span style="margin-left: 1ex;">(<a href="/BF8A2EE4.txt"><i class="fa fa-lock" title="OpenPGP public key"></i></a>)</span></li>
-<li><i class="fa-li fa fa-phone"></i> +49&nbsp;6151&nbsp;162&thinsp;5296</li>
-<li><i class="fa-li fa fa-fax"></i> +49&nbsp;6151&nbsp;162&thinsp;5295</li>
+<li><i class="fa-li fa fa-phone"></i> +43&nbsp;1&nbsp;5324621&thinsp;3</li>
+<li><i class="fa-li fa fa-fax"></i> +43&nbsp;1&nbsp;5324621&thinsp;9</li>
 <li><i class="fa-li fa fa-university"></i>
-    TU Darmstadt - FB 20<br />Hochschulstraße 10<br />64289 Darmstadt<br />Germany</li>
+    OFAI<br>Freyung 6/3<br>1010 Vienna<br>Austria</li>
 </ul>
 
 <p>You can also follow me and find out more about my work and personal life on the following sites:</p>
@@ -91,8 +86,8 @@ My <a href="http://orcid.org">ORCID</a> number is
 <li>June 27, 2018: Co-convener and session chair, Panel on Humor and Artificial Intelligence, <strong><a href="https://www.folklore.ee/rl/fo/konve/ishs2018/">30th International Society for Humor Studies Conference (ISHS 2018)</a></strong>, Tallinn</li>
 <li>May 7, 2018: Invited colloquium at the <strong><a href="https://www.uni-potsdam.de/ling/index.html">Linguistics Department, University of Potsdam</a></strong></li>
 <li>April 13, 2018: Academic writing in English workshop, <strong><a href="https://www.informatik.tu-darmstadt.de/">Research Training Group GRK 1994: Adaptive Preparation of Information from Heterogeneous Sources (AIPHES)</a></strong>, Technische Universität Darmstadt</li>
-<li>February 16, 2018: Invited talk, <strong><a href="https://easychair.org/cfp/ConTIn6">6th Conference on Text Interpretation (ConTIn-6)</a></strong>, Tyumen</li>
 <!--
+<li>February 16, 2018: Invited talk, <strong><a href="https://easychair.org/cfp/ConTIn6">6th Conference on Text Interpretation (ConTIn-6)</a></strong>, Tyumen</li>
 <li>October 17, 2017: Invited lecture at the <strong><a href="https://www.linguistics.rub.de/">Department of Linguistics, Ruhr-Universität Bochum</a></strong></li>
 <li>September 27, 2017: Academic writing in English workshop, <strong><a href="https://www.tk.informatik.tu-darmstadt.de/de/telecooperation-group/">Telecooperation Group, Technische Universität Darmstadt</a></strong>, Ronneburg</li>
 <li>August 3–4, 2017: Co-chair, <strong><a href="http://alt.qcri.org/semeval2017/task7/">Shared Task on Detection and Interpretation of English Puns</a></strong> at <strong><a href="http://alt.qcri.org/semeval2017/">SemEval-2017</a></strong>, Vancouver</li>
