@@ -120,6 +120,10 @@ sudo route add -host ${SSH_CLIENT%% *} gw $(/sbin/ip route | awk '/default/ { pr
 
 Source: [Prevent SSH connection lost after logging into VPN on server machine](https://serverfault.com/a/649855/379227)
 
+### How can I kill an unresponsive SSH session?
+
+<kbd>Enter</kbd> <kbd>~</kbd> <kbd>.</kbd>
+
 ## Emacs
 
 ### How can I make AUCTeX ignore "mismatched" `\index` parentheses?
