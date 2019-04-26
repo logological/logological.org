@@ -242,29 +242,49 @@ locale settings.  For example, you cannot have KDE format currencies
 according to one locale, times and dates according to another locale,
 etc.  Instead you can specify only a single, global locale.
 
-For times and dates, you can override the global locale on a
-per-application basis by manually setting `LC_TIME` before launching
-the application.  Unfortunately, you cannot specify a date/time format
-of your own choosing, but must select from among the locales installed
-on your system.  Even more unfortunately, there is no easy way of
-knowing which of the locales (if any) format the date and time the way
-you want.  Finding the right locale may be a matter of trial and
-error.
+For times and dates, you can globally override the default locale by
+setting `LC_TIME` (for example, in `$HOME/.i18n` on openSUSE).
+Alternatively, you can override on a per-application basis by manually
+setting `LC_TIME` before launching the application.
 
-For ISO 8601–style dates, it seems the `en_DK` locale works.  So for
-example, to have Thunderbird display dates in YYYY-MM-DD format,
-you can put the following script somewhere in your execution path:
+Unfortunately, you cannot specify a date/time format of your own
+choosing, but must select from among the locales installed on your
+system.  Even more unfortunately, there is no easy way of knowing
+which of the locales (if any) format the date and time the way you
+want.  Finding the right locale may be a matter of trial and error.
+Writing a new locale
+definition
+[is supposed to be "easy"](https://bugzilla.mozilla.org/show_bug.cgi?id=1426907#c107) but
+[is actually anything but](https://bugzilla.mozilla.org/show_bug.cgi?id=1426907#c129) (at
+least on openSUSE).
+
+For ISO 8601–style dates, using the `en_DK` locale sometimes works.
+So for example, to have a certain application display dates in
+YYYY-MM-DD format, you can put the following script somewhere in your
+execution path:
 
 ```bash
 #!/bin/bash
-LC_TIME=en_DK exec /usr/bin/thunderbird "$@" >&/dev/null &
+LC_TIME=en_DK.UTF-8 exec /usr/bin/some_application "$@" >&/dev/null &
 ```
 
-Unfortunately, the locale setting does not persist across sessions
-saved and restored by `ksmserver`.
+To have all applications display dates in this format, put the
+following in `$HOME/.i18n` or somewhere else that your shell will
+source it:
 
-For further discussion, see
-[KDE Bug 340982](https://bugs.kde.org/show_bug.cgi?id=340982).
+```bash
+export LC_TIME="en_DK.UTF-8"
+```
+
+Unfortunately, the locale setting does not work with recent versions
+of Thunderbird due to reasons explained
+in
+[Thunderbird Bug 1426907](https://bugzilla.mozilla.org/show_bug.cgi?id=1426907).
+
+For further discussion,
+see [KDE Bug 340982](https://bugs.kde.org/show_bug.cgi?id=340982)
+and
+[Thunderbird Bug 1509096](https://bugzilla.mozilla.org/show_bug.cgi?id=1509096).
 
 ### How can I change the height of the Application Launcher (Kickoff)?
 
