@@ -326,6 +326,16 @@ should be used instead:
 \usepackage{newtxmath} % Use Times for math
 ```
 
+Note that this isn't _quite_ the same as using `times`, since `times`
+also changes the default monospace font to Courier whereas `newtxtext`
+does not.  If it's important to also change the monospace font to
+Courier, then the following code should also be added:
+
+```latex
+\DeclareRobustCommand\crfamily{\fontfamily{pcr}\selectfont}
+\DeclareTextFontCommand{\texttt}{\crfamily}
+```
+
 ### How can I allow Biblatex to perform arbitrary word breaks in DOIs?
 
 ```latex
