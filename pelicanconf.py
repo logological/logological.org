@@ -18,7 +18,7 @@ BUILD_TIME = datetime.date.today().strftime(format='%Y-%m-%d')
 # Language and time
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en-ca'
-TIMEZONE = u'Europe/Berlin'
+TIMEZONE = u'Europe/Vienna'
 
 # This goes at the footer of the site
 FOOTER_LEFT = "" # Superseded; see base.html
