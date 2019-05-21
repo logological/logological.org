@@ -10,5 +10,4 @@ saga/
 sagesdesk/
 ttrss/
 mentifex*
-robots.txt
 miller_cv.pdf

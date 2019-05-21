@@ -65,6 +65,7 @@ STATIC_PATHS = [
     'extra/keybase.txt',
     'extra/party_keyring.gpg',
     'extra/semeval2017_pun_task.tar.xz',
+    'extra/robots.txt',
 ]
 EXTRA_PATH_METADATA = {
     'extra/apple-touch-icon-114x114.png': {'path': 'apple-touch-icon-114x114.png'},
@@ -94,6 +95,7 @@ EXTRA_PATH_METADATA = {
     'extra/keybase.txt': {'path': 'keybase.txt'},
     'extra/party_keyring.gpg': {'path': 'party_keyring.gpg'},
     'extra/semeval2017_pun_task.tar.xz': {'path': 'semeval2017/semeval2017_pun_task.tar.xz'},
+    'extra/robots.txt': {'path': 'robots.txt'},
 }
 
 #READERS = {"html": None}
