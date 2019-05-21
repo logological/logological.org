@@ -99,6 +99,12 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/google0aaa94dac5255b24.html': {'path': 'google0aaa94dac5255b24.html'},
 }
+ARTICLE_EXCLUDES = [
+    'extra',
+    ]
+PAGE_EXCLUDES = [
+    'extra',
+    ]
 
 #READERS = {"html": None}
 
