@@ -1,6 +1,5 @@
 Title: openSUSE 13.2 on an Acer TravelMate B115-M
-save_as: gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html
-url: gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html
+slug: gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M
 
 # openSUSE 13.2 on an Acer TravelMate B115-M
 

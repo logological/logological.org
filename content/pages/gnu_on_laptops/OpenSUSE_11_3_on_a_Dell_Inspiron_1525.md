@@ -1,6 +1,5 @@
 Title: openSUSE 11.3 on a Dell Inspiron 1525
-save_as: gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525.html
-url: gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525.html
+slug: gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525
 
 # openSUSE 11.3 on a Dell Inspiron 1525
 

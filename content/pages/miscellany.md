@@ -1,6 +1,5 @@
 Title: Miscellany
-save_as: misc.html
-url: misc.html
+slug: misc
 
 # Miscellany
 
