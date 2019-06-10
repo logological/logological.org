@@ -1,5 +1,6 @@
 Title: GNU/Linux on a Sony Vaio PCG-FX801
 save_as: gnu_on_laptops/GNULinux_on_a_Sony_Vaio_PCG-FX801.html
+url: gnu_on_laptops/GNULinux_on_a_Sony_Vaio_PCG-FX801.html
 
 
 # GNU/Linux on a Sony Vaio PCG-FX801

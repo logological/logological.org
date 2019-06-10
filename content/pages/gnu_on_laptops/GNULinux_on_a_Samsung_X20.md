@@ -1,5 +1,6 @@
 Title: GNU/Linux on a Samsung X20
 save_as: gnu_on_laptops/GNULinux_on_a_Samsung_X20.html
+url: gnu_on_laptops/GNULinux_on_a_Samsung_X20.html
 
 # GNU/Linux on a Samsung X20
 

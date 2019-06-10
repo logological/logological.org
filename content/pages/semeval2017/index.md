@@ -1,6 +1,7 @@
 Title: SemEval-2017 Shared Task: Detection and Interpretation of English Puns
 template: page_puns
 save_as: puns.html
+url: puns.html
 
 # SemEval-2017 Shared Task:<br />Detection and Interpretation of English Puns
 

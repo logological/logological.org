@@ -1,5 +1,6 @@
 Title: GNU/Linux on a Dell Inspiron 1525
 save_as: gnu_on_laptops/OpenSUSE_10_3_on_a_Dell_Inspiron_1525.html
+url: gnu_on_laptops/OpenSUSE_10_3_on_a_Dell_Inspiron_1525.html
 
 # GNU/Linux on a Dell Inspiron 1525
 
