@@ -1,5 +1,6 @@
 Title: Autocomplete maps
 save_as: autocomplete.html
+url: autocomplete.html
 
 # Autocomplete maps
 

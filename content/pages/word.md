@@ -1,5 +1,6 @@
 Title: Please don't send me Microsoft Word documents
 save_as: word.html
+url: word.html
 
 # Please don't send me Microsoft Word documents
 

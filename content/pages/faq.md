@@ -1,5 +1,6 @@
 title: Frequently Asked Questions
 save_as: faq.html
+url: faq.html
 
 # Frequently Asked Questions
 

@@ -1,5 +1,6 @@
 Title: Commodore Users Group of Saskatchewan
 save_as: cugs.html
+url: cugs.html
 
 # Commodore Users Group of Saskatchewan
 

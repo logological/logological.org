@@ -1,5 +1,6 @@
 title: Key-signing party
 save_as: keysigning.html
+url: keysigning.html
 
 # Key-signing party
 <a href="/images/keysigning_poster.pdf"><img src="/images/keysigning_poster.jpg" title="Publicity poster for the key-signing party" alt="[A publicity poster advertising the key-signing party at TU Darmstadt]" style="float:right; border: thin solid black; margin-left: 1em; width: 300px;" /></a>

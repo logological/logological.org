@@ -1,5 +1,6 @@
 Title: School newspapers
 save_as: school_newspapers.html
+url: school_newspapers.html
 
 # School newspapers
 

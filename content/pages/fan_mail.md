@@ -1,5 +1,6 @@
 Title: Fan mail for "Why I Will Never Have a Girlfriend"
 save_as: fan_mail.html
+url: fan_mail.html
 
 # Fan mail for "Why I Will Never Have a Girlfriend"
 
