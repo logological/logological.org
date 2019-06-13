@@ -1,5 +1,5 @@
 Title: GNU/Linux on an IBM ThinkPad i1452
-save_as: gnu_on_laptops/GNULinux_on_an_IBM_ThinkPad_i1452.html
+slug: gnu_on_laptops/GNULinux_on_an_IBM_ThinkPad_i1452
 
 # GNU/Linux on an IBM ThinkPad i1452
 

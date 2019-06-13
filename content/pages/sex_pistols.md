@@ -1,5 +1,5 @@
 Title: Sex Pistols impersonations
-save_as: sex_pistols.html
+slug: sex_pistols
 
 # Sex Pistols impersonations
 

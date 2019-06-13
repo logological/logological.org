@@ -1,5 +1,5 @@
 Title: Please don't send me Microsoft Word documents
-save_as: word.html
+slug: word
 
 # Please don't send me Microsoft Word documents
 

@@ -1,5 +1,6 @@
 title: Home
 save_as: index.html
+url: index.html
 
 <div class="row">
 

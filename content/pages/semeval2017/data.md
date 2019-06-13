@@ -1,6 +1,6 @@
 Title: Data and Resources | SemEval-2017 Shared Task on Puns
 template: page_puns
-save_as: semeval2017/data.html
+slug: semeval2017/data
 
 # Data and resources
 

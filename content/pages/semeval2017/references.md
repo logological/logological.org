@@ -1,6 +1,6 @@
 Title: References | SemEval-2017 Shared Task on Puns
 template: page_puns
-save_as: semeval2017/references.html
+slug: semeval2017/references
 
 # References
 

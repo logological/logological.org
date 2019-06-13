@@ -1,5 +1,5 @@
 Title: GNU/Linux on a Lenovo ThinkPad T61
-save_as: gnu_on_laptops/GNULinux_on_a_Lenovo_ThinkPad_T61.html
+slug: gnu_on_laptops/GNULinux_on_a_Lenovo_ThinkPad_T61
 
 # GNU/Linux on a Lenovo ThinkPad T61
 

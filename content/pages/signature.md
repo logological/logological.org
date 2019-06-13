@@ -1,5 +1,5 @@
 title: What is "signature.asc"?
-save_as: signature.html
+slug: signature
 
 # What is "signature.asc"?
 
