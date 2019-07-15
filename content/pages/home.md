@@ -17,7 +17,8 @@ url: index.html
 You've reached the home page of <strong>Tristan Miller</strong>.  I'm a computational linguist working mainly in the area of lexical semantics.
 My research interests include word sense disambiguation, lexical substitution, and computational detection and interpretation of humour.</p>
 
-<p>Since 2019 I have been working as a research scientist in the <a href="http://ofai.at/research/interact/index.html" title="Language and Interaction Technologies Group">Language and Interaction Technologies Group</a> of the <a href="http://ofai.at/" title="Austrian Research Institute for Artificial Intelligence">Austrian Research Institute for Artificial intelligence</a> (OFAI).  In the spirit of <a title="open science" href="https://en.wikipedia.org/wiki/Open_science">open science</a>, I share my research and teaching material (code, data, lecture notes, etc.) online under free licenses.</p>
+<p>Since 2019 I have been working as a research scientist in the <a href="http://ofai.at/research/interact/index.html" title="Language and Interaction Technologies Group">Language and Interaction Technologies Group</a> of the <a href="http://ofai.at/" title="Austrian Research Institute for Artificial Intelligence">Austrian Research Institute for Artificial intelligence</a> (OFAI), where I head the project <a href="https://punderstanding.ofai.at/"> Computational Pun-derstanding: Computer-Assisted Translation of Humorous Wordplay </a>.
+<!-- In the spirit of <a title="open science" href="https://en.wikipedia.org/wiki/Open_science">open science</a>, I share my research and teaching material (code, data, lecture notes, etc.) online under free licenses. --></p>
 
 <p>For more information, you can consult <a title="curriculum vitæ for Tristan Miller" href="https://logological.org/miller_cv.pdf">my curriculum vitæ</a>.</p>
 
@@ -81,8 +82,11 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 <ul>
+<li>July 29, 2019: Public lecture, <strong><a href="https://www.eventbrite.com/e/brainstorms-11-language-machines-vs-biology-tickets-65262146838">Brainstorm #11: Machines vs. Biology</a></strong>, Vienna</li>
 <li>June 24–29, 2019: Co-convener, <strong><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/literatureLanguages/newsandevents/2019-ISHS-Conference/HumorAI.aspx">Panel on Humor and Artificial Intelligence</a></strong>, <strong><a href="http://www.tamuc.edu/ishs2019">31st International Society for Humor Studies Conference (ISHS 2019)</a></strong>, Austin</li>
+<li>June 13, 2019: Public lecture, <strong><a href="http://ofai.at/events.shtml">Austrian Research Institute for Artificial Intelligence</a></strong>, Vienna</li>
 <li>June 2–7, 2019: Area co-chair for Resources and Evaluation, <strong><a href="http://naacl2019.org/">17th Meeting of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2019)</a></strong>, Minneapolis</li>
+<li>May 7, 2019: Public lecture, <strong><a href="http://ofai.at/events.shtml">Austrian Research Institute for Artificial Intelligence</a></strong>, Vienna</li>
 <li>July 15–20, 2018: Area co-chair for Multilinguality, <strong><a href="http://acl2018.org/">56th Annual Meeting of the Association for Computational Linguistics (ACL 2018)</a></strong>, Melbourne</li>
 <!--
 <li>June 27, 2018: Co-convener and session chair, Panel on Humor and Artificial Intelligence, <strong><a href="https://www.folklore.ee/rl/fo/konve/ishs2018/">30th International Society for Humor Studies Conference (ISHS 2018)</a></strong>, Tallinn</li>
