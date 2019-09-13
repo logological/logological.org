@@ -51,13 +51,15 @@ My research interests include word sense disambiguation, lexical substitution, a
 
 <li><a href="https://ofai.academia.edu/TristanMiller"><i class="ai ai-academia-square fa-3x" title="Academia.edu"></i></a></li>
 
-<li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>
+<!--<li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>-->
 
 <li><a href="http://psych0naut.livejournal.com/"><i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i></a></li>
 
 <li><a href="https://www.linkedin.com/in/tristan-miller-032b327"><i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i></a></li>
 
 <li><a href="https://twitter.com/Logological"><i class="fa fa-twitter-square fa-3x" title="Twitter"></i></a></li>
+
+<li><a href="https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan"><i class="ai ai-dblp-square fa-3x" title="DBLP"></i></a></li>
 
 </ul>
 
@@ -82,6 +84,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 <ul>
+<li>September 5–6, 2019: Presenter, <strong><a href="http://rgcl.wlv.ac.uk/hit-it2019/">Second Workshop on Human-Informed Translation and Interpreting Technology (HiT-IT 2019)</a></strong>, Varna</li>
 <li>July 29, 2019: Public lecture, <strong><a href="https://www.eventbrite.com/e/brainstorms-11-language-machines-vs-biology-tickets-65262146838">Brainstorm #11: Machines vs. Biology</a></strong>, Vienna</li>
 <li>June 24–29, 2019: Co-convener, <strong><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/literatureLanguages/newsandevents/2019-ISHS-Conference/HumorAI.aspx">Panel on Humor and Artificial Intelligence</a></strong>, <strong><a href="http://www.tamuc.edu/ishs2019">31st International Society for Humor Studies Conference (ISHS 2019)</a></strong>, Austin</li>
 <li>June 13, 2019: Public lecture, <strong><a href="http://ofai.at/events.shtml">Austrian Research Institute for Artificial Intelligence</a></strong>, Vienna</li>
