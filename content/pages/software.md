@@ -65,6 +65,8 @@ various laptops.
     1525](/gnu_on_laptops/OpenSUSE_11_3_on_a_Dell_Inspiron_1525.html)
 -   [OpenSUSE 13.2 on an Acer TravelMate
     B115-M](/gnu_on_laptops/OpenSUSE_13_2_on_an_Acer_TravelMate_B115-M.html)
+-   [OpenSUSE 15.1 on an Acer TravelMate
+    B118-M](/gnu_on_laptops/OpenSUSE_15_1_on_an_Acer_TravelMate_B118-M.html)
 
 And other miscellaneous documents:
 
