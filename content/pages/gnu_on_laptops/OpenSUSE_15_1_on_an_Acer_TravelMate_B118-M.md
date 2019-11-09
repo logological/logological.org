@@ -178,3 +178,8 @@ from suspend:
 
 I have tried disabling each of these (e.g., `echo XHC | tee
 /proc/acpi/wakeup`) but in no case did this solve the problem.
+
+I later noticed in the BIOS menu, in the "Main" tab, there is a
+setting "Lid Open Resume" that is set to "Enabled".  Presumably
+changing this setting to "Disabled" will work around this problem,
+though I have not yet tested this.
