@@ -14,7 +14,7 @@ Technical specifications
 
 The Acer TravelMate B118-M is available in various configurations.
 According to my retailer, my system's full model name is "Acer
-TravelMate B115-M-P98A", with the Acer article number NX.VHPEG.005.
+TravelMate B118-M-P98A", with the Acer article number NX.VHPEG.005.
 
 <table>
 <tr><th>Component</th><th>Details</th></tr>
@@ -41,26 +41,28 @@ Summary
 <tr><td>USB                 </td><td>works out of the box</td></tr>
 <tr><td>Ethernet            </td><td>works out of the box</td></tr>
 <tr><td>WLAN                </td><td>works out of the box</td></tr>
-<tr><td>graphics            </td><td>works out of the box</td></tr>
+<tr><td>graphics            </td><td>mostly working; see below</td></tr>
 <tr><td>HDMI                </td><td>not tested</td></tr>
 <tr><td>hard disk           </td><td>works out of the box</td></tr>
 <tr><td>sound               </td><td>works out of the box</td></tr>
 <tr><td>memory card reader  </td><td>not tested</td></tr>
 <tr><td>touchpad            </td><td>needs workaround; see below</td></tr>
 <tr><td>camera              </td><td>works out of the box</td></tr>
+<tr><td>BIOS update         </td><td>doesn't work; see below</td></tr>
 </table>
 
 Installation
 ------------
 
-The model I received apparently had no operating system installed; it
-booted into an arcane and unhelpful UEFI menu.  The computer has no
-optical drive, so to install openSUSE 15.1 I used an external USB
-drive.  In order to get the computer to boot from an external USB
-drive, it was necessary to hold down the F2 key immediately after
-powering on the machine.  This brings up a BIOS-like menu that will
-allow you to select the default boot device order, or to enable a boot
-menu (activated by pressing F12 during system startup).
+The model I received apparently had no usable operating system
+installed; it booted into an arcane and unhelpful UEFI menu.  The
+computer has no optical drive, so to install openSUSE 15.1 I used an
+external USB drive.  In order to get the computer to boot from an
+external USB drive, it was necessary to hold down the F2 key
+immediately after powering on the machine.  This brings up a BIOS-like
+menu that will allow you to select the default boot device order, or
+to enable a boot menu (activated by pressing F12 during system
+startup).
 
 The touchpad was not detected during install, so I had to use an
 external mouse.  I had YaST completely wipe and repartition the hard
@@ -139,13 +141,19 @@ tracker](https://bugs.freedesktop.org/show_bug.cgi?id=22185) for
 details.) I used Meta+F3 (where "Meta" is the key with the Windows
 logo).
 
-Another issue arises with Fn+Up, which is supposed to increase the
-volume.  This does increase the volume as expected, but for some
-reason, it also temporarily blanks the screen in some compositing
-desktop environments.  In particular, the problem seems to occur in
-KDE Plasma when the rendering backend of the compositor is set to
-XRender.  Changing the rendering backend to OpenGL (either 2.0 or 3.1)
-solves the problem.
+### Graphics
+
+Under some circumstances, the laptop screen blinks on and off rapidly
+for several seconds.  This happens whenever the Fn+Up or Fn+Dn keys
+are used to adjust the audio volume, triggering the on-screen display
+(OSD).  The problem also occurs very frequently when running Windows 7
+in VirtualBox.  In this case, the problem seems to be triggered by
+clicking on certain icons in the Windows Explorer, but also when the
+virtual machine boots up or shuts down.
+
+I am still investigating this issue and have asked about it on
+the
+[Acer community site](https://community.acer.com/en/discussion/580925/screen-blinks-on-and-off-when-osd-appears-and-in-virtualbox-travelmate-b118#latest).
 
 ### Suspend
 
@@ -183,3 +191,9 @@ I later noticed in the BIOS menu, in the "Main" tab, there is a
 setting "Lid Open Resume" that is set to "Enabled".  Presumably
 changing this setting to "Disabled" will work around this problem,
 though I have not yet tested this.
+
+### BIOS update
+
+BIOS updates are available on Acer's website.  However, they are
+distributed as Microsoft Windows executables and so there seems to be
+no way of applying them without running Windows.
