@@ -1,0 +1,26 @@
+{% extends "base_maledicta.html" %}
+
+{% block lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}
+     {{ page.title}} | {{ SITENAME }}
+{% endblock %}
+
+{% block content %}
+
+{% if page.banner %}
+<div class="container-fluid">
+    <div class="banner" style="background-image: url({{page.banner}});">
+    </div>
+</div>
+{% endif %}
+
+<div class="container">
+
+    {{ page.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
+
+</div>
+
+{% endblock %}
+
+{% block modified %}{{ page.modified|strftime('%Y-%m-%d %H:%M %Z') }}{% endblock %}
