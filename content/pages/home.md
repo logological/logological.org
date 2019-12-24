@@ -45,7 +45,7 @@ My research interests include word sense disambiguation, lexical substitution, a
 
 <li><a href="https://github.com/logological"><i class="fab fa-github-square fa-3x" title="GitHub"></i></a></li>
 
-<li><a href="http://orcid.org/0000-0002-0749-1100"><i class="ai ai-orcid-square ai-3x" title="ORCID"></i></a></li>
+<li><a href="https://orcid.org/0000-0002-0749-1100"><i class="ai ai-orcid-square ai-3x" title="ORCID"></i></a></li>
 
 <li><a href="https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ"><i class="ai ai-google-scholar-square ai-3x" title="Google Scholar"></i></a></li>
 
