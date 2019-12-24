@@ -2,9 +2,10 @@ body {
     font-size: 12pt;
 }
 
-h1 {
-    margin-bottom: 21px;
+table + h2 {
+    margin-top: 1ex;
 }
+
 
 dd {
     margin-left: 3em;
@@ -24,15 +25,6 @@ dd {
 
 .social > li > a{
     color: #333;
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-
-.navbar-inverse {
-    border: none;
-    margin-bottom: 0px;
 }
 
 .fa-ul {

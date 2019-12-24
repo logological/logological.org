@@ -3,7 +3,7 @@
 <head>
 {% block head %}
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block meta %}
         <meta name="author" content="{{ AUTHOR }}"/>
         {% if SITEKEYWORDS %}
@@ -11,6 +11,8 @@
         {% endif %}
     {% endblock %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ SITEURL }}/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ SITEURL }}/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ SITEURL }}/apple-touch-icon-72x72.png" />
@@ -30,10 +32,10 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!-- Fonts and styling -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/cosmo.css">
-    <!--Include the Source Sans Pro Google fonts CSS-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/sourcesanspro/sourcesanspro.css">
-    <!--Include the Font Awesome and Academicons CSS-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/gh-fork-ribbon.css" />
@@ -43,6 +45,7 @@
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/biblet.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/codehilite.css">
+
     <!-- Feeds -->
     {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -50,6 +53,7 @@
     {% if FEED_ALL_RSS %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
     {% endif %}
+
     <!-- Google Analytics -->
     {{ GOOGLE_ANALYTICS }}
 {% endblock head %}
@@ -58,28 +62,23 @@
 <body>
 
 {% block navbar %}
-<nav class="navbar navbar-inverse" lang="{{ DEFAULT_LANG }}">
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary py-1 mb-3" lang="{{ DEFAULT_LANG }}">
 <div class="container">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed"
-         data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-         aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{% block navbar_title_link %}{{ SITEURL }}{% endblock %}">{% block navbar_title %}{{ SITETITLE }}{% endblock %}</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+  <a class="navbar-brand font-weight-bold" href="{% block navbar_title_link %}{{ SITEURL }}{% endblock %}">{% block navbar_title %}{{ SITETITLE }}{% endblock %}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
 	{% block menu %}
            {% for title, link in MENUITEMS %}
-           <li><a href="{{ link }}">{{ title }}</a></li>
+           <li class="nav-item">
+	     <a class="nav-link active" href="{{ link }}">{{ title }}</a>
+	   </li>
            {% endfor %}
 	{% endblock %}
-        </ul>
-    </div><!--/.nav-collapse -->
+    </ul>
+  </div>
 </div>
 </nav>
 {% endblock %}
