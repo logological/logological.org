@@ -29,10 +29,10 @@ My research interests include word sense disambiguation, lexical substitution, a
 <h1>Contact</h1>
 
 <ul class="fa-ul">
-<li><i class="fa-li fa fa-envelope"></i> <a title="Tristan Miller" href="mailto:tristan@logological.org">tristan@logological.org</a>&nbsp;<span style="margin-left: 1ex;">(<a href="/BF8A2EE4.txt"><i class="fa fa-lock" title="OpenPGP public key"></i></a>)</span></li>
-<li><i class="fa-li fa fa-phone"></i> +43&nbsp;1&nbsp;5324621&thinsp;3</li>
-<li><i class="fa-li fa fa-fax"></i> +43&nbsp;1&nbsp;5324621&thinsp;9</li>
-<li><i class="fa-li fa fa-university"></i>
+<li><i class="fa-li fas fa-envelope"></i> <a title="Tristan Miller" href="mailto:tristan@logological.org">tristan@logological.org</a>&nbsp;<span style="margin-left: 1ex;">(<a href="/BF8A2EE4.txt"><i class="fas fa-lock" title="OpenPGP public key"></i></a>)</span></li>
+<li><i class="fa-li fas fa-phone"></i> +43&nbsp;1&nbsp;5324621&thinsp;3</li>
+<li><i class="fa-li fas fa-fax"></i> +43&nbsp;1&nbsp;5324621&thinsp;9</li>
+<li><i class="fa-li fas fa-university"></i>
     OFAI<br>Freyung 6/3<br>1010 Vienna<br>Austria</li>
 </ul>
 
@@ -43,23 +43,26 @@ My research interests include word sense disambiguation, lexical substitution, a
 
 <ul class="social">
 
-<li><a href="https://github.com/logological"><i class="fa fa-github-square fa-3x" title="GitHub"></i></a></li>
+<li><a href="https://github.com/logological"><i class="fab fa-github-square fa-3x" title="GitHub"></i></a></li>
 
-<li><a href="http://orcid.org/0000-0002-0749-1100"><i class="ai ai-orcid-square fa-3x" title="ORCID"></i></a></li>
+<li><a href="http://orcid.org/0000-0002-0749-1100"><i class="ai ai-orcid-square ai-3x" title="ORCID"></i></a></li>
 
-<li><a href="https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ"><i class="ai ai-google-scholar-square fa-3x" title="Google Scholar"></i></a></li>
+<li><a href="https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ"><i class="ai ai-google-scholar-square ai-3x" title="Google Scholar"></i></a></li>
 
-<li><a href="https://ofai.academia.edu/TristanMiller"><i class="ai ai-academia-square fa-3x" title="Academia.edu"></i></a></li>
+<li><a href="https://ofai.academia.edu/TristanMiller"><i class="ai ai-academia-square ai-3x" title="Academia.edu"></i></a></li>
 
-<!--<li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square fa-3x" title="ImpactStory"></i></a></li>-->
+<li><a href="https://impactstory.org/u/0000-0002-0749-1100"><i class="ai ai-impactstory-square ai-3x" title="ImpactStory"></i></a></li>
 
-<li><a href="http://psych0naut.livejournal.com/"><i class="fa fa-pencil-square fa-3x" title="LiveJournal"></i></a></li>
+<li><a href="http://psych0naut.livejournal.com/"><i class="fas fa-pen-square fa-3x" title="LiveJournal"></i></a></li>
 
-<li><a href="https://www.linkedin.com/in/tristan-miller-032b327"><i class="fa fa-linkedin-square fa-3x" title="LinkedIn"></i></a></li>
+<li><a href="https://www.linkedin.com/in/tristan-miller-032b327"><i class="fab fa-linkedin fa-3x" title="LinkedIn"></i></a></li>
 
-<li><a href="https://twitter.com/Logological"><i class="fa fa-twitter-square fa-3x" title="Twitter"></i></a></li>
+<li><a href="https://twitter.com/Logological"><i class="fab fa-twitter-square fa-3x" title="Twitter"></i></a></li>
 
-<li><a href="https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan"><i class="ai ai-dblp-square fa-3x" title="DBLP"></i></a></li>
+<li><a href="https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan"><i class="ai ai-dblp-square ai-3x" title="DBLP"></i></a></li>
+
+<li><a href="https://www.semanticscholar.org/author/Tristan-Miller/1818919"><i class="ai ai-semantic-scholar-square ai-3x" title="Semantic Scholar"></i></a></li>
+
 
 </ul>
 
