@@ -26,7 +26,6 @@ BEGIN {
     
     FS = "\t"
     OFS = ","
-    ORS = "\r\n"
 }
 
 # Print the header
@@ -147,7 +146,7 @@ function to_html(    bibtex, htmltitle, htmlauthor) {
 	"        <td>" strip_markup(number) "</td>\n" \
 	"        <td>" strip_markup(year) "</td>\n" \
 	"        <td>" strip_markup(pages) "</td>\n" \
-	"        <td><button type='button' class='btn btn-primary btn-sm' data-toggle='modal' data-target='#bibtex' data-bibtex=\"" bibtex "\">B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span></button></td>\n" \
+	"        <td><button type='button' class='btn btn-primary btn-sm m-0' data-toggle='modal' data-target='#bibtex' data-bibtex=\"" bibtex "\">B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span></button></td>\n" \
 	"      </tr>"
 }
 
