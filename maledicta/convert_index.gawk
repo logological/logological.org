@@ -62,24 +62,6 @@ END {
 	case "html":
 	    print "    </tbody>"
 	    print "  </table>"
-	    print "<div class='modal fade' id='bibtex' tabindex='-1' role='dialog' aria-labelledby='bibtexModalLabel' aria-hidden='true'>\n\
-  <div class='modal-dialog' role='document'>\n\
-    <div class='modal-content'>\n\
-      <div class='modal-header'>\n\
-        <h5 class='modal-title' id='bibtexModalLabel'>B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span></h5>\n\
-        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n\
-          <span aria-hidden='true'>&times;</span>\n\
-        </button>\n\
-      </div>\n\
-      <div class='modal-body'>\n\
-        <pre class='bibtexBody'>pre</pre>\n\
-      </div>\n\
-      <div class='modal-footer'>\n\
-        <button type='button' class='btn btn-primary' data-dismiss='modal'>Close</button>\n\
-      </div>\n\
-    </div>\n\
-  </div>\n\
-</div>"
 	    break
 	case "bibtex":
 	    break
