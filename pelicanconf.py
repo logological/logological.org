@@ -67,6 +67,7 @@ STATIC_PATHS = [
     'extra/semeval2017_pun_task.tar.xz',
     'extra/robots.txt',
     'extra/google0aaa94dac5255b24.html',
+    'extra/maledicta.bib',
 ]
 EXTRA_PATH_METADATA = {
     'extra/apple-touch-icon-114x114.png': {'path': 'apple-touch-icon-114x114.png'},
@@ -98,6 +99,7 @@ EXTRA_PATH_METADATA = {
     'extra/semeval2017_pun_task.tar.xz': {'path': 'semeval2017/semeval2017_pun_task.tar.xz'},
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/google0aaa94dac5255b24.html': {'path': 'google0aaa94dac5255b24.html'},
+    'extra/maledicta.bib': {'path': 'maledicta.bib'},
 }
 ARTICLE_EXCLUDES = [
     'extra',

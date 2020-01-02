@@ -47,12 +47,13 @@ deploy:
 	make publish
 	make rsync_upload
 
-html: publications
+html: publications maledicta
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*
 	make -C publications clean
+	make -C maledicta clean
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -83,11 +84,14 @@ stopserver:
 	$(BASEDIR)/develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-publish: publications
+publish: publications maledicta
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 publications:
 	make -C publications
+
+maledicta:
+	make -C maledicta
 
 ssh_upload:
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
@@ -97,4 +101,4 @@ rsync_upload:
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzzc publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):www/files.nothingisreal.com/publications/Tristan_Miller/ --cvs-exclude --exclude-from=rsync_exclude.txt
 
-.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications
+.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta

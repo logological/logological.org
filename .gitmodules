@@ -4,3 +4,6 @@
 [submodule "publications/resume"]
 	path = publications/resume
 	url = psy@pi:git/resume.git
+[submodule "maledicta/maledicta_index"]
+	path = maledicta/maledicta_index
+	url = git@github.com:logological/maledicta.git
