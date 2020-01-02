@@ -11,6 +11,8 @@ don't really fit into any other section.
 <dd>A short guide to English technical and scientific writing directed specifically to German speakers.</dd>
 <dt>[Commodore Users Group of Saskatchewan](/cugs.html)</dt>
 <dd>Information on a now-defunct Commodore users' group</dd>
+<dt>[_Maledicta_ article index](/maledicta.html)</dt>
+<dd>Title and author index for _Maledicta: The International Journal of Verbal Aggression_</dd>
 <dt>[The Arthur T. Murray/Mentifex FAQ](/mentifex_faq.html)</dt>
 <dd>Information on a prominent net.kook</dd>
 <dt>[My photos](/photos)</dt>
