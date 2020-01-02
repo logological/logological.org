@@ -124,5 +124,13 @@ targets: 6 }]
 $('.dataTables_length').addClass('bs-select');
 });
 </script>
+<script type='text/javascript'>
+$('#bibtex').on('show.bs.modal', function (event) {
+var button = $(event.relatedTarget) 
+var entry = button.data('bibtex') 
+var modal = $(this)
+modal.find('.bibtexBody').text(entry)
+})
+</script>
 </body>
 </html>

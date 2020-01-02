@@ -13,4 +13,3 @@ and issue of the journal.  Not included are cartoons and illustrations
 back-matter items, with the exception of bibliographies.
 
 You can also download <a href="maledicta.bib" title="Maledicta article index">a B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> file</a> containing the entire index.
-

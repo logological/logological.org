@@ -62,6 +62,24 @@ END {
 	case "html":
 	    print "    </tbody>"
 	    print "  </table>"
+	    print "<div class='modal fade' id='bibtex' tabindex='-1' role='dialog' aria-labelledby='bibtexModalLabel' aria-hidden='true'>\n\
+  <div class='modal-dialog' role='document'>\n\
+    <div class='modal-content'>\n\
+      <div class='modal-header'>\n\
+        <h5 class='modal-title' id='bibtexModalLabel'>B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span></h5>\n\
+        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n\
+          <span aria-hidden='true'>&times;</span>\n\
+        </button>\n\
+      </div>\n\
+      <div class='modal-body'>\n\
+        <pre class='bibtexBody'>pre</pre>\n\
+      </div>\n\
+      <div class='modal-footer'>\n\
+        <button type='button' class='btn btn-primary' data-dismiss='modal'>Close</button>\n\
+      </div>\n\
+    </div>\n\
+  </div>\n\
+</div>"
 	    break
 	case "bibtex":
 	    break
@@ -132,8 +150,7 @@ function to_bibtex(     firstyear, firstauthor, key) {
 }
 
 function to_html(    bibtex, htmltitle, htmlauthor) {
-    bibtex = to_bibtex()
-    bibtexurl = data_uri(bibtex)
+    bibtex = gensub(/\\&/, "\\&amp;", "g", to_bibtex())
 
     htmltitle = gensub(/([^h]){([^}]+)}/, "\\1\\2", "g", title)
     htmltitle = gensub(/\\emph{([^}]+)}/, "<em>\\1</em>", "g", htmltitle)
@@ -148,7 +165,7 @@ function to_html(    bibtex, htmltitle, htmlauthor) {
 	"        <td>" strip_markup(number) "</td>\n" \
 	"        <td>" strip_markup(year) "</td>\n" \
 	"        <td>" strip_markup(pages) "</td>\n" \
-	"        <td><a target='_blank' href='" bibtexurl "'>B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span></a></td>\n" \
+	"        <td><button type='button' class='btn btn-primary btn-sm' data-toggle='modal' data-target='#bibtex' data-bibtex=\"" bibtex "\">B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span></button></td>\n" \
 	"      </tr>"
 }
 
