@@ -36,7 +36,7 @@ NR==1 {
 	    print to_plaintsv()
 	    break
 	case "html":
-	    print "  <table id='maledictaIndex' class='table table-striped table-bordered table-sm' cellspacing='0' width='100%'>"
+	    print "  <table id='maledictaIndex' class='table table-striped table-bordered table-sm'>"
 	    print "    <thead>"
 	    print "      <tr>"
 	    print "        <th class='th-sm'>Title</th>"

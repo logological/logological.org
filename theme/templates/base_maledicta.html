@@ -113,7 +113,7 @@
 <script src="{{SITEURL}}/theme/js/bootstrap.min.js"></script>
 <script src="{{SITEURL}}/theme/js/mdb/mdb.min.js"></script>
 <script src="{{SITEURL}}/theme/js/mdb/addons/datatables.min.js"></script>
-<script type="text/javascript">
+<script>
 $(document).ready(function () {
 $('#maledictaIndex').DataTable({
     "order": [],
@@ -124,7 +124,7 @@ targets: 6 }]
 $('.dataTables_length').addClass('bs-select');
 });
 </script>
-<script type='text/javascript'>
+<script>
 $('#bibtex').on('show.bs.modal', function (event) {
 var button = $(event.relatedTarget) 
 var entry = button.data('bibtex') 
