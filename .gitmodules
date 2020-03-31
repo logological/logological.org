@@ -7,3 +7,6 @@
 [submodule "maledicta/maledicta_index"]
 	path = maledicta/maledicta_index
 	url = git@github.com:logological/maledicta.git
+[submodule "publications/covers"]
+	path = publications/covers
+	url = psy@pi:git/publications/publication_covers.git

@@ -8,6 +8,7 @@ default: refresh ../content/pages/publications.html ../content/pages/publication
 
 refresh:
 	cd resume && git pull origin master
+	cd covers && git pull origin master
 
 all: miller.bbl miller-polemics.bbl miller-recreational.bbl
 
