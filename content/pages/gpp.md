@@ -16,8 +16,8 @@ Licence](https://www.gnu.org/copyleft/lgpl.html).
 Downloading
 -----------
 
-The latest stable version of GPP is **2.25**, released on
-2016-12-27. A list of changes from previous versions can be found in
+The latest stable version of GPP is **2.26**, released on
+2020-05-28. A list of changes from previous versions can be found in
 the
 [change log](https://files.nothingisreal.com/software/gpp/NEWS).
 
@@ -41,6 +41,7 @@ Binary packages are available for several systems, including:
 * [macOS](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
 * [openSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/devel:/tools/)
 * [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
+* Fedora (via its package management tool, DNF)
 
 Note that these packages are produced and hosted by third parties. The
 GPP authors take no responsibility for them.
