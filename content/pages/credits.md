@@ -8,3 +8,5 @@ This website is powered by [Pelican](http://getpelican.com/),
 the [Bootswatch](https://bootswatch.com/) themes.<br />
 Icons by [Font Awesome](http://fontawesome.io/) and
 [Academicons](https://jpswalsh.github.io/academicons/).
+
+Portrait: Copyright 2020 Foto Weinwurm GmbH

@@ -8,7 +8,7 @@ url: index.html
 
 <h1>About</h1>
 
-<img src="images/miller_20110420-square.jpg"
+<img src="images/miller_20200512-square.jpg"
      class="img-circle"
      title="Portrait of Tristan Miller"
      style="width: 30%; margin-left: 20px; margin-top: 0px; margin-bottom: 5px; float: right;">
