@@ -87,7 +87,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 <ul>
-<li>June 23, 2020: Keynote address, <strong><a href="https://nlp4re.github.io/2020/">Third Workshop on Natural Language Processing for Requirements Engineering (NLP4RE'20)</a></strong>, <strong><a href="https://refsq.org/">26th International Working Conference on Requirements Engineering (REFSQ'20)</a></strong>, Pisa</li>
+<li>June 23, 2020: Keynote address, <strong><a href="https://nlp4re.github.io/2020/">Third Workshop on Natural Language Processing for Requirements Engineering (NLP4RE'20)</a></strong>, <strong><a href="https://refsq.org/">26th International Working Conference on Requirements Engineering (REFSQ'20)</a></strong> (online event)</li>
 <li>January 15, 2020: <strong><a href="https://oe1.orf.at/programm/20200115/585743/Computer-verstehen-keinen-Spass">Interview on <em>Digital.Leben</em></a></strong>, <strong><a href="https://oe1.orf.at/">Ö1 (Austrian public radio)</a></strong></li>
 <li>December 7, 2019: Invited lecture, <strong>2nd Comedy and Artificial Intelligence Conference</strong>, St. Peter's College, Oxford</li>
 <li>November 14, 2019: Invited lecture, <strong><a href="https://transvienna.univie.ac.at/news-events/einzelansicht-aktuell/news/vortragsreihe-translatio-ex-machina/"><em>Translatio Ex Machina</em> lecture series</a></strong>, <strong><a href="https://transvienna.univie.ac.at/en/">Centre for Translation Studies</a></strong>, <strong><a href="https://www.univie.ac.at/en/">University of Vienna</a></strong></li>
