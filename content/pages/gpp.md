@@ -16,8 +16,8 @@ Licence](https://www.gnu.org/copyleft/lgpl.html).
 Downloading
 -----------
 
-The latest stable version of GPP is **2.26**, released on
-2020-05-28. A list of changes from previous versions can be found in
+The latest stable version of GPP is **2.27**, released on
+2020-07-27. A list of changes from previous versions can be found in
 the
 [change log](https://files.nothingisreal.com/software/gpp/NEWS).
 
