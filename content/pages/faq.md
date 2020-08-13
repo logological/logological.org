@@ -124,6 +124,28 @@ Source: [Prevent SSH connection lost after logging into VPN on server machine](h
 
 <kbd>Enter</kbd> <kbd>~</kbd> <kbd>.</kbd>
 
+### How can I block all traffic from (or to) a certain country?
+
+On openSUSE, install the geoip add-on for xtables:
+
+```bash
+sudo zypper in xtables-addons xtables-geoip
+```
+
+Now you can use iptables or the firewalld front end to it (if it is
+running) to block network traffic for a list of countries:
+
+```bash
+iptables -I INPUT -m geoip --src-cc CN,VN,ID,IN,KR,SG,HK -j DROP
+firewall-cmd --direct --add-rule ipv4 filter INPUT 0 -m geoip --src-cc CN,VN,ID,IN,KR,SG,HK -j DROP
+```
+
+If using firewalld, then to make the block persistent across reboots:
+
+```bash
+firewall-cmd --runtime-to-permanent
+```
+
 ## Emacs
 
 ### How can I make AUCTeX ignore "mismatched" `\index` parentheses?
