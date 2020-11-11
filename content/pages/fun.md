@@ -24,7 +24,7 @@ a regular contributor of language-themed articles and puzzles to
 *[Lingo: The Language Magazine for Younger Readers](http://www.lingozine.com/)*,
 *[Games World of Puzzles](http://www.gamesmagazine-online.com/)*
 (formerly *Games Magazine*),
-*[Word Ways: The Journal of Recreational Linguistics](http://www.wordways.com/)*,
+*[Word Ways: The Journal of Recreational Linguistics](https://digitalcommons.butler.edu/wordways/)*,
 and other magazines.
 
 * [Shakespeare's Sonnet Generator](https://logological.org/sonnet/),
