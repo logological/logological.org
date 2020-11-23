@@ -1,4 +1,5 @@
 Title: comp.ai
+Slug: comp.ai
 
 # comp.ai
 
