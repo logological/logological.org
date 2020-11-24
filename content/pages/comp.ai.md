@@ -21,9 +21,9 @@ You should be able to submit articles to comp.ai just as you do for any other ne
 
 ## Moderator info
 
-The current moderator is [Tristan Miller](https://logological.org/).
-
 To contact the moderator, e-mail [comp-ai-request@nan.users.panix.com](mailto:comp-ai-request@nan.users.panix.com).
+
+The current moderator is [Tristan Miller](https://logological.org/).
 
 From 24 April 1999 to 24 November 2020, the moderator was David Kinny.
 
