@@ -93,6 +93,7 @@ EXTRA_PATH_METADATA = {
     'extra/mstile-310x310.png': {'path': 'mstile-310x310.png'},
     'extra/mstile-70x70.png': {'path': 'mstile-70x70.png'},
     'extra/.htaccess': {'path': '.htaccess'},
+    'extra/81A27838.txt': {'path': '81A27838.txt'},
     'extra/EFBF4915.txt': {'path': 'EFBF4915.txt'},
     'extra/BF8A2EE4.txt': {'path': 'BF8A2EE4.txt'},
     'extra/keybase.txt': {'path': 'keybase.txt'},
