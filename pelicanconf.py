@@ -60,6 +60,7 @@ STATIC_PATHS = [
     'extra/mstile-310x310.png',
     'extra/mstile-70x70.png',
     'extra/.htaccess',
+    'extra/81A27838.txt',
     'extra/EFBF4915.txt',
     'extra/BF8A2EE4.txt',
     'extra/keybase.txt',

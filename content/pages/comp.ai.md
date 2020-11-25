@@ -17,7 +17,7 @@ The purpose of moderation is to improve the quality, relevance and readability o
 
 ## How to post to comp.ai
 
-You should be able to submit articles to comp.ai just as you do for any other newsgroups. If you find that your news provider has misconfigured the group as unmoderated, you can email submissions to [comp-ai@nan.users.panix.com](mailto:comp-ai@nan.users.panix.com).
+You should be able to submit articles to comp.ai just as you do for any other newsgroups. If you find that your news provider has misconfigured the group as unmoderated, you can e-mail submissions to [comp-ai@nan.users.panix.com](mailto:comp-ai@nan.users.panix.com).
 
 ## Moderator info
 
@@ -27,6 +27,7 @@ The current moderator is [Tristan Miller](https://logological.org/).
 
 From 24 April 1999 to 24 November 2020, the moderator was David Kinny.
 
-## Links
+## Further information
 
 * [Original Request for Discussion (RFD) and Calls for Votes (CFV) for comp.ai](https://www.newsdemon.com/newsgroup-info/comp.ai)
+* [Signing key for comp.ai](/81A27838.txt)
