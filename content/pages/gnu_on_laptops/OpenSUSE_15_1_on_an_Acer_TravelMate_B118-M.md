@@ -151,9 +151,7 @@ in VirtualBox.  In this case, the problem seems to be triggered by
 clicking on certain icons in the Windows Explorer, but also when the
 virtual machine boots up or shuts down.
 
-I am still investigating this issue and have asked about it on
-the
-[Acer community site](https://community.acer.com/en/discussion/580925/screen-blinks-on-and-off-when-osd-appears-and-in-virtualbox-travelmate-b118#latest).
+This turned out to be a bug in the Linux kernel (or more specifically its integrated Intel modesetting driver) which has since been fixed.  [The fix was backported to openSUSE Leap 15.1](https://bugzilla.suse.com/show_bug.cgi?id=1156928) in late 2019.
 
 ### Suspend
 
@@ -162,35 +160,9 @@ the lid is opened.  However, it is not possible to properly suspend
 the machine _while_ the lid remains open.  If you try this, then the
 machine suspends but then immediately wakes again.
 
-I have not yet solved this problem.  Running `cat /proc/acpi/wakeup`
-shows the following devices that are permitted to wake the computer
-from suspend:
-
-	Device  S-state   Status   Sysfs node
-	RP01      S4    *disabled
-	PXSX      S5    *disabled
-	RP02      S4    *disabled
-	PXSX      S5    *disabled
-	RP03      S4    *enabled   pci:0000:00:13.0
-	PXSX      S5    *disabled
-	RP04      S4    *disabled
-	PXSX      S5    *disabled
-	RP05      S4    *enabled   pci:0000:00:13.2
-	PXSX      S5    *disabled  pci:0000:02:00.0
-	RP06      S4    *enabled   pci:0000:00:13.3
-	PXSX      S5    *disabled  pci:0000:03:00.0
-	XHC       S4    *enabled   pci:0000:00:15.0
-	XDCI      S4    *disabled
-	HDAS      S3    *disabled  pci:0000:00:0e.0
-	CNVW      S4    *disabled
-
-I have tried disabling each of these (e.g., `echo XHC | tee
-/proc/acpi/wakeup`) but in no case did this solve the problem.
-
-I later noticed in the BIOS menu, in the "Main" tab, there is a
-setting "Lid Open Resume" that is set to "Enabled".  Presumably
-changing this setting to "Disabled" will work around this problem,
-though I have not yet tested this.
+I discovered that in the BIOS menu, in the "Main" tab, there is a
+setting "Lid Open Resume" that is set to "Enabled".  Changing this
+setting to "Disabled" will work around this problem.
 
 ### BIOS update
 
