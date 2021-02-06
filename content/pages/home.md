@@ -87,7 +87,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 <ul>
-<li>March 9, 2021: Invited talk, <strong lang="fr"><a href="https://motsmachines.github.io/2021/">Mots/Machines: Traduction, Transcréation, Transformation</a></strong>, Brest, France</li>
+<li>March 5, 2021: Invited talk, <strong lang="fr"><a href="https://motsmachines.github.io/2021/">Words/Machines-2021: Do Machines Have a Sense of Humor?</a></strong>, Brest, France</li>
 <li>January 27, 2021: Invited talk, <strong><a href="https://www.linguisticsathuddersfield.com/">Department of Linguistics and Modern Languages</a></strong>, University of Huddersfield</li>
 <li>June 23, 2020: Keynote address, <strong><a href="https://nlp4re.github.io/2020/">Third Workshop on Natural Language Processing for Requirements Engineering (NLP4RE'20)</a></strong>, <strong><a href="https://refsq.org/">26th International Working Conference on Requirements Engineering (REFSQ'20)</a></strong> (online event)</li>
 <li>January 15, 2020: <strong><a href="https://oe1.orf.at/programm/20200115/585743/Computer-verstehen-keinen-Spass">Interview on <em>Digital.Leben</em></a></strong>, <strong><a href="https://oe1.orf.at/">Ö1 (Austrian public radio)</a></strong></li>
