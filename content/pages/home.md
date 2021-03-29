@@ -87,14 +87,17 @@ My <a href="http://orcid.org">ORCID</a> number is
 <h1>Recent and upcoming activities</h1>
 
 <ul>
+<li>August 5–6, 2021: Co-chair, <strong><a href="https://sites.google.com/view/semeval2021-task12/home">Shared Task on Learning with Disagreements</a></strong> at <strong><a href="https://semeval.github.io/SemEval2021/">SemEval-2021</a></strong>, Bangkok</li>
+<li>June 8, 2021: Research seminar, <strong><a href="https://transvienna.univie.ac.at/en/">Centre for Translation Studies</a></strong>, <strong><a href="https://www.univie.ac.at/en/">University of Vienna</a></strong></li>
+<li>May 12, 2021: Presenter, <strong><a href="https://calt2021conference.wordpress.com/">Computer-Assisted Literary Translation Conference (CALT 2021)</a></strong>, Swansea, United Kingdom</li>
 <li>March 5, 2021: Invited talk, <strong lang="fr"><a href="https://motsmachines.github.io/2021/">Words/Machines-2021: Do Machines Have a Sense of Humor?</a></strong>, Brest, France</li>
 <li>January 27, 2021: Invited talk, <strong><a href="https://www.linguisticsathuddersfield.com/">Department of Linguistics and Modern Languages</a></strong>, University of Huddersfield</li>
 <li>June 23, 2020: Keynote address, <strong><a href="https://nlp4re.github.io/2020/">Third Workshop on Natural Language Processing for Requirements Engineering (NLP4RE'20)</a></strong>, <strong><a href="https://refsq.org/">26th International Working Conference on Requirements Engineering (REFSQ'20)</a></strong> (online event)</li>
 <li>January 15, 2020: <strong><a href="https://oe1.orf.at/programm/20200115/585743/Computer-verstehen-keinen-Spass">Interview on <em>Digital.Leben</em></a></strong>, <strong><a href="https://oe1.orf.at/">Ö1 (Austrian public radio)</a></strong></li>
+<!--
 <li>December 7, 2019: Invited lecture, <strong>2nd Comedy and Artificial Intelligence Conference</strong>, St. Peter's College, Oxford</li>
 <li>November 14, 2019: Invited lecture, <strong><a href="https://transvienna.univie.ac.at/news-events/einzelansicht-aktuell/news/vortragsreihe-translatio-ex-machina/"><em>Translatio Ex Machina</em> lecture series</a></strong>, <strong><a href="https://transvienna.univie.ac.at/en/">Centre for Translation Studies</a></strong>, <strong><a href="https://www.univie.ac.at/en/">University of Vienna</a></strong></li>
 <li>September 5–6, 2019: Presenter, <strong><a href="http://rgcl.wlv.ac.uk/hit-it2019/">Second Workshop on Human-Informed Translation and Interpreting Technology (HiT-IT 2019)</a></strong>, Varna</li>
-<!--
 <li>July 29, 2019: Invited lecture, <strong><a href="https://www.eventbrite.com/e/brainstorms-11-language-machines-vs-biology-tickets-65262146838">Brainstorm #11: Machines vs. Biology</a></strong>, Vienna</li>
 <li>June 24–29, 2019: Co-convener, <strong><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/literatureLanguages/newsandevents/2019-ISHS-Conference/HumorAI.aspx">Panel on Humor and Artificial Intelligence</a></strong>, <strong><a href="http://www.tamuc.edu/ishs2019">31st International Society for Humor Studies Conference (ISHS 2019)</a></strong>, Austin</li>
 <li>June 13, 2019: Public lecture, <strong><a href="http://ofai.at/events.shtml">Austrian Research Institute for Artificial Intelligence</a></strong>, Vienna</li>
