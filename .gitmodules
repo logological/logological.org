@@ -3,10 +3,10 @@
 	url = git://github.com/getpelican/pelican-plugins.git
 [submodule "publications/resume"]
 	path = publications/resume
-	url = psy@pi:git/resume.git
+	url = psy@git:git/resume.git
 [submodule "maledicta/maledicta_index"]
 	path = maledicta/maledicta_index
 	url = git@github.com:logological/maledicta.git
 [submodule "publications/covers"]
 	path = publications/covers
-	url = psy@pi:git/publications/publication_covers.git
+	url = psy@git:git/publications/publication_covers.git
