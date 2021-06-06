@@ -1,3 +1,17 @@
+# Plans for logological.org
+
+Adapt https://github.com/StartBootstrap/startbootstrap-resume (fork
+repo, tweak appearance, possibly with full-page image per
+https://blackbat13.github.io/index-en.html).  Adapt website content
+and structure to new theme.  Keep the single-page layout as an
+overview page, with each section listing a selection of the most
+important/recent items, plus a link to a page giving further details.
+Use cards for individual entries per
+https://www.christophersheaffe.com/.  Menu can be possibly News,
+Publications, Software, Projects, Miscellany, CV [PDF]
+[download-icon].  Need to add some sort of credits and last modified
+link somewhere.
+
 # Souce code for logological.org
 
 This is the source code for my personal site
