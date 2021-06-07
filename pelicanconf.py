@@ -129,13 +129,28 @@ THEME = 'theme'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('Publications', '/publications.html'),
-    ('Software', '/software.html'),
-    ('Teaching', '/teaching.html'),
-    ('CV', '/miller_cv.pdf'),
-    #('Activities', '/activities.html'),
-    ('Fun', '/fun.html'),
-    ('Miscellany', '/misc.html'),
+    ('News', '#news'),
+    ('Publications', '#publications'),
+    ('Software', '#software'),
+    ('Projects', '#projects'),
+    ('Miscellany', '#miscellany'),
+    ('CV <i class="fas fa-download"></i>', '/miller_cv.pdf'),
+]
+SOCIALITEMS = [
+    ('ACM Digital Library', 'https://dl.acm.org/profile/99659541876', 'ai ai-acmdl'),
+    ('Academia.edu', 'https://ofai.academia.edu/TristanMiller', 'ai ai-academia'),
+    ('DBLP', 'https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan', 'ai ai-dblp'),
+    ('Diaspora', 'https://diasp.eu/people/0f0c56f61e74a82e', 'fab fa-diaspora'),
+    ('GitHub', 'https://github.com/logological', 'fab fa-github'),
+    ('Google Scholar', 'https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ', 'ai ai-google-scholar'),
+    ('Impactstory', 'https://impactstory.org/u/0000-0002-0749-1100', 'ai ai-impactstory'),
+    ('LinkedIn', 'https://www.linkedin.com/in/tristan-miller-032b327', 'fab fa-linkedin-in'),
+    ('Mastodon', 'https://mastodon.social/@Logological', 'fab fa-mastodon'),
+    ('ORCID', 'https://orcid.org/0000-0002-0749-1100', 'ai ai-orcid'),
+    ('Publons', 'https://publons.com/researcher/4277733/tristan-miller/', 'ai ai-publons'),
+    ('Scopus', 'https://www.scopus.com/authid/detail.uri?authorId=8725776300', 'ai ai-scopus'),
+    ('Semantic Scholar', 'https://www.semanticscholar.org/author/Tristan-Miller/1818919', 'ai ai-semantic-scholar'),
+    ('Twitter', 'https://twitter.com/Logological', 'fab fa-twitter'),
 ]
 
 PLUGIN_PATHS = ['pelican-plugins']

@@ -1,3 +1,4 @@
+/*
 body {
     font-size: 12pt;
 }
@@ -9,30 +10,6 @@ table + h2 {
 
 dd {
     margin-left: 3em;
-}
-
-/* The icon list in the about page */
-.social {
-    list-style-type: none;
-    margin-top: 10.5px;
-    padding: 0px;
-}
-
-.social > li {
-    display: inline;
-    margin-right: 3px;
-}
-
-.social > li > a{
-    color: #333;
-}
-
-.fa-ul {
-    margin-top: 10px;
-}
-
-.fa-ul li {
-    margin-bottom: 5px;
 }
 
 footer {
@@ -61,7 +38,7 @@ footer {
 }
 
 .altmetric-embed img {
-    width: auto; /* Prevent img width=100% in Chrome (makes it stretched) */
+    width: auto;
 }
 
 .site-description {
@@ -93,7 +70,6 @@ footer {
 }
 
 .github-fork-ribbon:before {
-  /* Set the base colour */
   background-color: #000;
 }
 
@@ -113,3 +89,4 @@ table.dataTable thead .sorting_desc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:before {
   bottom: .5em;
 }
+*/

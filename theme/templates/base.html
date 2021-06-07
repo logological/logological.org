@@ -34,11 +34,27 @@
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
     <!-- Fonts and styling -->
+
+    <!-- Font Awesome icons (free version)-->
+    <!--
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    -->
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ SITEURL }}/theme/css/startbootstrap-resume/styles.css" rel="stylesheet" />
+
+<!--
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/cosmo.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/sourcesanspro/sourcesanspro.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/css/academicons.min.css">
+-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<!--
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/gh-fork-ribbon.css" />
+-->
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="{{ SITEURL }}/gh-fork-ribbon.ie.css" />
 <![endif]-->
@@ -59,32 +75,32 @@
 {% endblock head %}
 </head>
 
-<body>
+<body id="page-top">
 
-{% block navbar %}
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary py-1 mb-3" lang="{{ DEFAULT_LANG }}">
-<div class="container">
-  <a class="navbar-brand font-weight-bold" href="{% block navbar_title_link %}{{ SITEURL }}{% endblock %}">{% block navbar_title %}{{ SITETITLE }}{% endblock %}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  {% block navbar %}
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" lang="{{ DEFAULT_LANG }}">
+    <a class="navbar-brand js-scroll-trigger link-light" href="{{ SITEURL }}/">
+      <span class="d-block d-lg-none">{% block navbar_title %}{{ SITETITLE }}{% endblock %}</span>
+      <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/images/miller_20200512-square.jpg" alt="{{ SITETITLE }}" /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
 	{% block menu %}
-           {% for title, link in MENUITEMS %}
-           <li class="nav-item">
-	     <a class="nav-link active" href="{{ link }}">{{ title }}</a>
-	   </li>
-           {% endfor %}
+        {% for title, link in MENUITEMS %}
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
 	{% endblock %}
-    </ul>
+      </ul>
+    </div>
+  </nav>
+  {% endblock %}
+  
+  <div class="container-fluid p-0">
+    {% block content %}
+    {% endblock %}
   </div>
-</div>
-</nav>
-{% endblock %}
-
-{% block content %}
-{% endblock %}
 
 <footer lang="{{ DEFAULT_LANG }}">
 <div class="container">
@@ -103,11 +119,9 @@
 </div>
 </footer>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{SITEURL}}/theme/js/jquery-3.4.1.slim.min.js"></script>
-<script src="{{SITEURL}}/theme/js/popper.min.js"></script>
-<script src="{{SITEURL}}/theme/js/bootstrap.min.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{{SITEURL}}/theme/js/startbootstrap-resume/scripts.js"></script>
 </body>
 </html>

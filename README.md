@@ -15,6 +15,11 @@ link somewhere.
 Maledicta table requires MDB for sortable table, so switch to another 
 free table library such as https://datatables.net/examples/styling/bootstrap5.html
 
+To do:
+
+* Install ScrollReveal (via NPM on startbootstrap-resume)
+* Change fonts
+
 # Souce code for logological.org
 
 This is the source code for my personal site

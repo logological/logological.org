@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}
+     {{ SITENAME }}
+{% endblock %}
+
+{% block content %}
+
+{% include 'about.html' %}
+
+<hr class="m-0" />
+
+{% include 'news.html' %}
+
+<hr class="m-0" />
+
+{% include 'publications.html' %}
+
+<hr class="m-0" />
+
+{% include 'software.html' %}
+
+<hr class="m-0" />
+
+{% include 'projects.html' %}
+
+<hr class="m-0" />
+
+{% include 'miscellany.html' %}
+
+{% endblock %}
+
+{% block modified %}{{ page.modified|strftime('%Y-%m-%d %H:%M %Z') }}{% endblock %}
