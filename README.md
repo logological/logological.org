@@ -12,6 +12,9 @@ Publications, Software, Projects, Miscellany, CV [PDF]
 [download-icon].  Need to add some sort of credits and last modified
 link somewhere.
 
+Maledicta table requires MDB for sortable table, so switch to another 
+free table library such as https://datatables.net/examples/styling/bootstrap5.html
+
 # Souce code for logological.org
 
 This is the source code for my personal site
