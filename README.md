@@ -13,14 +13,14 @@ Publications, Software, Projects, Miscellany, CV [PDF]
 link somewhere.
 
 Maledicta table requires MDB for sortable table, so switch to another 
-free table library such as https://datatables.net/examples/styling/bootstrap5.html
+free table library such as https://datatables.net/examples/styling/bootstrap5.html or https://www.jqueryscript.net/table/Feature-Rich-Data-Table-Bootstrap.html
 
 To do:
 
 * Install ScrollReveal (via NPM on startbootstrap-resume)
 * Change fonts
 * Domesticate external resources
-** 
+* Archive of news
 
 # Souce code for logological.org
 

@@ -19,6 +19,7 @@ BUILD_TIME = datetime.date.today().strftime(format='%Y-%m-%d')
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en-ca'
 TIMEZONE = u'Europe/Vienna'
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 
 # This goes at the footer of the site
 FOOTER_LEFT = "" # Superseded; see base.html
@@ -112,9 +113,9 @@ PAGE_EXCLUDES = [
 
 #READERS = {"html": None}
 
-ARTICLES_FRONT_PAGE = 2
+ARTICLES_FRONT_PAGE = 5
 SUMMARY_MAX_LENGTH = 25
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Feed generation is usually not desired when developing
@@ -156,7 +157,7 @@ SOCIALITEMS = [
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math',
            'sitemap',
-           'filetime_from_git',
+          # 'filetime_from_git',
 ]
 SITEMAP = {
     'format': 'xml',
@@ -172,6 +173,7 @@ SITEMAP = {
 
 #RESPONSIVE_IMAGES = False
 #FIGURE_NUMBERS = True
+#PAGINATED_TEMPLATES = ['home']
 DIRECT_TEMPLATES = ['index']
 
 MARKDOWN = {
