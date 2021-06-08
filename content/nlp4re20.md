@@ -2,3 +2,4 @@ title: Keynote address at the 3rd Workshop on Natural Language Processing for Re
 icon: fas fa-chalkboard-teacher
 link: https://nlp4re.github.io/2020/
 date: 2020-06-23 12:00
+gittime: off

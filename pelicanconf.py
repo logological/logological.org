@@ -157,7 +157,7 @@ SOCIALITEMS = [
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math',
            'sitemap',
-          # 'filetime_from_git',
+          'filetime_from_git',
 ]
 SITEMAP = {
     'format': 'xml',
