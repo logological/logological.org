@@ -8,7 +8,13 @@
 
 {% block content %}
 
+<section class="page-section">
+  <div class="page-section-content">
+
 {{ page.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
+
+  </div>
+</section>
 
 {% endblock %}
 

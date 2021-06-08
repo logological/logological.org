@@ -130,10 +130,10 @@ THEME = 'theme'
 # Top menu
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [
-    ('News', '/#news'),
+    ('Research News', '/#news'),
     ('Publications', '/#publications'),
     ('Software', '/#software'),
-    ('Projects', '/#projects'),
+#    ('Projects', '/#projects'),
     ('Miscellany', '/#miscellany'),
     ('CV <i class="fas fa-download"></i>', '/miller_cv.pdf'),
 ]
