@@ -7,13 +7,13 @@
     {% for article in articles_page.object_list %}
 <div class="card mb-3">
   <div class="row g-0 align-items-center">
-    <div class="col-md-2 text-center text-secondary">
-      <i class="{{ article.icon }} fa-2x text-primary"></i><br>
+    <div class="col-md-2 text-center text-secondary pt-1">
+      <span class="iconify news-icon" data-icon="{{ NEWS_ICONS[article.icon] }}" data-inline="false"></span><br>
       {{ article.locale_date }}
     </div>
     <div class="col-md-10">
       <div class="card-body">
-        <h4 class="card-title news-title"><a class="link-dark stretched-link" href="{{ article.link }}">{{ article.title }}</a></h4>
+        <h4 class="card-title news-title mt-0 mb-0 pt-0 pb-0"><a class="link-dark stretched-link" href="{{ article.link }}">{{ article.title }}</a></h4>
         {% if article.summary %}
         <p class="card-text">{{ article.summary }}</p>
         {% endif %}

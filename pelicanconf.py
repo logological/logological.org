@@ -185,3 +185,12 @@ MARKDOWN = {
     },
     'output_format': 'html5',
 }
+
+NEWS_ICONS = {
+    'talk': 'mdi:presentation',
+    'invited-talk': 'mdi:presentation',
+    'keynote': 'mdi:presentation',
+    'radio': 'mdi:radio-tower',
+    'publication': 'mdi:file-document-outline',
+    'shared-task': 'mdi:human-greeting-proximity',
+}
