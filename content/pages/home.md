@@ -88,7 +88,7 @@ My <a href="http://orcid.org">ORCID</a> number is
 
 <ul>
 <li>August 5–6, 2021: Co-chair, <strong><a href="https://sites.google.com/view/semeval2021-task12/home">Shared Task on Learning with Disagreements</a></strong> at <strong><a href="https://semeval.github.io/SemEval2021/">SemEval-2021</a></strong>, Bangkok</li>
-<li>June 8, 2021: Research seminar, <strong><a href="https://transvienna.univie.ac.at/en/">Centre for Translation Studies</a></strong>, <strong><a href="https://www.univie.ac.at/en/">University of Vienna</a></strong></li>
+<li>June 15, 2021: Research seminar, <strong><a href="https://transvienna.univie.ac.at/en/">Centre for Translation Studies</a></strong>, <strong><a href="https://www.univie.ac.at/en/">University of Vienna</a></strong></li>
 <li>May 12, 2021: Presenter, <strong><a href="https://calt2021conference.wordpress.com/">Computer-Assisted Literary Translation Conference (CALT 2021)</a></strong>, Swansea, United Kingdom</li>
 <li>March 5, 2021: Invited talk, <strong lang="fr"><a href="https://motsmachines.github.io/2021/">Words/Machines-2021: Do Machines Have a Sense of Humor?</a></strong>, Brest, France</li>
 <li>January 27, 2021: Invited talk, <strong><a href="https://www.linguisticsathuddersfield.com/">Department of Linguistics and Modern Languages</a></strong>, University of Huddersfield</li>
