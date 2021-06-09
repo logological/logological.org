@@ -133,7 +133,7 @@ MENUITEMS = [
     ('Research News', '/#news'),
     ('Publications', '/#publications'),
     ('Software', '/#software'),
-#    ('Projects', '/#projects'),
+    ('Projects', '/#projects'),
     ('Miscellany', '/#miscellany'),
     ('CV <i class="fas fa-download"></i>', '/miller_cv.pdf'),
 ]
@@ -153,11 +153,38 @@ SOCIALITEMS = [
     ('Semantic Scholar', 'https://www.semanticscholar.org/author/Tristan-Miller/1818919', 'ai ai-semantic-scholar'),
     ('Twitter', 'https://twitter.com/Logological', 'fab fa-twitter'),
 ]
+PROJECTS = (
+    {
+        'title': 'Computational Pun-derstanding',
+        'subtitle': 'OFAI, 2019–2021',
+        'description': 'An FWF-funded research project on the computer-assisted translation of wordplay',
+        'url': 'https://punderstanding.ofai.at/',
+        'image': 'Computational_Pun-derstanding_logo.svg',
+        'roles': ['Project lead'],
+    },
+    {
+        'title': 'Babel: The Language Magazine',
+        'subtitle': 'University of Huddersfield, 2012–',
+        'description': 'A quarterly pop-science magazine that delivers cutting-edge linguistic research in an accessible and colourful format',
+        'url': 'https://babelzine.co.uk/',
+        'image': 'babel.jpg',
+        'roles': ['Advisory panel', 'Columnist'],
+     },
+    {
+        'title': 'eFISK',
+        'subtitle': 'DFKI, 2004–2005',
+        'description': 'A study on attention-based information retrieval using eye tracking, funded by the Rhineland-Palatinate Foundation for Innovation',
+        'url': 'efisk',
+        'image': 'efisk.png',
+        'roles': ['Co-PI'],
+     },
+)
+# To add: @VISOR, HUMOR, SemEval-2021, SemEval-2017, GermEval-2015
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math',
            'sitemap',
-          'filetime_from_git',
+           'filetime_from_git',
 ]
 SITEMAP = {
     'format': 'xml',

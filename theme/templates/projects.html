@@ -2,39 +2,25 @@
 <section class="resume-section" id="projects">
   <div class="resume-section-content">
     <h2 class="mb-5">Projects</h2>
-    <div class="subheading mb-3">Programming Languages & Tools</div>
-    <ul class="list-inline dev-icons">
-      <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-      <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-      <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-      <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-      <li class="list-inline-item"><i class="fab fa-react"></i></li>
-      <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-      <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-      <li class="list-inline-item"><i class="fab fa-less"></i></li>
-      <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-      <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-      <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-      <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-    </ul>
-    <div class="subheading mb-3">Workflow</div>
-    <ul class="fa-ul mb-0">
-      <li>
-        <span class="fa-li"><i class="fas fa-check"></i></span>
-        Mobile-First, Responsive Design
-      </li>
-      <li>
-        <span class="fa-li"><i class="fas fa-check"></i></span>
-        Cross Browser Testing & Debugging
-      </li>
-      <li>
-        <span class="fa-li"><i class="fas fa-check"></i></span>
-        Cross Functional Teams
-      </li>
-      <li>
-        <span class="fa-li"><i class="fas fa-check"></i></span>
-        Agile Development & Scrum
-      </li>
-    </ul>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      {% for project in PROJECTS %}
+      <div class="col">
+        <div class="card mb-3 border-dark h-100">
+          <div class="card-header">
+            <a href="{{ project.url }}"><img src="/images/{{ project.image }}" class="card-img-top" style="width: 100%; height: 15vw; object-fit: contain;" alt=""></a>
+          </div>
+          <div class="card-body">
+            <a href="{{ project.url }}"><h4 class="card-title">{{ project.title }}</h4></a>
+            <h5 class="card-subtitle mb-2 text-muted">{{ project.subtitle }}</h5>
+            <p class="card-text">{% for role in project.roles %}<span class="badge bg-primary me-2">{{ role }}</span>{% endfor %}</p>
+            <p class="card-text">{{ project.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
   </div>
 </section>

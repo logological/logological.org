@@ -21,6 +21,7 @@ To do:
 * Change fonts
 * Domesticate external resources
 * Archive of news
+* Put project/software cards in a carousel; possibly with https://stackoverflow.com/a/20008623/906070 (though mind how things appear on small screens)
 
 # Souce code for logological.org
 
