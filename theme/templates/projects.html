@@ -12,7 +12,7 @@
             <a href="{{ project.url }}"><img src="/images/{{ project.image }}" class="card-img-top" style="width: 100%; height: 15vw; object-fit: contain;" alt=""></a>
           </div>
           <div class="card-body">
-            <a href="{{ project.url }}"><h4 class="card-title">{{ project.title }}</h4></a>
+            <a href="{{ project.url }}"><h4 class="card-title" {% if project.no_text_transform %}style="text-transform: none;"{% endif %}>{{ project.title }}</h4></a>
             <h5 class="card-subtitle mb-2 text-muted">{{ project.subtitle }}</h5>
             <p class="card-text">{% for role in project.roles %}<span class="badge bg-primary me-2">{{ role }}</span>{% endfor %}</p>
             <p class="card-text">{{ project.description }}</p>

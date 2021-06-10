@@ -132,11 +132,12 @@ SOCIALITEMS = [
 PROJECTS = (
     {
         'title': 'Computational Pun-derstanding',
-        'subtitle': 'OFAI, 2019–2021',
+        'subtitle': 'OFAI, 2019–',
         'description': 'An FWF-funded research project on the computer-assisted translation of wordplay',
         'url': 'https://punderstanding.ofai.at/',
         'image': 'Computational_Pun-derstanding_logo.svg',
         'roles': ['Project lead'],
+        'category': 'research',
     },
     {
         'title': 'Babel: The Language Magazine',
@@ -145,6 +146,7 @@ PROJECTS = (
         'url': 'https://babelzine.co.uk/',
         'image': 'babel.jpg',
         'roles': ['Advisory panel', 'Columnist'],
+        'category': 'publishing',
      },
     {
         'title': 'eFISK',
@@ -153,6 +155,18 @@ PROJECTS = (
         'url': 'efisk',
         'image': 'efisk.png',
         'roles': ['Co-PI'],
+        'category': 'research',
+        'no_text_transform': True,
+     },
+    {
+        'title': 'DKPro WSD',
+        'subtitle': 'TU Darmstadt, 2012–',
+        'description': 'A modular, extensible Java framework for word sense disambiguation based on Apache UIMA',
+        'url': 'https://dkpro.github.io/dkpro-wsd/',
+        'image': 'dkpro_wsd.png',
+        'roles': ['Lead developer'],
+        'category': 'software',
+        'no_text_transform': True,
      },
 )
 # To add: @VISOR, HUMOR, SemEval-2021, SemEval-2017, GermEval-2015
