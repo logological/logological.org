@@ -168,6 +168,15 @@ PROJECTS = (
         'category': 'software',
         'no_text_transform': True,
      },
+    {
+        'title': 'GPP',
+        'subtitle': 'DFKI, 2004–',
+        'description': 'A general-purpose preprocessor with customizable syntax',
+        'url': '/gpp',
+        'image': 'gpp-image.svg',
+        'roles': ['Lead maintainer'],
+        'category': 'software',
+     },
 )
 # To add: @VISOR, HUMOR, SemEval-2021, SemEval-2017, GermEval-2015
 
