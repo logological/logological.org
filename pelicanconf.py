@@ -290,7 +290,7 @@ PROJECTS = [
         'date': '2004–',
         'description': 'Convert DLG Pro message bases to HTML for archiving on the Web',
         'url': 'dlg2html',
-        'image': 'dlg2html.png',
+        'image': 'dlg2html.svg',
         'roles': ['Lead developer'],
         'category': 'software',
      },
