@@ -6,7 +6,7 @@
     {% for category_id, category_name in PROJECT_CATEGORIES %}
     <h3 class="mt-5">{{ category_name }}</h3>
     <div class="row mx-auto my-auto justify-content-center">
-      <div id="{{ category_id }}Carousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="{{ category_id }}Carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
       
           {% for project in PROJECTS|selectattr("category", "equalto", category_id)|sort(attribute="date", reverse=True)  %}
