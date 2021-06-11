@@ -21,7 +21,9 @@ To do:
 * Change fonts
 * Domesticate external resources
 * Archive of news
-* Put project/software cards in a carousel; possibly with https://stackoverflow.com/a/20008623/906070 (though mind how things appear on small screens)
+* Fix carousel bug: cards are not responsive and don't get resized when viewport size changes
+* Put carousel JavaScript and CSS elsewhere
+* Un-uglify carousel JavaScript
 
 # Souce code for logological.org
 
