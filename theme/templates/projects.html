@@ -9,7 +9,7 @@
       <div id="{{ category_id }}Carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
       
-          {% for project in PROJECTS|selectattr("category", "equalto", category_id)  %}
+          {% for project in PROJECTS|selectattr("category", "equalto", category_id)|sort(attribute="date", reverse=True)  %}
           <div class="carousel-item{% if loop.first %} active{% endif %} {{ category_id }}-project">
             <div class="col-md-4 mb-3">
               <div class="card me-3 border-dark project-card">
@@ -18,7 +18,13 @@
                 </div>
                 <div class="card-body">
                   <a href="{{ project.url }}"><h4 class="card-title" {% if project.no_text_transform %}style="text-transform: none;"{% endif %}>{{ project.title }}</h4></a>
-                  <h5 class="card-subtitle mb-2 text-muted">{{ project.subtitle }}</h5>
+                  <h5 class="card-subtitle mb-2 text-muted">
+                    {% if project.subtitle %}
+                    {{ project.subtitle }}
+                    {% else %}
+                    {{ project.location }} &bullet; {{ project.date }}
+                    {% endif %}
+                  </h5>
                   <p class="card-text">{% for role in project.roles %}<span class="badge bg-primary me-2">{{ role }}</span>{% endfor %}</p>
                   <p class="card-text">{{ project.description }}</p>
                 </div>
