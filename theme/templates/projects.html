@@ -3,9 +3,14 @@
   <div class="resume-section-content">
     <h2 class="mb-5">Projects</h2>
 
+
+    {% for category_id, category_name in PROJECT_CATEGORIES %}
+
+    <h3 class="mt-5">{{ category_name }}</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
       {% for project in PROJECTS %}
+      {% if project.category == category_id %}
       <div class="col">
         <div class="card mb-3 border-dark h-100">
           <div class="card-header">
@@ -19,8 +24,11 @@
           </div>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
 
     </div>
+    {% endfor %}
+
   </div>
 </section>

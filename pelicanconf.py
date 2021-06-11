@@ -129,7 +129,7 @@ SOCIALITEMS = [
     ('Semantic Scholar', 'https://www.semanticscholar.org/author/Tristan-Miller/1818919', 'ai ai-semantic-scholar'),
     ('Twitter', 'https://twitter.com/Logological', 'fab fa-twitter'),
 ]
-PROJECTS = (
+PROJECTS = [
     {
         'title': 'Computational Pun-derstanding',
         'subtitle': 'OFAI, 2019–',
@@ -278,8 +278,33 @@ PROJECTS = (
         'roles': ['Lead developer'],
         'category': 'software',
      },
-)
-# To add: @VISOR, HUMOR, SemEval-2021, SemEval-2017, GermEval-2015
+    {
+        'title': 'HUMOR',
+        'subtitle': 'De Gruyter, 2020–',
+        'description': 'International Journal of Humor Research',
+        'url': 'https://www.degruyter.com/journal/key/HUMR/html',
+        'image': 'humor.jpg',
+        'roles': ['Consulting editor'],
+        'category': 'publishing',
+     },
+    {
+        'title': 'GermEval 2015: LexSub',
+        'subtitle': 'GSCL, 2015',
+        'description': 'Workshop for German-language lexical substitution',
+        'url': 'https://www.nothingisreal.com/germeval2015/',
+        'image': '2015_GermEval_LexSub_cover.jpg',
+        'roles': ['Co-chair'],
+        'category': 'event',
+        'no_text_transform': True,
+     },
+]
+# To add: @VISOR, SemEval-2021, SemEval-2017, ISHS panels, PracTeX Journal
+
+PROJECT_CATEGORIES = [ ('research', 'Funded research projects'),
+                       ('event', 'Scholarly events'),
+                       ('software', 'Software'),
+                       ('publishing', 'Publishing &amp; documentation'),
+                      ]
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math',
