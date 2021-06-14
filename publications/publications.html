@@ -15,21 +15,19 @@
   B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span>
   file</a>.</p>
 
-    <script type='text/javascript' defer='defer' src='/theme/js/showhide.js'
-  /></script>
-<!-- BEGIN BIBLET SHOWHIDE -->
-    <div class='bib-showhide'>
-      <ul>
-        <li><button class="btn btn-primary btn-sm" onclick="toggleAll('bib-abstract')">Show/hide
-  abstracts</button></li>
-        <li><button class="btn btn-primary btn-sm" onclick="toggleAll('bib-bibtex')">Show/hide B<span
-  style='font-variant:small-caps;'>ib</span><span
-  class='tex'>T<sub>e</sub>X</span> records</button></li>
-      </ul>
-    </div>
-<!-- END BIBLET SHOWHIDE -->
-
 <!-- BIBLIOGRAPHY -->
+
+<script>
+/* Activate the publication tabs */
+function openTab(publication, tabName) {
+    var i, x;
+    x = document.getElementsByClassName(publication + "-tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.add("d-none");
+    }
+    document.getElementById(publication + "-" + tabName).classList.remove("d-none");
+}
+</script>
 
 </body>
 </html>
