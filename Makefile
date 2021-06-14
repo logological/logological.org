@@ -1,6 +1,7 @@
 PY?=python3
 PELICAN?=pelican
 PELICANOPTS=
+PORT?=8000
 
 SSH?=ssh
 RSYNC?=rsync
