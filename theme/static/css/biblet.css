@@ -1,17 +1,19 @@
 .bib-abstract {
-  display: block;
+/*
   margin-top: 1em;
   margin-left: 50px;
   margin-right: 50px;
   font-size: smaller;
   text-align: justify;
-  display: none;
+/*
 }
 
 .bib-abstract:before {
+/*
   content: "Abstract: ";
   font-weight: bold;
- }
+*/
+}
 
 .bib-article {
 }
@@ -37,19 +39,22 @@
 
 .bib-bibtex {
   font-family: monospace;
+/*
   margin-top: 1em;
   margin-left: 50px;
   margin-right: 50px;
+*/
   font-size: smaller;
   text-align: left;
-  display: none;
 }
 
 .bib-bibtex:before {
+/*
   content: "BibTeX record: ";
   display: block;
   font-family: sans-serif;
   font-weight: bold;
+*/
 }
 
 .bib-book {
@@ -62,21 +67,27 @@
 }
 
 .bib-cover {
+/*
     float:right;
     margin-right: 10px;
     border: solid black thin;
     box-shadow: 3px 3px 3px #888888;
     margin-bottom: 10px;
+*/
 }
 
 .bib-cover-container {
+/*
     width: 60px;
     float: left;
+*/
 }
 
 .bib-cover-container + div {
+/*
     display: block;
     overflow: hidden;
+*/
 }
 
 .bib-editor {
@@ -130,7 +141,7 @@
 }
 
 .bib-legend:before {
-  content: "Publications with icons are available for download.  The  following legend indicates the file formats available: ";
+  content: "Publications with icons are available for download.  The following legend indicates the file formats available: ";
 }
 
 .bib-legend ul {
