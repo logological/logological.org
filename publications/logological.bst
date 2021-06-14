@@ -701,27 +701,18 @@ FUNCTION {output.citationicons}
   newline$
 }
 
-% Needs debugging
 INTEGERS {first.icon}
 FUNCTION {output.icons}
-{ #0 'first.icon :=
-  get.icon.data
+{ get.icon.data
   { record.marker = }
     { duplicate$ missing$
         { pop$ pop$ pop$ }
-        { #0 first.icon =
-            { "                <!-- Document links -->" write$
-	      newline$
-              #1 'first.icon :=
-            }
-            'skip$
-          if$
-
+        {
 	  "                <a href='" swap$ url.escape * "'>" * write$
 	  newline$
 	  "                    <button type='button' class='btn btn-outline-primary btn-sm'>" write$
 	  newline$
-	  "                      <span class='iconify me-1' data-icon='" swap$ * "'></span>" swap$ * write$
+	  "                      <span class='iconify me-1' data-icon='" swap$ * "'></span>" * swap$ * write$
 	  newline$
 	  "                    </button>" write$
 	  newline$
@@ -731,15 +722,6 @@ FUNCTION {output.icons}
       if$
     }
   while$
-  #1 first.icon =
-    {
-%      "              </div> <!-- btn-group -->" write$
-%      newline$
-%      "            </div> <!-- " css.prefix * "article -->" * write$
-%      newline$
-    }
-    'skip$
-  if$
 }
 
 % Not implemented for logological.org
@@ -920,7 +902,7 @@ FUNCTION {fin.entry}
   "              <div class='btn-group mt-3' role='group' aria-label='Bibliographic details'>" write$
   newline$
   output.citationicons
-  %output.icons
+  output.icons
   "              </div> <!-- btn-group -->" write$
   newline$
   "            </div> <!-- bib-" type$ * " -->" * write$ newline$
