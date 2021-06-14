@@ -758,7 +758,7 @@ FUNCTION {output.bibitem}
   newline$
   "        <div class='col-2 text-center'>" write$
   newline$
-  "          <img src='" covers.path * "/" * cover * "' alt='' class='img-fluid' style='max-height: 15vw;'>" * write$
+  "          <img src='" covers.path * "/" * cover * "' alt='' style='width: 100%; max-height: 15vw;'>" * write$
   newline$
   "        </div>" write$
   newline$
