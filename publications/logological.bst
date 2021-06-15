@@ -756,13 +756,13 @@ FUNCTION {output.bibitem}
   newline$
   "      <div class='row g-0 align-items-center'>" write$
   newline$
-  "        <div class='col-2 text-center'>" write$
+  "        <div class='col-sm-2 text-center'>" write$
   newline$
-  "          <img src='" covers.path * "/" * cover * "' alt='' style='width: 100%; max-height: 15vw;'>" * write$
+  "          <img src='" covers.path * "/" * cite$ * ".jpg' alt='' class='border border-dark img-fluid'>" * write$
   newline$
   "        </div>" write$
   newline$
-  "        <div class='col-10'>" write$
+  "        <div class='col-sm-10'>" write$
   newline$
   "          <div class='card-body'>" write$
   newline$
