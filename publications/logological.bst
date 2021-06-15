@@ -909,11 +909,27 @@ FUNCTION {fin.entry}
   newline$
   output.abstract
   output.bibtex
-  "              <div class='btn-group mt-3' role='group' aria-label='Bibliographic details'>" write$
+  "              <div class='row'>" write$
+  newline$
+  "              <div class='col'>" write$
+  newline$
+  "                <div class='btn-group mt-3' role='group' aria-label='Bibliographic details' style='white-space: nowrap;'>" write$
   newline$
   output.citationicons
+  "                </div> <!-- btn-group -->" write$
+  newline$
+  "              </div> <!-- col -->" write$
+  newline$
+  "              <div class='col'>" write$
+  newline$
+  "                <div class='btn-group mt-3' role='group' aria-label='Document links' style='white-space: nowrap;'>" write$
+  newline$
   output.icons
-  "              </div> <!-- btn-group -->" write$
+  "                </div> <!-- btn-group -->" write$
+  newline$
+  "              </div> <!-- col -->" write$
+  newline$
+  "              </div> <!-- row -->" write$
   newline$
   "            </div> <!-- bib-" type$ * " -->" * write$ newline$
   "          </div> <!-- card-body -->" write$ newline$
