@@ -153,6 +153,11 @@ FUNCTION {get.icon.data}
   #0 in.bibliography = 'skip$ {pdf} if$
   record.marker
   
+  "HTML"
+  "mdi:web"
+  #0 in.bibliography = 'skip$ {pdf} if$
+  record.marker
+  
 }
 
 FUNCTION {get.link.data}
@@ -670,7 +675,7 @@ FUNCTION {output.citationicons}
   % Citation button
   "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-citation' checked>" * write$
   newline$
-  "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-citation' onclick=" * quote$ * "openTab(" * cite$ *
+  "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-citation' onclick=" * quote$ * "openTab('" * cite$ *
   "','" * "citation" * "')" * quote$ * ">" * write$
   newline$
   "                  <span class='iconify me-2' data-icon='mdi:format-quote-close'></span>Citation" write$
@@ -679,20 +684,25 @@ FUNCTION {output.citationicons}
   newline$
 
   % Abstract button
-  "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-abstract'>" * write$
-  newline$
-  "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-abstract' onclick=" * quote$ * "openTab(" * cite$ *
-  "','" * "abstract" * "')" * quote$ * ">" * write$
-  newline$
-  "                  <span class='iconify me-2' data-icon='mdi:sign-text'></span>Abstract" write$
-  newline$
-  "                </label>" write$
-  newline$
+  abstract missing$
+    'skip$
+    {
+      "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-abstract'>" * write$
+      newline$
+      "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-abstract' onclick=" * quote$ * "openTab('" * cite$ *
+      "','" * "abstract" * "')" * quote$ * ">" * write$
+      newline$
+      "                  <span class='iconify me-2' data-icon='mdi:sign-text'></span>Abstract" write$
+      newline$
+      "                </label>" write$
+      newline$
+    }
+  if$
 
   % BibTeX button
   "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-bibtex'>" * write$
   newline$
-  "                <label class='btn btn-outline-primary btn-sm me-5' for='" cite$ * "-btn-bibtex' onclick=" * quote$ * "openTab(" * cite$ *
+  "                <label class='btn btn-outline-primary btn-sm me-5' for='" cite$ * "-btn-bibtex' onclick=" * quote$ * "openTab('" * cite$ *
   "','" * "bibtex" * "')" * quote$ * ">" * write$
   newline$
   "                  <span class='iconify me-2' data-icon='mdi:library'></span>BibTeX" write$
@@ -710,7 +720,7 @@ FUNCTION {output.icons}
         {
 	  "                <a href='" swap$ url.escape * "'>" * write$
 	  newline$
-	  "                    <button type='button' class='btn btn-outline-primary btn-sm'>" write$
+	  "                    <button type='button' class='btn btn-outline-primary btn-sm me-1'>" write$
 	  newline$
 	  "                      <span class='iconify me-1' data-icon='" swap$ * "'></span>" * swap$ * write$
 	  newline$
