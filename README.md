@@ -1,30 +1,3 @@
-# Plans for logological.org
-
-Adapt https://github.com/StartBootstrap/startbootstrap-resume (fork
-repo, tweak appearance, possibly with full-page image per
-https://blackbat13.github.io/index-en.html).  Adapt website content
-and structure to new theme.  Keep the single-page layout as an
-overview page, with each section listing a selection of the most
-important/recent items, plus a link to a page giving further details.
-Use cards for individual entries per
-https://www.christophersheaffe.com/.  Menu can be possibly News,
-Publications, Software, Projects, Miscellany, CV [PDF]
-[download-icon].  Need to add some sort of credits and last modified
-link somewhere.
-
-Maledicta table requires MDB for sortable table, so switch to another 
-free table library such as https://datatables.net/examples/styling/bootstrap5.html or https://www.jqueryscript.net/table/Feature-Rich-Data-Table-Bootstrap.html
-
-To do:
-
-* Install ScrollReveal (via NPM on startbootstrap-resume)
-* Change fonts
-* Domesticate external resources
-* Archive of news
-* Fix carousel bug: cards are not responsive and don't get resized when viewport size changes
-* Put carousel JavaScript and CSS elsewhere
-* Un-uglify carousel JavaScript
-
 # Souce code for logological.org
 
 This is the source code for my personal site
@@ -92,10 +65,11 @@ directory where the generated HTML files are.  Point your browser to
 
 The website style has been adapted from the [StartBootstrap resume
 theme](https://github.com/StartBootstrap/startbootstrap-resume). Icons
-are provided by [FontAwesome](http://fontawesome.io/) and
-[Academicons](http://jpswalsh.github.io/academicons/).
+are provided by [FontAwesome](http://fontawesome.io/),
+[Academicons](http://jpswalsh.github.io/academicons/), and [Material
+Design Icons](https://materialdesignicons.com/).
 
-## License
+## Licence
 
 The theme and source code (but not the content!) is licensed under the
 MIT License.
