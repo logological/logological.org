@@ -2,6 +2,16 @@ Title: eFISK
 
 # eFISK: Eine aufmerksamkeitsbasierte Schlüsselwort-Extraktions- und Information Retrieval-Maschine
 
+## Zusammenfassung
+
+**PIs:** Andreas Dengel (DFKI GmbH), Tristan Miller (DFKI GmbH)
+
+**Laufzeit:** 1.4.2004 – 31.3.2005
+
+**Förderung:** Stiftung Rheinland-Pfalz für Innovation
+
+**Arbeitsrichtung:** Information Retrieval, Automatische Schlüsselwort-Extraktion
+
 ## Einleitung
 
 Die Suche nach Informationen in Texten ist eine Problemstellung, die
@@ -13,6 +23,12 @@ Systeme über Jahre hinweg nicht wesentlich zu steigern war, ermöglicht
 die Einbeziehung multi-modaler Interaktionen in den Suchprozess, wie
 z.B. gestisches und visuelles Feedback, inzwischen eine Verbesserung
 der Ergebnisse.
+
+<div class="clearfix">
+<figure class="figure col-md-4 float-md-end mb-3 ms-md-3">
+  <img src="images/efisk.png" class="figure-img img-fluid rounded" alt="">
+  <figcaption class="figure-caption">Abb. 1:  Der Aufbau des Experiments</figcaption>
+</figure>
 
 Ziel von eFISK war die Entwicklung eines Systems, das beim Lesen
 automatisch jene Wörter und Passagen identifiziert, die für den Leser
@@ -27,14 +43,15 @@ die der Nutzer durch seine Aufmerksamkeitsverteilung implizit
 bestimmten Wörtern und Textpassagen zuweist. Hierzu werden mithilfe
 einer auf dem Schreibtisch platzierten Infrarot-Kamera die
 Augenbewegungen erfasst und zeitnah unterschiedliche Parameter wie
-Blickrichtung, Pupillengröße und Verweildauer ermittelt. Nachdem man
-aus der psycholinguistischen Theorie weiß, dass _Fixierungen_ (Blicke,
-die über einen längeren Zeitraum an einer Position verweilen) mit
-erhöhter Aufmerksamkeit und Konzentration einhergehen, lassen sich
-anhand dieser Daten die maßgeblichen Wörter und Übergänge
-erschließen. Das Durchblättern und Überfliegen von Sequenzen ist
-demgegenüber durch _Sakkaden_ (rasche Sprünge von einem Bereich zum
-Nächsten) gekennzeichnet.
+Blickrichtung, Pupillengröße und Verweildauer ermittelt
+(Abb. 1). Nachdem man aus der psycholinguistischen Theorie weiß, dass
+_Fixierungen_ (Blicke, die über einen längeren Zeitraum an einer
+Position verweilen) mit erhöhter Aufmerksamkeit und Konzentration
+einhergehen, lassen sich anhand dieser Daten die maßgeblichen Wörter
+und Übergänge erschließen. Das Durchblättern und Überfliegen von
+Sequenzen ist demgegenüber durch _Sakkaden_ (rasche Sprünge von einem
+Bereich zum Nächsten) gekennzeichnet.
+</div>
 
 ## Ergebnisse
 
@@ -97,12 +114,17 @@ sich die Anfrage aus den n Schlüsselwörtern mit den höchsten
 Gesamtfixierungszeiten und dem Referenzdokument zusammen. Bei unseren
 Experimenten hat sich _n_ = 60 als optimal erwiesen.
 
-<!-- Abbildung 2 zeigt die Average Precision at seen Relevant
-Documents der verglichenen Verfahren unter Berücksichtigung der ersten
-50 zurückgelieferten Dokumente.  --> Von den Eye Tracking-basierten
-Verfahren ist “Top 60 + RefDoc” mit großem Abstand das beste. Es
-übertrifft bei den ersten 30 Dokumenten die Ergebnisse des Relevance
-Feedback und des Pseudo Relevance Feedback Verfahrens deutlich.
+<figure class="figure text-center">
+  <img src="images/efisk-graph.svg" style="width: 50%;" class="figure-img img-fluid rounded" alt="">
+  <figcaption class="figure-caption">Abb. 2:  Ergebnisse für die ersten 50 Dokumente</figcaption>
+</figure>
+
+Abbildung 2 zeigt die Average Precision at seen Relevant Documents der
+verglichenen Verfahren unter Berücksichtigung der ersten 50
+zurückgelieferten Dokumente. Von den Eye Tracking-basierten Verfahren
+ist “Top 60 + RefDoc” mit großem Abstand das beste. Es übertrifft bei
+den ersten 30 Dokumenten die Ergebnisse des Relevance Feedback und des
+Pseudo Relevance Feedback Verfahrens deutlich.
 
 Die Berücksichtigung weiterer Eye Tracker-Informationen wie z.B der
 Pupillengröße und Sakkaden verbessert die Ergebnisse zusätzlich,

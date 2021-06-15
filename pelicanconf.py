@@ -154,7 +154,7 @@ PROJECTS = [
         'title': 'eFISK',
         'location': 'DFKI',
         'date': '2004–2005',
-        'description': 'A state-funded study on attention-based information retrieval using eye tracking',
+        'description': 'A study on attention-based information retrieval using eye tracking',
         'url': 'efisk',
         'image': 'efisk.png',
         'roles': ['Principal investigator'],
