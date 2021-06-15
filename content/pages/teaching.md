@@ -10,25 +10,6 @@ Title: Teaching
   Web](https://moodle.informatik.tu-darmstadt.de/course/view.php?id=105)
   (Winter 2011)
 
-<!--
-
-### Supervised theses
-
-Detecting Humorous Images by Caption Analysis
-: Malou Ockenfels<br />Master of Science, Department of Computer Science, Technische Universität Darmstadt, Germany, 2018.
-
-Automatic Annotation of Argumentation Components for eCommerce
-: Ji-Ung Lee<br />Master of Science, Department of Computer Science, Technische Universität Darmstadt, Germany, 2017.
-
-## German Research Center for Artificial Intelligence (DFKI)
-
-### Supervised theses
-
-A Semantic-Based Word Completion Utility Using Latent Semantic Analysis
-: Elisabeth Wolf<br />Master of Science, Department of Technical Sciences, University of Applied Sciences, Oldenburg/Ostfriesland/Wilhelmshaven, Emden, Germany, 2005.
-
--->
-
 ## University of Toronto
 
 ### Courses

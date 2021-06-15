@@ -25,6 +25,8 @@ don't really fit into any other section.
 <dd>Read this if you received an e-mail from me which appears to have an attachment named <tt>signature.asc</tt></dd>
 <dt><a href="/faq.html">FAQ</a></dt>
 <dd>A list of questions I am frequently asking myself</dd>
+<dt><a href="/teaching.html">Teaching</a></dt>
+<dd>Courses I've taught</dd>
 </dl>
 
 ## GNU/Linux on laptops
