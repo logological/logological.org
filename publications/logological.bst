@@ -41,6 +41,7 @@ ENTRY
     edition
     editor
     howpublished
+    html
     institution
     isbn
     issn
@@ -60,7 +61,6 @@ ENTRY
     tex
     title
     type
-    html
     volume
     year
   }
@@ -155,7 +155,7 @@ FUNCTION {get.icon.data}
   
   "HTML"
   "mdi:web"
-  #0 in.bibliography = 'skip$ {pdf} if$
+  #0 in.bibliography = 'skip$ {html} if$
   record.marker
   
 }
