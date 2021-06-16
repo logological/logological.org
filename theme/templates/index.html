@@ -1,56 +1,28 @@
 {% extends "base.html" %}
 
+{% block title %}{{ SITENAME }}{% endblock %}
+
 {% block content %}
 
-{% if BANNER %}
-<div class="container-fluid banner-area">
-    <div class="banner" style="background-image: url({{BANNER}});">
-    </div>
-    <div class="container site-description">
-        <p>
-        {{ DESCRIPTION }}
-        </p>
-    </div>
-</div>
+{% include 'about.html' %}
 
-<div class="container">
+<hr class="m-0" />
 
-{% for row in categories|batch(2) %}
-    <div class="row">
-    {% for category, articles in row %}
-        <div class="col-md-6 summary-box">
-            <h1><a class="category-link" href="/{{category}}">{{ category|capitalize }}  »</a></h1>
-            <div class="row">
-                {% for article in articles[0:2] %}
-                    <div class="col-md-6 col-sm-6">
-                    <div class="thumbnail">
+{% include 'news.html' %}
 
-                        {% if article.thumbnail %}
-                            <img  src="{{SITEURL}}/{{article.thumbnail}}"></img>
-                        {% endif %}
+<hr class="m-0" />
 
-                        <div class="caption">
-                            <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a>
-                            <!--{% if category != "software" %}-->
-                                <!--{% if article.date %}-->
-                                    <!--({{article.date|strftime('%Y')}})-->
-                                <!--{% endif %}-->
-                            <!--{% endif %}-->
-                            {% if "OA" in article.tags %}
-                                <i class="fas fa-unlock-alt" title="Open-Access"></i>
-                            {% endif %}
-                        </div>
-                    </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    {% endfor %}
-    </div>
-{% endfor %}
+{% include 'publications_populated.html' %}
 
-</div>
+<hr class="m-0" />
 
-{% endif %}
+{% include 'projects.html' %}
 
-{% endblock content %}
+<hr class="m-0" />
+
+{% include 'miscellany.html' %}
+
+{% endblock %}
+
+{% block modified %}
+{% endblock %}

@@ -1,0 +1,84 @@
+<!-- Projects -->
+<section class="resume-section" id="projects">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Projects</h2>
+
+    {% for category_id, category_name in PROJECT_CATEGORIES %}
+    <h3 class="mt-5">{{ category_name }}</h3>
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="{{ category_id }}Carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+      
+          {% for project in PROJECTS|selectattr("category", "equalto", category_id)|sort(attribute="date", reverse=True)  %}
+          <div class="carousel-item{% if loop.first %} active{% endif %} {{ category_id }}-project">
+            <div class="col-md-4 mb-3">
+              <div class="card me-3 border-dark project-card">
+                <div class="card-header">
+                  <a href="{{ project.url }}"><img src="/images/{{ project.image }}" class="card-img-top" style="width: 100%; height: 15vw; object-fit: contain;" alt=""></a>
+                </div>
+                <div class="card-body">
+                  <a href="{{ project.url }}"><h4 class="card-title" {% if project.no_text_transform %}style="text-transform: none;"{% endif %}>{{ project.title }}</h4></a>
+                  <h5 class="card-subtitle mb-2 text-muted">
+                    {% if project.subtitle %}
+                    {{ project.subtitle }}
+                    {% else %}
+                    {{ project.location }} &bullet; {{ project.date }}
+                    {% endif %}
+                  </h5>
+                  <p class="card-text">{% for role in project.roles %}<span class="badge bg-primary me-2">{{ role }}</span>{% endfor %}</p>
+                  <p class="card-text">{{ project.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#{{ category_id }}Carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#{{ category_id }}Carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+<script>
+// set height of all cards to max height
+
+// get array of all '.card' elements
+const cards = Array.from(document.querySelectorAll('.project-card'));
+
+// form array of card element heights (offsetHeight)
+const cardHeights = cards.map(card => card.offsetHeight);
+
+// find the maximum value of cardHeights array
+const maxCardHeight = Math.max(...cardHeights);
+
+// set all card `height` styles to `maxCardHeight`
+cards.forEach(card => {
+    card.style.height = maxCardHeight + 'px';
+});
+
+// Cycle through cards in carousel
+{% for category_id, category_name in PROJECT_CATEGORIES %}
+let {{ category_id }}items = document.querySelectorAll('.carousel .{{ category_id }}-project')
+
+{{ category_id }}items.forEach((el) => {
+    const minPerSlide = 3
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = {{ category_id }}items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+{% endfor %}
+</script>

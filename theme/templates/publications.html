@@ -1,0 +1,25 @@
+<!-- Publications -->
+<section class="resume-section" id="publications">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Publications</h2>
+
+    {% raw %}
+    <!-- BIBLIOGRAPHY -->
+    {% endraw %}
+
+    <a href="publications"><h3 class="mt-5 link-primary">More publications<i class="ms-3 fas fa-angle-double-right"></i></h3></a>
+
+  </div>
+</section>
+
+<script>
+/* Activate the publication tabs */
+function openTab(publication, tabName) {
+    var i, x;
+    x = document.getElementsByClassName(publication + "-tab");
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.add("d-none");
+    }
+    document.getElementById(publication + "-" + tabName).classList.remove("d-none");
+}
+</script>

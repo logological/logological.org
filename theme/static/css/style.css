@@ -1,3 +1,4 @@
+/*
 body {
     font-size: 12pt;
 }
@@ -9,30 +10,6 @@ table + h2 {
 
 dd {
     margin-left: 3em;
-}
-
-/* The icon list in the about page */
-.social {
-    list-style-type: none;
-    margin-top: 10.5px;
-    padding: 0px;
-}
-
-.social > li {
-    display: inline;
-    margin-right: 3px;
-}
-
-.social > li > a{
-    color: #333;
-}
-
-.fa-ul {
-    margin-top: 10px;
-}
-
-.fa-ul li {
-    margin-bottom: 5px;
 }
 
 footer {
@@ -61,7 +38,7 @@ footer {
 }
 
 .altmetric-embed img {
-    width: auto; /* Prevent img width=100% in Chrome (makes it stretched) */
+    width: auto;
 }
 
 .site-description {
@@ -93,7 +70,6 @@ footer {
 }
 
 .github-fork-ribbon:before {
-  /* Set the base colour */
   background-color: #000;
 }
 
@@ -112,4 +88,39 @@ table.dataTable thead .sorting_desc:before,
 table.dataTable thead .sorting_desc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:before {
   bottom: .5em;
+}
+*/
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
 }

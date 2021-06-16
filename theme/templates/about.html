@@ -1,0 +1,19 @@
+<!-- About-->
+<section class="resume-section" id="about">
+  <div class="resume-section-content">
+    <h1 class="mb-0">
+      Tristan
+      <span class="text-primary">Miller</span>
+    </h1>
+    <div class="subheading mb-5">
+      Austrian Research Institute for Artificial Intelligence · Freyung 6/6 · 1010 Vienna · Austria<br>
+      <i class="fas fa-phone"></i> <a href="tel:+43153246213">+43 1 5324621 3</a> <!--<i class="ms-3 fas fa-fax"></i> <a href="tel:+43153246219">+43 1 5324621 9</a>--><i class="ms-3 fas fa-envelope"></i> <a href="mailto:tristan@logological.org">tristan@logological.org</a>&nbsp;<span style="margin-left: 0.2ex;">(<a href="/BF8A2EE4.txt"><i class="fas fa-lock" title="OpenPGP public key"></i></a>)</span>
+    </div>
+    <p class="lead mb-5">I'm a computational linguist with research interests in lexical semantics, historical online corpora, and computational detection and interpretation of humour.  I currently head the <a href="https://punderstanding.ofai.at/">Computational Pun-derstanding: Computer-Assisted Translation of Humorous Wordplay</a> project at the <a href="http://www.ofai.at/">Austrian Research Institute for Artificial Intelligence (OFAI)</a>.</p>
+    <div class="external-links text-center">
+      {% for title, url, icon in SOCIALITEMS %}
+      <a title="{{ title }}" class="external-link" href="{{ url }}"><i class="{{ icon }}"></i></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

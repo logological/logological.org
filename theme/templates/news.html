@@ -1,0 +1,29 @@
+<!-- News -->
+<section class="resume-section" id="news">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Research news</h2>
+
+{% if articles %}
+    {% for article in articles_page.object_list %}
+<div class="card mb-3">
+  <div class="row g-0 align-items-center">
+    <div class="col-md-2 text-center text-secondary pt-1">
+      <span class="iconify news-icon" data-icon="{{ NEWS_ICONS[article.icon] }}" data-inline="false"></span><br>
+      {{ article.locale_date }}
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <h4 class="card-title news-title mt-0 mb-0 pt-0 pb-0"><a class="link-dark stretched-link" href="{{ article.link }}">{{ article.title }}</a></h4>
+        {% if article.summary %}
+        <p class="card-text">{{ article.summary }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+    {% endfor %}
+{% endif %}
+
+  </div>
+</section>
+

@@ -8,18 +8,13 @@
 
 {% block content %}
 
-{% if page.banner %}
-<div class="container-fluid">
-    <div class="banner" style="background-image: url({{page.banner}});">
-    </div>
-</div>
-{% endif %}
+<section class="page-section">
+  <div class="page-section-content">
 
-<div class="container">
+{{ page.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
 
-    {{ page.content|replace("<html>","")|replace("<body>","")|replace("</html>","")|replace("</body>","") }}
-
-</div>
+  </div>
+</section>
 
 {% endblock %}
 

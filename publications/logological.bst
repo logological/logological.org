@@ -1,9 +1,9 @@
 % BibTeX logological bibliography style, based on `biblet'
 %
 % Copyright (C) 1985 Oren Patashnik
-% Copyright (C) 2016 Tristan Miller
+% Copyright (C) 2021 Tristan Miller
 %                    psychonaut@nothingisreal.com
-%                    http://www.nothingisreal.com/biblet/
+%                    https://www.nothingisreal.com/biblet/
 %
 % This work may be distributed and/or modified under the conditions of
 % the LaTeX Project Public License, either version 1.3 of this license
@@ -33,12 +33,15 @@ ENTRY
     booktitle
     bookurl
     chapter
+    code
     cover
+    data
     doi
     dvi
     edition
     editor
     howpublished
+    html
     institution
     isbn
     issn
@@ -58,7 +61,6 @@ ENTRY
     tex
     title
     type
-    html
     volume
     year
   }
@@ -121,7 +123,7 @@ FUNCTION {init.string.consts}
   ""			'heading.prefix		:=
   "https://www.nothingisreal.com/icons/nuvola-1.0/48x48"	'icon.path		:=
   "css"				'css.path		:=
-  "/images/covers"			'covers.path		:=
+  "/images/covers"	'covers.path		:=
   null				'current.year		:=
   null				'current.pubtype	:=
 }
@@ -129,64 +131,33 @@ FUNCTION {init.string.consts}
 FUNCTION {get.icon.data}
 { null
 
-  % Icon data has the following format:
+  % Link data has the following format:
   %
   %   <legend text>
-  %   <img height attribute>
-  %   <img width attribute>
-  %   <img title attribute>
-  %   <img alt attribute>
-  %   <img src attribute> 
+  %   <CSS class name for icon>
   %   #0 in.bibliography = 'skip$ {<entry>} if$
   %   record.marker
-  %
-  % The first four values are optional; to omit them, push
-  % the null string ("").
 
-  "<abbr lang='en' title='Portable Document Format'>PDF</abbr>"
-  ""
-  ""
-  "PDF version"
-  "[PDF version] "
-  icon.path "/pdf.png" *
+  "Code"
+  "mdi:source-repository"
+  #0 in.bibliography = 'skip$ {code} if$
+  record.marker
+  
+  "Data"
+  "mdi:database"
+  #0 in.bibliography = 'skip$ {data} if$
+  record.marker
+
+  "PDF"
+  "mdi:file-pdf"
   #0 in.bibliography = 'skip$ {pdf} if$
   record.marker
   
-  "PostScript"
-  ""
-  ""
-  "PostScript version"
-  "[PostScript version] "
-  icon.path "/ps.png" *
-  #0 in.bibliography = 'skip$ {ps} if$
-  record.marker
-
-  "<abbr lang='en' title='HyperText Markup Language'>HTML</abbr>"
-  ""
-  ""
-  "HTML version"
-  "[HTML version] "
-  icon.path "/html.png" *
+  "HTML"
+  "mdi:web"
   #0 in.bibliography = 'skip$ {html} if$
   record.marker
-
-  "<abbr lang='en' title='TeX device-independent file'>DVI</abbr>"
-  ""
-  ""
-  "DVI version"
-  "[DVI version] "
-  icon.path "/dvi.png" *
-  #0 in.bibliography = 'skip$ {dvi} if$ 
-  record.marker
-
-  "LaTeX"
-  ""
-  ""
-  "LaTeX version"
-  "[LaTeX version] "
-  icon.path "/tex.png" *
-  #0 in.bibliography = 'skip$ {tex} if$ 
-  record.marker
+  
 }
 
 FUNCTION {get.link.data}
@@ -331,275 +302,58 @@ FUNCTION {find.replace}
 }
 FUNCTION {latex2html.1}
 {
-  "\raise.5ex\hbox{\texttildelow}"  "&tilde;"  find.replace
-  "\textcolor[gray]{.25}{\block}"  "&#x2593;"  find.replace
-  "\textcolor[gray]{.75}{\block}"  "&#x2591;"  find.replace
-  "\textcolor[gray]{.5}{\block}"  "&#x2592;"  find.replace
-  "\textcircled{\scshape p}"  "&#x2117;"  find.replace
-  "\underline{\hspace{1ex}}"  "&#x005F;"  find.replace
-  "n\kern-.2em\textsf{'}"  "&#x0149;"  find.replace
-  "\textfractionsolidus"  "&frasl;"  find.replace
-  "\textperiodcentered"  "&middot;"  find.replace
-  "\textpertenthousand"  "&#x2031;"  find.replace
-  "\textasciidieresis"  "&die;"  find.replace
-  "\textquotedblright"  "&rdquo;"  find.replace
-  "\textreferencemark"  "&#x203B;"  find.replace
-  "\textordmasculine"  "&ordm;"  find.replace
-  "\textquestiondown"  "&iquest;"  find.replace
-  "\textquotedblleft"  "&#x201F;"  find.replace
-  "\textquotedblleft"  "&ldquo;"  find.replace
-  "\textvisiblespace"  "&#x2423;"  find.replace
-  "\hspace{0.167em}"  "&thinsp;"  find.replace
-  "\textasciicircum"  "&circ;"  find.replace
-  "\textasciimacron"  "&macr;"  find.replace
-  "\textmusicalnote"  "&#x266A;"  find.replace
-  "\textordfeminine"  "&ordf;"  find.replace
-  "\textperthousand"  "&permil;"  find.replace
-  "\textquotesingle"  "&#x0027;"  find.replace
-  "I\kern -.15em J"  "&#x0132;"  find.replace
-  "\guillemotright"  "&raquo;"  find.replace
-  "\guilsinglright"  "&rsaquo;"  find.replace
-  "\hspace{0.25em}"  "&#x2005;"  find.replace
-  "\hspace{0.33em}"  "&#x2004;"  find.replace
-  "\quotesinglbase"  "&lsquor;"  find.replace
-  "\rule{1em}{1pt}"  "&#x2015;"  find.replace
 }
 
 FUNCTION {latex2html.2}
 {
-  "\textasciiacute"  "&acute;"  find.replace
-  "\textasciibreve"  "&#x02D8;"  find.replace
-  "\textasciicaron"  "&#x02C7;"  find.replace
-  "\textasciigrave"  "&#x0060;"  find.replace
-  "\textasciitilde"  "&tilde;"  find.replace
-  "\textcircled{P}"  "&#x2117;"  find.replace
-  "\textcircled{S}"  "&#x24C8;"  find.replace
-  "\textexclamdown"  "&iexcl;"  find.replace
-  "\textquoteright"  "&rsquo;"  find.replace
-  "\textregistered"  "&reg;"  find.replace
-  "\textrightarrow"  "&rarr;"  find.replace
   "\textunderscore"  "&#x005F;"  find.replace
-  "i\kern -.15em j"  "&#x0133;"  find.replace
-  "\guillemotleft"  "&laquo;"  find.replace
-  "\guilsinglleft"  "&lsaquo;"  find.replace
-  "\hspace{0.5em}"  "&ensp;"  find.replace
   "\textbackslash"  "&#x005C;"  find.replace
-  "\textbigcircle"  "&#x25EF;"  find.replace
-  "\textbraceleft"  "&#x007B;"  find.replace
-  "\textbrokenbar"  "&brvbar;"  find.replace
-  "\textcopyright"  "&copy;"  find.replace
-  "\textdaggerdbl"  "&Dagger;"  find.replace
-  "\textdownarrow"  "&darr;"  find.replace
-  "\textlbrackdbl"  "&#x301A;"  find.replace
-  "\textleftarrow"  "&larr;"  find.replace
-  "\textparagraph"  "&para;"  find.replace
-  "\textquoteleft"  "&lsquo;"  find.replace
-  "\textrbrackdbl"  "&#x301B;"  find.replace
-  "\texttrademark"  "&trade;"  find.replace
-  "\quotedblbase"  "&ldquor;"  find.replace
-  "\textacutedbl"  "&#x02DD;"  find.replace
-  "\textcircledP"  "&#x2117;"  find.replace
 }
 
 FUNCTION {latex2html.3}
 {
-  "\textcurrency"  "&curren;"  find.replace
-  "\textellipsis"  "&hellip;"  find.replace
-  "\textquotedbl"  "&quot;"  find.replace
-  "\textsterling"  "&pound;"  find.replace
-  "\texttildelow"  "&tilde;"  find.replace
-  "\hphantom{,}"  "&#x2008;"  find.replace
-  "\hphantom{0}"  "&#x2007;"  find.replace
-  "\hspace{1em}"  "&emsp;"  find.replace
-  "\hspace{1pt}"  "&#x200A;"  find.replace
-  "\textgreater"  "&gt;"  find.replace
-  "\textpilcrow"  "&para;"  find.replace
-  "\textsection"  "&sect;"  find.replace
-  "\textuparrow"  "&uarr;"  find.replace
-  "\brokenvert"  "&brvbar;"  find.replace
-  "\eighthnote"  "&#x266A;"  find.replace
-  "\textbardbl"  "&#x2016;"  find.replace
   "\textbullet"  "&bull;"  find.replace
-  "\textdagger"  "&dagger;"  find.replace
-  "\textdegree"  "&deg;"  find.replace
-  "\textdollar"  "&#x0024;"  find.replace
-  "\textemdash"  "&mdash;"  find.replace
-  "\textendash"  "&ndash;"  find.replace
-  "\textlangle"  "&lang;"  find.replace
   "\textnumero"  "&#x2116;"  find.replace
-  "\textrangle"  "&rang;"  find.replace
-  "\textrecipe"  "&#x211E;"  find.replace
-  "\checkmark"  "&#x2713;"  find.replace
   "\copyright"  "&copy;"  find.replace
-  "\ding{168}"  "&clubs;"  find.replace
-  "\ding{169}"  "&diams;"  find.replace
-  "\ding{170}"  "&hearts;"  find.replace
-  "\ding{171}"  "&spades;"  find.replace
   "\textminus"  "&minus;"  find.replace
 }
 
 FUNCTION {latex2html.4}
 {
-  "\textsc{k}"  "&#x0138;"  find.replace
-  "\texttimes"  "&times;"  find.replace
-  "\CYRHRDSN"  "&#x042A;"  find.replace
-  "\CYRISHRT"  "&#x0419;"  find.replace
-  "\CYRKBEAK"  "&#x040C;"  find.replace
-  "\CYRSFTSN"  "&#x042C;"  find.replace
-  "\CYRUSHRT"  "&#x040E;"  find.replace
-  "\currency"  "&curren;"  find.replace
-  "\cyrhrdsn"  "&#x044A;"  find.replace
-  "\cyrishrt"  "&#x0439;"  find.replace
-  "\cyrkbeak"  "&#x045C;"  find.replace
-  "\cyrsftsn"  "&#x044C;"  find.replace
-  "\cyrushrt"  "&#x045E;"  find.replace
-  "\ding{37}"  "&#x260E;"  find.replace
-  "\ding{51}"  "&#x2713;"  find.replace
-  "\ding{55}"  "&#x2717;"  find.replace
-  "\ding{64}"  "&#x2720;"  find.replace
-  "\ding{73}"  "&#x2606;"  find.replace
-  "\ding{86}"  "&#x2736;"  find.replace
-  "\fbox{~~}"  "&#x25AD;"  find.replace
-  "\recorder"  "&#x2315;"  find.replace
   "\textcent"  "&cent;"  find.replace
   "\texteuro"  "&euro;"  find.replace
   "\textless"  "&lt;"  find.replace
-  "\textlnot"  "&not;"  find.replace
-  "\textsurd"  "&radic;"  find.replace
   "\LaTeXTeX"  "<span class='latex'>(L<sup>a</sup>)T<sub>e</sub>X</span>"  find.replace
-  "\CYRDZHE"  "&#x040F;"  find.replace
-  "\CYREREV"  "&#x042D;"  find.replace
-  "\CYRSHCH"  "&#x0429;"  find.replace
-  "\CYRTSHE"  "&#x040B;"  find.replace
-  "\cyrdzhe"  "&#x045F;"  find.replace
-  "\cyrerev"  "&#x044D;"  find.replace
 }
 
 FUNCTION {latex2html.5}
 {
-  "\cyrshch"  "&#x0449;"  find.replace
-  "\cyrtshe"  "&#x045B;"  find.replace
-  "\maltese"  "&#x2720;"  find.replace
   "\textbar"  "&#x007C;"  find.replace
   "\textdiv"  "&divide;"  find.replace
-  "\textmho"  "&#x2127;"  find.replace
-  "\textohm"  "&#x2126;"  find.replace
-  "\textyen"  "&yen;"  find.replace
   "\BibTeX"  "B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span>"  find.replace
-  "\CYRDJE"  "&#x0402;"  find.replace
-  "\CYRDZE"  "&#x0405;"  find.replace
-  "\CYRERY"  "&#x042B;"  find.replace
-  "\CYRGUP"  "&#x0403;"  find.replace
-  "\CYRLJE"  "&#x0409;"  find.replace
-  "\CYRNJE"  "&#x040A;"  find.replace
-  "\Hstrok"  "&#x0126;"  find.replace
-  "\Lmidot"  "&#x013F;"  find.replace
-  "\Tstrok"  "&#x0166;"  find.replace
-  "\cyrdje"  "&#x0452;"  find.replace
-  "\cyrdze"  "&#x0455;"  find.replace
-  "\cyrery"  "&#x044B;"  find.replace
-  "\cyrgup"  "&#x0453;"  find.replace
-  "\cyrlje"  "&#x0459;"  find.replace
-  "\cyrnje"  "&#x045A;"  find.replace
-  "\dlcrop"  "&#x230D;"  find.replace
-  "\drcrop"  "&#x230C;"  find.replace
-  "\female"  "&#x2640;"  find.replace
-  "\hstrok"  "&#x0127;"  find.replace
-  "\hybull"  "&#x2043;"  find.replace
-  "\lmidot"  "&#x0140;"  find.replace
-  "\marker"  "&#x25AE;"  find.replace
-  "\permil"  "&permil;"  find.replace
   "\pounds"  "&pound;"  find.replace
 }
 
 FUNCTION {latex2html.6}
 {
-  "\rbrace"  "&#x007D;"  find.replace
-  "\textmu"  "&micro;"  find.replace
-  "\textpm"  "&plusmn;"  find.replace
-  "\tstrok"  "&#x0167;"  find.replace
-  "\ulcrop"  "&#x230F;"  find.replace
-  "\urcrop"  "&#x230E;"  find.replace
-  "\" quote$ * "{\i}" *  "&iuml;"  find.replace
   "\'{\i}"  "&iacute;"  find.replace
   "\={\i}"  "&#x012B;"  find.replace
-  "\CYRCH"  "&#x0427;"  find.replace
-  "\CYRIE"  "&#x0404;"  find.replace
-  "\CYRII"  "&#x0406;"  find.replace
-  "\CYRJE"  "&#x0408;"  find.replace
-  "\CYRSH"  "&#x0428;"  find.replace
-  "\CYRYA"  "&#x042F;"  find.replace
-  "\CYRYI"  "&#x0407;"  find.replace
-  "\CYRYO"  "&#x0401;"  find.replace
-  "\CYRYU"  "&#x042E;"  find.replace
-  "\CYRZH"  "&#x0416;"  find.replace
   "\LaTeX"  "<span class='latex'>L<sup>a</sup>T<sub>e</sub>X</span>"  find.replace
   "\Thorn"  "&THORN;"  find.replace
   "\^{\i}"  "&icirc;"  find.replace
   "\^{\j}"  "&#x0135;"  find.replace
   "\`{\i}"  "&igrave;"  find.replace
-  "\block"  "&#x2588;"  find.replace
-  "\boxDL"  "&#x2557;"  find.replace
-  "\boxDR"  "&#x2554;"  find.replace
-  "\boxDl"  "&#x2556;"  find.replace
-  "\boxDr"  "&#x2553;"  find.replace
-  "\boxHD"  "&#x2566;"  find.replace
-  "\boxHU"  "&#x2569;"  find.replace
 }
 
 FUNCTION {latex2html.7}
 {
-  "\boxHd"  "&#x2564;"  find.replace
-  "\boxHu"  "&#x2567;"  find.replace
-  "\boxUL"  "&#x255D;"  find.replace
-  "\boxUR"  "&#x255A;"  find.replace
-  "\boxUl"  "&#x255C;"  find.replace
-  "\boxUr"  "&#x2559;"  find.replace
-  "\boxVH"  "&#x256C;"  find.replace
-  "\boxVL"  "&#x2563;"  find.replace
-  "\boxVR"  "&#x2560;"  find.replace
-  "\boxVh"  "&#x256B;"  find.replace
-  "\boxVl"  "&#x2562;"  find.replace
-  "\boxVr"  "&#x255F;"  find.replace
-  "\boxdL"  "&#x2555;"  find.replace
-  "\boxdR"  "&#x2552;"  find.replace
-  "\boxdl"  "&#x2510;"  find.replace
-  "\boxdr"  "&#x250C;"  find.replace
-  "\boxhD"  "&#x2565;"  find.replace
-  "\boxhU"  "&#x2568;"  find.replace
-  "\boxhd"  "&#x252C;"  find.replace
-  "\boxhu"  "&#x2534;"  find.replace
-  "\boxuL"  "&#x255B;"  find.replace
-  "\boxuR"  "&#x2558;"  find.replace
-  "\boxul"  "&#x2518;"  find.replace
-  "\boxur"  "&#x2514;"  find.replace
-  "\boxvH"  "&#x256A;"  find.replace
-  "\boxvL"  "&#x2561;"  find.replace
-  "\boxvR"  "&#x255E;"  find.replace
-  "\boxvh"  "&#x253C;"  find.replace
-  "\boxvl"  "&#x2524;"  find.replace
-  "\boxvr"  "&#x251C;"  find.replace
-  "\cyrch"  "&#x0447;"  find.replace
-  "\cyrie"  "&#x0454;"  find.replace
-  "\cyrii"  "&#x0456;"  find.replace
 }
 
 FUNCTION {latex2html.8}
 {
-  "\cyrje"  "&#x0458;"  find.replace
-  "\cyrsh"  "&#x0448;"  find.replace
-  "\cyrya"  "&#x044F;"  find.replace
-  "\cyryi"  "&#x0457;"  find.replace
-  "\cyryo"  "&#x0451;"  find.replace
-  "\cyryu"  "&#x044E;"  find.replace
-  "\cyrzh"  "&#x0436;"  find.replace
   "\ldots"  "&hellip;"  find.replace
-  "\lhblk"  "&#x2584;"  find.replace
-  "\phone"  "&#x260E;"  find.replace
   "\slash"  "/"  find.replace
   "\thorn"  "&thorn;"  find.replace
-  "\uhblk"  "&#x2580;"  find.replace
-  "\~{\i}"  "&#x0129;"  find.replace
   "\" quote$ * "{A}" *  "&Auml;"  find.replace
   "\" quote$ * "{E}" *  "&Euml;"  find.replace
   "\" quote$ * "{I}" *  "&Iuml;"  find.replace
@@ -661,31 +415,10 @@ FUNCTION {latex2html.10}
   "\={e}"  "&#x0113;"  find.replace
   "\={o}"  "&#x014D;"  find.replace
   "\={u}"  "&#x016B;"  find.replace
-  "\CYRA"  "&#x0410;"  find.replace
-  "\CYRB"  "&#x0411;"  find.replace
-  "\CYRC"  "&#x0426;"  find.replace
-  "\CYRD"  "&#x0414;"  find.replace
-  "\CYRE"  "&#x0415;"  find.replace
-  "\CYRF"  "&#x0424;"  find.replace
-  "\CYRG"  "&#x0413;"  find.replace
-  "\CYRH"  "&#x0425;"  find.replace
-  "\CYRI"  "&#x0418;"  find.replace
-  "\CYRK"  "&#x041A;"  find.replace
-  "\CYRL"  "&#x041B;"  find.replace
-  "\CYRM"  "&#x041C;"  find.replace
-  "\CYRN"  "&#x041D;"  find.replace
-  "\CYRO"  "&#x041E;"  find.replace
-  "\CYRP"  "&#x041F;"  find.replace
-  "\CYRR"  "&#x0420;"  find.replace
-  "\CYRS"  "&#x0421;"  find.replace
 }
 
 FUNCTION {latex2html.11}
 {
-  "\CYRT"  "&#x0422;"  find.replace
-  "\CYRU"  "&#x0423;"  find.replace
-  "\CYRV"  "&#x0412;"  find.replace
-  "\CYRZ"  "&#x0417;"  find.replace
   "\H{O}"  "&#x0150;"  find.replace
   "\H{U}"  "&#x0170;"  find.replace
   "\H{o}"  "&#x0151;"  find.replace
@@ -725,32 +458,7 @@ FUNCTION {latex2html.12}
   "\`{e}"  "&egrave;"  find.replace
   "\`{o}"  "&ograve;"  find.replace
   "\`{u}"  "&ugrave;"  find.replace
-  "\boxH"  "&#x2550;"  find.replace
-  "\boxV"  "&#x2551;"  find.replace
-  "\boxh"  "&#x2500;"  find.replace
-  "\boxv"  "&#x2502;"  find.replace
   "\cent"  "&cent;"  find.replace
-  "\cyra"  "&#x0430;"  find.replace
-  "\cyrb"  "&#x0431;"  find.replace
-  "\cyrc"  "&#x0446;"  find.replace
-  "\cyrd"  "&#x0434;"  find.replace
-  "\cyre"  "&#x0435;"  find.replace
-  "\cyrf"  "&#x0444;"  find.replace
-  "\cyrg"  "&#x0433;"  find.replace
-  "\cyrh"  "&#x0445;"  find.replace
-  "\cyri"  "&#x0438;"  find.replace
-  "\cyrk"  "&#x043A;"  find.replace
-  "\cyrl"  "&#x043B;"  find.replace
-  "\cyrm"  "&#x043C;"  find.replace
-  "\cyrn"  "&#x043D;"  find.replace
-  "\cyro"  "&#x043E;"  find.replace
-  "\cyrp"  "&#x043F;"  find.replace
-  "\cyrr"  "&#x0440;"  find.replace
-  "\cyrs"  "&#x0441;"  find.replace
-  "\cyrt"  "&#x0442;"  find.replace
-  "\cyru"  "&#x0443;"  find.replace
-  "\cyrv"  "&#x0432;"  find.replace
-  "\cyrz"  "&#x0437;"  find.replace
   "\c{C}"  "&Ccedil;"  find.replace
 }
 
@@ -770,7 +478,6 @@ FUNCTION {latex2html.13}
   "\c{r}"  "&#x0157;"  find.replace
   "\c{s}"  "&#x015F;"  find.replace
   "\c{t}"  "&#x0163;"  find.replace
-  "\ddag"  "&Dagger;"  find.replace
   "\k{A}"  "&#x0104;"  find.replace
   "\k{E}"  "&#x0118;"  find.replace
   "\k{I}"  "&#x012E;"  find.replace
@@ -779,9 +486,6 @@ FUNCTION {latex2html.13}
   "\k{e}"  "&#x0119;"  find.replace
   "\k{i}"  "&#x012F;"  find.replace
   "\k{u}"  "&#x0173;"  find.replace
-  "\male"  "&#x2642;"  find.replace
-  "\mldr"  "&#x2026;"  find.replace
-  "\nldr"  "&#x2025;"  find.replace
   "\r{U}"  "&#x016E;"  find.replace
   "\r{u}"  "&#x016F;"  find.replace
   "\u{A}"  "&#x0102;"  find.replace
@@ -821,30 +525,11 @@ FUNCTION {latex2html.14}
   "\~{n}"  "&ntilde;"  find.replace
   "\~{o}"  "&otilde;"  find.replace
   "\~{u}"  "&#x0169;"  find.replace
-  "\" quote$ * "{}" *  "&die;"  find.replace
   "\TeX"  "<span class='tex'>T<sub>e</sub>X</span>"  find.replace
-  "\'{}"  "&acute;"  find.replace
 }
 
 FUNCTION {latex2html.15}
 {
-  "\.{}"  "&#x02D9;"  find.replace
-  "\={}"  "&macr;"  find.replace
-  "\={}"  "&oline;"  find.replace
-  "\H{}"  "&#x02DD;"  find.replace
-  "\^{}"  "&circ;"  find.replace
-  "\`{}"  "&#x0060;"  find.replace
-  "\b{}"  "&#x02CD;"  find.replace
-  "\c{}"  "&cedil;"  find.replace
-  "\dag"  "&dagger;"  find.replace
-  "\d{}"  "&#x0323;"  find.replace
-  "\k{}"  "&#x02DB;"  find.replace
-  "\r{}"  "&#x02DA;"  find.replace
-  "\t{}"  "&#x0361;"  find.replace
-  "\u{}"  "&#x02D8;"  find.replace
-  "\v{}"  "&#x02C7;"  find.replace
-  "\~{}"  "&tilde;"  find.replace
-  "n{'}"  "&#x0149;"  find.replace
   "---"  "&mdash;"  find.replace
   "\@."  "&#x002E;"  find.replace
   "\AA"  "&#x212B;"  find.replace
@@ -985,52 +670,71 @@ FUNCTION {output.check}
   if$
 }
 
+FUNCTION {output.citationicons}
+{
+  % Citation button
+  "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-citation' checked>" * write$
+  newline$
+  "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-citation' onclick=" * quote$ * "openTab('" * cite$ *
+  "','" * "citation" * "')" * quote$ * ">" * write$
+  newline$
+  "                  <span class='iconify me-2' data-icon='mdi:format-quote-close'></span>Citation" write$
+  newline$
+  "                </label>" write$
+  newline$
+
+  % Abstract button
+  abstract missing$
+    'skip$
+    {
+      "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-abstract'>" * write$
+      newline$
+      "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-abstract' onclick=" * quote$ * "openTab('" * cite$ *
+      "','" * "abstract" * "')" * quote$ * ">" * write$
+      newline$
+      "                  <span class='iconify me-2' data-icon='mdi:sign-text'></span>Abstract" write$
+      newline$
+      "                </label>" write$
+      newline$
+    }
+  if$
+
+  % BibTeX button
+  "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-bibtex'>" * write$
+  newline$
+  "                <label class='btn btn-outline-primary btn-sm me-5' for='" cite$ * "-btn-bibtex' onclick=" * quote$ * "openTab('" * cite$ *
+  "','" * "bibtex" * "')" * quote$ * ">" * write$
+  newline$
+  "                  <span class='iconify me-2' data-icon='mdi:library'></span>BibTeX" write$
+  newline$
+  "                </label>" write$
+  newline$
+}
+
 INTEGERS {first.icon}
 FUNCTION {output.icons}
-{ #0 'first.icon :=
-  get.icon.data
+{ get.icon.data
   { record.marker = }
     { duplicate$ missing$
-        { pop$ pop$ pop$ pop$ pop$ pop$ pop$ }
-        { #0 first.icon =
-            { "<div class='" css.prefix * "iconbox'>" * write$
-              #1 'first.icon :=
-            }
-            'skip$
-          if$
-          "<a" write$ newline$ 
-          "href = '" swap$ url.escape * "'" * write$ newline$
-          title missing$
-            'skip$
-            { "title = " quote$ * title latex2html * quote$ * 
-              write$ newline$
-            }
-          if$
-          ">" write$
-          "<img class='" css.prefix * "icon'" * write$ newline$
-          "src = '" swap$ url.escape * "'" * write$ newline$
-          "alt = '"   swap$ * "'" * write$ newline$
-          "title = '" swap$ * "'" * write$ newline$
-          duplicate$ "" =
-            'pop$
-            { "width = '" swap$ * "'" * write$ newline$ }
-          if$
-          duplicate$ "" =
-            'pop$
-            { "height = '" swap$ * "'" * write$ newline$ }
-          if$
-          "/></a>" write$
-          pop$ % legend
+        { pop$ pop$ pop$ }
+        {
+	  "                <a href='" swap$ url.escape * "'>" * write$
+	  newline$
+	  "                    <button type='button' class='btn btn-outline-primary btn-sm me-1'>" write$
+	  newline$
+	  "                      <span class='iconify me-1' data-icon='" swap$ * "'></span>" * swap$ * write$
+	  newline$
+	  "                    </button>" write$
+	  newline$
+	  "                </a>" write$
+	  newline$
         }
       if$
     }
   while$
-  #1 first.icon =
-    { "</div>" write$ }
-    'skip$
-  if$
 }
 
+% Not implemented for logological.org
 FUNCTION {output.pubtype.heading}
 {  pubtype missing$
      {
@@ -1046,7 +750,7 @@ FUNCTION {output.pubtype.heading}
           "<p></html>" write$ newline$
 	  "==" pubtype * "==" * write$ newline$
           "<html></p>" write$ newline$
-          "        <ol class='bib-list'>" write$ newline$
+          "        <ol class='" css.prefix * "list'>" * write$ newline$
           pubtype 'current.pubtype :=
         }
       if$
@@ -1057,21 +761,28 @@ FUNCTION {output.pubtype.heading}
 
 FUNCTION {output.bibitem}
 { output.pubtype.heading
-  "          <li class='" css.prefix * "bibitem' id='" * 
-	cite.prefix * write$
-  cite$ write$
-  "'>" write$
+
+  "    <div class='card mb-3' id='" cite$ * "'>" * write$
   newline$
-  "	    <div class='bib-cover-container'><img class='bib-cover' src='"
-  covers.path * "/" * cover * "' /></div>" * write$
+  "      <div class='row g-0 align-items-center'>" write$
+  newline$
+  "        <div class='col-sm-2 text-center'>" write$
+  newline$
+  "          <img src='" covers.path * "/" * cite$ * ".jpg' alt='' class='border border-dark img-fluid'>" * write$
+  newline$
+  "        </div>" write$
+  newline$
+  "        <div class='col-sm-10'>" write$
+  newline$
+  "          <div class='card-body'>" write$
   newline$
   type$ "" =
     { "            <div class='" css.prefix * "unknown'>" * write$ }
     { "            <div class='" css.prefix * type$ * "'>" * write$ }
   if$
   newline$
-  %output.icons
-  "<p>" write$
+  "              <div id='" cite$ * "-citation' class='" * cite$ * "-tab'>" * write$
+  newline$
   ""
   before.all 'output.state :=
 }
@@ -1079,7 +790,7 @@ FUNCTION {output.bibitem}
 FUNCTION {output.abstract}
 { abstract missing$
     'skip$
-    { "              <div class='" css.prefix * "abstract'>" * 
+    { "              <div id='" cite$ * "-abstract' class='d-none " * css.prefix * "abstract " * cite$ * "-tab'>" * 
       abstract * "</div>" *
       #0 latex2htmlize.abstracts =
         'skip$
@@ -1181,23 +892,50 @@ FUNCTION {output.entries}
 }
 
 FUNCTION {output.bibtex}
-{ "<div class='" css.prefix * "bibtex'>" * write$ newline$
+{ %"{% raw %}" write$ newline$
+  "<div id='" cite$ * "-bibtex' class='d-none " * css.prefix * "bibtex " * cite$ * "-tab'>" * write$ newline$
   "<span class='" css.prefix * "entry-type'>" * write$
   "@" type$ * "</span>{" * write$
   "<span class='" css.prefix * "entry-key'>" * cite$ *
-  "</span>,<br/>" * write$ newline$
+  "</span>,<br>" * write$ newline$
   output.entries
   "}</div>" write$ newline$
+  %"{% endraw %}" write$ newline$
 }
 
 FUNCTION {fin.entry}
-{ add.period$ "</p>" *
+{ add.period$ "</div>" *
   write$
   newline$
   output.abstract
   output.bibtex
-  "            </div>" write$ newline$
-  "          </li>" write$ newline$
+  "              <div class='row'>" write$
+  newline$
+  "              <div class='col'>" write$
+  newline$
+  "                <div class='btn-group mt-3' role='group' aria-label='Bibliographic details' style='white-space: nowrap;'>" write$
+  newline$
+  output.citationicons
+  "                </div> <!-- btn-group -->" write$
+  newline$
+  "              </div> <!-- col -->" write$
+  newline$
+  "              <div class='col'>" write$
+  newline$
+  "                <div class='btn-group mt-3' role='group' aria-label='Document links' style='white-space: nowrap;'>" write$
+  newline$
+  output.icons
+  "                </div> <!-- btn-group -->" write$
+  newline$
+  "              </div> <!-- col -->" write$
+  newline$
+  "              </div> <!-- row -->" write$
+  newline$
+  "            </div> <!-- bib-" type$ * " -->" * write$ newline$
+  "          </div> <!-- card-body -->" write$ newline$
+  "        </div> <!-- col -->" write$ newline$
+  "      </div> <!-- row -->" write$ newline$
+  "    </div> <!-- card -->" write$ newline$
 }
 
 FUNCTION {new.block}
@@ -1345,9 +1083,9 @@ FUNCTION {format.issn}
 FUNCTION {format.btitle.link}
 { "" 'link :=
   bookurl empty$
-    { "<span class='bib-booktitle'>" booktitle * "</span>" * }
+    { "<span class='" css.prefix * "booktitle'>" * booktitle * "</span>" * }
     {
-      "<span class='bib-booktitle'><a href='" bookurl * "'>" *
+      "<span class='" css.prefix * "booktitle'><a href='" * bookurl * "'>" *
       booktitle * "</a></span>" * 
     }
   if$
@@ -1356,9 +1094,9 @@ FUNCTION {format.btitle.link}
 FUNCTION {format.jtitle.link}
 { "" 'link :=
   bookurl empty$
-    {  "<span class='bib-journaltitle'>" journal * "</span>" *}
+    {  "<span class='" css.prefix * "journaltitle'>" * journal * "</span>" *}
     {
-      "<span class='bib-journaltitle'><a href='" bookurl * "'>" *
+      "<span class='" css.prefix * "journaltitle'><a href='" * bookurl * "'>" *
       journal * "</a></span>" * 
     }
   if$
@@ -1670,7 +1408,7 @@ FUNCTION {format.book.crossref}
 	      crossref * warning$
 	      "" *
 	    }
-	    { "<span class='bib-series'>" * series * "</span>" * }
+	    { "<span class='" css.prefix * "series'>" * series * "</span>" * }
 	  if$
 	}
 	{ key * }
@@ -1707,9 +1445,11 @@ FUNCTION {article}
   format.authors "author" output.check
   new.block
   format.title "title" output.check
+  "<br>" write$ % Line break after authors
   new.block
   crossref missing$
     { format.jtitle.link "journal" output.check
+      "<br>" write$ % Line break after title
       format.vol.num.pages output
       format.date "year" output.check
     }
@@ -1821,9 +1561,11 @@ FUNCTION {incollection}
   format.authors "author" output.check
   new.block
   format.title "title" output.check
+  "<br>" write$ % Line break after authors
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
+      "<br>" write$ % Line break after title
       format.bvolume output
       format.number.series output
       format.chapter.pages output
@@ -1850,9 +1592,11 @@ FUNCTION {inproceedings}
   format.authors "author" output.check
   new.block
   format.title "title" output.check
+  "<br>" write$ % Line break after authors
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
+      "<br>" write$ % Line break after title
       format.bvolume output
       format.number.series output
       format.pages output
@@ -2289,6 +2033,7 @@ SORT
 
 EXECUTE {init.state.consts}
 
+% Not implemented for logological.org
 FUNCTION {output.legend}
 {
   "<!-- BEGIN BIBLET LEGEND -->" write$ newline$
@@ -2331,6 +2076,7 @@ FUNCTION {output.links}
   while$
 }
 
+% Not implemented for logological.org
 FUNCTION {output.showhide}
 {
   "<!-- BEGIN BIBLET SHOWHIDE -->" write$ newline$
@@ -2371,8 +2117,8 @@ FUNCTION {begin.bib}
 %  output.legend newline$
 %  output.showhide newline$
   "<!-- BEGIN BIBLET BIBLIOGRAPHY -->" write$ newline$
-  "    <div class='" css.prefix * "bibliography'>" * write$ newline$
-  "        <ol class='bib-list'>" write$ newline$
+%  "    <div class='" css.prefix * "bibliography'>" * write$ newline$
+%  "        <ol class='bib-list'>" write$ newline$
   #1 'in.bibliography :=
 }
 
@@ -2383,15 +2129,15 @@ EXECUTE {begin.bib}
 ITERATE {call.type$}
 
 FUNCTION {end.bib}
-{ "        </ol>" write$ newline$
-  "    </div>" write$ newline$
+{ %"        </ol>" write$ newline$
+  %"    </div>" write$ newline$
   "<!-- END BIBLET BIBLIOGRAPHY -->" write$ newline$ newline$
-  #0 'in.bibliography :=
-  "    <div class='" css.prefix * "footer'>" * write$ newline$
-  "      <hr /><p lang='en'>Generated with B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> and the "
-  "<a href='https://www.nothingisreal.com/biblet/'>biblet</a>" *
-  " bibliography style.</p>" * write$ newline$
-  "    </div>" write$ newline$
+  %#0 'in.bibliography :=
+  %"    <div class='" css.prefix * "footer'>" * write$ newline$
+  %"      <hr /><p lang='en'>Generated with B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> and the "
+  %"<a href='https://www.nothingisreal.com/biblet/'>biblet</a>" *
+  %" bibliography style.</p>" * write$ newline$
+  %"    </div>" write$ newline$
 %  "  </body>" write$ newline$
 %  "</html>" write$ newline$
 }
