@@ -3,8 +3,8 @@ PELICAN?=pelican
 PELICANOPTS=
 PORT?=8000
 
-SSH?=ssh
 RSYNC?=rsync
+SCP?=scp
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
@@ -15,7 +15,8 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 SSH_HOST=onza
 SSH_PORT=22
 SSH_USER=psy
-SSH_TARGET_DIR=www/logological.org
+SSH_WEBSITE_TARGET_DIR=www/logological.org
+SSH_PUBLICATIONS_TARGET_DIR=www/files.nothingisreal.com/publications/Tristan_Miller/
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -102,11 +103,11 @@ maledicta:
 	make -C maledicta
 
 ssh_upload:
-	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-	scp -P $(SSH_PORT) publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):www/files.nothingisreal.com/publications/Tristan_Miller/
+	$(SCP) -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR)
+	$(SCP) -P $(SSH_PORT) publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR)
 
 rsync_upload:
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):www/files.nothingisreal.com/publications/Tristan_Miller/ --cvs-exclude --exclude-from=rsync_exclude.txt
+	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
+	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta
