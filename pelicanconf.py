@@ -454,3 +454,7 @@ NEWS_ICONS = {
     'publication': 'mdi:file-document-outline',
     'shared-task': 'mdi:human-greeting-proximity',
 }
+
+# Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
+import logging
+LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
