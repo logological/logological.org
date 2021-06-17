@@ -16,7 +16,7 @@
                 <div class="card-header">
                   <a href="{{ project.url }}"><img src="/images/{{ project.image }}" class="card-img-top" style="width: 100%; height: 15vw; object-fit: contain;" alt=""></a>
                 </div>
-                <div class="card-body">
+                <div class="card-body mb-2">
                   <a href="{{ project.url }}"><h4 class="card-title" {% if project.no_text_transform %}style="text-transform: none;"{% endif %}>{{ project.title }}</h4></a>
                   <h5 class="card-subtitle mb-2 text-muted">
                     {% if project.subtitle %}
@@ -47,31 +47,37 @@
 </section>
 
 <script>
-function normalizeCardHeight() {
-    var cards = Array.from(document.querySelectorAll('.project-card'));
-    var cardHeights = cards.map(card => card.offsetHeight);
-    var maxCardHeight = Math.max(...cardHeights);
+  function equalizeCardHeight() {
+      const cards = Array.from(document.querySelectorAll('.project-card'));
 
-    cards.forEach(card => {
-        card.style.height = maxCardHeight + 'px';
-    });
+      cards.forEach(card => {
+          card.style.height = null;
+      });
 
-    {% for category_id, category_name in PROJECT_CATEGORIES %}
-    let {{ category_id }}items = document.querySelectorAll('.carousel .{{ category_id }}-project')
+      const cardHeights = cards.map(card => card.offsetHeight);
+      const maxCardHeight = Math.max(...cardHeights);
 
-    {{ category_id }}items.forEach((el) => {
-        const minPerSlide = 3
-        let next = el.nextElementSibling
-        for (var i=1; i<minPerSlide; i++) {
-            if (!next) {
-                // wrap carousel by using first child
-        	next = {{ category_id }}items[0]
-      	    }
-            let cloneChild = next.cloneNode(true)
-            el.appendChild(cloneChild.children[0])
-            next = next.nextElementSibling
-        }
-    })
-    {% endfor %}
-}
+      cards.forEach(card => {
+          card.style.height = maxCardHeight + 'px';
+      });
+  }
+
+  /* Set up three-column carousel */
+  {% for category_id, category_name in PROJECT_CATEGORIES %}
+  let {{ category_id }}items = document.querySelectorAll('.carousel .{{ category_id }}-project')
+
+  {{ category_id }}items.forEach((el) => {
+      const minPerSlide = 3
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+          if (!next) {
+              // wrap carousel by using first child
+              next = {{ category_id }}items[0]
+      	  }
+          let cloneChild = next.cloneNode(true)
+          el.appendChild(cloneChild.children[0])
+          next = next.nextElementSibling
+      }
+  })
+  {% endfor %}
 </script>
