@@ -327,6 +327,16 @@ PROJECTS = [
         'no_text_transform': True,
      },
     {
+        'title': 'Big-8 Management Board',
+        'location': 'Usenet',
+        'date': '2020–',
+        'description': 'Administration of Usenet\'s original discussion hierarchies',
+        'url': 'https://www.big-8.org/',
+        'image': 'b8mb.svg',
+        'roles': ['Co-chair'],
+        'category': 'event',
+     },
+    {
         'title': 'Humor &amp; Artificial Intelligence',
         'location': 'ISHS',
         'date': '2022',
@@ -409,7 +419,7 @@ PROJECTS = [
 ]
 
 PROJECT_CATEGORIES = [ ('research', 'Funded research projects'),
-                       ('event', 'Scholarly events'),
+                       ('event', 'Events &amp; organizations'),
                        ('software', 'Software'),
                        ('publishing', 'Publishing &amp; documentation'),
                       ]
