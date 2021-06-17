@@ -1,5 +1,5 @@
 <!-- Projects -->
-<section class="resume-section" id="projects">
+<section class="resume-section" id="projects"">
   <div class="resume-section-content">
     <h2 class="mb-5">Projects</h2>
 
@@ -47,38 +47,31 @@
 </section>
 
 <script>
-// set height of all cards to max height
+function normalizeCardHeight() {
+    var cards = Array.from(document.querySelectorAll('.project-card'));
+    var cardHeights = cards.map(card => card.offsetHeight);
+    var maxCardHeight = Math.max(...cardHeights);
 
-// get array of all '.card' elements
-const cards = Array.from(document.querySelectorAll('.project-card'));
+    cards.forEach(card => {
+        card.style.height = maxCardHeight + 'px';
+    });
 
-// form array of card element heights (offsetHeight)
-const cardHeights = cards.map(card => card.offsetHeight);
+    {% for category_id, category_name in PROJECT_CATEGORIES %}
+    let {{ category_id }}items = document.querySelectorAll('.carousel .{{ category_id }}-project')
 
-// find the maximum value of cardHeights array
-const maxCardHeight = Math.max(...cardHeights);
-
-// set all card `height` styles to `maxCardHeight`
-cards.forEach(card => {
-    card.style.height = maxCardHeight + 'px';
-});
-
-// Cycle through cards in carousel
-{% for category_id, category_name in PROJECT_CATEGORIES %}
-let {{ category_id }}items = document.querySelectorAll('.carousel .{{ category_id }}-project')
-
-{{ category_id }}items.forEach((el) => {
-    const minPerSlide = 3
-    let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
-        if (!next) {
-            // wrap carousel by using first child
+    {{ category_id }}items.forEach((el) => {
+        const minPerSlide = 3
+        let next = el.nextElementSibling
+        for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
         	next = {{ category_id }}items[0]
-      	}
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
-{% endfor %}
+      	    }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+    {% endfor %}
+}
 </script>
