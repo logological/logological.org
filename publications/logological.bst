@@ -718,13 +718,9 @@ FUNCTION {output.icons}
     { duplicate$ missing$
         { pop$ pop$ pop$ }
         {
-	  "                <a href='" swap$ url.escape * "'>" * write$
+	  "                <a href='" swap$ url.escape * "' class='btn btn-outline-primary btn-sm me-1'>" * write$
 	  newline$
-	  "                    <button type='button' class='btn btn-outline-primary btn-sm me-1'>" write$
-	  newline$
-	  "                      <span class='iconify me-1' data-icon='" swap$ * "'></span>" * swap$ * write$
-	  newline$
-	  "                    </button>" write$
+	  "                  <span class='iconify me-1' data-icon='" swap$ * "'></span>" * swap$ * write$
 	  newline$
 	  "                </a>" write$
 	  newline$
