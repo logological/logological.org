@@ -337,6 +337,16 @@ PROJECTS = [
         'category': 'event',
      },
     {
+        'title': 'Abusive and Offensive Humour',
+        'location': 'ISHS',
+        'date': '2022',
+        'description': 'Reinhold Aman Memorial Panel at the 2022 International Society for Humor Studies Conference',
+        'url': 'https://eventi.unibo.it/ishs-2022',
+        'image': 'aman_panel.jpg',
+        'roles': ['Co-convenor'],
+        'category': 'event',
+     },
+    {
         'title': 'Humor &amp; Artificial Intelligence',
         'location': 'ISHS',
         'date': '2022',
