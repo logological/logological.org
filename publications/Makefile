@@ -25,7 +25,7 @@ all.bib: miller.bib miller-recreational.bib
 	pdflatex $<
 
 clean:
-	rm -f {miller,miller-featured,miller-recreational}.{aux,bbl,blg,log}
+	rm -f {miller,miller-featured,miller-recreational}.{aux,bbl,blg,log} ../theme/templates/publications_populated.html
 
 .PRECIOUS: %.aux
 
