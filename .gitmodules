@@ -19,3 +19,6 @@
 [submodule "academicons"]
 	path = academicons
 	url = https://github.com/jpswalsh/academicons.git
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap.git
