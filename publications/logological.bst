@@ -758,7 +758,7 @@ FUNCTION {output.pubtype.heading}
 FUNCTION {output.bibitem}
 { output.pubtype.heading
 
-  "    <div class='card mb-3' id='" cite$ * "'>" * write$
+  "    <div class='card mb-0 mt-0 pb-3 pt-3 border-end-0 border-start-0 border-top-0 border-bottom-1' id='" cite$ * "'>" * write$
   newline$
   "      <div class='row g-0 align-items-center'>" write$
   newline$
