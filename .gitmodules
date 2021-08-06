@@ -22,3 +22,6 @@
 [submodule "bootstrap"]
 	path = bootstrap
 	url = https://github.com/twbs/bootstrap.git
+[submodule "MaterialDesign-Webfont"]
+	path = MaterialDesign-Webfont
+	url = https://github.com/Templarian/MaterialDesign-Webfont.git

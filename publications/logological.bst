@@ -141,32 +141,32 @@ FUNCTION {get.icon.data}
   %   record.marker
 
   "Code"
-  "mdi:source-repository"
+  "mdi-source-repository"
   #0 in.bibliography = 'skip$ {code} if$
   record.marker
   
   "Data"
-  "mdi:database"
+  "mdi-database"
   #0 in.bibliography = 'skip$ {data} if$
   record.marker
 
   "Video"
-  "mdi:video"
+  "mdi-video"
   #0 in.bibliography = 'skip$ {video} if$
   record.marker
 
   "Appendix"
-  "mdi:more"
+  "mdi-more"
   #0 in.bibliography = 'skip$ {appendix} if$
   record.marker
 
   "PDF"
-  "mdi:file-pdf"
+  "mdi-file-pdf"
   #0 in.bibliography = 'skip$ {pdf} if$
   record.marker
   
   "HTML"
-  "mdi:web"
+  "mdi-web"
   #0 in.bibliography = 'skip$ {html} if$
   record.marker
   
@@ -690,7 +690,7 @@ FUNCTION {output.citationicons}
   "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-citation' onclick=" * quote$ * "openTab('" * cite$ *
   "','" * "citation" * "')" * quote$ * ">" * write$
   newline$
-  "                  <span class='iconify me-2' data-icon='mdi:format-quote-close'></span>Citation" write$
+  "                  <span class='me-2 mdi mdi-format-quote-close'></span>Citation" write$
   newline$
   "                </label>" write$
   newline$
@@ -704,7 +704,7 @@ FUNCTION {output.citationicons}
       "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-abstract' onclick=" * quote$ * "openTab('" * cite$ *
       "','" * "abstract" * "')" * quote$ * ">" * write$
       newline$
-      "                  <span class='iconify me-2' data-icon='mdi:sign-text'></span>Abstract" write$
+      "                  <span class='me-2 mdi mdi-sign-text'></span>Abstract" write$
       newline$
       "                </label>" write$
       newline$
@@ -717,7 +717,7 @@ FUNCTION {output.citationicons}
   "                <label class='btn btn-outline-primary btn-sm me-5' for='" cite$ * "-btn-bibtex' onclick=" * quote$ * "openTab('" * cite$ *
   "','" * "bibtex" * "')" * quote$ * ">" * write$
   newline$
-  "                  <span class='iconify me-2' data-icon='mdi:library'></span>BibTeX" write$
+  "                  <span class='me-2 mdi mdi-library'></span>BibTeX" write$
   newline$
   "                </label>" write$
   newline$
@@ -732,7 +732,7 @@ FUNCTION {output.icons}
         {
 	  "                <a href='" swap$ url.escape * "' class='btn btn-outline-primary btn-sm me-1'>" * write$
 	  newline$
-	  "                  <span class='iconify me-1' data-icon='" swap$ * "'></span>" * swap$ * write$
+	  "                  <span class='me-1 mdi " swap$ * "'></span>" * swap$ * write$
 	  newline$
 	  "                </a>" write$
 	  newline$

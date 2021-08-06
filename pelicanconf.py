@@ -477,12 +477,12 @@ MARKDOWN = {
 }
 
 NEWS_ICONS = {
-    'talk': 'mdi:presentation',
-    'invited-talk': 'mdi:presentation',
-    'keynote': 'mdi:presentation',
-    'radio': 'mdi:radio-tower',
-    'publication': 'mdi:file-document-outline',
-    'shared-task': 'mdi:human-greeting-proximity',
+    'talk': 'mdi-presentation',
+    'invited-talk': 'mdi-presentation',
+    'keynote': 'mdi-presentation',
+    'radio': 'mdi-radio-tower',
+    'publication': 'mdi-file-document-outline',
+    'shared-task': 'mdi-human-greeting-proximity',
 }
 
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
