@@ -426,6 +426,16 @@ PROJECTS = [
         'roles': ['Co-maintainer'],
         'category': 'software',
      },
+    {
+        'title': 'PunCAT',
+        'location': 'OFAI',
+        'date': '2020–',
+        'description': 'Interactive prototype tool for the computer-assisted translation of puns',
+        'url': 'https://github.com/OFAI/PunCAT',
+        'image': 'puncat.png',
+        'roles': ['Co-developer'],
+        'category': 'software',
+     },
 ]
 
 PROJECT_CATEGORIES = [ ('research', 'Funded research projects'),
