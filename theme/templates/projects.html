@@ -63,21 +63,26 @@
   }
 
   /* Set up three-column carousel */
-  {% for category_id, category_name in PROJECT_CATEGORIES %}
-  let {{ category_id }}items = document.querySelectorAll('.carousel .{{ category_id }}-project')
+  const categories = [
+      {% for category_id, category_name in PROJECT_CATEGORIES %}
+      "{{ category_id }}",
+      {% endfor %}
+  ];
 
-  {{ category_id }}items.forEach((el) => {
-      const minPerSlide = 3
-      let next = el.nextElementSibling
-      for (var i=1; i<minPerSlide; i++) {
-          if (!next) {
-              // wrap carousel by using first child
-              next = {{ category_id }}items[0]
-      	  }
-          let cloneChild = next.cloneNode(true)
-          el.appendChild(cloneChild.children[0])
-          next = next.nextElementSibling
-      }
-  })
-  {% endfor %}
+  categories.forEach((category) => {
+      let items = document.querySelectorAll('.carousel .' + category + '-project');
+      items.forEach((item) => {
+          const minPerSlide = 3;
+          let next = item.nextElementSibling;
+          for (var i=1; i<minPerSlide; i++) {
+              if (!next) {
+                  // wrap carousel by using first child
+                  next = items[0];
+              }
+              let cloneChild = next.cloneNode(true);
+              item.appendChild(cloneChild.children[0]);
+              next = next.nextElementSibling;
+          }
+      });
+  });
 </script>
