@@ -29,6 +29,7 @@ ENTRY
   {
     abstract
     address
+    appendix
     author
     booktitle
     bookurl
@@ -61,6 +62,7 @@ ENTRY
     tex
     title
     type
+    video
     volume
     year
   }
@@ -146,6 +148,16 @@ FUNCTION {get.icon.data}
   "Data"
   "mdi:database"
   #0 in.bibliography = 'skip$ {data} if$
+  record.marker
+
+  "Video"
+  "mdi:video"
+  #0 in.bibliography = 'skip$ {video} if$
+  record.marker
+
+  "Appendix"
+  "mdi:more"
+  #0 in.bibliography = 'skip$ {appendix} if$
   record.marker
 
   "PDF"
