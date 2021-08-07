@@ -96,6 +96,7 @@ ARTICLES_FRONT_PAGE = 5
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
+DEFAULT_CATEGORY = 'news'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
