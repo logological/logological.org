@@ -47,42 +47,68 @@
 </section>
 
 <script>
-  function equalizeCardHeight() {
-      const cards = Array.from(document.querySelectorAll('.project-card'));
+  /*    
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
 
-      cards.forEach(card => {
-          card.style.height = null;
-      });
+        Copyright (C) 2021  Tritan Miller
 
-      const cardHeights = cards.map(card => card.offsetHeight);
-      const maxCardHeight = Math.max(...cardHeights);
+        The JavaScript code in this page is free software: you can
+        redistribute it and/or modify it under the terms of the GNU
+        General Public License (GNU GPL) as published by the Free Software
+        Foundation, either version 3 of the License, or (at your option)
+        any later version.  The code is distributed WITHOUT ANY WARRANTY;
+        without even the implied warranty of MERCHANTABILITY or FITNESS
+        FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 
-      cards.forEach(card => {
-          card.style.height = maxCardHeight + 'px';
-      });
-  }
+        As additional permission under GNU GPL version 3 section 7, you
+        may distribute non-source (e.g., minimized or compacted) forms of
+        that code without the copy of the GNU GPL normally required by
+        section 4, provided you include this license notice and a URL
+        through which recipients can access the Corresponding Source.   
 
-  /* Set up three-column carousel */
-  const categories = [
-      {% for category_id, category_name in PROJECT_CATEGORIES %}
-      "{{ category_id }}",
-      {% endfor %}
-  ];
 
-  categories.forEach((category) => {
-      let items = document.querySelectorAll('.carousel .' + category + '-project');
-      items.forEach((item) => {
-          const minPerSlide = 3;
-          let next = item.nextElementSibling;
-          for (var i=1; i<minPerSlide; i++) {
-              if (!next) {
-                  // wrap carousel by using first child
-                  next = items[0];
-              }
-              let cloneChild = next.cloneNode(true);
-              item.appendChild(cloneChild.children[0]);
-              next = next.nextElementSibling;
-          }
-      });
-  });
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+  */
+  
+function equalizeCardHeight() {
+    const cards = Array.from(document.querySelectorAll('.project-card'));
+
+    cards.forEach(card => {
+        card.style.height = null;
+    });
+
+    const cardHeights = cards.map(card => card.offsetHeight);
+    const maxCardHeight = Math.max(...cardHeights);
+
+    cards.forEach(card => {
+        card.style.height = maxCardHeight + 'px';
+    });
+}
+
+/* Set up three-column carousel */
+const categories = [
+    {% for category_id, category_name in PROJECT_CATEGORIES %}
+    "{{ category_id }}",
+    {% endfor %}
+];
+
+categories.forEach((category) => {
+    let items = document.querySelectorAll('.carousel .' + category + '-project');
+    items.forEach((item) => {
+        const minPerSlide = 3;
+        let next = item.nextElementSibling;
+        for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0];
+            }
+            let cloneChild = next.cloneNode(true);
+            item.appendChild(cloneChild.children[0]);
+            next = next.nextElementSibling;
+        }
+    });
+});
+
 </script>

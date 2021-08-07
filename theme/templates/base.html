@@ -70,21 +70,8 @@
     {% endblock %}
   </div>
 
-<footer lang="{{ DEFAULT_LANG }}">
-<div class="container">
-    <div class="row">
-      <div class="col-md-4">
-	<!-- {{ FOOTER_LEFT }} -->
-	<!-- Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %} -->
-      </div>
-      <div class="col-md-4">
-        <!-- {{ FOOTER_MIDDLE }} -->
-      </div>
-      <div class="col-md-4">
-        <!-- {{ FOOTER_RIGHT }} -->
-      </div>
-    </div>
-</div>
+<footer lang="{{ DEFAULT_LANG }}" class="text-end border-top border-top-1 mt-5">
+  <p class="mb-0 pb-0"><small><a href="{{ SITEURL }}/credits.html" data-jslicense="1">Credits</a> | Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %}</small></p>
 </footer>
 
 <!-- Bootstrap core JS-->

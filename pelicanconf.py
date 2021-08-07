@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 import subprocess
 import datetime
+import pytz
 
 AUTHOR = u'Tristan Miller'
 SITETITLE = u"Tristan Miller"
@@ -13,13 +14,14 @@ SITEURL = ''
 REPOURL = 'https://github.com/logological/logological.org'
 DESCRIPTION = ""
 BANNER = ""
-BUILD_TIME = datetime.date.today().strftime(format='%Y-%m-%d')
 
 # Language and time
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en-ca'
 TIMEZONE = u'Europe/Vienna'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
+BUILD_TIME = datetime.datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M %Z")
+#date.today()#.strftime(format='%Y-%m-%d')
 
 # This goes at the footer of the site
 FOOTER_LEFT = "" # Superseded; see base.html
