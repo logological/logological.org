@@ -17,7 +17,7 @@ all: miller.bbl miller-recreational.bbl miller-featured.bbl
 
 %.bbl: %.aux %.bib logological.bst
 	bibtex $<
-	sed 's/^ *//' $@ | fmt -w 2048 | sed 's/=>/\n=>/g' > $@.fmt && mv $@.fmt $@
+	sed 's/^ *//;' $@ | fmt -w 2048 | sed 's/=>/\n=>/g;/^[^=]/s/[\t ]\+/ /g' > $@.fmt && mv $@.fmt $@
 
 all.bib: miller.bib miller-recreational.bib
 	cat $+ > $@

@@ -1,29 +1,29 @@
 ## Publications
 {% raw %}
-Waltraud Kolb and Tristan Miller.  Human–computer interaction in pun translation.  In James Hadley, Kristiina Taivalkoski-Shilov, Carlos S. C. Teixeira, and Antonio Toral, editors, Using Technologies for Creative-Text Translation.  Routledge, 2022.  To appear.	
-=> https://github.com/OFAI/PunCAT	Code
+Waltraud Kolb and Tristan Miller. Human–computer interaction in pun translation. In James Hadley, Kristiina Taivalkoski-Shilov, Carlos S. C. Teixeira, and Antonio Toral, editors, Using Technologies for Creative-Text Translation. Routledge, 2022. To appear. 
+=> https://github.com/OFAI/PunCAT Code
 
-Alexandra Uma, Tommaso Fornaciari, Anca Dumitrache, Tristan Miller, Jon Chamberlain, Barbara Plank, Edwin Simpson, and Massimo Poesio.	SemEval-2021 Task 12: Learning with disagreements.  In Proceedings of the 15th International Workshop on Semantic Evaluation (SemEval-2021), pages 338–347, August 2021.  ISBN 978-1-954085-70-1.  DOI: 10.18653/v1/2021.semeval-1.41.  
-=> https://aclanthology.org/2021.semeval-1.41.pdf	  PDF 
-=> https://doi.org/10.5281/zenodo.5130736       Data
+Alexandra Uma, Tommaso Fornaciari, Anca Dumitrache, Tristan Miller, Jon Chamberlain, Barbara Plank, Edwin Simpson, and Massimo Poesio. SemEval-2021 Task 12: Learning with disagreements. In Proceedings of the 15th International Workshop on Semantic Evaluation (SemEval-2021), pages 338–347, August 2021. ISBN 978-1-954085-70-1. DOI: 10.18653/v1/2021.semeval-1.41. 
+=> https://aclanthology.org/2021.semeval-1.41.pdf PDF 
+=> https://doi.org/10.5281/zenodo.5130736 Data
 
-Tristan Miller.  Dmitri Borgmann's rotas square articles.  Notes and Queries, 67(3):431–432, September 2020.	ISSN 0029-3970.  DOI: 10.1093/notesj/gjaa113.  
+Tristan Miller. Dmitri Borgmann's rotas square articles. Notes and Queries, 67(3):431–432, September 2020. ISSN 0029-3970. DOI: 10.1093/notesj/gjaa113. 
 => https://academic.oup.com/nq/article/67/3/431/5900366?guestAccessKey=570b28c9-eed4-45ca-87ac-1e2650a8d5ae HTML 
 => https://academic.oup.com/nq/article-pdf/67/3/431/34243418/gjaa113.pdf?guestAccessKey=570b28c9-eed4-45ca-87ac-1e2650a8d5ae PDF
 
-Tristan Miller and Denis Auroux.  GPP, the generic preprocessor.  Journal of Open Source Software, 5(51), July 2020.  ISSN 2475-9066.  DOI: 10.21105/joss.02400.  
+Tristan Miller and Denis Auroux. GPP, the generic preprocessor. Journal of Open Source Software, 5(51), July 2020. ISSN 2475-9066. DOI: 10.21105/joss.02400. 
 => https://www.theoj.org/joss-papers/joss.02400/10.21105.joss.02400.pdf PDF 
 => https://logological.org/gpp/ Code
 
-Tristan Miller.  Reinhold Aman, 1936–2019.  Humor: International Journal of Humor Research, 32(1):1–5, February 2020.  ISSN 0933-1719.  DOI: 10.1515/humor-2019-0085.  
+Tristan Miller. Reinhold Aman, 1936–2019. Humor: International Journal of Humor Research, 32(1):1–5, February 2020. ISSN 0933-1719. DOI: 10.1515/humor-2019-0085. 
 => https://www.degruyter.com/view/j/humr.2020.33.issue-1/humor-2019-0085/humor-2019-0085.xml HTML 
-=> https://www.degruyter.com/document/doi/10.1515/humor-2019-0085/pdf   PDF
+=> https://www.degruyter.com/document/doi/10.1515/humor-2019-0085/pdf PDF
 
-Edwin Simpson, Erik-Lân Do Dinh, Tristan Miller, and Iryna Gurevych.  Predicting humorousness and metaphor novelty with Gaussian process preference learning.	In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019), pages 5716–5728, July 2019.  ISBN 978-1-950737-48-2.  DOI: 10.18653/v1/P19-1572.  
-=> https://aclanthology.org/P19-1572.pdf	   PDF 
-=> https://vimeo.com/385226013  Video 
-=> https://github.com/UKPLab/acl2019-GPPL-humour-metaphor	     Data 
-=> https://github.com/UKPLab/acl2019-GPPL-humour-metaphor	  Code
+Edwin Simpson, Erik-Lân Do Dinh, Tristan Miller, and Iryna Gurevych. Predicting humorousness and metaphor novelty with Gaussian process preference learning. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019), pages 5716–5728, July 2019. ISBN 978-1-950737-48-2. DOI: 10.18653/v1/P19-1572. 
+=> https://aclanthology.org/P19-1572.pdf PDF 
+=> https://vimeo.com/385226013 Video 
+=> https://github.com/UKPLab/acl2019-GPPL-humour-metaphor Data 
+=> https://github.com/UKPLab/acl2019-GPPL-humour-metaphor Code
 
 {% endraw %}
 
