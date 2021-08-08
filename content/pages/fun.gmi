@@ -24,16 +24,16 @@ Logology, or recreational linguistics, is the study and practice of word games a
 => https://logological.org/sonnet/ Shakespeare's Sonnet Generator
 
 * A selection of my logological articles from Word Ways (open access from two years after the date of publication):
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5233&amp;context=wordways Pessimal spelling alphabets
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5241&amp;context=wordways Russian–English homoglyphs, homographs, and homographic translations
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5272&amp;context=wordways Dvorak typewriter words
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5290&amp;context=wordways Perfect Roman windows
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5327&amp;context=wordways The world's shortest personal names
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5324&amp;context=wordways Unigraphic lipogrammatic windows: A survey
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5341&amp;context=wordways Higher-order contronyms
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5375&amp;context=wordways Elemental words revisited
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5419&amp;context=wordways Gadsby: Wikipedia's lost lipogram
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5444&amp;context=wordways Ichthyornithonomy
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5233&context=wordways Pessimal spelling alphabets
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5241&context=wordways Russian–English homoglyphs, homographs, and homographic translations
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5272&context=wordways Dvorak typewriter words
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5290&context=wordways Perfect Roman windows
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5327&context=wordways The world's shortest personal names
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5324&context=wordways Unigraphic lipogrammatic windows: A survey
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5341&context=wordways Higher-order contronyms
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5375&context=wordways Elemental words revisited
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5419&context=wordways Gadsby: Wikipedia's lost lipogram
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5444&context=wordways Ichthyornithonomy
 
 ## Recreational mathematics
 
@@ -41,9 +41,9 @@ These papers are mainly for fun, though some of them have some serious research 
 
 => https://logological.org/girlfriend.html Why I will never have a girlfriend
 => https://logological.org/freundin.html Warum ich niemals eine Freundin haben werde
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5379&amp;context=wordways Knight-graphable words
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5379&context=wordways Knight-graphable words
 => https://oeis.org/A255436 A255436: Number of distinct, connected, order-n subgraphs of the infinite knight's graph
-=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5405&amp;context=wordways New puzzles on knight-graphable words
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5405&context=wordways New puzzles on knight-graphable words
 
 ## Light verse
 
