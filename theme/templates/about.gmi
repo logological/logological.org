@@ -1,4 +1,4 @@
-You've reached the Gemini home page of Tristan Miller.  I'm a computational linguist with research interests in lexical semantics, historical online corpora, and computational detection and interpretation of humour.  I currently head the Computational Pun-derstanding: Computer-Assisted Translation of Humorous Wordplay project at the Austrian Research Institute for Artificial Intelligence (OFAI).
+You've reached the Gemini capsule of Tristan Miller.  I'm a computational linguist with research interests in lexical semantics, historical online corpora, and computational detection and interpretation of humour.  I currently head the Computational Pun-derstanding: Computer-Assisted Translation of Humorous Wordplay project at the Austrian Research Institute for Artificial Intelligence (OFAI).
 
 => https://punderstanding.ofai.at/	Computational Pun-derstanding
 => http://www.ofai.at/	Austrian Research Institute for Artificial Intelligence
