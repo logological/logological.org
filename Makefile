@@ -30,7 +30,7 @@ help:
 	@echo 'Makefile logological.org                                                  '
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
-	@echo '   make gmi                            (re)generate the Gemini site       '
+	@echo '   make gemini                         (re)generate the Gemini site       '
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
