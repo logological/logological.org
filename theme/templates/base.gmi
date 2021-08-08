@@ -1,0 +1,7 @@
+{% block head %}{% endblock head %}
+{% block content %}{% endblock content %}
+{% block navbar %}
+
+
+Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %}
+{% endblock navbar %}

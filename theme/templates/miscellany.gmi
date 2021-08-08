@@ -1,0 +1,6 @@
+## Miscellany
+    
+My interests in language, math, and computers were sparked and strengthened by exposure to the works of Willard R. Espy, Louis Phillips, Mike Keith, Dmitri Borgmann, Jim Butterfield, and others. These writers share a great talent for making technical or linguistic topics fun and accessible to a general audience.  You can check out my own contributions to popular and recreational mathematics and linguistics, plus a few other odds and ends.  I also maintain an index of miscellaneous documents and websites I've produced which don't really fit into any other section.
+
+=> fun.gmi	My contributions to popular and recreational mathematics and linguistics
+=> misc.gmi	Miscellaneous documents and websites I've produced

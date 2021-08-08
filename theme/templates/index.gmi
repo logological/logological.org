@@ -1,0 +1,20 @@
+{% extends "base.gmi" %}
+
+{% block content %}
+```
+▜          ▜       ▗       ▜            
+▐ ▞▀▖▞▀▌▞▀▖▐ ▞▀▖▞▀▌▄ ▞▀▖▝▀▖▐   ▞▀▖▙▀▖▞▀▌
+▐ ▌ ▌▚▄▌▌ ▌▐ ▌ ▌▚▄▌▐ ▌ ▖▞▀▌▐ ▗▖▌ ▌▌  ▚▄▌
+ ▘▝▀ ▗▄▘▝▀  ▘▝▀ ▗▄▘▀▘▝▀ ▝▀▘ ▘▝▘▝▀ ▘  ▗▄▘
+```
+
+{% include 'about.gmi' %}
+
+{% include 'news.gmi' %}
+
+{% include 'publications_populated.gmi' %}
+
+{% include 'projects.gmi' %}
+
+{% include 'miscellany.gmi' %}
+{% endblock %}

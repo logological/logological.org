@@ -1,0 +1,19 @@
+Title: Teaching
+
+# Teaching
+
+## Technische Universität Darmstadt
+
+### Courses
+
+=> https://moodle.informatik.tu-darmstadt.de/course/view.php?id=105 Natural Language Processing and the Web (Winter 2011)
+
+## University of Toronto
+
+### Courses
+
+=> http://www.cs.toronto.edu/~pgries/108/02f/ CSC108: Introduction to Computer Programming (Fall 2002)
+=> https://logological.org/courses/Toronto/CSC270.02S/ CSC270: Fundamental Data Structures and Techniques (Summer 2002)
+=> https://logological.org/courses/Toronto/CSC270.02W/ CSC270: Fundamental Data Structures and Techniques (Winter 2002)
+=> http://www.cs.toronto.edu/~dianaz/324/ CSC324: Principles of Programming Languages (Summer 2001)
+=> https://logological.org/courses/Toronto/CSC468.00F/ CSC468/CSC2204: Operating Systems (Fall 2000)

@@ -80,7 +80,6 @@ INTEGERS
     in.span
     debug.mode
     use.internal.latex2html
-    latex2htmlize.abstracts
     longest.entry.name
     in.bibliography
   }
@@ -88,7 +87,6 @@ INTEGERS
 FUNCTION {init.state.consts}
 {  #0 'debug.mode :=
    #1 'use.internal.latex2html :=
-   #0 'latex2htmlize.abstracts :=
    #0 'before.all :=
    #1 'mid.sentence :=
    #2 'after.sentence :=
@@ -136,96 +134,33 @@ FUNCTION {get.icon.data}
   % Link data has the following format:
   %
   %   <legend text>
-  %   <CSS class name for icon>
   %   #0 in.bibliography = 'skip$ {<entry>} if$
   %   record.marker
 
   "Code"
-  "mdi-source-repository"
   #0 in.bibliography = 'skip$ {code} if$
   record.marker
   
   "Data"
-  "mdi-database"
   #0 in.bibliography = 'skip$ {data} if$
   record.marker
 
   "Video"
-  "mdi-video"
   #0 in.bibliography = 'skip$ {video} if$
   record.marker
 
   "Appendix"
-  "mdi-more"
   #0 in.bibliography = 'skip$ {appendix} if$
   record.marker
 
   "PDF"
-  "mdi-file-pdf"
   #0 in.bibliography = 'skip$ {pdf} if$
   record.marker
   
   "HTML"
-  "mdi-web"
   #0 in.bibliography = 'skip$ {html} if$
   record.marker
   
-}
-
-FUNCTION {get.link.data}
-{ null
-
-  % Link data has the following format:
-  %
-  %   <link rel>
-  %   <link type>
-  %   <link media>
-  %   <link href>
-  %   <link title>
-  %   record.marker
-
-  "alternate stylesheet"
-  "text/css"
-  "all"
-  css.path "/plain.css" *
-  "Plain"
-  record.marker
-
-  "alternate stylesheet"
-  "text/css"
-  "all"
-  css.path "/traditional.css" *
-  "Traditional"
-  record.marker
-
-  "alternate stylesheet"
-  "text/css"
-  "all"
-  css.path "/breuel.css" *
-  "Amethyst"
-  record.marker
-
-  "alternate stylesheet"
-  "text/css"
-  "all"
-  css.path "/fruity.css" *
-  "Fruity Typewriter"
-  record.marker
-
-  "alternate stylesheet"
-  "text/css"
-  "all"
-  css.path "/boxy.css" *
-  "Boxy"
-  record.marker
-
-  "stylesheet"
-  "text/css"
-  "all"
-  css.path "/compact.css" *
-  "Compact"
-  record.marker
-
 }
 
 MACRO {jan} {"January"}
@@ -318,43 +253,43 @@ FUNCTION {latex2html.1}
 
 FUNCTION {latex2html.2}
 {
-  "\textunderscore"  "&#x005F;"  find.replace
-  "\textbackslash"  "&#x005C;"  find.replace
+  "\textunderscore"  "_"  find.replace
+  "\textbackslash"  "\"  find.replace
 }
 
 FUNCTION {latex2html.3}
 {
-  "\textbullet"  "&bull;"  find.replace
-  "\textnumero"  "&#x2116;"  find.replace
-  "\copyright"  "&copy;"  find.replace
-  "\textminus"  "&minus;"  find.replace
+  "\textbullet"  "•"  find.replace
+  "\textnumero"  "№"  find.replace
+  "\copyright"  "©"  find.replace
+  "\textminus"  "−"  find.replace
 }
 
 FUNCTION {latex2html.4}
 {
-  "\textcent"  "&cent;"  find.replace
-  "\texteuro"  "&euro;"  find.replace
-  "\textless"  "&lt;"  find.replace
-  "\LaTeXTeX"  "<span class='latex'>(L<sup>a</sup>)T<sub>e</sub>X</span>"  find.replace
+  "\textcent"  "¢"  find.replace
+  "\texteuro"  "€"  find.replace
+  "\textless"  "<"  find.replace
+  "\LaTeXTeX"  "(La)TeX"  find.replace
 }
 
 FUNCTION {latex2html.5}
 {
-  "\textbar"  "&#x007C;"  find.replace
-  "\textdiv"  "&divide;"  find.replace
-  "\BibTeX"  "B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span>"  find.replace
-  "\pounds"  "&pound;"  find.replace
+  "\textbar"  "|"  find.replace
+  "\textdiv"  "÷"  find.replace
+  "\BibTeX"  "BibTeX"  find.replace
+  "\pounds"  "£"  find.replace
 }
 
 FUNCTION {latex2html.6}
 {
-  "\'{\i}"  "&iacute;"  find.replace
-  "\={\i}"  "&#x012B;"  find.replace
-  "\LaTeX"  "<span class='latex'>L<sup>a</sup>T<sub>e</sub>X</span>"  find.replace
-  "\Thorn"  "&THORN;"  find.replace
-  "\^{\i}"  "&icirc;"  find.replace
-  "\^{\j}"  "&#x0135;"  find.replace
-  "\`{\i}"  "&igrave;"  find.replace
+  "\'{\i}"  "í"  find.replace
+  "\={\i}"  "ī"  find.replace
+  "\LaTeX"  "LaTeX"  find.replace
+  "\Thorn"  "Þ"  find.replace
+  "\^{\i}"  "î"  find.replace
+  "\^{\j}"  "ĵ"  find.replace
+  "\`{\i}"  "ì"  find.replace
 }
 
 FUNCTION {latex2html.7}
@@ -363,234 +298,233 @@ FUNCTION {latex2html.7}
 
 FUNCTION {latex2html.8}
 {
-  "\ldots"  "&hellip;"  find.replace
+  "\ldots"  "…"  find.replace
   "\slash"  "/"  find.replace
-  "\thorn"  "&thorn;"  find.replace
-  "\" quote$ * "{A}" *  "&Auml;"  find.replace
-  "\" quote$ * "{E}" *  "&Euml;"  find.replace
-  "\" quote$ * "{I}" *  "&Iuml;"  find.replace
-  "\" quote$ * "{O}" *  "&Ouml;"  find.replace
-  "\" quote$ * "{U}" *  "&Uuml;"  find.replace
-  "\" quote$ * "{Y}" *  "&Yuml;"  find.replace
-  "\" quote$ * "{a}" *  "&auml;"  find.replace
-  "\" quote$ * "{e}" *  "&euml;"  find.replace
+  "\thorn"  "þ"  find.replace
+  "\" quote$ * "{A}" *  "Ä"  find.replace
+  "\" quote$ * "{E}" *  "Ë"  find.replace
+  "\" quote$ * "{I}" *  "Ï"  find.replace
+  "\" quote$ * "{O}" *  "Ö"  find.replace
+  "\" quote$ * "{U}" *  "Ü"  find.replace
+  "\" quote$ * "{Y}" *  "Ÿ"  find.replace
+  "\" quote$ * "{a}" *  "ä"  find.replace
+  "\" quote$ * "{e}" *  "ë"  find.replace
 }
 
 FUNCTION {latex2html.9}
 {
-  "\" quote$ * "{o}" *  "&ouml;"  find.replace
-  "\" quote$ * "{u}" *  "&uuml;"  find.replace
-  "\" quote$ * "{y}" *  "&yuml;"  find.replace
-  "\'{A}"  "&Aacute;"  find.replace
-  "\'{C}"  "&#x0106;"  find.replace
-  "\'{E}"  "&Eacute;"  find.replace
-  "\'{I}"  "&Iacute;"  find.replace
-  "\'{L}"  "&#x0139;"  find.replace
-  "\'{N}"  "&#x0143;"  find.replace
-  "\'{O}"  "&Oacute;"  find.replace
-  "\'{R}"  "&#x0154;"  find.replace
-  "\'{S}"  "&#x015A;"  find.replace
-  "\'{U}"  "&Uacute;"  find.replace
-  "\'{Y}"  "&Yacute;"  find.replace
-  "\'{Z}"  "&#x0179;"  find.replace
-  "\'{a}"  "&aacute;"  find.replace
-  "\'{c}"  "&#x0107;"  find.replace
-  "\'{e}"  "&eacute;"  find.replace
-  "\'{g}"  "&#x01F5;"  find.replace
-  "\'{l}"  "&#x013A;"  find.replace
-  "\'{n}"  "&#x0144;"  find.replace
-  "\'{o}"  "&oacute;"  find.replace
-  "\'{r}"  "&#x0155;"  find.replace
-  "\'{s}"  "&#x015B;"  find.replace
-  "\'{u}"  "&uacute;"  find.replace
-  "\'{y}"  "&yacute;"  find.replace
-  "\'{z}"  "&#x017A;"  find.replace
-  "\.{C}"  "&#x010A;"  find.replace
-  "\.{E}"  "&#x0116;"  find.replace
+  "\" quote$ * "{o}" *  "ö"  find.replace
+  "\" quote$ * "{u}" *  "ü"  find.replace
+  "\" quote$ * "{y}" *  "ÿ"  find.replace
+  "\'{A}"  "Á"  find.replace
+  "\'{C}"  "Ć"  find.replace
+  "\'{E}"  "É"  find.replace
+  "\'{I}"  "Í"  find.replace
+   "\'{L}"  "Ĺ"  find.replace
+  "\'{N}"  "Ń"  find.replace
+  "\'{O}"  "Ó"  find.replace
+  "\'{R}"  "Ŕ"  find.replace
+  "\'{S}"  "Ś"  find.replace
+  "\'{U}"  "Ú"  find.replace
+  "\'{Y}"  "Ý"  find.replace
+  "\'{Z}"  "Ź"  find.replace
+  "\'{a}"  "á"  find.replace
+  "\'{c}"  "ć"  find.replace
+  "\'{e}"  "é"  find.replace
+  "\'{g}"  "ǵ"  find.replace
+  "\'{l}"  "ĺ"  find.replace
+  "\'{n}"  "ń"  find.replace
+  "\'{o}"  "ó"  find.replace
+  "\'{r}"  "ŕ"  find.replace
+  "\'{s}"  "ś"  find.replace
+  "\'{u}"  "ú"  find.replace
+  "\'{y}"  "ý"  find.replace
+  "\'{z}"  "ź"  find.replace
+  "\.{C}"  "Ċ"  find.replace
+  "\.{E}"  "Ė"  find.replace
 }
 
 FUNCTION {latex2html.10}
 {
-  "\.{G}"  "&#x0120;"  find.replace
-  "\.{I}"  "&#x0130;"  find.replace
-  "\.{Z}"  "&#x017B;"  find.replace
-  "\.{c}"  "&#x010B;"  find.replace
-  "\.{e}"  "&#x0117;"  find.replace
-  "\.{g}"  "&#x0121;"  find.replace
-  "\.{z}"  "&#x017C;"  find.replace
-  "\={A}"  "&#x0100;"  find.replace
-  "\={E}"  "&#x0112;"  find.replace
-  "\={I}"  "&#x012A;"  find.replace
-  "\={O}"  "&#x014C;"  find.replace
-  "\={U}"  "&#x016A;"  find.replace
-  "\={a}"  "&#x0101;"  find.replace
-  "\={e}"  "&#x0113;"  find.replace
-  "\={o}"  "&#x014D;"  find.replace
-  "\={u}"  "&#x016B;"  find.replace
+  "\.{G}"  "Ġ"  find.replace
+  "\.{I}"  "İ"  find.replace
+  "\.{Z}"  "Ż"  find.replace
+  "\.{c}"  "ċ"  find.replace
+  "\.{e}"  "ė"  find.replace
+  "\.{g}"  "ġ"  find.replace
+  "\.{z}"  "ż"  find.replace
+  "\={A}"  "Ā"  find.replace
+  "\={E}"  "Ē"  find.replace
+  "\={I}"  "Ī"  find.replace
+  "\={O}"  "Ō"  find.replace
+  "\={U}"  "Ū"  find.replace
+  "\={a}"  "ā"  find.replace
+  "\={e}"  "ē"  find.replace
+  "\={o}"  "ō"  find.replace
+  "\={u}"  "ū"  find.replace
 }
 
 FUNCTION {latex2html.11}
 {
-  "\H{O}"  "&#x0150;"  find.replace
-  "\H{U}"  "&#x0170;"  find.replace
-  "\H{o}"  "&#x0151;"  find.replace
-  "\H{u}"  "&#x0171;"  find.replace
-  "\^{A}"  "&Acirc;"  find.replace
-  "\^{C}"  "&#x0108;"  find.replace
-  "\^{E}"  "&Ecirc;"  find.replace
-  "\^{G}"  "&#x011C;"  find.replace
-  "\^{H}"  "&#x0124;"  find.replace
-  "\^{I}"  "&Icirc;"  find.replace
-  "\^{J}"  "&#x0134;"  find.replace
-  "\^{O}"  "&Ocirc;"  find.replace
-  "\^{S}"  "&#x015C;"  find.replace
-  "\^{U}"  "&Ucirc;"  find.replace
-  "\^{W}"  "&#x0174;"  find.replace
-  "\^{Y}"  "&#x0176;"  find.replace
-  "\^{a}"  "&acirc;"  find.replace
-  "\^{c}"  "&#x0109;"  find.replace
-  "\^{e}"  "&ecirc;"  find.replace
-  "\^{g}"  "&#x011D;"  find.replace
-  "\^{h}"  "&#x0125;"  find.replace
-  "\^{o}"  "&ocirc;"  find.replace
-  "\^{s}"  "&#x015D;"  find.replace
-  "\^{u}"  "&ucirc;"  find.replace
-  "\^{w}"  "&#x0175;"  find.replace
-  "\^{y}"  "&#x0177;"  find.replace
-  "\`{A}"  "&Agrave;"  find.replace
-  "\`{E}"  "&Egrave;"  find.replace
-  "\`{I}"  "&Igrave;"  find.replace
+  "\H{O}"  "Ő"  find.replace
+  "\H{U}"  "Ű"  find.replace
+  "\H{o}"  "ő"  find.replace
+  "\H{u}"  "ű"  find.replace
+  "\^{A}"  "Â"  find.replace
+  "\^{C}"  "Ĉ"  find.replace
+  "\^{E}"  "Ê"  find.replace
+  "\^{G}"  "Ĝ"  find.replace
+  "\^{H}"  "Ĥ"  find.replace
+  "\^{I}"  "Î"  find.replace
+  "\^{J}"  "Ĵ"  find.replace
+  "\^{O}"  "Ô"  find.replace
+  "\^{S}"  "Ŝ"  find.replace
+  "\^{U}"  "Û"  find.replace
+  "\^{W}"  "Ŵ"  find.replace
+  "\^{Y}"  "Ŷ"  find.replace
+  "\^{a}"  "â"  find.replace
+  "\^{c}"  "ĉ"  find.replace
+  "\^{e}"  "ê"  find.replace
+  "\^{g}"  "ĝ"  find.replace
+  "\^{h}"  "ĥ"  find.replace
+  "\^{o}"  "ô"  find.replace
+  "\^{s}"  "ŝ"  find.replace
+  "\^{u}"  "û"  find.replace
+  "\^{w}"  "ŵ"  find.replace
+  "\^{y}"  "ŷ"  find.replace
+  "\`{A}"  "À"  find.replace
+  "\`{E}"  "È"  find.replace
+  "\`{I}"  "Ì"  find.replace
 }
 
 FUNCTION {latex2html.12}
 {
-  "\`{O}"  "&Ograve;"  find.replace
-  "\`{U}"  "&Ugrave;"  find.replace
-  "\`{a}"  "&agrave;"  find.replace
-  "\`{e}"  "&egrave;"  find.replace
-  "\`{o}"  "&ograve;"  find.replace
-  "\`{u}"  "&ugrave;"  find.replace
-  "\cent"  "&cent;"  find.replace
-  "\c{C}"  "&Ccedil;"  find.replace
+  "\`{O}"  "Ò"  find.replace
+  "\`{U}"  "Ù"  find.replace
+  "\`{a}"  "à"  find.replace
+  "\`{e}"  "è"  find.replace
+  "\`{o}"  "ò"  find.replace
+  "\`{u}"  "ù"  find.replace
+  "\cent"  "¢"  find.replace
+  "\c{C}"  "Ç"  find.replace
 }
 
 FUNCTION {latex2html.13}
 {
-  "\c{G}"  "&#x0122;"  find.replace
-  "\c{K}"  "&#x0136;"  find.replace
-  "\c{L}"  "&#x013B;"  find.replace
-  "\c{N}"  "&#x0145;"  find.replace
-  "\c{R}"  "&#x0156;"  find.replace
-  "\c{S}"  "&#x015E;"  find.replace
-  "\c{T}"  "&#x0162;"  find.replace
-  "\c{c}"  "&ccedil;"  find.replace
-  "\c{k}"  "&#x0137;"  find.replace
-  "\c{l}"  "&#x013C;"  find.replace
-  "\c{n}"  "&#x0146;"  find.replace
-  "\c{r}"  "&#x0157;"  find.replace
-  "\c{s}"  "&#x015F;"  find.replace
-  "\c{t}"  "&#x0163;"  find.replace
-  "\k{A}"  "&#x0104;"  find.replace
-  "\k{E}"  "&#x0118;"  find.replace
-  "\k{I}"  "&#x012E;"  find.replace
-  "\k{U}"  "&#x0172;"  find.replace
-  "\k{a}"  "&#x0105;"  find.replace
-  "\k{e}"  "&#x0119;"  find.replace
-  "\k{i}"  "&#x012F;"  find.replace
-  "\k{u}"  "&#x0173;"  find.replace
-  "\r{U}"  "&#x016E;"  find.replace
-  "\r{u}"  "&#x016F;"  find.replace
-  "\u{A}"  "&#x0102;"  find.replace
-  "\u{G}"  "&#x011E;"  find.replace
-  "\u{U}"  "&#x016C;"  find.replace
-  "\u{a}"  "&#x0103;"  find.replace
-  "\u{g}"  "&#x011F;"  find.replace
+  "\c{G}"  "Ģ"  find.replace
+  "\c{K}"  "Ķ"  find.replace
+  "\c{L}"  "Ļ"  find.replace
+  "\c{N}"  "Ņ"  find.replace
+  "\c{R}"  "Ŗ"  find.replace
+  "\c{S}"  "Ş"  find.replace
+  "\c{T}"  "Ţ"  find.replace
+  "\c{c}"  "ç"  find.replace
+  "\c{k}"  "ķ"  find.replace
+  "\c{l}"  "ļ"  find.replace
+  "\c{n}"  "ņ"  find.replace
+  "\c{r}"  "ŗ"  find.replace
+  "\c{s}"  "ş"  find.replace
+  "\c{t}"  "ţ"  find.replace
+  "\k{A}"  "Ą"  find.replace
+  "\k{E}"  "Ę"  find.replace
+  "\k{I}"  "Į"  find.replace
+  "\k{U}"  "Ų"  find.replace
+  "\k{a}"  "ą"  find.replace
+  "\k{e}"  "ę"  find.replace
+  "\k{i}"  "į"  find.replace
+  "\k{u}"  "ų"  find.replace
+  "\r{U}"  "Ů"  find.replace
+  "\r{u}"  "ů"  find.replace
+  "\u{A}"  "Ă"  find.replace
+  "\u{G}"  "Ğ"  find.replace
+  "\u{U}"  "Ŭ"  find.replace
+  "\u{a}"  "ă"  find.replace
+  "\u{g}"  "ğ"  find.replace
 }
 
 FUNCTION {latex2html.14}
 {
-  "\u{u}"  "&#x016D;"  find.replace
-  "\v{C}"  "&#x010C;"  find.replace
-  "\v{D}"  "&#x010E;"  find.replace
-  "\v{E}"  "&#x011A;"  find.replace
-  "\v{L}"  "&#x013D;"  find.replace
-  "\v{N}"  "&#x0147;"  find.replace
-  "\v{R}"  "&#x0158;"  find.replace
-  "\v{S}"  "&Scaron;"  find.replace
-  "\v{T}"  "&#x0164;"  find.replace
-  "\v{Z}"  "&#x017D;"  find.replace
-  "\v{c}"  "&#x010D;"  find.replace
-  "\v{d}"  "&#x010F;"  find.replace
-  "\v{e}"  "&#x011B;"  find.replace
-  "\v{l}"  "&#x013E;"  find.replace
-  "\v{n}"  "&#x0148;"  find.replace
-  "\v{r}"  "&#x0159;"  find.replace
-  "\v{s}"  "&scaron;"  find.replace
-  "\v{t}"  "&#x0165;"  find.replace
-  "\v{z}"  "&#x017E;"  find.replace
-  "\~{A}"  "&Atilde;"  find.replace
-  "\~{I}"  "&#x0128;"  find.replace
-  "\~{N}"  "&Ntilde;"  find.replace
-  "\~{O}"  "&Otilde;"  find.replace
-  "\~{U}"  "&#x0168;"  find.replace
-  "\~{a}"  "&atilde;"  find.replace
-  "\~{n}"  "&ntilde;"  find.replace
-  "\~{o}"  "&otilde;"  find.replace
-  "\~{u}"  "&#x0169;"  find.replace
-  "\TeX"  "<span class='tex'>T<sub>e</sub>X</span>"  find.replace
+  "\u{u}"  "ŭ"  find.replace
+  "\v{C}"  "Č"  find.replace
+  "\v{D}"  "Ď"  find.replace
+  "\v{E}"  "Ě"  find.replace
+  "\v{L}"  "Ľ"  find.replace
+  "\v{N}"  "Ň"  find.replace
+  "\v{R}"  "Ř"  find.replace
+  "\v{S}"  "Š"  find.replace
+  "\v{T}"  "Ť"  find.replace
+  "\v{Z}"  "Ž"  find.replace
+  "\v{c}"  "č"  find.replace
+  "\v{d}"  "ď"  find.replace
+  "\v{e}"  "ě"  find.replace
+  "\v{l}"  "ľ"  find.replace
+  "\v{n}"  "ň"  find.replace
+  "\v{r}"  "ř"  find.replace
+  "\v{s}"  "š"  find.replace
+  "\v{t}"  "ť"  find.replace
+  "\v{z}"  "ž"  find.replace
+  "\~{A}"  "Ã"  find.replace
+  "\~{I}"  "Ĩ"  find.replace
+  "\~{N}"  "Ñ"  find.replace
+  "\~{O}"  "Õ"  find.replace
+  "\~{U}"  "Ũ"  find.replace
+  "\~{a}"  "ã"  find.replace
+  "\~{n}"  "ñ"  find.replace
+  "\~{o}"  "õ"  find.replace
+  "\~{u}"  "ũ"  find.replace
+  "\TeX"  "TeX"  find.replace
 }
 
 FUNCTION {latex2html.15}
 {
-  "---"  "&mdash;"  find.replace
-  "\@."  "&#x002E;"  find.replace
-  "\AA"  "&#x212B;"  find.replace
-  "\AA"  "&Aring;"  find.replace
-  "\AE"  "&AElig;"  find.replace
-  "\DH"  "&ETH;"  find.replace
-  "\DJ"  "&#x0110;"  find.replace
-  "\NG"  "&#x014A;"  find.replace
-  "\OE"  "&OElig;"  find.replace
-  "\TH"  "&THORN;"  find.replace
-  "\aa"  "&aring;"  find.replace
-  "\ae"  "&aelig;"  find.replace
-  "\dh"  "&eth;"  find.replace
-  "\dj"  "&#x0111;"  find.replace
-  "\ng"  "&#x014B;"  find.replace
-  "\oe"  "&oelig;"  find.replace
+  "---"  "—"  find.replace
+  "\@."  "."  find.replace
+  "\AA"  "Å"  find.replace
+  "\AA"  "Å"  find.replace
+  "\AE"  "Æ"  find.replace
+  "\DH"  "Ð"  find.replace
+  "\DJ"  "Đ"  find.replace
+  "\NG"  "Ŋ"  find.replace
+  "\OE"  "Œ"  find.replace
+  "\TH"  "Þ"  find.replace
+  "\aa"  "å"  find.replace
+  "\ae"  "æ"  find.replace
+  "\dh"  "ð"  find.replace
+  "\dj"  "đ"  find.replace
+  "\ng"  "ŋ"  find.replace
+  "\oe"  "œ"  find.replace
 }
 
 FUNCTION {latex2html.16}
 {
-  "\ss"  "&szlig;"  find.replace
-  "\th"  "&thorn;"  find.replace
+  "\ss"  "ß"  find.replace
+  "\th"  "þ"  find.replace
   "\@ "  " "  find.replace
   "\ "  " "  find.replace
-  "!`"  "&iexcl;"  find.replace
-  "!!"  "&#x203C;"  find.replace
-  "''"  "&rdquo;"  find.replace
-  ",,"  "&ldquor;"  find.replace
-  "--"  "&ndash;"  find.replace
-  "?`"  "&iquest;"  find.replace
-  "\#"  "&#x0023;"  find.replace
-  "\$"  "&#x0024;"  find.replace
-  "\%"  "&#x0025;"  find.replace
-  "\&"  "&amp;"  find.replace
-  "\-"  "&shy;"  find.replace
-  "\L"  "&#x0141;"  find.replace
-  "\O"  "&Oslash;"  find.replace
-  "\P"  "&para;"  find.replace
-  "\S"  "&sect;"  find.replace
-  "\_"  "&#x005F;"  find.replace
-  "\i"  "&#x0131;"  find.replace
-  "\l"  "&#x0142;"  find.replace
-  "\o"  "&oslash;"  find.replace
-  "\{"  "&#x007B;"  find.replace
-  "\}"  "&#x007D;"  find.replace
-  "``"  "&ldquo;"  find.replace
-  quote$  "&quot;"  find.replace
-  "`"  "&lsquo;"  find.replace
-  "~"  "&nbsp;"  find.replace
+  "!`"  "¡"  find.replace
+  "!!"  "‼"  find.replace
+  "''"  "”"  find.replace
+  ",,"  "„"  find.replace
+  "--"  "–"  find.replace
+  "?`"  "¿"  find.replace
+  "\#"  "#"  find.replace
+  "\$"  "$"  find.replace
+  "\%"  "%"  find.replace
+  "\&"  "&"  find.replace
+  "\-"  ""  find.replace
+  "\L"  "Ł"  find.replace
+  "\O"  "Ø"  find.replace
+  "\P"  "¶"  find.replace
+  "\S"  "§"  find.replace
+  "\_"  "_"  find.replace
+  "\i"  "ı"  find.replace
+  "\l"  "ł"  find.replace
+  "\o"  "ø"  find.replace
+  "\{"  "{"  find.replace
+  "\}"  "}"  find.replace
+  "``"  "“"  find.replace
+  "`"  "‘"  find.replace
+  "~"  " "  find.replace
   "{"  ""  find.replace
   "}"  ""  find.replace
 }
@@ -626,13 +560,6 @@ FUNCTION {url.escape}
   "'"  "%27"  find.replace
 }
 
-FUNCTION {html.escape}
-{
-  "&"  "&amp;"  find.replace
-  ">"  "&gt;"  find.replace
-  "<"  "&lt;"  find.replace
-}
-
 FUNCTION {output.nonnull}
 { latex2html
   's :=
@@ -641,7 +568,7 @@ FUNCTION {output.nonnull}
     { output.state after.block =
 	{ add.period$ write$
 	  in.span #0 >
-	    { "</span>" write$
+	    { 
 	      in.span #1 - 'in.span :=
             }
 	    'skip$
@@ -652,7 +579,7 @@ FUNCTION {output.nonnull}
 	    'write$
 	    { add.period$ " " * write$
 	      in.span #0 >
-	        { "</span>" write$
+	        {
 		  in.span #1 - 'in.span :=
                 }
 	        'skip$
@@ -682,59 +609,15 @@ FUNCTION {output.check}
   if$
 }
 
-FUNCTION {output.citationicons}
-{
-  % Citation button
-  "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-citation' checked>" * write$
-  newline$
-  "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-citation' onclick=" * quote$ * "openTab('" * cite$ *
-  "','" * "citation" * "')" * quote$ * ">" * write$
-  newline$
-  "                  <span class='me-2 mdi mdi-format-quote-close'></span>Citation" write$
-  newline$
-  "                </label>" write$
-  newline$
-
-  % Abstract button
-  abstract missing$
-    'skip$
-    {
-      "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-abstract'>" * write$
-      newline$
-      "                <label class='btn btn-outline-primary btn-sm' for='" cite$ * "-btn-abstract' onclick=" * quote$ * "openTab('" * cite$ *
-      "','" * "abstract" * "')" * quote$ * ">" * write$
-      newline$
-      "                  <span class='me-2 mdi mdi-sign-text'></span>Abstract" write$
-      newline$
-      "                </label>" write$
-      newline$
-    }
-  if$
-
-  % BibTeX button
-  "                <input type='radio' class='btn-check' name='" cite$ * "-btn-group-bib' id='" * cite$ * "-btn-bibtex'>" * write$
-  newline$
-  "                <label class='btn btn-outline-primary btn-sm me-5' for='" cite$ * "-btn-bibtex' onclick=" * quote$ * "openTab('" * cite$ *
-  "','" * "bibtex" * "')" * quote$ * ">" * write$
-  newline$
-  "                  <span class='me-2 mdi mdi-library'></span>BibTeX" write$
-  newline$
-  "                </label>" write$
-  newline$
-}
-
 INTEGERS {first.icon}
 FUNCTION {output.icons}
 { get.icon.data
   { record.marker = }
     { duplicate$ missing$
-        { pop$ pop$ pop$ }
+        { pop$ pop$ }
         {
-	  "                <a href='" swap$ url.escape * "' class='btn btn-outline-primary btn-sm me-1'>" * write$
-	  newline$
-	  "                  <span class='me-1 mdi " swap$ * "'></span>" * swap$ * write$
-	  newline$
-	  "                </a>" write$
+	  "=> " swap$ url.escape * write$
+	  "	" swap$ * write$
 	  newline$
         }
       if$
@@ -742,72 +625,10 @@ FUNCTION {output.icons}
   while$
 }
 
-% Not implemented for logological.org
-FUNCTION {output.pubtype.heading}
-{  pubtype missing$
-     {
-       %"Missing pubtype in " cite$ * warning$
-    }
-    { current.pubtype pubtype =
-        'skip$
-        { 
-          current.pubtype null =
-            'skip$
-            { "        </ol>" write$ newline$ }
-          if$
-          "<p></html>" write$ newline$
-	  "==" pubtype * "==" * write$ newline$
-          "<html></p>" write$ newline$
-          "        <ol class='" css.prefix * "list'>" * write$ newline$
-          pubtype 'current.pubtype :=
-        }
-      if$
-    }
-  if$
-  newline$
-}
-
 FUNCTION {output.bibitem}
-{ output.pubtype.heading
-
-  "    <div class='card mb-0 mt-0 pb-3 pt-3 border-end-0 border-start-0 border-top-0 border-bottom-1' id='" cite$ * "'>" * write$
-  newline$
-  "      <div class='row g-0 align-items-center'>" write$
-  newline$
-  "        <div class='col-sm-2 text-center'>" write$
-  newline$
-  "          <img src='" covers.path * "/" * cite$ * ".jpg' alt='' class='border border-dark img-fluid'>" * write$
-  newline$
-  "        </div>" write$
-  newline$
-  "        <div class='col-sm-10'>" write$
-  newline$
-  "          <div class='card-body'>" write$
-  newline$
-  type$ "" =
-    { "            <div class='" css.prefix * "unknown'>" * write$ }
-    { "            <div class='" css.prefix * type$ * "'>" * write$ }
-  if$
-  newline$
-  "              <div id='" cite$ * "-citation' class='" * cite$ * "-tab'>" * write$
-  newline$
+{
   ""
   before.all 'output.state :=
-}
-
-FUNCTION {output.abstract}
-{ abstract missing$
-    'skip$
-    { "              <div id='" cite$ * "-abstract' class='d-none " * css.prefix * "abstract " * cite$ * "-tab'>" * 
-      abstract * "</div>" *
-      #0 latex2htmlize.abstracts =
-        'skip$
-        'latex2html
-      if$
-      write$
-      newline$
-    }
-  if$
 }
 
 FUNCTION {format.abbreviated.month}
@@ -836,7 +657,7 @@ FUNCTION {format.abbreviated.month}
       s "November" = { "nov" } 'skip$ if$
       s "December" = { "dec" } 'skip$ if$
     }
-    { "{" s html.escape * "}" * }
+    { "{" s * "}" * }
   if$
 }
 
@@ -847,21 +668,18 @@ FUNCTION {output.entry}
     {pop$ pop$}
     { 's :=
       't :=
-      "<div class='" css.prefix * "field'>" * write$
-      "<span class='" css.prefix * "field-name' >" * write$
       t write$
       longest.entry.name t string.length - 'j :=
       {j #0 >}
         { j #1 - 'j :=
-          "&nbsp;" write$
+          " " write$
         }
       while$
-      "</span> = <span class='" css.prefix * "field-data'>" * write$
       t "month" =
         'format.abbreviated.month
-         { "{" s html.escape * "}" * }
+         { "{" s * "}" * }
       if$
-      "</span>,</div>" * write$ newline$
+      newline$
     }
   if$
 }
@@ -899,51 +717,12 @@ FUNCTION {output.entries}
   "note" note output.entry
 }
 
-FUNCTION {output.bibtex}
-{ %"{% raw %}" write$ newline$
-  "<div id='" cite$ * "-bibtex' class='d-none " * css.prefix * "bibtex " * cite$ * "-tab'>" * write$ newline$
-  "<span class='" css.prefix * "entry-type'>" * write$
-  "@" type$ * "</span>{" * write$
-  "<span class='" css.prefix * "entry-key'>" * cite$ *
-  "</span>,<br>" * write$ newline$
-  output.entries
-  "}</div>" write$ newline$
-  %"{% endraw %}" write$ newline$
-}
-
 FUNCTION {fin.entry}
-{ add.period$ "</div>" *
+{ add.period$ 
   write$
   newline$
-  output.abstract
-  output.bibtex
-  "              <div class='row'>" write$
-  newline$
-  "              <div class='col'>" write$
-  newline$
-  "                <div class='btn-group mt-3' role='group' aria-label='Bibliographic details' style='white-space: nowrap;'>" write$
-  newline$
-  output.citationicons
-  "                </div> <!-- btn-group -->" write$
-  newline$
-  "              </div> <!-- col -->" write$
-  newline$
-  "              <div class='col'>" write$
-  newline$
-  "                <div class='btn-group mt-3' role='group' aria-label='Document links' style='white-space: nowrap;'>" write$
-  newline$
   output.icons
-  "                </div> <!-- btn-group -->" write$
   newline$
-  "              </div> <!-- col -->" write$
-  newline$
-  "              </div> <!-- row -->" write$
-  newline$
-  "            </div> <!-- bib-" type$ * " -->" * write$ newline$
-  "          </div> <!-- card-body -->" write$ newline$
-  "        </div> <!-- col -->" write$ newline$
-  "      </div> <!-- row -->" write$ newline$
-  "    </div> <!-- card -->" write$ newline$
 }
 
 FUNCTION {new.block}
@@ -1004,13 +783,6 @@ FUNCTION {field.or.null}
   if$
 }
 
-%FUNCTION {emphasize}
-%{ duplicate$ empty$
-%    { pop$ "" }
-%    { "<em>" swap$ * "</em>" * }
-%  if$
-%}
-
 INTEGERS { nameptr namesleft numnames }
 
 FUNCTION {format.names}
@@ -1028,7 +800,7 @@ FUNCTION {format.names}
 		'skip$
 	      if$
 	      t "others" =
-		{ " et&nbsp;al." * }
+		{ " et al." * }
 		{ " and " * t * }
 	      if$
 	    }
@@ -1045,8 +817,7 @@ FUNCTION {format.names}
 FUNCTION {format.authors}
 { author empty$
     { "" }
-    { "<span class='" css.prefix * "author'>" * write$
-      #1 in.span + 'in.span :=
+    { #1 in.span + 'in.span :=
       author format.names 
     }
   if$
@@ -1056,7 +827,7 @@ FUNCTION {format.editors}
 { editor empty$
     { "" }
     { #1 in.span + 'in.span :=
-      "<span class='" css.prefix * "editor'>" * 
+      ""
       editor format.names *
       editor num.names$ #1 >
 	{ ", editors" * }
@@ -1069,8 +840,7 @@ FUNCTION {format.editors}
 FUNCTION {format.doi}
 { doi empty$
     { "" }
-    { new.block "DOI: <a href='https://dx.doi.org/" doi * "'>" *
-      doi * "</a>" * }
+    { new.block "DOI: " doi * }
   if$
 }
 
@@ -1091,22 +861,16 @@ FUNCTION {format.issn}
 FUNCTION {format.btitle.link}
 { "" 'link :=
   bookurl empty$
-    { "<span class='" css.prefix * "booktitle'>" * booktitle * "</span>" * }
-    {
-      "<span class='" css.prefix * "booktitle'><a href='" * bookurl * "'>" *
-      booktitle * "</a></span>" * 
-    }
+    { booktitle }
+    { booktitle }
   if$
 }
 
 FUNCTION {format.jtitle.link}
 { "" 'link :=
   bookurl empty$
-    {  "<span class='" css.prefix * "journaltitle'>" * journal * "</span>" *}
-    {
-      "<span class='" css.prefix * "journaltitle'><a href='" * bookurl * "'>" *
-      journal * "</a></span>" * 
-    }
+    { journal }
+    { journal }
   if$
 }
 
@@ -1123,11 +887,7 @@ FUNCTION {format.title.link}
   if$
   link empty$
     { title "t" change.case$ }
-    {
-      "<a href='" link * "'>" *
-      %title=" *   quote$ * title latex2html * quote$ * ">" * 
-      title "t" change.case$ * "</a>" * 
-    }
+    { title "t" change.case$ }
   if$
 }
 
@@ -1135,7 +895,7 @@ FUNCTION {format.title}
 { title empty$
     { "" }
     { #1 in.span + 'in.span :=
-      "<span class='" css.prefix * "title'>" * 
+      ""
 %      title "t" change.case$ *
       format.title.link *
     }
@@ -1186,12 +946,12 @@ FUNCTION {format.date}
 
 FUNCTION {format.btitle}
 {  #1 in.span + 'in.span :=
-  "<span class='" css.prefix * "booktitle'>" * title *
+  title
 }
 
 FUNCTION {tie.or.space.connect}
 { duplicate$ text.length$ #3 <
-    { "&nbsp;" }
+    { " " }
     { " " }
   if$
   swap$ * *
@@ -1328,7 +1088,7 @@ FUNCTION {format.in.ed.booktitle}
     { "" }
     { editor empty$
 	{ "In " format.btitle.link * }
-	{ "In " format.editors * "</span>, " * format.btitle.link *
+	{ "In " format.editors * ", " * format.btitle.link *
 	  in.span #1 - 'in.span :=
         }
       if$
@@ -1378,18 +1138,18 @@ FUNCTION {format.article.crossref}
     }
     { "In " key * }
   if$
-  " <a href='#" * cite.prefix * crossref * "'>[" * crossref * "]</a>" *
+  " [" * crossref * "]" *
 }
 
 FUNCTION {format.crossref.editor}
 { editor #1 "{vv~}{ll}" format.name$
   editor num.names$ duplicate$
   #2 >
-    { pop$ " et&nbsp;al." * }
+    { pop$ " et al." * }
     { #2 <
 	'skip$
 	{ editor #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
-	    { " et&nbsp;al." * }
+	    { " et al." * }
 	    { " and " * editor #2 "{vv~}{ll}" format.name$ * }
 	  if$
 	}
@@ -1416,7 +1176,7 @@ FUNCTION {format.book.crossref}
 	      crossref * warning$
 	      "" *
 	    }
-	    { "<span class='" css.prefix * "series'>" * series * "</span>" * }
+	    { series }
 	  if$
 	}
 	{ key * }
@@ -1424,7 +1184,7 @@ FUNCTION {format.book.crossref}
     }
     { format.crossref.editor * }
   if$
-  " <a href='#" * cite.prefix * crossref * "'>[" * crossref * "]</a>" *
+  " [" * crossref * "]" *
 }
 
 FUNCTION {format.incoll.inproc.crossref}
@@ -1445,7 +1205,7 @@ FUNCTION {format.incoll.inproc.crossref}
     }
     { "In " format.crossref.editor * }
   if$
-  " <a href='#" * cite.prefix * crossref * "'>[" * crossref * "]</a>" *
+  " [" * crossref * "]" *
 }
 
 FUNCTION {article}
@@ -1453,11 +1213,9 @@ FUNCTION {article}
   format.authors "author" output.check
   new.block
   format.title "title" output.check
-  "<br>" write$ % Line break after authors
   new.block
   crossref missing$
     { format.jtitle.link "journal" output.check
-      "<br>" write$ % Line break after title
       format.vol.num.pages output
       format.date "year" output.check
     }
@@ -1569,11 +1327,9 @@ FUNCTION {incollection}
   format.authors "author" output.check
   new.block
   format.title "title" output.check
-  "<br>" write$ % Line break after authors
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
-      "<br>" write$ % Line break after title
       format.bvolume output
       format.number.series output
       format.chapter.pages output
@@ -1600,11 +1356,9 @@ FUNCTION {inproceedings}
   format.authors "author" output.check
   new.block
   format.title "title" output.check
-  "<br>" write$ % Line break after authors
   new.block
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
-      "<br>" write$ % Line break after title
       format.bvolume output
       format.number.series output
       format.pages output
@@ -2041,66 +1795,6 @@ SORT
 
 EXECUTE {init.state.consts}
 
-% Not implemented for logological.org
-FUNCTION {output.legend}
-{
-  "<!-- BEGIN BIBLET LEGEND -->" write$ newline$
-  "    <div class='" css.prefix * "legend'>" * write$ newline$
-  "      <ul>" write$ newline$
-  get.icon.data
-  { record.marker = }
-    { "        <li><img " write$ newline$
-      "src = '" swap$ url.escape * "'" * write$ newline$
-      "alt = '"   swap$ * "'" * write$ newline$
-      "title = '" swap$ * "'" * write$ newline$
-      duplicate$ "" =
-        'pop$
-        { "width = '" swap$ * "'" * write$ newline$ }
-      if$
-      duplicate$ "" =
-        'pop$
-        { "height = '" swap$ * "'" * write$ newline$ }
-      if$
-      "/>" swap$ * "</li>" * write$ newline$
-    }
-  while$
-  "      </ul>" write$ newline$
-  "    </div>" write$ newline$
-  "<!-- END BIBLET LEGEND -->" write$ newline$
-}
-
-FUNCTION {output.links}
-{
-  get.link.data
-  { record.marker = }
-    { "    <link " write$
-      "title='" swap$ * "' " * write$
-      "href='"  swap$ url.escape * "' " * write$
-      "media='" swap$ * "' " * write$
-      "type='"  swap$ * "' " * write$
-      "rel='"   swap$ * "' " * write$
-      "/>" write$ newline$
-    }
-  while$
-}
-
-% Not implemented for logological.org
-FUNCTION {output.showhide}
-{
-  "<!-- BEGIN BIBLET SHOWHIDE -->" write$ newline$
-  "    <div class='" css.prefix * "showhide'>" * write$ newline$
-  "      <ul>" write$ newline$
-  "        <li><a href='#' onclick=" quote$ *
-  "toggleAll('" * css.prefix * "abstract')" * quote$ *
-  ">Show/hide abstracts</a></li>" * write$ newline$
-  "        <li><a href='#' onclick=" quote$ *
-  "toggleAll('" * css.prefix * "bibtex')" * quote$ *
-  ">Show/hide B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> records</a></li>" * write$ newline$
-  "      </ul>" write$ newline$
-  "    </div>" write$ newline$
-  "<!-- END BIBLET SHOWHIDE -->" write$ newline$
-}
-
 FUNCTION {begin.bib}
 {
   #0 use.internal.latex2html =
@@ -2108,25 +1802,6 @@ FUNCTION {begin.bib}
     { "Using internal LaTeX to HTML translation: processing may take a while!" warning$ }
   if$
 
-  % HTML header
-%  "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>" write$ newline$
-%  "<!-- \end{document} -->" write$ newline$
-%  "<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>" write$ newline$
-%  "  <head>" write$ newline$
-%  "    <title>My publications</title>" write$ newline$
-%  "    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />" write$ newline$
-%  "    <meta name='generator' content='BibTeX and the biblet bibliography style -- https://www.nothingisreal.com/biblet/' />" write$ newline$
-%  "    <script type='text/javascript' defer='defer' src='" script.path "/" * 
-%    script.showhide * url.escape * "' /></script>" * write$ newline$
-%  output.links
-%  "  </head>" write$ newline$
-%  "  <body>" write$ newline$
-%  "    <h1>My publications</h1>" write$ newline$ newline$
-%  output.legend newline$
-%  output.showhide newline$
-  "<!-- BEGIN BIBLET BIBLIOGRAPHY -->" write$ newline$
-%  "    <div class='" css.prefix * "bibliography'>" * write$ newline$
-%  "        <ol class='bib-list'>" write$ newline$
   #1 'in.bibliography :=
 }
 
@@ -2135,19 +1810,3 @@ EXECUTE {init.string.consts}
 EXECUTE {begin.bib}
 
 ITERATE {call.type$}
-
-FUNCTION {end.bib}
-{ %"        </ol>" write$ newline$
-  %"    </div>" write$ newline$
-  "<!-- END BIBLET BIBLIOGRAPHY -->" write$ newline$ newline$
-  %#0 'in.bibliography :=
-  %"    <div class='" css.prefix * "footer'>" * write$ newline$
-  %"      <hr /><p lang='en'>Generated with B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span> and the "
-  %"<a href='https://www.nothingisreal.com/biblet/'>biblet</a>" *
-  %" bibliography style.</p>" * write$ newline$
-  %"    </div>" write$ newline$
-%  "  </body>" write$ newline$
-%  "</html>" write$ newline$
-}
-
-EXECUTE {end.bib}

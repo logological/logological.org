@@ -1,0 +1,7 @@
+## Research news
+
+{% if articles %}
+{% for article in articles_page.object_list %}
+=> {{ article.link }}	{{ article.locale_date }}: {{ article.title }}
+{% endfor %}
+{% endif %}

@@ -1,13 +1,13 @@
-default: refresh ../content/pages/publications.html ../content/pages/publications-recreational.html ../theme/templates/publications_populated.html
+default: refresh ../content/pages/publications.gmi ../content/pages/publications-recreational.gmi ../theme/templates/publications_populated.gmi
 
-../theme/templates/publications_populated.html: miller-featured.bbl ../theme/templates/publications.html
-	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
+../theme/templates/publications_populated.gmi: miller-featured.bbl ../theme/templates/publications.gmi
+	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) | fgrep -v '<!-- BIBLIOGRAPHY -->' >$@
 
-../content/pages/publications.html: miller.bbl publications.html
-	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
+../content/pages/publications.gmi: miller.bbl publications.gmi
+	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) | fgrep -v '<!-- BIBLIOGRAPHY -->' >$@
 
-../content/pages/publications-recreational.html: miller-recreational.bbl publications-recreational.html
-	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
+../content/pages/publications-recreational.gmi: miller-recreational.bbl publications-recreational.gmi
+	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) | fgrep -v '<!-- BIBLIOGRAPHY -->' >$@
 
 refresh:
 	cd resume && git pull origin master
@@ -17,6 +17,7 @@ all: miller.bbl miller-recreational.bbl miller-featured.bbl
 
 %.bbl: %.aux %.bib logological.bst
 	bibtex $<
+	sed 's/^ *//' $@ | fmt -w 2048 | sed 's/=>/\n=>/g' > $@.fmt && mv $@.fmt $@
 
 all.bib: miller.bib miller-recreational.bib
 	cat $+ > $@
@@ -25,7 +26,7 @@ all.bib: miller.bib miller-recreational.bib
 	pdflatex $<
 
 clean:
-	rm -f {miller,miller-featured,miller-recreational}.{aux,bbl,blg,log} ../theme/templates/publications_populated.html
+	rm -f {miller,miller-featured,miller-recreational}.{aux,bbl,blg,log} ../content/pages/publications{,-recreational}.gmi ../theme/templates/publications_populated.gmi
 
 .PRECIOUS: %.aux
 

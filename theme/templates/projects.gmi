@@ -1,0 +1,10 @@
+## Projects
+{% for category_id, category_name in PROJECT_CATEGORIES %}
+
+### {{ category_name }}
+{% for project in PROJECTS|selectattr("category", "equalto", category_id)|sort(attribute="date", reverse=True)  %}
+{{ project.title }} ({{ project.location }}, {{ project.date }}): {{ project.description }}
+=> {{ project.url }}	{{ project.title }}
+
+{% endfor %}
+{% endfor %}

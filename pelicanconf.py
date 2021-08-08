@@ -23,72 +23,23 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 BUILD_TIME = datetime.datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M %Z")
 #date.today()#.strftime(format='%Y-%m-%d')
 
-# This goes at the footer of the site
-FOOTER_LEFT = "" # Superseded; see base.html
-FOOTER_RIGHT = """
-<a href="/credits.html">Credits</a> &bullet;
-<a title="{repo_name} on GitHub" href="{repo}">Source</a>
-""".format(repo=REPOURL, repo_name=REPOURL[19:])
-
 # Where to put generated files
-ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_URL = '{category}/{slug}.gmi'
 ARTICLE_SAVE_AS = ARTICLE_URL
-PAGE_URL = '{slug}.html'
+PAGE_URL = '{slug}.gmi'
 PAGE_SAVE_AS = PAGE_URL
+INDEX_SAVE_AS = 'index.gmi'
 USE_FOLDER_AS_CATEGORY = True
 CATEGORY_URL = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
-
-STATIC_PATHS = [
-    'images',
-    'extra/.htaccess',
-    'extra/81A27838.txt',
-    'extra/android-chrome-192x192.png',
-    'extra/android-chrome-512x512.png',
-    'extra/apple-touch-icon.png',
-    'extra/BF8A2EE4.txt',
-    'extra/browserconfig.xml',
-    'extra/EFBF4915.txt',
-    'extra/favicon-16x16.png',
-    'extra/favicon-32x32.png',
-    'extra/favicon.ico',
-    'extra/google0aaa94dac5255b24.html',
-    'extra/keybase.txt',
-    'extra/maledicta.bib',
-    'extra/mstile-150x150.png',
-    'extra/party_keyring.gpg',
-    'extra/robots.txt',
-    'extra/safari-pinned-tab.svg',
-    'extra/site.webmanifest',
-]
-EXTRA_PATH_METADATA = {
-    'extra/.htaccess': {'path': '.htaccess'},
-    'extra/81A27838.txt': {'path': '81A27838.txt'},
-    'extra/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
-    'extra/android-chrome-512x512.png': {'path': 'android-chrome-512x512.png'},
-    'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
-    'extra/BF8A2EE4.txt': {'path': 'BF8A2EE4.txt'},
-    'extra/browserconfig.xml': {'path': 'browserconfig.xml'},
-    'extra/EFBF4915.txt': {'path': 'EFBF4915.txt'},
-    'extra/favicon-16x16.png': {'path': 'favicon-16x16.png'},
-    'extra/favicon-32x32.png': {'path': 'favicon-32x32.png'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/google0aaa94dac5255b24.html': {'path': 'google0aaa94dac5255b24.html'},
-    'extra/keybase.txt': {'path': 'keybase.txt'},
-    'extra/maledicta.bib': {'path': 'maledicta.bib'},
-    'extra/mstile-150x150.png': {'path': 'mstile-150x150.png'},
-    'extra/party_keyring.gpg': {'path': 'party_keyring.gpg'},
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/safari-pinned-tab.svg': {'path': 'safari-pinned-tab.svg'},
-    'extra/site.webmanifest': {'path': 'site.webmanifest'},
-}
-ARTICLE_EXCLUDES = [
-    'extra',
-    ]
-PAGE_EXCLUDES = [
-    'extra',
-    ]
+YEAR_ARCHIVE_SAVE_AS = ''
+MONTH_ARCHIVE_SAVE_AS = ''
+DAY_ARCHIVE_SAVE_AS=''
+ARCHIVES_SAVE_AS=''
+AUTHORS_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+TAGS_SAVE_AS = ''
 
 #READERS = {"html": None}
 
@@ -97,6 +48,7 @@ SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_CATEGORY = 'news'
+STATIC_PATHS = []
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -159,7 +111,7 @@ PROJECTS = [
         'location': 'DFKI',
         'date': '2004–2005',
         'description': 'A study on attention-based information retrieval using eye tracking',
-        'url': 'efisk',
+        'url': 'efisk.gmi',
         'image': 'efisk.png',
         'roles': ['Principal investigator'],
         'category': 'research',
@@ -181,7 +133,7 @@ PROJECTS = [
         'location': 'DFKI',
         'date': '2004–',
         'description': 'A general-purpose preprocessor with customizable syntax',
-        'url': '/gpp',
+        'url': 'gpp.gmi',
         'image': 'gpp-image.svg',
         'roles': ['Lead maintainer'],
         'category': 'software',
@@ -232,7 +184,7 @@ PROJECTS = [
         'location': 'DFKI',
         'date': '2004–',
         'description': 'Convert text files to and from various Esperanto text encodings',
-        'url': 'eoconv',
+        'url': 'eoconv.gmi',
         'image': 'eoconv.svg',
         'roles': ['Lead developer'],
         'category': 'software',
@@ -242,7 +194,7 @@ PROJECTS = [
         'location': 'Griffith University',
         'date': '1999–2003',
         'description': 'A forward-chaining reasoning engine for defeasible logic',
-        'url': 'delores',
+        'url': 'delores.gmi',
         'image': 'delores.svg',
         'roles': ['Lead developer'],
         'category': 'software',
@@ -252,7 +204,7 @@ PROJECTS = [
         'location': 'DFKI',
         'date': '2005–',
         'description': 'A set of BibTeX bibliography styles (bst) which generate XHTML',
-        'url': 'biblet',
+        'url': 'biblet.gmi',
         'image': 'biblet.png',
         'roles': ['Lead developer'],
         'category': 'software',
@@ -262,7 +214,7 @@ PROJECTS = [
         'location': 'University of Regina',
         'date': '1998–',
         'description': 'A fully-functional chess engine capable of human-vs-human, human-vs-computer, and computer-vs-computer play',
-        'url': 'cheops',
+        'url': 'cheops.gmi',
         'image': 'Cheops.png',
         'roles': ['Lead developer'],
         'category': 'software',
@@ -293,7 +245,7 @@ PROJECTS = [
         'location': 'DFKI',
         'date': '2004–',
         'description': 'Convert DLG Pro message bases to HTML for archiving on the Web',
-        'url': 'dlg2html',
+        'url': 'dlg2html.gmi',
         'image': 'dlg2html.svg',
         'roles': ['Lead developer'],
         'category': 'software',
@@ -350,7 +302,7 @@ PROJECTS = [
         'category': 'event',
      },
     {
-        'title': 'Humor &amp; Artificial Intelligence',
+        'title': 'Humor & Artificial Intelligence',
         'location': 'ISHS',
         'date': '2022',
         'description': 'Panel at the 2022 International Society for Humor Studies Conference',
@@ -360,7 +312,7 @@ PROJECTS = [
         'category': 'event',
      },
     {
-        'title': 'Humor &amp; Artificial Intelligence',
+        'title': 'Humor & Artificial Intelligence',
         'location': 'ISHS',
         'date': '2019',
         'description': 'Panel at the 2019 International Society for Humor Studies Conference',
@@ -370,7 +322,7 @@ PROJECTS = [
         'category': 'event',
      },
     {
-        'title': 'Humor &amp; Artificial Intelligence',
+        'title': 'Humor & Artificial Intelligence',
         'location': 'ISHS',
         'date': '2018',
         'description': 'Panel at the 2018 International Society for Humor Studies Conference',
@@ -414,13 +366,13 @@ PROJECTS = [
         'location': 'OFAI',
         'date': '2020',
         'description': 'Title and author index for <em>Maledicta: The International Journal of Verbal Aggression</em>',
-        'url': 'maledicta',
+        'url': 'https://logological.org/maledicta',
         'image': 'maledicta.svg',
         'roles': ['Editor'],
         'category': 'publishing',
      },
     {
-        'title': 'STUMP &amp; WebSTUMP',
+        'title': 'STUMP & WebSTUMP',
         'location': 'The GNU Project',
         'date': '2020–',
         'description': 'Usenet robomoderation software and a Web-based front end',
@@ -442,42 +394,25 @@ PROJECTS = [
 ]
 
 PROJECT_CATEGORIES = [ ('research', 'Funded research projects'),
-                       ('event', 'Events &amp; organizations'),
+                       ('event', 'Events & organizations'),
                        ('software', 'Software'),
-                       ('publishing', 'Publishing &amp; documentation'),
+                       ('publishing', 'Publishing & documentation'),
                       ]
 
-PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['render_math',
-           'sitemap',
-           'filetime_from_git',
+PLUGIN_PATHS = [
+    'pelican-plugins',
+    'pelican-gemini'
 ]
-SITEMAP = {
-    'format': 'xml',
-    'priorities': {
-        'articles': 0.5,
-        'indexes': 0.5,
-        'pages': 0.5},
-    'changefreqs': {
-        'articles': 'weekly',
-        'indexes': 'weekly',
-        'pages': 'weekly'}
-}
+PLUGINS = [
+    'filetime_from_git',
+    'pelican_gemini',
+]
 
 #RESPONSIVE_IMAGES = False
 #FIGURE_NUMBERS = True
 #PAGINATED_TEMPLATES = ['home']
 DIRECT_TEMPLATES = ['index']
-
-MARKDOWN = {
-    'extension_configs': {
-        'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
-        'markdown.extensions.toc': {},
-    },
-    'output_format': 'html5',
-}
+TEMPLATE_EXTENSIONS = ['.gmi']
 
 NEWS_ICONS = {
     'talk': 'mdi-presentation',
@@ -489,5 +424,5 @@ NEWS_ICONS = {
 }
 
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
-import logging
-LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
+#import logging
+#LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]

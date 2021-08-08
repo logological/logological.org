@@ -5,9 +5,8 @@ cache/
 *.swp
 \#*#
 .#*
-content/pages/publications-recreational.html
-content/pages/publications.html
-content/pages/maledicta.html
-content/extra/maledicta.bib
-theme/templates/publications_populated.html
+content/pages/publications-recreational.gmi
+content/pages/publications.gmi
+theme/templates-gemini/publications_populated.gmi
 virtualenv/
+venv/

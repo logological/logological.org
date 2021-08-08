@@ -1,0 +1,5 @@
+title: Co-organizer of the CLEF 2022 workshop "JOKER - Automatic Pun and Humour Translation"
+icon: shared-task
+date: 2022-09-05
+link: https://clef2022.clef-initiative.eu/
+gittime: off

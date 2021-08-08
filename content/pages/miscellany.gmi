@@ -1,0 +1,17 @@
+Title: Miscellany
+slug: misc
+
+# Miscellany
+
+Here are some miscellaneous documents and websites I've produced which don't really fit into any other section.
+
+=> https://files.nothingisreal.com/publications/Tristan_Miller/advice.pdf	Advice for German Writers of English Scientific Prose
+=> gemini://gemini.logological.org/cugs.gmi	Commodore Users Group of Saskatchewan
+=> https://logological.org/maledicta	Maledicta article index
+=> gemini://gemini.logological.org/mentifex_faq.gmi	The Arthur T. Murray/Mentifex FAQ
+=> https://logological.org/photos	My photos
+=> gemini://gemini.logological.org/school_newspapers.gmi	School newspapers
+=> gemini://gemini.logological.org/word.gmi	Please don't send me Microsoft Word documents
+=> gemini://gemini.logological.org/signature.gmi	What is "signature.asc"?
+=> gemini://gemini.logological.org/faq.gmi	FAQ
+=> gemini://gemini.logological.org/teaching.gmi	Teaching

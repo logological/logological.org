@@ -1,0 +1,57 @@
+Title: Fun
+
+# Fun
+
+My interests in language, math, and computers were sparked and strengthened by exposure to the works of Willard R. Espy, Louis Phillips, Mike Keith, Dmitri Borgmann, Jim Butterfield, and others.  These writers share a great talent for making technical or linguistic topics fun and accessible to a general audience.  This page collects some of my own contributions to popular and recreational mathematics and linguistics, plus a few other odds and ends.
+
+=> https://en.wikipedia.org/wiki/Willard_R._Espy Willard R. Espy
+=> https://en.wikipedia.org/wiki/Louis_Phillips_%28author%29 Louis Phillips
+=> https://en.wikipedia.org/wiki/Mike_Keith_%28mathematician%29 Mike Keith
+=> https://en.wikipedia.org/wiki/Dmitri_Borgmann Dmitri Borgmann
+=> https://en.wikipedia.org/wiki/Jim_Butterfield Jim Butterfield
+
+## Logology
+
+Logology, or recreational linguistics, is the study and practice of word games and wordplay. Since 2012 I've been writing the Language Games column for Babel: The Language Magazine, and I am a regular contributor of language-themed articles and puzzles to Lingo: The Language Magazine for Younger Readers, Games World of Puzzles (formerly Games Magazine), Word Ways: The Journal of Recreational Linguistics, and other magazines.
+
+=> https://en.wikipedia.org/wiki/Logology Logology
+=> http://www.babelzine.com/ Babel: The Language Magazine
+=> http://www.lingozine.com/ Lingo: The Language Magazine for Younger Readers
+=> http://www.gamesmagazine-online.com/ Games World of Puzzles
+=> https://digitalcommons.butler.edu/wordways/ Word Ways: The Journal of Recreational Linguistics
+
+* Shakespeare's Sonnet Generator, a website that randomly generates authentic Shakespearean sonnets (a collaboration with Dave Morice)
+=> https://logological.org/sonnet/ Shakespeare's Sonnet Generator
+
+* A selection of my logological articles from Word Ways (open access from two years after the date of publication):
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5233&amp;context=wordways Pessimal spelling alphabets
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5241&amp;context=wordways Russian–English homoglyphs, homographs, and homographic translations
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5272&amp;context=wordways Dvorak typewriter words
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5290&amp;context=wordways Perfect Roman windows
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5327&amp;context=wordways The world's shortest personal names
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5324&amp;context=wordways Unigraphic lipogrammatic windows: A survey
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5341&amp;context=wordways Higher-order contronyms
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5375&amp;context=wordways Elemental words revisited
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5419&amp;context=wordways Gadsby: Wikipedia's lost lipogram
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5444&amp;context=wordways Ichthyornithonomy
+
+## Recreational mathematics
+
+These papers are mainly for fun, though some of them have some serious research content:
+
+=> https://logological.org/girlfriend.html Why I will never have a girlfriend
+=> https://logological.org/freundin.html Warum ich niemals eine Freundin haben werde
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5379&amp;context=wordways Knight-graphable words
+=> https://oeis.org/A255436 A255436: Number of distinct, connected, order-n subgraphs of the infinite knight's graph
+=> http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5405&amp;context=wordways New puzzles on knight-graphable words
+
+## Light verse
+
+A selection of my humorous poetry:
+
+* "Firing the Fireman" (published in Light, Winter/Spring 2014)
+* "Ichthyopoesis" (published in Light, Winter/Spring 2014)
+* "Quadrature" (published in the Journal of Humanistic Mathematics, July 2015)
+* "Paradox" (published in the Journal of Humanistic Mathematics, July 2015)
+* "Apprehension" (published in the Journal of Humanistic Mathematics, July 2015)
+* Haiku (published in Word Ways: The Journal of Recreational Linguistics, February 2014)

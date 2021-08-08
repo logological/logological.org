@@ -1,0 +1,11 @@
+title: Publications
+slug: publications
+
+# Publications
+
+This is a list of my scientific and technical publications. (My publications in humour, poetry, and recreational linguistics are in a separate list.)
+
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller.bib	BibTeX version of this list
+=> publications-recreational.gmi	My publications in humour, poetry, and recreational linguistics
+
+<!-- BIBLIOGRAPHY -->

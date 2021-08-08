@@ -1,0 +1,3 @@
+{% extends "base.gmi" %}
+{% block content %}{{ page.content }}{% endblock content %}
+{% block modified %}{{ page.modified|strftime('%Y-%m-%d %H:%M %Z') }}{% endblock %}

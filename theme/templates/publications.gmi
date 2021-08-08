@@ -1,0 +1,7 @@
+## Publications
+{% raw %}
+<!-- BIBLIOGRAPHY -->
+{% endraw %}
+
+=> publications.gmi	More publications
+
