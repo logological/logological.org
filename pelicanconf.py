@@ -486,6 +486,7 @@ NEWS_ICONS = {
     'radio': 'mdi-radio-tower',
     'publication': 'mdi-file-document-outline',
     'shared-task': 'mdi-human-greeting-proximity',
+    'panelist': 'mdi-human-greeting-proximity',
 }
 
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
