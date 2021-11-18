@@ -9,6 +9,9 @@ default: refresh ../content/pages/publications.html ../content/pages/publication
 ../content/pages/publications-recreational.html: miller-recreational.bbl publications-recreational.html
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
 
+miller-featured.bib: miller.bib miller-abstracts.bib
+	cat $+ > $@
+
 refresh:
 	cd resume && git pull origin master
 	cd covers && git pull origin master
@@ -18,7 +21,7 @@ all: miller.bbl miller-recreational.bbl miller-featured.bbl
 %.bbl: %.aux %.bib logological.bst
 	bibtex $<
 
-all.bib: miller.bib miller-recreational.bib
+all.bib: miller.bib miller-abstracts.bib miller-recreational.bib
 	cat $+ > $@
 
 %.aux: %.tex

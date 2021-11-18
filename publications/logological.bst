@@ -88,7 +88,7 @@ INTEGERS
 FUNCTION {init.state.consts}
 {  #0 'debug.mode :=
    #1 'use.internal.latex2html :=
-   #0 'latex2htmlize.abstracts :=
+   #1 'latex2htmlize.abstracts :=
    #0 'before.all :=
    #1 'mid.sentence :=
    #2 'after.sentence :=
