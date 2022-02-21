@@ -104,10 +104,12 @@ maledicta:
 
 ssh_upload:
 	$(SCP) -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR)
-	$(SCP) -P $(SSH_PORT) publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR)
+	$(SCP) -P $(SSH_PORT) publications/resume/{miller-abstracts,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR)
+	$(SCP) -P $(SSH_PORT) publications/resume/miller-featured.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR)/miller.bib
 
 rsync_upload:
 	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
-	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
+	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller-abstracts,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
+	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/miller-featured.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR)/miller.bib --cvs-exclude --exclude-from=rsync_exclude.txt
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta
