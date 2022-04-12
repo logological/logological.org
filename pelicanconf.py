@@ -340,6 +340,16 @@ PROJECTS = [
         'category': 'event',
      },
     {
+        'title': 'JOKER',
+        'location': 'CLEF',
+        'date': '2022',
+        'description': 'Workshop on automatic pun and humour translation',
+        'url': 'http://joker-project.com/',
+        'image': 'joker_workshop.png',
+        'roles': ['Co-organizer'],
+        'category': 'event',
+     },
+    {
         'title': 'Abusive and Offensive Humour',
         'location': 'ISHS',
         'date': '2022',
