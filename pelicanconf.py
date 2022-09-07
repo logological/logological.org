@@ -394,7 +394,7 @@ PROJECTS = [
         'location': 'DFKI',
         'date': '2004–2005',
         'description': 'A holistic context- and content-sensitive approach to information navigation',
-        'url': 'https://www.dfki.de/web/forschung/projekte-publikationen/projekte-uebersicht/projekt/visor/',
+        'url': 'https://web.archive.org/web/20150601102743/https://www.dfki.de/web/forschung/av/projekte/base_view?pid=283',
         'image': 'atvisor.png',
         'roles': ['Named investigator'],
         'category': 'research',
