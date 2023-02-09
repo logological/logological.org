@@ -340,7 +340,7 @@ PROJECTS = [
         'category': 'event',
      },
     {
-        'title': 'OFAI 2023 Lecture Series',
+        'title': 'OFAI 2022 Lecture Series',
         'location': 'OFAI',
         'date': '2022',
         'description': 'Public guest lecture series on artificial intelligence',
@@ -350,7 +350,7 @@ PROJECTS = [
         'category': 'event',
      },
     {
-        'title': 'OFAI 2022 Lecture Series',
+        'title': 'OFAI 2023 Lecture Series',
         'location': 'OFAI',
         'date': '2023',
         'description': 'Public guest lecture series on artificial intelligence',
