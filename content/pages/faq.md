@@ -301,7 +301,13 @@ export LC_TIME="en_DK.UTF-8"
 Unfortunately, the locale setting does not work with recent versions
 of Thunderbird due to reasons explained
 in
-[Thunderbird Bug 1426907](https://bugzilla.mozilla.org/show_bug.cgi?id=1426907).
+[Thunderbird Bug 1426907](https://bugzilla.mozilla.org/show_bug.cgi?id=1426907).  However, [in Thunderbird 91+ the date formats can be specified manually in the config editor](https://support.mozilla.org/en-US/kb/customize-date-time-formats-thunderbird#w_create-date-and-time-format-override-preferences-using-thunderbirds-config-editor). The following preferences can be used for something like ISO 8601–style date and time:
+
+| Preference                                        | Value        |
+| ------------------------------------------------- | ------------ |
+| `intl.date_time.pattern_override.date_short`      | `yyyy-MM-dd` |
+| `intl.date_time.pattern_override.time_short`      | `HH:mm`      |
+| `intl.date_time.pattern_override.connector_short` | `{1} {0}`    |
 
 For further discussion,
 see [KDE Bug 340982](https://bugs.kde.org/show_bug.cgi?id=340982)
