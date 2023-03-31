@@ -29,5 +29,5 @@ From 24 April 1999 to 24 November 2020, the moderator was David Kinny.
 
 ## Further information
 
-* [Original Request for Discussion (RFD) and Calls for Votes (CFV) for comp.ai](https://www.newsdemon.com/newsgroup-info/comp.ai)
+* [Original Request for Discussion (RFD) and Calls for Votes (CFV) for comp.ai](https://ftp.isc.org/usenet/news.announce.newgroups/comp/comp.ai)
 * [Signing key for comp.ai](/81A27838.txt)
