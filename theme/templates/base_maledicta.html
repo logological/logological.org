@@ -100,6 +100,12 @@
 <script src="{{SITEURL}}/theme/js/maledicta/mdb/mdb.min.js"></script>
 <script src="{{SITEURL}}/theme/js/maledicta/mdb/addons/datatables.min.js"></script>
 <script>
+// Works around https://github.com/logological/logological.org/security/dependabot/1
+jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
+</script>
+<script>
 $(document).ready(function () {
 $('#maledictaIndex').DataTable({
     "order": [],
