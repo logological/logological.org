@@ -37,6 +37,9 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
 -   [Dvorak international keyboard layout for
     xkb](https://github.com/logological/dvorak)
+-   [GNU STUMP](https://savannah.gnu.org/projects/stump/) and [GNU
+    WebSTUMP](https://savannah.gnu.org/projects/webstump/), Usenet
+    moderation tools
 -   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
 -   Various [Mozilla](https://www.mozilla.org/en-US/) projects,
