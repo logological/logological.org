@@ -29,12 +29,17 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
 -   [WEBWEAVR-III](http://www.cis.uoguelph.ca/~yxiang/ww3/), a Bayesian
     network research toolkit
 
-## Miscellaneous
+## Document processing
 
 -   [Biblet](/biblet.html), a set of BibTeX bibliography styles
     (bst) which generate XHTML
--   [CHEOPS](/cheops.html), a computer chess engine
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
+-   [heria](/heria), a LaTeX class for Horizon Europe RIA and IA funding
+    proposals
+
+## Miscellaneous
+
+-   [CHEOPS](/cheops.html), a computer chess engine
 -   [Dvorak international keyboard layout for
     xkb](https://github.com/logological/dvorak)
 -   [GNU STUMP](https://savannah.gnu.org/projects/stump/) and [GNU
@@ -42,10 +47,11 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
     moderation tools
 -   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
--   Various [Mozilla](https://www.mozilla.org/en-US/) projects,
-    including the web browser core, the
-    [Firefox](https://www.mozilla.org/en-US/firefox/new/) browser, and
-    the [SeaMonkey](http://www.seamonkey-project.org/) Internet
+-   Various current and former [Mozilla](https://www.mozilla.org/)
+    projects, including the web browser core, the
+    [Firefox](https://www.mozilla.org/en-US/firefox/new/) browser, the
+    [Thunderbird](https://www.thunderbird.net/) mail and news client,
+    and the [SeaMonkey](http://www.seamonkey-project.org/) Internet
     application suite
 
 # Documentation
