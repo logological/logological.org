@@ -372,3 +372,6 @@ Redirect permanent /semeval2017/references http://alt.qcri.org/semeval2017/task7
 Redirect permanent /semeval2017/semeval2017_pun_task.tar.xz http://alt.qcri.org/semeval2017/task7/data/uploads/semeval2017_pun_task.tar.xz
 Redirect permanent /images/SemEval-2017_20160623_flyer.png http://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.png
 Redirect permanent /images/SemEval-2017_20160623_flyer.pdf http://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.pdf
+
+# News to share on Facebook
+Redirect permanent /fb/manitoban https://themanitoban.com/2024/03/crunching-code-and-cracking-jokes/47075/
