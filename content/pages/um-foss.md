@@ -14,8 +14,8 @@ For those who just want a quick overview of what to do:
 * **Calendar:** Install the [DavMail](https://davmail.sourceforge.net/) gateway and have [Thunderbird](https://www.thunderbird.net/), or any other CalDAV client, connect to it.
 * **Address book:** Install the [DavMail](https://davmail.sourceforge.net/) gateway and have [Thunderbird](https://www.thunderbird.net/), or any other CardDAV/LDAP client, connect to it.
 * **Chat:** Use [Pidgin](https://www.pidgin.im/) and the appropriate plugins to access Teams, Slack, etc.
+* **Digital signatures:** Use [XCA](https://www.hohnstaedt.de/xca/) to create a self-signed certificate and [Okular](https://okular.kde.org/) or [LibreOffice](https://www.libreoffice.org/) to sign PDFs with it.
 * **Office suite:** Microsoft 365 files can be downloaded for local editing with [LibreOffice](https://www.libreoffice.org/), and then uploaded again afterwards.
-
 
 ## Multi-factor authentication
 
@@ -141,6 +141,32 @@ The Microsoft 365/Teams service used by the University includes an office suite,
 ### Letterhead
 
 The University provides [letterhead](https://umanitoba.sharepoint.com/sites/um-intranet-um-brand/SitePages/template-and-asset-library.aspx) in Microsoft Word and PDF formats.  The Word versions can be used with free word processors such as [LibreOffice Writer](https://www.libreoffice.org/discover/writer/).  The author of this guide has produced a [LaTeX](https://www.latex-project.org/) version of the letterhead that he hopes to one day release here.
+
+## Digital signatures
+
+Various University offices will occasionally send you PDFs and ask you to digitally sign them.  There exist various free software tools that can sign PDFs with an existing PKCS#12 certificate:
+
+1. [LibreOffice](https://www.libreoffice.org/) can sign PDFs with an existing certificate:
+    1. Launch LibreOffice and select File → Digital Signatures → Sign Existing PDF….  A file picker dialog will appear; select the PDF on your filesystem that you want to sign and press the "Open" button.  The PDF will open in a new window.  Press the "Sign Document" banner at the top of the window.  This will bring up a "Digital Signatures" dialog listing the document's current signatures.  Press the "Sign Document…" button to select one of your existing signatures and sign the document.  If you haven't yet configured any signatures, you should first press the "Start Certificate Manager…" button, which will launch your system's default certificate management software.
+2. [Okular](https://okular.kde.org/) can sign PDFs with an existing certificate:
+    1. First, make sure that Okular is configured to use your existing certificate database: launch Okular and go to Settings → Configure Backends.  In the setting dialog that appears, select "PDF".  If you don't see your certificate in the Available Certificates list, then you may need to specify the path to your certificate database by pressing the radio button next to "Custom" and then pressing the file picker icon or typing the path to the database file (e.g., `$HOME/.pki/nssdb`) in the input field.  Press "OK" when done.
+    2. To actually sign a PDF, open it with Okular, scroll to the location in the document where you want the signature to appear, and select Tools → Digitally Sign.  You will be prompted to draw a rectangle where you want the signature to appear on the page.  Then a dialog will appear prompting you to select a certificate to sign with, as well as a reason, location, and an image.  (Make sure you actually click on the desired certificate and the desired image, even if there is only one choice.)  Press "OK" and you will be prompted for where to save the signed version of the PDF.
+
+If you don't yet have a PKCS#12 certificate, you will need to create one.  There are at least a couple options for this:
+
+1. You can use the command-line tool [OpenSSL](https://www.openssl.org/).  (Instructions forthcoming.)
+2. You can use the graphical [XCA](https://www.hohnstaedt.de/xca/) tool and the Mozilla NSS tools.  Here are some rough notes:
+    1. Launch XCA.  Create a new database (File → New DataBase).
+    2. Start creating a new certificate by pressing the New Certificate button.  A new dialog window will pop up.
+    3. In the "Signing" frame of the "Source" tab, select "Create a self signed certificate".
+    4. In the "Subject" tab, enter an Internal Name to identify the certificate internally, and then fill in the fields in the "Distinguished name" frame.  The "countryName" should be a two-letter ISO code and the "commonName" should be your personal name.  Press "Generate a new key" to generate a private key.
+    5. In the "Extensions" tab, set the Type to "Certification Authority".  If desired, adjust the validity period for the certificate.
+    6. In the "Key usage" tab, check the "Critical" box in the "X509v3 Key Usage" frame.
+    7. Press the OK button.  The dialog box disappears and the newly generated certificate now appears in the main window.
+    8. Select the newly generated certificate and press the "Export" button.  An export dialog appears.
+    9. Choose the name and filename, and set the Export Format to PKCS #12.
+    10. Press the OK button.
+    11. In a terminal, import the certificate into the PKI store: `pk12util -d sql:$HOME/.pki/nssdb -i /path/to/your/new/certificate.p12`
 
 ## Chat/team communication
 
