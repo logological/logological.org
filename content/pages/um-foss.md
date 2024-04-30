@@ -9,9 +9,9 @@ Much of the officially supported productivity and groupware software the Univers
 
 For those who just want a quick overview of what to do:
 
-* **MFA:** [Configure your MFA]((https://mysignins.microsoft.com/security-info)) to use a phone number or security key instead of Microsoft's proprietary app.
+* **MFA:** [Configure your MFA](https://mysignins.microsoft.com/security-info) to use a phone number or security key instead of Microsoft's proprietary app.
 * **E-mail:** Use [Thunderbird](https://www.thunderbird.net/) or any other OAuth2-capable e-mail client—see below for the correct IMAP and SMTP settings.  If your client doesn't support OAuth2, then install the [DavMail](https://davmail.sourceforge.net/) gateway and have the client connect to it.
-* **Calendar:** Install the [DavMail](https://davmail.sourceforge.net/) gateway and have Thunderbird, or any other CalDAV client, connect to it.
+* **Calendar:** Install the [DavMail](https://davmail.sourceforge.net/) gateway and have [Thunderbird](https://www.thunderbird.net/), or any other CalDAV client, connect to it.
 * **Address book:** Install the [DavMail](https://davmail.sourceforge.net/) gateway and have [Thunderbird](https://www.thunderbird.net/), or any other CardDAV/LDAP client, connect to it.
 * **Chat:** Use [Pidgin](https://www.pidgin.im/) and the appropriate plugins to access Teams, Slack, etc.
 * **Office suite:** Microsoft 365 files can be downloaded for local editing with [LibreOffice](https://www.libreoffice.org/), and then uploaded again afterwards.
@@ -99,7 +99,7 @@ The University has at least two calendar systems: a [public calendar system for 
 
 ### Public events calendar
 
-The [public calendar system for events](https://eventscalendar.umanitoba.ca/) can be used as-is with free software!  It provides event information via web pages that can be viewed in a web browser, via an RSS feed that can be viewed in a feed aggregator, or via iCalendar files that can be subscribed to from an HTTP- or WebDAV-capable calendar client such as [Mozilla Thunderbird](https://www.thunderbird.net/).
+The [public calendar system for events](https://eventscalendar.umanitoba.ca/) can be used as-is with free software!  It provides event information via web pages that can be viewed in a web browser, via an RSS feed that can be viewed in a feed aggregator, or via iCalendar files that can be subscribed to from an HTTP- or WebDAV-capable calendar client such as [Thunderbird](https://www.thunderbird.net/).
 
 I recommend using the web interface to browse for event categories of interest to you.  (Follow the links in the drop-down menus near the top of the page.)  Once you are at the web page for a category, the "SUBSCRIBE" section in the right column of the page provides WebDAV or HTTP URLs that you can import into your calendar client:
 
@@ -110,8 +110,8 @@ I recommend using the web interface to browse for event categories of interest t
 
 Personal calendars are hosted through a Microsoft Exchange server via Microsoft 365.  Unfortunately, it does not expose the standard CalDAV protocol, and most free calendar clients do not support Microsoft's proprietary protocols.  You can consider the following workarounds:
 
-1. Install [DavMail](https://davmail.sourceforge.net/), a Java-based server that acts as a gateway between Microsoft's proprietary protocols and CalDAV.  You can then use any CalDAV-capable calendar client, such as [Mozilla Thunderbird](https://www.thunderbird.net/), and have it connect to your DavMail server.
-2. Use [Mozilla Thunderbird](https://www.thunderbird.net/), which has an integrated calendar to which Microsoft Exchange support can be added via the [TbSync](https://addons.thunderbird.net/En-us/thunderbird/addon/tbsync/) and [Provider for Exchange ActiveSync](https://addons.thunderbird.net/En-us/thunderbird/addon/eas-4-tbsync/?src=ss) add-ons.  (Note that you must install _both_ add-ons.)
+1. Install [DavMail](https://davmail.sourceforge.net/), a Java-based server that acts as a gateway between Microsoft's proprietary protocols and CalDAV.  You can then use any CalDAV-capable calendar client, such as [Thunderbird](https://www.thunderbird.net/), and have it connect to your DavMail server.
+2. Use [Thunderbird](https://www.thunderbird.net/), which has an integrated calendar to which Microsoft Exchange support can be added via the [TbSync](https://addons.thunderbird.net/En-us/thunderbird/addon/tbsync/) and [Provider for Exchange ActiveSync](https://addons.thunderbird.net/En-us/thunderbird/addon/eas-4-tbsync/?src=ss) add-ons.  (Note that you must install _both_ add-ons.)
 
 In my experience, both DavMail and TbSync are a bit buggy, which is inevitable considering that they aim to reverse-engineer a complex, largely undocumented, and constantly changing protocol.  However, their respective developers are very responsive to bug reports.  I find DavMail to be the more reliable and versatile of the two, though it is more complicated to set up than TbSync.
 
@@ -129,8 +129,8 @@ On my openSUSE machines, I install DavMail using the repositories provided by th
 
 UM's address book is hosted through a Microsoft Exchange server via Microsoft 365.  Unfortunately, it does not expose the standard CardDAV or LDAP protocols, and most free e-mail/address book clients do not support Microsoft's proprietary protocols.  You can consider the following workarounds:
 
-1. Install [DavMail](https://davmail.sourceforge.net/), a Java-based server that acts as a gateway between Microsoft's proprietary protocols and CardDAV or LDAP.  You can then use any CardDAV- or LDAP-capable client, such as [Mozilla Thunderbird](https://www.thunderbird.net/), and have it connect to your DavMail server.
-2. Use [Mozilla Thunderbird](https://www.thunderbird.net/), which has an integrated address book to which Microsoft Exchange support can be added via the [TbSync](https://addons.thunderbird.net/En-us/thunderbird/addon/tbsync/) and [Provider for Exchange ActiveSync](https://addons.thunderbird.net/En-us/thunderbird/addon/eas-4-tbsync/?src=ss) add-ons.  (Note that you must install _both_ add-ons.)
+1. Install [DavMail](https://davmail.sourceforge.net/), a Java-based server that acts as a gateway between Microsoft's proprietary protocols and CardDAV or LDAP.  You can then use any CardDAV- or LDAP-capable client, such as [Thunderbird](https://www.thunderbird.net/), and have it connect to your DavMail server.
+2. Use [Thunderbird](https://www.thunderbird.net/), which has an integrated address book to which Microsoft Exchange support can be added via the [TbSync](https://addons.thunderbird.net/En-us/thunderbird/addon/tbsync/) and [Provider for Exchange ActiveSync](https://addons.thunderbird.net/En-us/thunderbird/addon/eas-4-tbsync/?src=ss) add-ons.  (Note that you must install _both_ add-ons.)
 
 You can set up DavMail for CardDAV/LDAP clients using instructions similar to those given above for CalDAV clients.
 
@@ -144,7 +144,7 @@ The University provides [letterhead](https://umanitoba.sharepoint.com/sites/um-i
 
 ## Chat/team communication
 
-The University's Microsoft 365 service includes Microsoft Teams, which can be used for chat and video conferencing.  There is no need to install Microsoft's proprietary Teams application in order to access Teams, as you can access Teams through a free web browser such as [Mozilla Firefox](https://mozilla.org/firefox) or [Chromium](https://www.chromium.org/Home).  However, note that the web interfaces themselves contain proprietary JavaScript, and accessing Teams through a standalone web browser may not be as convenient as using a dedicated application.  Some alternatives to consider:
+The University's Microsoft 365 service includes Microsoft Teams, which can be used for chat and video conferencing.  There is no need to install Microsoft's proprietary Teams application in order to access Teams, as you can access Teams through a free web browser such as [Firefox](https://mozilla.org/firefox) or [Chromium](https://www.chromium.org/Home).  However, note that the web interfaces themselves contain proprietary JavaScript, and accessing Teams through a standalone web browser may not be as convenient as using a dedicated application.  Some alternatives to consider:
 
 1. Use [Pidgin](https://www.pidgin.im/), the universal chat client, with the [MS Teams Plugin](https://github.com/EionRobb/purple-teams).  This lacks support for certain features (calls, message reactions, etc.) but does support basic chat.  This solution is 100% free software.
 
