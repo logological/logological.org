@@ -566,6 +566,7 @@ NEWS_ICONS = {
     'radio': 'mdi-radio-tower',
     'publication': 'mdi-file-document-outline',
     'shared-task': 'mdi-human-greeting-proximity',
+    'conference': 'mdi-human-greeting-proximity',
     'panelist': 'mdi-human-greeting-proximity',
 }
 
