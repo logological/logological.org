@@ -115,15 +115,51 @@ Personal calendars are hosted through a Microsoft Exchange server via Microsoft 
 
 In my experience, both DavMail and TbSync are a bit buggy, which is inevitable considering that they aim to reverse-engineer a complex, largely undocumented, and constantly changing protocol.  However, their respective developers are very responsive to bug reports.  I find DavMail to be the more reliable and versatile of the two, though it is more complicated to set up than TbSync.
 
-### Setting up DavMail
+### Setting up DavMail (basic instructions)
 
 1. Download and install DavMail.  The author provides [prepackaged versions for Windows, Mac OS X, Debian, and other systems](https://davmail.sourceforge.net/download.html) on his website, and [prepackaged versions for CentOS, Fedora, and openSUSE](https://software.opensuse.org//download.html?project=home%3Amguessan%3Adavmail&package=davmail) via the openSUSE Build Service.
 2. Configure the DavMail server.  To do this, go to the [DavMail website](https://davmail.sourceforge.net/) and follow the relevant setup instructions in the "DavMail setup" section of the navigation menu and in the "Office 365" and "Is Office 365 modern authentication / MFA supported?" sections of the [FAQ](https://davmail.sourceforge.net/faq.html).
 3. Configure your calendar client.  To do this, go the [DavMail website](https://davmail.sourceforge.net/) and follow the relevant calendar setup instructions in the "Thunderbird Setup", "OS X Setup", "Android Setup", or "iPhone Setup" section of the navigation menu.  If you are using a different calendar client, you should be able to adapt the Thunderbird setup instructions.
 
-On my openSUSE machines, I install DavMail using the repositories provided by the openSUSE Build Service.  (I add these repositories to Zypper so that any available upgrades to DavMail are fetched and installed whenever I do a system update using `zypper up` or `zypper dup`.)  I run DavMail as a headless systemd service in `O365Modern` mode, but to do the initial setup, I first ran it as a GUI application.  This allowed me to interactively perform the MFA and get the OAuth2 access token for use in the `davmail.properties` configuration file.
+On my openSUSE machines, I install DavMail using the repositories provided by the openSUSE Build Service.  (I add these repositories to Zypper so that any available upgrades to DavMail are fetched and installed whenever I do a system update using `zypper up` or `zypper dup`.)
 
-(At some point I may revise this section to include step-by-step instructions.)
+I run DavMail as a headless systemd service in `O365Manual` mode, but to do the initial setup, I first ran it as a GUI application.  This allowed me to interactively perform the MFA and get the OAuth2 access token for use in the `davmail.properties` configuration file.  Step-by-step instructions on setting up DavMail to run interactively or as a systemd service are provided in the following two sections.
+
+### Setting up DavMail to run in a local user account
+
+1. Launch DavMail from your local user account.  A DavMail icon will appear in your system tray.
+2. Right-click on the DavMail icon in your system tray and select "Settings…".
+3. In the "Main" tab, select "O365Manual" as the Exchange Protocol.
+4. Check the boxes for all the services you want to create a gateway for (POP or IMAP for incoming mail, SMTP for outgoing mail, Caldav for calendar, and LDAP for address book).
+5. Press the "Save" button.
+6. Launch Thunderbird.  (You could alternatively use any other CalDav-capable calendar application, though you will need to adapt the rest of these instructions accordingly.)
+7. In the Calendar tab, press the "New Calendar…" button.  A "Create New Calendar" dialog appears.
+8. Select "On the Network" and press the "Next" button.
+9. In the "Username" field, enter your full umanitoba.ca e-mail address (e.g., `FirstName.LastName@umanitoba.ca`).
+10. In the "Location" field, enter `http://localhost:1080/users/FirstName.LastName@umanitoba.ca/calendar` (substituting your e-mail address) and press the "Find Calendars" button.  An "Authentication Required" dialog appears.
+11. Enter your UMNet password and press the "OK" button.
+12. An "Office 365 - Manual authentication" dialog appears.  Press the "Open" button to open the MFA page in your web browser (or alternatively, press the "Copy to clipboard" button and then paste the URL into the address bar of your web browser).  If your browser is not already logged into the UM MFA system, you may be prompted for your username and password and for an MFA token.  Your browser will then be redirected to a _blank_ page.
+13. Check your browser's address bar for the URL of this blank page.  It will look something like the following:  `https://login.microsoftonline.com/common/oauth2/nativeclient?code=SOME_EXTREMELY_LONG_STRING_OF_CHARACTERS&session_state=SOME_SHORT_STRING_OF_CHARACTERS`.  Copy the value of the `code` field (`SOME_EXTREMELY_LONG_STRING_OF_CHARACTERS` in the example here) and paste it into the "Authentication code" field of DavMail's "Office 365 - Manual authentication" dialog, and then press the "Send" button.
+14. Back in Thunderbird's "Create New Calendar" dialog, you may be prompted whether to subscribe to a CalDAV or iCalendar calendar.  The default option should be fine. Press the "Properties" button. An "Edit Calendar" dialog appears.
+15. Give the calendar a name and, if desired, a colour.  Press the "OK" button.  You will be returned to the "Create New Calendar" dialog.
+16. Press the "Subscribe" button.
+17. Wait a minute or two for DavMail and Thunderbird to perform the initial sychronization of your new calendar.
+18. You can now begin using your calendar!  You will need to keep DavMail running for this, so if you log out of your account or reboot machine, remember to restart it, or configure your account to automatically start it on login.  Alternatively, you can configure DavMail to run as a system service (see below).
+19. The authentication code you entered in a previous step is valid only for 90 days.  (After 90 days, DavMail will probably prompt you again for a new code.)
+
+### Configuring DavMail to run as a system service
+
+These instructions assume that you have installed a packaged version of DavMail that includes systemd configuration files.
+
+1. Follow the instructions above to set up DavMail to run in a local user account.
+2. Quit DavMail and launch a root shell.
+3. Copy `$HOME/.davmail.properties` to `/etc/davmail.properties`.
+4. Open `/etc/davmail.properties` in a text editor.  Locate the line that sets the key `davmail.mode` and make sure that it reads `davmail.mode=O365Manual`.  Also locate the line that sets the key `davmail.logFilePath` and set the value to something sensible – e.g., `davmail.logFilePath=/var/log/davmail.log`.
+5. Start the system-wide DavMail service: `systemctl start davmail.service`
+6. Verify that the service started correctly by running `systemctl status davmail.service`.  If a problem is indicated, consult the log file you set in a previous step.
+7. Verify that your calendar client is able to connect to the service, such as by creating an event.
+8. If everything is working, you can configure your system to automatically start the DavMail service on boot: `systemctl enable davmail.service`.
+9. Remember that your authentication code is valid only for 90 days.  However, when DavMail runs as a system service, it won't prompt you for a new code, and Thunderbird might not emit any error messages.  You should set a reminder to manually get a new code.  To get a new code, first stop the system-wide DavMail service by running `systemctl stop davmail.service` as root.  Then launch DavMail in your user account and have Thunderbird connect to the calendar, in which case DavMail should prompt you once again for the authentication code.  You can then quit DavMail, copy the new code from the end of `$HOME/.davmail.properties` to `/etc/davmail.properties`, and restart the system-wide DavMail service with `systemctl start davmail.service`.
 
 ## Address book
 
