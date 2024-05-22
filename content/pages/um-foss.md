@@ -35,7 +35,7 @@ If your favourite e-mail client doesn't support OAuth2, you may be able to use i
 
 ### Setting up incoming mail (IMAP)
 
-For incoming mail, configure your e-mail client with the following settings.  (Note that the exact labels may vary from client to client.)
+For incoming mail, configure your e-mail client with the following settings.  (Note that the field names may vary from client to client.)
 
 <dl>
 <dt>Server type</dt>
@@ -56,7 +56,7 @@ When you first configure your account, or when you check mail for the first time
 
 ### Setting up outgoing mail (SMTP)
 
-For outgoing mail, configure your e-mail client with the following settings.  (Note that the exact labels may vary from client to client.)
+For outgoing mail, configure your e-mail client with the following settings.  (Note that the field names may vary from client to client.)
 
 <dl>
 <dt>Server type</dt>
@@ -77,13 +77,17 @@ When you first configure your account, or when you send mail for the first time,
 
 ### Junk mail filtering
 
-Incoming mail that Microsoft deems to be suspicious will be automatically placed in an IMAP folder named "Junk mail".  You may not want this if you prefer to use your own spam filtering software, or if you prefer not to have your mail filtered at all.  Unfortunately, there is no way to fully disable the server-side filtering.  You can consider the following workarounds:
+Incoming mail that Microsoft deems to be suspicious is automatically filtered in two ways.  Some mail gets diverted to an IMAP folder named "Junk mail", and some mail gets "quarantined" into an area that you can access only by pointing a web browser to `https://security.microsoft.com/quarantine`.
 
-1. You can manage a list of "approved senders" through the Microsoft 365 web interface.  Mail from senders on this list will bypass the server-side junk mail checks.  The disadvantage of this method is that you have to manually manage the list (and of course that you have to do it through the proprietary web interface).
+You may not want either type of filtering if you prefer to use your own spam filtering software, or if you prefer not to have your mail filtered at all.  Unfortunately, there is no way to fully disable the server-side filtering.  You can consider the following workarounds for the filter that diverts mail to the "Junk mail" folder:
+
+1. You can manage a list of "approved senders" through the Microsoft 365 web interface.  Mail from senders on this list will bypass the server-side junk mail checks that divert mail to the "Junk mail" folder.  The disadvantage of this method is that you have to manually manage the list (and of course that you have to do it through the proprietary web interface).
 
 2. Your mail client may allow you to create a client-side filtering rule that automatically moves all incoming mail from the Junk mail folder to your inbox. Unfortunately, Thunderbird does not yet support filtering rules for mail arriving anywhere other than the inbox.
 
 3. [Imap-CLI](https://github.com/Gentux/imap-cli) is a general-purpose command-line IMAP tool that you can configure to move all messages from one IMAP folder to another (say, from your "Junk mail" folder to your inbox).  You can then run it periodically (via a cron job, for example).  It supports OAuth2 authentication.
+
+There is probably no workaround for the filter that "quaratines" e-mails into a special web interface.
 
 ### Content rewriting
 
@@ -95,11 +99,11 @@ The mail server is configured to automatically add an obnoxious "**Caution!** Th
 
 ## Calendar
 
-The University has at least two calendar systems: a [public calendar system for events](https://eventscalendar.umanitoba.ca/), and another system that hosts the personal calendar associated with your umanitoba.ca e-mail account.
+The University has at least two calendar systems: a [public calendar system for events](https://eventscalendar.umanitoba.ca/), and another system that hosts the personal calendars associated with umanitoba.ca e-mail accounts.
 
 ### Public events calendar
 
-The [public calendar system for events](https://eventscalendar.umanitoba.ca/) can be used as-is with free software!  It provides event information via web pages that can be viewed in a web browser, via an RSS feed that can be viewed in a feed aggregator, or via iCalendar files that can be subscribed to from an HTTP- or WebDAV-capable calendar client such as [Thunderbird](https://www.thunderbird.net/).
+The [public calendar system for events](https://eventscalendar.umanitoba.ca/) can be used as-is with free software!  This system provides event information via web pages that can be viewed in a web browser, via an RSS feed that can be viewed in a feed aggregator, or via iCalendar files that can be subscribed to from an HTTP- or WebDAV-capable calendar client such as [Thunderbird](https://www.thunderbird.net/).
 
 I recommend using the web interface to browse for event categories of interest to you.  (Follow the links in the drop-down menus near the top of the page.)  Once you are at the web page for a category, the "SUBSCRIBE" section in the right column of the page provides WebDAV or HTTP URLs that you can import into your calendar client:
 
