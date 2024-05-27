@@ -16,6 +16,7 @@ For those who just want a quick overview of what to do:
 * **Chat:** Use [Pidgin](https://www.pidgin.im/) and the appropriate plugins to access Teams, Slack, etc.
 * **Digital signatures:** Use [XCA](https://www.hohnstaedt.de/xca/) to create a self-signed certificate and [Okular](https://okular.kde.org/) or [LibreOffice](https://www.libreoffice.org/) to sign PDFs with it.
 * **Office suite:** Microsoft 365 files can be downloaded for local editing with [LibreOffice](https://www.libreoffice.org/), and then uploaded again afterwards.
+* **VPN:** Use [OpenConnect](https://www.infradead.org/openconnect/), though see below to work around issues with IST's non-working instructions.
 
 ## Multi-factor authentication
 
@@ -217,3 +218,16 @@ The University's Microsoft 365 service includes Microsoft Teams, which can be us
 2. Use [Ferdium](https://www.ferdium.org/), a desktop application that embeds web versions of various apps, including Teams.  It can do pretty much everything the web-based versions of Teams can do, but only because it runs the same proprietary JavaScript.
 
 Individual academic units within the university may use Slack, another proprietary chat/team communication tool.  Both Pidgin (via [slack-libpurple](https://github.com/dylex/slack-libpurple)) and Ferdium support Slack as well, with the same respective advantages and disadvantages as their Teams support.
+
+## VPN
+
+[IST's VPN support page](https://umanitoba.ca/information-services-technology/my-security/vpn-support) links to some [VPN instructions for Linux](https://ithelp.umanitoba.ca/a/1635613-vpn-instructions-for-installing-linux-vpn) that discuss connecting to the VPN with [OpenConnect](https://www.infradead.org/openconnect/), a client that works not just with GNU/Linux but most other popular operating systems.
+
+Unfortunately, IST's instructions for using OpenConnect no longer seem to work; the client now throws a "Failed to find or parse web form in login page" error, possibly as a result of changes made to UM's (pre-)sign-in web page in 2024. It is possible to work around the problem by manually passing an authentication cookie to openconnect using the `-C` command-line option.  Where does one get such a cookie?  One option is [openconnect-pulse-gui](https://github.com/utknoxville/openconnect-pulse-gui), a Python script that will bring up an interactive web interface for you to do MFA, capture the resulting authentication cookie, and print it out on the console for you.  In fact, the script prints out the complete OpenConnect command line that you can simply copy and paste into your command shell; this will get you connected to the VPN with no further prompting.
+
+At least on my openSUSE systems, I find there are two problems with how OpenConnect sets up the VPN tunnel:
+
+1. By default, only certain network traffic gets routed through the VPN.  If you want _all_ traffic to be routed through the VPN, then you should add the line `CISCO_SPLIT_INC=` somewhere near the top of the `vpnc-script` script that OpenConnect runs upon establishing a connection.  On openSUSE, this script is located at `/etc/openconnect/vpnc-script`; on Debian it is located at `/usr/share/vpnc-scripts/vpnc-script`.
+
+2. My computer's DNS settings (in `/etc/resolv.conf`) don't get changed, so I can't refer to my UM computers by name.  I don't yet have a workaround for this.
+
