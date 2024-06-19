@@ -18,7 +18,7 @@ BANNER = ""
 # Language and time
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en-ca'
-TIMEZONE = u'Europe/Vienna'
+TIMEZONE = u'America/Winnipeg'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 BUILD_TIME = datetime.datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M %Z")
 #date.today()#.strftime(format='%Y-%m-%d')
