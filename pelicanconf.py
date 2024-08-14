@@ -541,7 +541,12 @@ SITEMAP = {
     'changefreqs': {
         'articles': 'weekly',
         'indexes': 'weekly',
-        'pages': 'weekly'}
+        'pages': 'weekly'},
+    "exclude": [
+        "^news",
+        "^index[0-9]+$",
+        "^index[0-9]+\.html$",
+    ]
 }
 
 #RESPONSIVE_IMAGES = False
