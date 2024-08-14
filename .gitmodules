@@ -1,6 +1,6 @@
 [submodule "pelican-plugins"]
-	path = pelican-plugins
-	url = git://github.com/getpelican/pelican-plugins.git
+	path = pelican-plugins-submodules/pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins.git
 [submodule "publications/resume"]
 	path = publications/resume
 	url = psy@git:git/resume.git
@@ -25,3 +25,9 @@
 [submodule "MaterialDesign-Webfont"]
 	path = MaterialDesign-Webfont
 	url = https://github.com/Templarian/MaterialDesign-Webfont.git
+[submodule "pelican-plugins-submodules/sitemap"]
+	path = pelican-plugins-submodules/sitemap
+	url = https://github.com/pelican-plugins/sitemap.git
+[submodule "pelican-plugins-submodules/render-math"]
+	path = pelican-plugins-submodules/render-math
+	url = https://github.com/pelican-plugins/render-math.git
