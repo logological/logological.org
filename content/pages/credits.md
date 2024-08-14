@@ -15,7 +15,7 @@ This website is powered by [Pelican](https://getpelican.com/),
 ## Font credits
 
 * Mulish Copyright 2011 [The Mulish Project
-  Authors](github.com/googlefonts/mulish). [SIL Open Font License,
+  Authors](https://github.com/googlefonts/mulish). [SIL Open Font License,
   1.1](http://scripts.sil.org/OFL).
 * Saira Extra Condensed Copyright 2016 [The Saira Project
   Authors](mailto:omnibus.type@gmail.com), with reserved font name
