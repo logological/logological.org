@@ -39,19 +39,20 @@ You can also
 
 Binary packages are available for several systems:
 
-* [OpenSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/home:/psych0naut/)
+* [openSUSE](https://download.opensuse.org/repositories/home:/psych0naut/)
 * Microsoft Windows:
-    * [Michael Yee](http://web.mit.edu/myee/www/) has produced a
-    [UCI-enabled](/:w:Universal_Chess_Interface) build of
-    **[CHEOPS 1.1 for Microsoft Windows](http://web.mit.edu/myee/www/chess/cheops-1.1uci.zip)**.
-    * [Daniel José Queraltó](http://www.andscacs.com/) has produced a
+    * [Michael Yee](https://web.mit.edu/myee/www/) has produced a
+    [UCI-enabled](https://en.wikipedia.org/wiki/Universal_Chess_Interface) build of
+    **[CHEOPS 1.1 for Microsoft Windows](https://web.mit.edu/myee/www/chess/cheops-1.1uci.zip)**.
+    * [Daniel José Queraltó](https://web.archive.org/web/20191228150551/http://www.andscacs.com/) has produced a
     build of
-    **[CHEOPS 1.2 for Microsoft Windows](http://www.andscacs.com/cheops_1.2/cheops_1.2.rar)**. (On
+    **[CHEOPS 1.2 for Microsoft Windows](https://web.archive.org/web/20160401201242/http://www.andscacs.com/cheops_1.2/cheops_1.2.rar)**. (On
     some systems, you may need to also install Microsoft's
-    [Visual C++ runtime packages](http://www.microsoft.com/en-us/download/details.aspx?id=40784).)
+    [Visual C++ runtime packages](https://www.microsoft.com/en-us/download/details.aspx?id=40784).)
 
-Note that, except for the SUSE packages, these packages are produced
-and hosted by third parties. I take no responsibility for them.
+Note that, except for the openSUSE packages, these packages are
+produced and hosted by third parties. I take no responsibility for
+them.
 
 
 Documentation
