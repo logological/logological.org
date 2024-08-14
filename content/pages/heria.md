@@ -26,6 +26,10 @@ CTAN.  The documentation includes the following:
 * [The `heria` user manual](http://mirrors.ctan.org/macros/latex/contrib/heria/heria.pdf)
 * [A skeleton proposal](http://mirrors.ctan.org/macros/latex/contrib/heria/heria-proposal.pdf)
   showing `heria` in action.
+  
+There is also a journal article that describes the motivation for and development of the package:
+
+* Tristan Miller. [Preparing Horizon Europe proposals in LaTeX with heria.](https://tug.org/TUGboat/tb45-1/tb139miller-horizon.html) _[TUGboat: The Communications of the TeX Users Group](https://tug.org/TUGboat/)_, 45(1):59–64, 2024. ISSN 0896-3207. DOI: [10.47397/tb/45-1/tb139miller-horizon](https://dx.doi.org/10.47397/tb/45-1/tb139miller-horizon).
 
 ## Development
 
