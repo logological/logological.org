@@ -36,6 +36,8 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
 -   [dlg2html](/dlg2html), a DLG Pro to HTML converter
 -   [heria](/heria), a LaTeX class for Horizon Europe RIA and IA funding
     proposals
+-   [sshrc-insight](/sshrc-insight), a LaTeX class for SSHRC Insight
+    Grant funding proposals
 
 ## Miscellaneous
 
