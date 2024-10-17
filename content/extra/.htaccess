@@ -375,7 +375,6 @@ Redirect permanent /images/SemEval-2017_20160623_flyer.pdf http://alt.qcri.org/s
 
 # News to share on Facebook
 Redirect permanent /fb/manitoban https://themanitoban.com/2024/03/crunching-code-and-cracking-jokes/47075/
-Redirect permanent /fb/ki https://sound.orf.at/podcast/oe1/dimensionen/wie-ki-die-uni-lehre-veraendert
 
 # Don't serve articles and index pages that Pelican stupidly generates
 Redirect 404 /news
