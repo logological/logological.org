@@ -312,313 +312,43 @@ FUNCTION {find.replace}
     }
   while$
 }
-FUNCTION {latex2html.1}
-{
-}
-
-FUNCTION {latex2html.2}
-{
-  "\textunderscore"  "&#x005F;"  find.replace
-  "\textbackslash"  "&#x005C;"  find.replace
-}
-
-FUNCTION {latex2html.3}
-{
-  "\textbullet"  "&bull;"  find.replace
-  "\textnumero"  "&#x2116;"  find.replace
-  "\copyright"  "&copy;"  find.replace
-  "\textminus"  "&minus;"  find.replace
-}
-
-FUNCTION {latex2html.4}
-{
-  "\textcent"  "&cent;"  find.replace
-  "\texteuro"  "&euro;"  find.replace
-  "\textless"  "&lt;"  find.replace
-  "\LaTeXTeX"  "<span class='latex'>(L<sup>a</sup>)T<sub>e</sub>X</span>"  find.replace
-}
-
-FUNCTION {latex2html.5}
-{
-  "\textbar"  "&#x007C;"  find.replace
-  "\textdiv"  "&divide;"  find.replace
-  "\BibTeX"  "B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span>"  find.replace
-  "\pounds"  "&pound;"  find.replace
-}
-
-FUNCTION {latex2html.6}
-{
-  "\'{\i}"  "&iacute;"  find.replace
-  "\={\i}"  "&#x012B;"  find.replace
-  "\LaTeX"  "<span class='latex'>L<sup>a</sup>T<sub>e</sub>X</span>"  find.replace
-  "\Thorn"  "&THORN;"  find.replace
-  "\^{\i}"  "&icirc;"  find.replace
-  "\^{\j}"  "&#x0135;"  find.replace
-  "\`{\i}"  "&igrave;"  find.replace
-}
-
-FUNCTION {latex2html.7}
-{
-}
-
-FUNCTION {latex2html.8}
-{
-  "\ldots"  "&hellip;"  find.replace
-  "\slash"  "/"  find.replace
-  "\thorn"  "&thorn;"  find.replace
-  "\" quote$ * "{A}" *  "&Auml;"  find.replace
-  "\" quote$ * "{E}" *  "&Euml;"  find.replace
-  "\" quote$ * "{I}" *  "&Iuml;"  find.replace
-  "\" quote$ * "{O}" *  "&Ouml;"  find.replace
-  "\" quote$ * "{U}" *  "&Uuml;"  find.replace
-  "\" quote$ * "{Y}" *  "&Yuml;"  find.replace
-  "\" quote$ * "{a}" *  "&auml;"  find.replace
-  "\" quote$ * "{e}" *  "&euml;"  find.replace
-}
-
-FUNCTION {latex2html.9}
-{
-  "\" quote$ * "{o}" *  "&ouml;"  find.replace
-  "\" quote$ * "{u}" *  "&uuml;"  find.replace
-  "\" quote$ * "{y}" *  "&yuml;"  find.replace
-  "\'{A}"  "&Aacute;"  find.replace
-  "\'{C}"  "&#x0106;"  find.replace
-  "\'{E}"  "&Eacute;"  find.replace
-  "\'{I}"  "&Iacute;"  find.replace
-  "\'{L}"  "&#x0139;"  find.replace
-  "\'{N}"  "&#x0143;"  find.replace
-  "\'{O}"  "&Oacute;"  find.replace
-  "\'{R}"  "&#x0154;"  find.replace
-  "\'{S}"  "&#x015A;"  find.replace
-  "\'{U}"  "&Uacute;"  find.replace
-  "\'{Y}"  "&Yacute;"  find.replace
-  "\'{Z}"  "&#x0179;"  find.replace
-  "\'{a}"  "&aacute;"  find.replace
-  "\'{c}"  "&#x0107;"  find.replace
-  "\'{e}"  "&eacute;"  find.replace
-  "\'{g}"  "&#x01F5;"  find.replace
-  "\'{l}"  "&#x013A;"  find.replace
-  "\'{n}"  "&#x0144;"  find.replace
-  "\'{o}"  "&oacute;"  find.replace
-  "\'{r}"  "&#x0155;"  find.replace
-  "\'{s}"  "&#x015B;"  find.replace
-  "\'{u}"  "&uacute;"  find.replace
-  "\'{y}"  "&yacute;"  find.replace
-  "\'{z}"  "&#x017A;"  find.replace
-  "\.{C}"  "&#x010A;"  find.replace
-  "\.{E}"  "&#x0116;"  find.replace
-}
-
-FUNCTION {latex2html.10}
-{
-  "\.{G}"  "&#x0120;"  find.replace
-  "\.{I}"  "&#x0130;"  find.replace
-  "\.{Z}"  "&#x017B;"  find.replace
-  "\.{c}"  "&#x010B;"  find.replace
-  "\.{e}"  "&#x0117;"  find.replace
-  "\.{g}"  "&#x0121;"  find.replace
-  "\.{z}"  "&#x017C;"  find.replace
-  "\={A}"  "&#x0100;"  find.replace
-  "\={E}"  "&#x0112;"  find.replace
-  "\={I}"  "&#x012A;"  find.replace
-  "\={O}"  "&#x014C;"  find.replace
-  "\={U}"  "&#x016A;"  find.replace
-  "\={a}"  "&#x0101;"  find.replace
-  "\={e}"  "&#x0113;"  find.replace
-  "\={o}"  "&#x014D;"  find.replace
-  "\={u}"  "&#x016B;"  find.replace
-}
-
-FUNCTION {latex2html.11}
-{
-  "\H{O}"  "&#x0150;"  find.replace
-  "\H{U}"  "&#x0170;"  find.replace
-  "\H{o}"  "&#x0151;"  find.replace
-  "\H{u}"  "&#x0171;"  find.replace
-  "\^{A}"  "&Acirc;"  find.replace
-  "\^{C}"  "&#x0108;"  find.replace
-  "\^{E}"  "&Ecirc;"  find.replace
-  "\^{G}"  "&#x011C;"  find.replace
-  "\^{H}"  "&#x0124;"  find.replace
-  "\^{I}"  "&Icirc;"  find.replace
-  "\^{J}"  "&#x0134;"  find.replace
-  "\^{O}"  "&Ocirc;"  find.replace
-  "\^{S}"  "&#x015C;"  find.replace
-  "\^{U}"  "&Ucirc;"  find.replace
-  "\^{W}"  "&#x0174;"  find.replace
-  "\^{Y}"  "&#x0176;"  find.replace
-  "\^{a}"  "&acirc;"  find.replace
-  "\^{c}"  "&#x0109;"  find.replace
-  "\^{e}"  "&ecirc;"  find.replace
-  "\^{g}"  "&#x011D;"  find.replace
-  "\^{h}"  "&#x0125;"  find.replace
-  "\^{o}"  "&ocirc;"  find.replace
-  "\^{s}"  "&#x015D;"  find.replace
-  "\^{u}"  "&ucirc;"  find.replace
-  "\^{w}"  "&#x0175;"  find.replace
-  "\^{y}"  "&#x0177;"  find.replace
-  "\`{A}"  "&Agrave;"  find.replace
-  "\`{E}"  "&Egrave;"  find.replace
-  "\`{I}"  "&Igrave;"  find.replace
-}
-
-FUNCTION {latex2html.12}
-{
-  "\`{O}"  "&Ograve;"  find.replace
-  "\`{U}"  "&Ugrave;"  find.replace
-  "\`{a}"  "&agrave;"  find.replace
-  "\`{e}"  "&egrave;"  find.replace
-  "\`{o}"  "&ograve;"  find.replace
-  "\`{u}"  "&ugrave;"  find.replace
-  "\cent"  "&cent;"  find.replace
-  "\c{C}"  "&Ccedil;"  find.replace
-}
-
-FUNCTION {latex2html.13}
-{
-  "\c{G}"  "&#x0122;"  find.replace
-  "\c{K}"  "&#x0136;"  find.replace
-  "\c{L}"  "&#x013B;"  find.replace
-  "\c{N}"  "&#x0145;"  find.replace
-  "\c{R}"  "&#x0156;"  find.replace
-  "\c{S}"  "&#x015E;"  find.replace
-  "\c{T}"  "&#x0162;"  find.replace
-  "\c{c}"  "&ccedil;"  find.replace
-  "\c{k}"  "&#x0137;"  find.replace
-  "\c{l}"  "&#x013C;"  find.replace
-  "\c{n}"  "&#x0146;"  find.replace
-  "\c{r}"  "&#x0157;"  find.replace
-  "\c{s}"  "&#x015F;"  find.replace
-  "\c{t}"  "&#x0163;"  find.replace
-  "\k{A}"  "&#x0104;"  find.replace
-  "\k{E}"  "&#x0118;"  find.replace
-  "\k{I}"  "&#x012E;"  find.replace
-  "\k{U}"  "&#x0172;"  find.replace
-  "\k{a}"  "&#x0105;"  find.replace
-  "\k{e}"  "&#x0119;"  find.replace
-  "\k{i}"  "&#x012F;"  find.replace
-  "\k{u}"  "&#x0173;"  find.replace
-  "\r{U}"  "&#x016E;"  find.replace
-  "\r{u}"  "&#x016F;"  find.replace
-  "\u{A}"  "&#x0102;"  find.replace
-  "\u{G}"  "&#x011E;"  find.replace
-  "\u{U}"  "&#x016C;"  find.replace
-  "\u{a}"  "&#x0103;"  find.replace
-  "\u{g}"  "&#x011F;"  find.replace
-}
-
-FUNCTION {latex2html.14}
-{
-  "\u{u}"  "&#x016D;"  find.replace
-  "\v{C}"  "&#x010C;"  find.replace
-  "\v{D}"  "&#x010E;"  find.replace
-  "\v{E}"  "&#x011A;"  find.replace
-  "\v{L}"  "&#x013D;"  find.replace
-  "\v{N}"  "&#x0147;"  find.replace
-  "\v{R}"  "&#x0158;"  find.replace
-  "\v{S}"  "&Scaron;"  find.replace
-  "\v{T}"  "&#x0164;"  find.replace
-  "\v{Z}"  "&#x017D;"  find.replace
-  "\v{c}"  "&#x010D;"  find.replace
-  "\v{d}"  "&#x010F;"  find.replace
-  "\v{e}"  "&#x011B;"  find.replace
-  "\v{l}"  "&#x013E;"  find.replace
-  "\v{n}"  "&#x0148;"  find.replace
-  "\v{r}"  "&#x0159;"  find.replace
-  "\v{s}"  "&scaron;"  find.replace
-  "\v{t}"  "&#x0165;"  find.replace
-  "\v{z}"  "&#x017E;"  find.replace
-  "\~{A}"  "&Atilde;"  find.replace
-  "\~{I}"  "&#x0128;"  find.replace
-  "\~{N}"  "&Ntilde;"  find.replace
-  "\~{O}"  "&Otilde;"  find.replace
-  "\~{U}"  "&#x0168;"  find.replace
-  "\~{a}"  "&atilde;"  find.replace
-  "\~{n}"  "&ntilde;"  find.replace
-  "\~{o}"  "&otilde;"  find.replace
-  "\~{u}"  "&#x0169;"  find.replace
-  "\TeX"  "<span class='tex'>T<sub>e</sub>X</span>"  find.replace
-}
-
-FUNCTION {latex2html.15}
-{
-  "---"  "&mdash;"  find.replace
-  "\@."  "&#x002E;"  find.replace
-  "\AA"  "&#x212B;"  find.replace
-  "\AA"  "&Aring;"  find.replace
-  "\AE"  "&AElig;"  find.replace
-  "\DH"  "&ETH;"  find.replace
-  "\DJ"  "&#x0110;"  find.replace
-  "\NG"  "&#x014A;"  find.replace
-  "\OE"  "&OElig;"  find.replace
-  "\TH"  "&THORN;"  find.replace
-  "\aa"  "&aring;"  find.replace
-  "\ae"  "&aelig;"  find.replace
-  "\dh"  "&eth;"  find.replace
-  "\dj"  "&#x0111;"  find.replace
-  "\ng"  "&#x014B;"  find.replace
-  "\oe"  "&oelig;"  find.replace
-}
-
-FUNCTION {latex2html.16}
-{
-  "\ss"  "&szlig;"  find.replace
-  "\th"  "&thorn;"  find.replace
-  "\@ "  " "  find.replace
-  "\ "  " "  find.replace
-  "!`"  "&iexcl;"  find.replace
-  "!!"  "&#x203C;"  find.replace
-  "''"  "&rdquo;"  find.replace
-  ",,"  "&ldquor;"  find.replace
-  "--"  "&ndash;"  find.replace
-  "?`"  "&iquest;"  find.replace
-  "\#"  "&#x0023;"  find.replace
-  "\$"  "&#x0024;"  find.replace
-  "\%"  "&#x0025;"  find.replace
-  "\&"  "&amp;"  find.replace
-  "\-"  "&shy;"  find.replace
-  "\L"  "&#x0141;"  find.replace
-  "\O"  "&Oslash;"  find.replace
-  "\P"  "&para;"  find.replace
-  "\S"  "&sect;"  find.replace
-  "\_"  "&#x005F;"  find.replace
-  "\i"  "&#x0131;"  find.replace
-  "\l"  "&#x0142;"  find.replace
-  "\o"  "&oslash;"  find.replace
-  "\{"  "&#x007B;"  find.replace
-  "\}"  "&#x007D;"  find.replace
-  "``"  "&ldquo;"  find.replace
-  quote$  "&quot;"  find.replace
-  "`"  "&lsquo;"  find.replace
-  "~"  "&nbsp;"  find.replace
-  "{"  ""  find.replace
-  "}"  ""  find.replace
-}
 
 FUNCTION {latex2html}
 { use.internal.latex2html #0 =
     'skip$
     {
-      latex2html.1
-      latex2html.2
-      latex2html.3
-      latex2html.4
-      latex2html.5
-      latex2html.6
-      latex2html.7
-      latex2html.8
-      latex2html.9
-      latex2html.10
-      latex2html.11
-      latex2html.12
-      latex2html.13
-      latex2html.14
-      latex2html.15
-      latex2html.16
+      "\textunderscore"  "&#x005F;"  find.replace
+      "\textbackslash"  "&#x005C;"  find.replace
+      "\textless"  "&lt;"  find.replace
+      "\LaTeXTeX"  "<span class='latex'>(L<sup>a</sup>)T<sub>e</sub>X</span>"  find.replace
+      "\BibTeX"  "B<span style='font-variant:small-caps;'>ib</span><span class='tex'>T<sub>e</sub>X</span>"  find.replace
+      "\LaTeX"  "<span class='latex'>L<sup>a</sup>T<sub>e</sub>X</span>"  find.replace
+      "\slash"  "/"  find.replace
+      "\TeX"  "<span class='tex'>T<sub>e</sub>X</span>"  find.replace
+      "---"  "&mdash;"  find.replace
+      "\@."  "&#x002E;"  find.replace
+      "\@ "  " "  find.replace
+      "\ "  " "  find.replace
+      "''"  "&rdquo;"  find.replace
+      ",,"  "&ldquor;"  find.replace
+      "--"  "&ndash;"  find.replace
+      "\#"  "&#x0023;"  find.replace
+      "\$"  "&#x0024;"  find.replace
+      "\%"  "&#x0025;"  find.replace
+      "\&"  "&amp;"  find.replace
+      "\-"  "&shy;"  find.replace
+      "\_"  "&#x005F;"  find.replace
+      "\{"  "&#x007B;"  find.replace
+      "\}"  "&#x007D;"  find.replace
+      "``"  "&ldquo;"  find.replace
+      quote$  "&quot;"  find.replace
+      "`"  "&lsquo;"  find.replace
+      "~"  "&nbsp;"  find.replace
+      "{"  ""  find.replace
+      "}"  ""  find.replace
     }
   if$
 }
-
 
 FUNCTION {url.escape}
 {
