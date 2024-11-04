@@ -25,7 +25,7 @@ all.bib: miller.bib miller-abstracts.bib miller-recreational.bib
 	cat $+ > $@
 
 %.aux: %.tex
-	pdflatex $<
+	rm -f $*.bbl && pdflatex -draftmode $<
 
 clean:
 	rm -f {miller,miller-featured,miller-recreational}.{aux,bbl,blg,log} ../theme/templates/publications_populated.html
