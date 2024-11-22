@@ -253,6 +253,14 @@ sudo stow PROGRAM_NAME
 
 ### How can I log out of KDE remotely (or from the command line)?
 
+In KDE Plasma 6:
+
+```bash
+qdbus6 org.kde.Shutdown /Shutdown logout
+```
+
+In KDE Plasma 5:
+
 ```bash
 qdbus org.kde.ksmserver /KSMServer logout 0 0 0
 ```
