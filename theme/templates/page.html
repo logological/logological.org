@@ -2,9 +2,11 @@
 
 {% block lang %}{{ page.lang }}{% endblock %}
 
-{% block title %}
-     {{ page.title}} | {{ SITENAME }}
-{% endblock %}
+{% block title %}{{ page.title}} | {{ SITENAME }}{% endblock %}
+
+{% block author %}{{ page.author or SITEAUTHOR }}{% endblock %}
+
+{% block fediverse %}{{ page.fediverse or SITEFEDIVERSE }}{% endblock %}
 
 {% block content %}
 
