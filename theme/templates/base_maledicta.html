@@ -8,8 +8,8 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     {% block meta %}
-    <meta name="author" content="{% block author %}{% endblock %}"/>
-    <meta name="fediverse:creator" content="{% block fediverse %}{% endblock %}"/>
+    <meta name="author" content="{% block author %}{{ SITEAUTHOR }}{% endblock %}"/>
+    <meta name="fediverse:creator" content="{% block fediverse %}{{ SITEFEDIVERSE }}{% endblock %}"/>
     {% if SITEKEYWORDS %}
     <meta name="keywords" content="{{ SITEKEYWORDS }}"/>
     {% endif %}
