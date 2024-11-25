@@ -5,7 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block meta %}
-        <meta name="author" content="{{ AUTHOR }}"/>
+        {% if page and page.author %}
+            <meta name="author" content="{{ page.author }}"/>
+        {% elif article and article.author %}
+            <meta name="author" content="{{ article.author }}"/>
+        {% else %}
+            <meta name="author" content="{{ SITEAUTHOR }}"/>
+        {% endif %}
+        {% if page and page.fediverse %}
+            <meta name="fediverse:creator" content="{{ page.fediverse }}" />
+        {% elif article and article.fediverse %}
+            <meta name="fediverse:creator" content="{{ article.fediverse }}" />
+        {% else %}
+            <meta name="fediverse:creator" content="{{ SITEFEDIVERSE }}" />
+        {% endif %}
         {% if SITEKEYWORDS %}
             <meta name="keywords" content="{{ SITEKEYWORDS }}"/>
         {% endif %}

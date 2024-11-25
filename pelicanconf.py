@@ -3,7 +3,8 @@ import subprocess
 import datetime
 import pytz
 
-AUTHOR = u'Tristan Miller'
+SITEAUTHOR = u"Tristan Miller"
+SITEFEDIVERSE = u"@logological@mastodon.social"
 SITETITLE = u"Tristan Miller"
 SITENAME = u"Tristan Miller"
 #SITEKEYWORDS = ', '.join([
