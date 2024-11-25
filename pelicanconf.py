@@ -4,7 +4,7 @@ import datetime
 import pytz
 
 SITEAUTHOR = u"Tristan Miller"
-SITEFEDIVERSE = u"@logological@mastodon.social"
+SITEFEDIVERSE = u"@Logological@mastodon.social"
 SITETITLE = u"Tristan Miller"
 SITENAME = u"Tristan Miller"
 #SITEKEYWORDS = ', '.join([
