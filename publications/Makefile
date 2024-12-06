@@ -13,8 +13,8 @@ miller-featured.bib: miller.bib miller-abstracts.bib
 	cat $+ > $@
 
 refresh:
-	cd resume && git pull origin master
-	cd covers && git pull origin master
+	if [ 0"$$OFFLINE" -ne 1 ]; then cd resume && git pull origin master;fi
+	if [ 0"$$OFFLINE" -ne 1 ]; then cd covers && git pull origin master;fi
 
 all: miller.bbl miller-recreational.bbl miller-featured.bbl
 

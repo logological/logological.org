@@ -4,7 +4,7 @@ default: refresh ../content/pages/maledicta.html ../content/extra/maledicta.bib
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
 
 refresh:
-	cd maledicta_index && git pull origin master
+	if [ 0"$$OFFLINE" -ne 1 ]; then cd maledicta_index && git pull origin master; fi
 
 ../content/extra/maledicta.bib:	maledicta_index/Maledicta_index.tsv convert_index.gawk
 	./convert_index.gawk --assign format=bibtex < $< > $@
