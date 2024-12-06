@@ -6,6 +6,14 @@
      {{ page.title}} | {{ SITENAME }}
 {% endblock %}
 
+{% block author %}
+     {{ page.author}} | {{ SITEAUTHOR }}
+{% endblock %}
+
+{% block fediverse %}
+     {{ page.fediverse}} | {{ SITEFEDIVERSE }}
+{% endblock %}
+
 {% block content %}
 
 {% if page.banner %}
