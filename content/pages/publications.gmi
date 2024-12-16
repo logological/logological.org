@@ -1,0 +1,178 @@
+title: Publications
+slug: publications
+
+# Publications
+
+This is a list of my scientific and technical publications. (My publications in humour, poetry, and recreational linguistics are in a separate list.)
+
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller.bib	BibTeX version of this list
+=> publications-recreational.gmi	My publications in humour, poetry, and recreational linguistics
+
+Waltraud Kolb and Tristan Miller. Human–computer interaction in pun translation. In James Hadley, Kristiina Taivalkoski-Shilov, Carlos S. C. Teixeira, and Antonio Toral, editors, Using Technologies for Creative-Text Translation. Routledge, 2022. To appear. 
+=> https://github.com/OFAI/PunCAT Code
+
+Alexandra Uma, Tommaso Fornaciari, Anca Dumitrache, Tristan Miller, Jon Chamberlain, Barbara Plank, Edwin Simpson, and Massimo Poesio. SemEval-2021 Task 12: Learning with disagreements. In Proceedings of the 15th International Workshop on Semantic Evaluation (SemEval-2021), pages 338–347, August 2021. ISBN 978-1-954085-70-1. DOI: 10.18653/v1/2021.semeval-1.41. 
+=> https://aclanthology.org/2021.semeval-1.41.pdf PDF 
+=> https://doi.org/10.5281/zenodo.5130736 Data
+
+Tristan Miller. Dmitri Borgmann's rotas square articles. Notes and Queries, 67(3):431–432, September 2020. ISSN 0029-3970. DOI: 10.1093/notesj/gjaa113. 
+=> https://academic.oup.com/nq/article/67/3/431/5900366?guestAccessKey=570b28c9-eed4-45ca-87ac-1e2650a8d5ae HTML 
+=> https://academic.oup.com/nq/article-pdf/67/3/431/34243418/gjaa113.pdf?guestAccessKey=570b28c9-eed4-45ca-87ac-1e2650a8d5ae PDF
+
+Tristan Miller and Denis Auroux. GPP, the generic preprocessor. Journal of Open Source Software, 5(51), July 2020. ISSN 2475-9066. DOI: 10.21105/joss.02400. 
+=> https://www.theoj.org/joss-papers/joss.02400/10.21105.joss.02400.pdf PDF 
+=> https://logological.org/gpp/ Code
+
+Tristan Miller, Erik-Lân Do Dinh, Edwin Simpson, and Iryna Gurevych. Predicting the humorousness of tweets using Gaussian process preference learning. Procesamiento del Lenguaje Natural, 64:37–44, March 2020. ISSN 1135-5948. DOI: 10.26342/2020-64-4. 
+=> http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/download/6193/3644 PDF 
+=> https://github.com/UKPLab/haha2019-gppl Data 
+=> https://github.com/UKPLab/haha2019-gppl Code
+
+Tristan Miller. Reinhold Aman, 1936–2019. Humor: International Journal of Humor Research, 32(1):1–5, February 2020. ISSN 0933-1719. DOI: 10.1515/humor-2019-0085. 
+=> https://www.degruyter.com/view/j/humr.2020.33.issue-1/humor-2019-0085/humor-2019-0085.xml HTML 
+=> https://www.degruyter.com/document/doi/10.1515/humor-2019-0085/pdf PDF
+
+Tristan Miller. Reinhold Aman (1936–2019). The LINGUIST List, 30.4729, December 2019. 
+=> https://linguistlist.org/issues/30/30-4729.html HTML
+
+Tristan Miller. The punster's amanuensis: The proper place of humans and machines in the translation of wordplay. In Proceedings of the Second Workshop on Human-Informed Translation and Interpreting Technology (HiT-IT 2019), pages 57–64, September 2019. DOI: 10.26615/issn.2683-0078.2019_007. 
+=> https://aclanthology.org/W19-8707.pdf PDF
+
+Tristan Miller, Erik-Lân Do Dinh, Edwin Simpson, and Iryna Gurevych. OFAI–UKP at HAHA@IberLEF2019: Predicting the humorousness of tweets using Gaussian process preference learning. In Miguel Ángel García Cumbreras, Julio Gonzalo, Eugenio Martínez Cámara, Raquel Martínez Unanue, Paolo Rosso, Jorge Carrillo de Albornoz, Soto Montalvo, Luis Chiruzzo, Sandra Collovini, Yoan Guitiérrez, Salud Jiménez Zafra, Martin Krallinger, Manuel Montes y Gómez, Reynier Ortega-Bueno, and Aiala Rosá, editors, Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2019), volume 2421 of CEUR Workshop Proceedings (ISSN 1613-0073), pages 180–190, August 2019. 
+=> http://ceur-ws.org/Vol-2421/HAHA_paper_6.pdf PDF 
+=> https://github.com/UKPLab/haha2019-gppl Data 
+=> https://github.com/UKPLab/haha2019-gppl Code
+
+Edwin Simpson, Erik-Lân Do Dinh, Tristan Miller, and Iryna Gurevych. Predicting humorousness and metaphor novelty with Gaussian process preference learning. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019), pages 5716–5728, July 2019. ISBN 978-1-950737-48-2. DOI: 10.18653/v1/P19-1572. 
+=> https://aclanthology.org/P19-1572.pdf PDF 
+=> https://vimeo.com/385226013 Video 
+=> https://github.com/UKPLab/acl2019-GPPL-humour-metaphor Data 
+=> https://github.com/UKPLab/acl2019-GPPL-humour-metaphor Code
+
+Tristan Miller, Maria Sukhareva, and Iryna Gurevych. A streamlined method for sourcing discourse-level argumentation annotations from the crowd. In Proceedings of the 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2019), volume 1, pages 1790–1796, June 2019. ISBN 978-1-950737-13-0. DOI: 10.18653/v1/N19-1177. 
+=> https://aclanthology.org/N19-1177.pdf PDF 
+=> https://github.com/UKPLab/naacl2019-argument-annotations Data 
+=> https://github.com/UKPLab/naacl2019-argument-annotations Code
+
+Christian Stab, Tristan Miller, Benjamin Schiller, Pranav Rai, and Iryna Gurevych. Cross-topic argument mining from heterogeneous sources. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP 2018), pages 3664–3674, October 2018. ISBN 978-1-948087-84-1. DOI: 10.18653/v1/D18-1402. 
+=> https://aclanthology.org/D18-1402.pdf PDF 
+=> https://aclanthology.org/attachments/D18-1402.Attachment.zip Appendix 
+=> https://vimeo.com/306127543 Video 
+=> https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2345 Data
+
+Christian Stab, Johannes Daxenberger, Chris Stahlhut, Tristan Miller, Benjamin Schiller, Christopher Tauchmann, Steffen Eger, and Iryna Gurevych. ArgumenText: Searching for arguments in heterogeneous sources. In Proceedings of the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Demonstrations (NAACL-HLT 2018), pages 21–25, June 2018. ISBN 978-1-948087-28-5. DOI: 10.18653/v1/N18-5005. 
+=> https://aclanthology.org/N18-5005.pdf PDF
+
+Christian Stab, Tristan Miller, and Iryna Gurevych. Cross-topic argument mining from heterogeneous sources using attention-based neural networks. ArXiv e-prints, 1802.05758, February 2018. 
+=> https://arxiv.org/pdf/1802.05758 PDF 
+=> https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2345 Data
+
+Tristan Miller, Christian F. Hempelmann, and Iryna Gurevych. SemEval-2017 Task 7: Detection and interpretation of English puns. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017), pages 58–68, August 2017. ISBN 978-1-945626-55-5. DOI: 10.18653/v1/S17-2005. 
+=> https://aclanthology.org/S17-2005.pdf PDF 
+=> https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2445 Data
+
+Sallam Abualhaija, Tristan Miller, Judith Eckle-Kohler, Iryna Gurevych, and Karl-Heinz Zimmermann. Metaheuristic approaches to lexical substitution and simplification. In Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2017), volume 1, pages 870–879, April 2017. ISBN 978-1-945626-34-0. 
+=> https://aclanthology.org/E17-1082.pdf PDF
+
+Christian F. Hempelmann and Tristan Miller. Puns: Taxonomy and phonology. In Salvatore Attardo, editor, The Routledge Handbook of Language and Humor, Routledge Handbooks in Linguistics, pages 95–108. Routledge, New York, NY, February 2017. ISBN 978-1-138-84306-6. DOI: 10.4324/9781315731162-8. 
+=> https://www.routledgehandbooks.com/doi/10.4324/9781315731162.ch8 PDF
+
+Chinnappa Guggilla, Tristan Miller, and Iryna Gurevych. CNN- and LSTM-based claim classification in online user comments. In Proceedings of the 26th International Conference on Computational Linguistics: Technical Papers (COLING 2016), pages 2740–2751, December 2016. ISBN 978-4-87974-702-0. 
+=> https://aclanthology.org/C16-1258.pdf PDF
+
+Tristan Miller, Mohamed Khemakhem, Richard Eckart de Castilho, and Iryna Gurevych. Sense-annotating a lexical substitution data set with Ubyline. In Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Marko Grobelnik, Bente Maegaard, Joseph Mariani, Asunción Moreno, Jan Odijk, and Stelios Piperidis, editors, Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016), pages 828–835. European Language Resources Association, May 2016. ISBN 978-2-9517408-9-1. 
+=> http://www.lrec-conf.org/proceedings/lrec2016/pdf/108_Paper.pdf PDF 
+=> https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2435 Data 
+=> https://github.com/UKPLab/lrec2016-ubyline Code
+
+Tristan Miller. Adjusting sense representations for word sense disambiguation and automatic pun interpretation. Dr.-Ing. thesis, Department of Computer Science, Technische Universität Darmstadt, April 2016. 
+=> http://www.nothingisreal.com/phd.pdf PDF
+
+Tristan Miller and Mladen Turković. Towards the automatic detection and identification of English puns. European Journal of Humour Research, 4(1):59–75, January 2016. ISSN 2307-700X. 
+=> http://www.europeanjournalofhumour.org/index.php/ejhr/article/download/69/pdf PDF
+
+Tristan Miller, Darina Benikova, and Sallam Abualhaija. GermEval 2015: LexSub – A shared task for German-language lexical substitution. In Proceedings of GermEval 2015: LexSub, pages 1–9, September 2015. 
+=> http://www.nothingisreal.com/germeval2015/program/2015_GermEval_LexSub.pdf PDF 
+=> https://fileserver.ukp.informatik.tu-darmstadt.de/UKP_Webpage/DATA/germeval2015.tar.xz Data 
+=> https://fileserver.ukp.informatik.tu-darmstadt.de/UKP_Webpage/DATA/germeval2015.tar.xz Code
+
+Tristan Miller and Iryna Gurevych. Automatic disambiguation of English puns. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (ACL–IJCNLP 2015), volume 1, pages 719–729, July 2015. ISBN 978-1-941643-72-3. DOI: 10.3115/v1/P15-1070. 
+=> https://aclanthology.org/P15-1070.pdf PDF
+
+Tristan Miller. A255436: Number of distinct, connected, order-n subgraphs of the infinite knight's graph. In The On-line Encyclopedia of Integer Sequences. February 2015. 
+=> https://oeis.org/A255436 HTML
+
+Michael Matuschek, Tristan Miller, and Iryna Gurevych. A language-independent sense clustering approach for enhanced WSD. In Josef Ruppenhofer and Gertrud Faaß, editors, Proceedings of the 12th Konferenz zur Verarbeitung natürlicher Sprache (KONVENS 2014), pages 11–21. Universitätsverlag Hildesheim, October 2014. ISBN 978-3-934105-46-1. 
+=> https://fileserver.ukp.informatik.tu-darmstadt.de/UKP_Webpage/publications/2014/konvens2014_mim_tm_sense_clustering.pdf PDF 
+=> https://www.ukp.tu-darmstadt.de/data/lexical-resources/wordnetgermanet-sense-clusters/ Data
+
+Tristan Miller and Iryna Gurevych. WordNet–Wikipedia–Wiktionary: Construction of a three-way alignment. In Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Hrafn Loftsson, Bente Maegaard, Joseph Mariani, Asunción Moreno, Jan Odijk, and Stelios Piperidis, editors, Proceedings of the 9th International Conference on Language Resources and Evaluation (LREC 2014), pages 2094–2100. European Language Resources Association, May 2014. ISBN 978-2-9517408-8-4. 
+=> http://www.lrec-conf.org/proceedings/lrec2014/pdf/4_Paper.pdf PDF 
+=> https://doi.org/10.5281/zenodo.5167590 Data
+
+Tristan Miller, Nicolai Erbs, Hans-Peter Zorn, Torsten Zesch, and Iryna Gurevych. DKPro WSD: A generalized UIMA-based framework for word sense disambiguation. In Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (System Demonstrations) (ACL 2013), pages 37–42, August 2013. 
+=> https://aclanthology.org/P13-4007.pdf PDF 
+=> https://dkpro.github.io/dkpro-wsd/ Code
+
+Tristan Miller, Chris Biemann, Torsten Zesch, and Iryna Gurevych. Using distributional similarity for lexical expansion in knowledge-based word sense disambiguation. In Martin Kay and Christian Boitet, editors, Proceedings of the 24th International Conference on Computational Linguistics (COLING 2012), pages 1781–1796, December 2012. 
+=> https://aclanthology.org/C12-1109.pdf PDF
+
+Tristan Miller, Bertin Klein, and Elisabeth Wolf. Exploiting latent semantic relations in highly linked hypertext for information retrieval in wikis. In Galia Angelova, Kalina Bontcheva, Ruslan Mitkov, Nicolas Nicolov, and Nikolai Nikolov, editors, Proceedings of the 7th International Conference on Recent Advances in Natural Language Processing (RANLP 2009), pages 241–245. ACM Press, September 2009. 
+=> https://aclanthology.org/R09-1045.pdf PDF
+
+Tristan Miller and Elisabeth Wolf. Word completion with latent semantic analysis. In Yuan Yan Tang, S. Patrick Wang, G. Lorette, Daniel So Yeung, and Hong Yan, editors, Proceedings of the 18th International Conference on Pattern Recognition (ICPR 2006), volume 1, pages 1252–1255. IEEE Press, August 2006. ISBN 978-0-7695-2521-1. DOI: 10.1109/ICPR.2006.1191. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller2006word.pdf PDF
+
+Elisabeth Wolf, Shankar Vembu, and Tristan Miller. On the use of topic models for word completion. In Tapio Salakoski, Filip Ginter, Sampo Pyysalo, and Tapio Pahikkala, editors, Proceedings of the 5th International Conference on Natural Language Processing (FinTAL 2006), volume 4139 of Lecture Notes in Computer Science (ISSN 0302-9743), pages 500–511. Springer, August 2006. ISBN 978-3-540-37334-6. DOI: 10.1007/11816508_50. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/wolf2006topic.pdf PDF
+
+Tristan Miller. Creare splendide slade con LaTeX: Un'introduzione al pacchetto HA-prosper [Producing beautiful slides with LaTeX: An introduction to the HA-prosper package]. Pluto Journal, (47), May 2006. Translated by Gabriele Zucchetta. 
+=> http://www.pluto.it/files/journal/pj0605/HA-prosper.html HTML
+
+Peter Flom and Tristan Miller. Impressions from PracTeX'05. TUGboat: The Communications of the TeX Users Group, 26(1):31–32, 2005. ISSN 0896-3207. 
+=> https://www.tug.org/TUGboat/tb26-1/impressions.pdf PDF
+
+Tristan Miller. Biblet: A portable BibTeX bibliography style for generating highly customizable XHTML. TUGboat: The Communications of the TeX Users Group, 26(1):85–96, 2005. ISSN 0896-3207. 
+=> https://www.tug.org/TUGboat/tb26-1/miller-biblet.pdf PDF 
+=> https://logological.org/biblet Code
+
+Tristan Miller. Using the RPM Package Manager for (La)TeX packages. TUGboat: The Communications of the TeX Users Group, 26(1):17–28, 2005. ISSN 0896-3207. 
+=> https://www.tug.org/TUGboat/tb26-1/tb82miller-rpm.pdf PDF
+
+Tristan Miller and Stefan Agne. Attention-based information retrieval using eye tracker data. In Peter Clark and Guus Schreiber, editors, Proceedings of the 3rd International Conference on Knowledge Capture (K-CAP 2005), pages 209–210, New York, NY, September 2005. ACM. ISBN 978-1-59593-163-4. DOI: 10.1145/1088622.1088672. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller2005attention.pdf PDF
+
+Peter Flom and Tristan Miller. Impressions from PracTeX'05. The PracTeX Journal, 2(3), July 2005. ISSN 1556-6994. 
+=> http://www.tug.org/pracjourn/2005-3/flom/ HTML
+
+Bertin Klein, Tristan Miller, and Sandra Zilles. Security issues for pervasive personalized communication systems. In Dieter Hutter and Markus Ullmann, editors, Security in Pervasive Computing: Proceedings of the 2nd International Conference on Security in Pervasive Computing (SPC 2005), volume 3450 of Lecture Notes in Computer Science (ISSN 0302-9743), pages 56–62. Springer, April 2005. ISBN 3-540-25521-4. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/klein05security.pdf PDF
+
+Tristan Miller. Producing beautiful slides with LaTeX: An introduction to the HA-prosper package. The PracTeX Journal, 2(1), April 2005. ISSN 1556-6994. 
+=> http://www.tug.org/pracjourn/2005-2/miller/miller.pdf PDF
+
+Tristan Miller. Latent semantic analysis and the construction of coherent extracts. In Nicolas Nicolov, Kalina Botcheva, Galia Angelova, and Ruslan Mitkov, editors, Recent Advances in Natural Language Processing III, volume 260 of Current Issues in Linguistic Theory (CILT) (ISSN 0304-0763), pages 277–286. John Benjamins, Amsterdam/Philadelphia, 2004. ISBN 1-58811-618-2. DOI: 10.1075/cilt.260.31mil. 
+=> http://benjamins.com/#catalog/books/cilt.260/main HTML
+
+Tristan Miller. Essay assessment with latent semantic analysis. Journal of Educational Computing Research, 29(4):495–512, December 2003. ISSN 0735-6331. DOI: 10.2190/W5AR-DYPW-40KX-FL99. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller03a.pdf PDF
+
+Tristan Miller. Latent semantic analysis and the construction of coherent extracts. In Galia Angelova, Kalina Bontcheva, Ruslan Mitkov, Nicolas Nicolov, and Nikolai Nikolov, editors, Proceedings of the 4th International Conference on Recent Advances in Natural Language Processing (RANLP 2003), pages 270–277, September 2003. ISBN 954-90906-6-3. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller03c.pdf PDF
+
+Tristan Miller. Generating coherent extracts of single documents using latent semantic analysis. M.Sc. thesis, Department of Computer Science, University of Toronto, March 2003. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/miller03b.pdf PDF
+
+Michael J. Maher, Allan Rock, Grigoris Antoniou, David Billington, and Tristan Miller. Efficient defeasible reasoning systems. International Journal on Artificial Intelligence Tools, 10(4):483–501, December 2001. ISSN 0218-2130. DOI: 10.1142/S0218213001000623. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/maher01.pdf PDF 
+=> https://logological.org/delores Code
+
+Tristan Miller. Essay assessment with latent semantic analysis. Technical Report CSRG-440, Department of Computer Science, University of Toronto, May 2001.
+
+Michael J. Maher, Allan Rock, Grigoris Antoniou, David Billington, and Tristan Miller. Efficient defeasible reasoning systems. In Proceedings of the 12th IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2000), pages 384–392. IEEE Press, November 2000. ISBN 0-7695-0909-6. DOI: 10.1109/TAI.2000.889898. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/maher00.pdf PDF 
+=> https://logological.org/delores Code
+
+Yang Xiang and Tristan Miller. A well-behaved algorithm for simulating dependence structures of Bayesian networks. International Journal of Applied Mathematics, 1(8):923–932, 1999. ISSN 1311-1728. 
+=> https://files.nothingisreal.com/publications/Tristan_Miller/xiang99wellbehaved.pdf PDF
+

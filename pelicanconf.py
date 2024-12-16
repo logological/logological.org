@@ -674,6 +674,7 @@ NEWS_ICONS = {
     'shared-task': 'mdi-human-greeting-proximity',
     'conference': 'mdi-human-greeting-proximity',
     'panelist': 'mdi-human-greeting-proximity',
+    'newspaper': 'mdi-newspaper-variant-outline',
 }
 
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
