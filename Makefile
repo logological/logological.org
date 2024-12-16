@@ -2,6 +2,7 @@ PY?=python3
 PELICAN?=pelican
 PELICANOPTS=
 PORT?=8000
+OFFLINE?=0
 
 RSYNC?=rsync
 SCP?=scp
