@@ -431,6 +431,16 @@ PROJECTS = [
         'category': 'event',
      },
     {
+        'title': 'CHum 2025',
+        'location': 'Abu Dhabi and online',
+        'date': '2025',
+        'description': 'Workshop on computational humour',
+        'url': 'https://chum2025.github.io/',
+        'image': 'chum2025.jpg',
+        'roles': ['Co-organizer'],
+        'category': 'event',
+     },
+    {
         'title': 'JOKER 2025',
         'location': 'CLEF',
         'date': '2025',
