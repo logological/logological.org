@@ -818,6 +818,17 @@ FUNCTION {format.issn}
   if$
 }
 
+FUNCTION {format.book.title.link}
+{ "" 'link :=
+  bookurl empty$
+    { "<span class='" css.prefix * "booktitle " * css.prefix * "title'>" * title * "</span>" * }
+    {
+      "<span class='" css.prefix * "booktitle " * css.prefix * "title'><a href='" * bookurl * "'>" *
+      title * "</a></span>" * 
+    }
+  if$
+}
+
 FUNCTION {format.btitle.link}
 { "" 'link :=
   bookurl empty$
@@ -1210,7 +1221,8 @@ FUNCTION {book}
     { format.authors output.nonnull }
   if$
   new.block
-  format.btitle "title" output.check
+  format.book.title.link "title" output.check
+  "<br>" write$ % Line break after authors/editors
   crossref missing$
     { new.sentence
       author empty$ not editor empty$ not and
@@ -1223,6 +1235,7 @@ FUNCTION {book}
       new.block
       format.number.series output
       new.sentence
+      "<br>" write$ % Line break after title
       publisher "publisher" output.check
       address output
     }

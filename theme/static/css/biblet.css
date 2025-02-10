@@ -63,9 +63,6 @@
 .bib-booklet {
 }
 
-.bib-booktitle {
-}
-
 .bib-cover {
 /*
     float:right;
@@ -236,6 +233,10 @@
 
 .bib-booktitle a {
     font-weight: normal;
+}
+
+.bib-booktitle.bib-title a {
+    font-weight: bold;
 }
 
 .tex sub, .latex sub, .latex sup {
