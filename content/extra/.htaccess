@@ -88,6 +88,7 @@ DefaultLanguage en-ca
     AddType application/x-chrome-extension              crx
     AddType application/x-opera-extension               oex
     AddType application/x-xpinstall                     xpi
+    AddType application/x-d64                           d64
     AddType text/vcard                                  vcard vcf
     AddType text/vnd.rim.location.xloc                  xloc
     AddType text/vtt                                    vtt

@@ -39,8 +39,9 @@ Miller at Miller Comprehensive High School in Regina, Saskatchewan in
 Beatle demo
 -----------
 
-The following Commodore 64 demo promoting the CUGS BBS was produced
-around 1992 by Tristan Miller.  It features Sidplayer music arranged
-by Music Man3, Jim Masterson, Fred Micoff, and Wes and Steve.
+[A Commodore 64 Beatles-themed demo promoting the CUGS
+BBS]({static}/images/CUGS_Beatles.d64) was produced around 1992 by
+Tristan Miller.  It features Sidplayer music arranged by Music Man3,
+Jim Masterson, Fred Micoff, and Wes and Steve.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lu6WxKXozpU?si=DfIUaJnlCLpWQvFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
