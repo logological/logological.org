@@ -30,7 +30,17 @@ please send them to me and I will add them to the online archive.
 
 *The Keyboard, Kids, and Krud* is a 32-minute tutorial video in which
 CUGS member Ken Danylczuk demonstrates how to disassemble and clean a
-Commodore 64 keyboard. The video was shot at Miller Comprehensive High
-School in Regina, Saskatchewan in 1992.
+Commodore 64 keyboard. The video was shot by Barry Bircher and Tristan
+Miller at Miller Comprehensive High School in Regina, Saskatchewan in
+1992.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/b9dF1WMbzhg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b9dF1WMbzhg?si=cfw0Q6CQUReUYUMb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Beatle demo
+-----------
+
+The following Commodore 64 demo promoting the CUGS BBS was produced
+around 1992 by Tristan Miller.  It features Sidplayer music arranged
+by Music Man3, Jim Masterson, Fred Micoff, and Wes and Steve.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lu6WxKXozpU?si=DfIUaJnlCLpWQvFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
