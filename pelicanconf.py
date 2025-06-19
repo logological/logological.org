@@ -646,7 +646,7 @@ SITEMAP = {
     "exclude": [
         "^news",
         "^index[0-9]+$",
-        "^index[0-9]+\.html$",
+        "^index[0-9]+.html$",
     ]
 }
 
