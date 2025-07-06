@@ -28,8 +28,6 @@ But if your OS's package manager handles Python libaries, it may be
 better to use it instead.  For example, on openSUSE Tumbleweed, you
 can get the latest releases of everything with `zypper`:
 
-	sudo zypper ar --refresh --check http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Tumbleweed/ devel:languages:python
-	sudo zypper dup --from devel:languages:python
 	sudo zypper in python3-pelican python3-Markdown python3-GitPython
 
 ### Installing in a virtual environment
