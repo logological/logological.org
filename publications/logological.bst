@@ -1,7 +1,7 @@
 % BibTeX logological bibliography style, based on `biblet'
 %
 % Copyright (C) 1985 Oren Patashnik
-% Copyright (C) 2021 Tristan Miller
+% Copyright (C) 2021-2025 Tristan Miller
 %                    psychonaut@nothingisreal.com
 %                    https://www.nothingisreal.com/biblet/
 %
@@ -18,9 +18,10 @@
 % - make sure id cite keys are valid for XHTML
 % - add "day" field
 % - allow author/editor for inbook
+% - allow Biber/Biblatex-style season names
 %
 % Changelog since prealpha:
-% - sorted by year, then month
+% - sorted by year, then month, then number
 % - allow for both isbn and issn in proceedings
 % - book covers
 % - add "doi" field
@@ -1751,6 +1752,10 @@ FUNCTION {presort}
   "    "
   *
   month field.or.null sort.format.month
+  *
+  "    "
+  *
+  number field.or.null sortify invert
   *
   "    "
   *
