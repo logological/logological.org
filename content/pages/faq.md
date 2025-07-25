@@ -512,6 +512,15 @@ workarounds:
   [BRISS](http://briss.sourceforge.net/) or
   [PDFCrop](http://pdfcrop.sourceforge.net/).
 
+### How can I transpose a tabular environment?
+
+Paste the table into the input of [GNU
+datamash](https://www.gnu.org/software/datamash/):
+
+```bash
+datamash transpose -t'&'
+```
+
 ## PDFs
 
 ### How can I set the logical numbering and numbering style in a PDF?
