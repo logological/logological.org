@@ -249,6 +249,23 @@ cd /usr/local/stow
 sudo stow PROGRAM_NAME
 ```
 
+### How do I copy a Lenovo BIOS update ISO image to bootable media?
+
+The ISO images Lenovo distributes for its ThinkPad BIOS updates are
+intended to be burned to optical media.  To put them instead on a USB
+flash drive, they must first be converted to a sane format.  This can
+be done with the geteltorito tool (available for Debian as part of
+[genisoimage](https://packages.debian.org/search?keywords=genisoimage&searchon=names&suite=stable&section=all)
+and on openSUSE as [a standalone
+package](https://software.opensuse.org/package/geteltorito?search_term=geteltorito):
+
+```bash
+geteltorito foo.iso > bar.iso
+```
+
+The resulting `.iso` file can then be copied to a USB drive using the
+usual manner (e.g., using `dd` or `imagewriter`).
+
 ## KDE
 
 ### How can I log out of KDE remotely (or from the command line)?
