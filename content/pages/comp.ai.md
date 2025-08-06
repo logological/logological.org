@@ -1,7 +1,5 @@
 Title: comp.ai
 Slug: comp.ai
-Author: test
-Fediverse: @test.at
 
 # comp.ai
 
