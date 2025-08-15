@@ -120,9 +120,9 @@ MENUITEMS = [
 ]
 SOCIALITEMS = [
     ('ACM Digital Library', 'https://dl.acm.org/profile/99659541876', 'ai ai-acmdl'),
-    ('Academia.edu', 'https://ofai.academia.edu/TristanMiller', 'ai ai-academia'),
+    ('Academia.edu', 'https://umanitoba.academia.edu/TristanMiller', 'ai ai-academia'),
     ('DBLP', 'https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan', 'ai ai-dblp'),
-    ('Diaspora', 'https://diasp.eu/people/0f0c56f61e74a82e', 'fab fa-diaspora'),
+#    ('Diaspora', 'https://diasp.eu/people/0f0c56f61e74a82e', 'fab fa-diaspora'),
     ('GitHub', 'https://github.com/logological', 'fab fa-github'),
     ('Google Scholar', 'https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ', 'ai ai-google-scholar'),
     ('Impactstory', 'https://impactstory.org/u/0000-0002-0749-1100', 'ai ai-impactstory'),
@@ -676,7 +676,6 @@ NEWS_ICONS = {
     'conference': 'mdi-human-greeting-proximity',
     'panelist': 'mdi-human-greeting-proximity',
     'newspaper': 'mdi-newspaper-variant-outline',
-#    'special-issue': 'mdi-book-alert-outline',
     'special-issue': 'mdi-book-open-variant-outline',
 }
 
