@@ -189,19 +189,47 @@ have also posted:
     format](http://www.goldmark.org./netrants/no-word/attach.html) by
     [Jeff Goldberg](http://www.goldmark.org/jeff/)
 -   [Don't send Microsoft Word documents to
-    me](http://homepages.tesco.net/~J.deBoynePollard/FGA/dont-send-word-documents.html)
+    me](https://jdebp.uk/FGA/dont-send-word-documents.html)
     by [Jonathan de Boyne
-    Pollard](http://homepages.tesco.net/~J.deBoynePollard/)
+    Pollard](https://jdebp.uk/)
 -   [We can put an end to Word
     attachments](https://www.gnu.org/philosophy/no-word-attachments.html)
-    by [Richard Stallman](http://www.stallman.org/) of the [Free
-    Software Foundation](http://www.fsf.org/)
+    by [Richard Stallman](https://www.stallman.org/) of the [Free
+    Software Foundation](https://www.fsf.org/)
 -   [Avoid e-mail attachments, especially Microsoft
-    Word](http://bcn.boulder.co.us/~neal/attachments.html) by [Neal
-    McBurnett](http://bcn.boulder.co.us/~neal/)
+    Word](https://bcn.boulder.co.us/~neal/attachments.html) by [Neal
+    McBurnett](https://bcn.boulder.co.us/~neal/)
 -   [Attachments in proprietary formats considered
-    harmful](http://www.cse.unsw.edu.au/~chak/email.html) by [Manuel
-    Chakravarty](http://www.cse.unsw.edu.au/~chak/)
+    harmful](https://web.archive.org/web/20180727142657/http://www.cse.unsw.edu.au/~chak/email.html) by [Manuel
+    M. T. Chakravarty](https://web.archive.org/web/20180727142657/http://www.cse.unsw.edu.au/~chak/)
+-   [Attachments in proprietary formats considered
+    harmful](https://www.cse.iitb.ac.in/~sharat/misc/emailFormat.html) by [Sharat Chandran](https://www.cse.iitb.ac.in/~sharat/)
+-   [Netiquette No
+    Nos](https://web.archive.org/web/20210424213134/http://www.georgedillon.com/web/netiquette.shtml)
+    by [George Dillon](https://georgedillon.com/)
+-   [No Word, please](https://awpeet.ca/noword/) by [A. W. Peet](https://awpeet.ca/)
+-   [Brave New Word](https://old.efn.no/pdf/brave-new-word.pdf) by
+    Thomas Gramstad of [Elektronisk Forpost Norge](https://efn.no/)
+    (in Norwegian)
+-   [plaintext: In praise of practical e-mail
+    hygiene](https://web.archive.org/web/20050212051113/http://www.hut.fi/~mvermeer/plain.html)
+    by [Martin
+    Vermeer](https://web.archive.org/web/20050212051113/http://www.hut.fi/~mvermeer/)
+-   [Why not Word!](https://rfc1149.net/documents/whynotword.html) by
+    [Samuel Tardieu](https://rfc1149.net/)
+-   [Stop sending Word
+    docs!](https://tonybove.com/getoffmicrosoft/stopdoc.html) by [Tony
+    Bove](https://tonybove.com/)
+-   [Why No
+    Word?](https://www.gurski.org/~gurski/rants/why_no_word.html) by
+    [Michael A. Gurski](https://www.gurski.org/~gurski/)
+-   [Death to proprietary word processing formats](https://web.archive.org/web/20080514021002/https://homepages.borland.com/ccalvert/Opinion/WordFormats.html) by the late [Charlie Calvert](https://blogs.embarcadero.com/charles-charlie-calvert-developer-educator-and-a-thoroughly-decent-man/)
+-   [ASCII: HTML emails and proprietary attachments considered
+    harmful](https://bruda.ca/ascii) by [Stefan
+    D. Bruda](https://bruda.ca/)
+-   [A plain defense for plain
+    text](https://plaintext.bearblog.dev/a-plain-defense-for-plain-text/)
+    by [Donald L. Brown, Jr.](https://plaintext.bearblog.dev/)
 
 ## Aside: the problem with word processors in general
 
@@ -229,42 +257,41 @@ For more information on the problems of the word processor and WYSIWYG
 paradigms:
 
 -   [Word processors: stupid and
-    inefficient](http://www.ecn.wfu.edu/~cottrell/wp.html) by [Allin
-    Cottrell](http://www.wfu.edu/~cottrell/)
+    inefficient](https://users.wfu.edu/cottrell/wp.html) by [Allin
+    Cottrell](https://users.wfu.edu/cottrell/)
 -   [What has WYSIWYG done to
-    us?](http://www.conradiator.com/downloads/pdf/WhatHasWYSIWYG_done2us.pdf)
-    by [Conrad Taylor](http://www.conradiator.com/)
+    us?](https://web.archive.org/web/20101008195150/http://www.conradiator.com/downloads/pdf/WhatHasWYSIWYG_done2us.pdf)
+    by [Conrad Taylor](https://conradiator.wordpress.com/)
 
 Here are links to some
 [Free](https://www.gnu.org/philosophy/free-sw.html) document preparation
 programs which do not use the word processing paradigm:
 
--   [LaTeX](http://www.latex-project.org/) is extremely popular among
+-   [LaTeX](https://www.latex-project.org/) is extremely popular among
     authors of technical and scientific documents, though it can be used
     for almost any form of publishing. It does not include a graphical
     interface, which you may find either liberating or daunting. There
     are commercial and non-commercial LaTeX versions available for all
     popular computing platforms, including MS-Windows, Mac OS,
     GNU/Linux, and Unix.
--   [LyX](http://www.lyx.org/) is a document processor similar to LaTeX,
+-   [LyX](https://www.lyx.org/) is a document processor similar to LaTeX,
     but with a user-friendly graphical WYSIWYM ("What You See Is What
     You Mean") interface. It was originally developed for Unix-like
     systems, but has been ported to MS-Windows and OS/2.
--   [TeXmacs](http://www.texmacs.org/) is a graphical scientific editor
+-   [TeXmacs](https://www.texmacs.org/) is a graphical scientific editor
     for Unix-like systems (including MS-Windows with the Cygwin
     environment). It integrates well with many existing toolkits for
     mathematics, statistics, and physics.
--   [DocBook](http://www.dpawson.co.uk/docbook/reference.html) provides
-    a system for writing structured documents using SGML or XML. It
-    enjoys considerable popularity among print book publishers, authors
-    of software documentation, and writers of FAQs and other technical
-    websites.
--   [ConTeXt](http://www.pragma-ade.com/) is a text-based document
+-   [DocBook](https://docbook.org/) provides a system for writing
+    structured documents using SGML or XML. It enjoys considerable
+    popularity among print book publishers, authors of software
+    documentation, and writers of FAQs and other technical websites.
+-   [ConTeXt](https://www.pragma-ade.com/) is a text-based document
     preparation system similar to LaTeX.
 
 ## Translations of this page
 
--   [请不要给我发送微软Word文档](http://ppip.nk.googlepages.com/no-word)
+-   [请不要给我发送微软Word文档](https://www.cnbeta.com.tw/articles/tech/29659.htm)
     (Chinese version by ppip)
 
 
