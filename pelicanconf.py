@@ -665,6 +665,7 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
+# Icon library: https://pictogrammers.com/library/mdi/
 NEWS_ICONS = {
     'talk': 'mdi-presentation',
     'invited-talk': 'mdi-presentation',
@@ -675,6 +676,8 @@ NEWS_ICONS = {
     'conference': 'mdi-human-greeting-proximity',
     'panelist': 'mdi-human-greeting-proximity',
     'newspaper': 'mdi-newspaper-variant-outline',
+#    'special-issue': 'mdi-book-alert-outline',
+    'special-issue': 'mdi-book-open-variant-outline',
 }
 
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
