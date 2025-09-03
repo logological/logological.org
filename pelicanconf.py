@@ -682,3 +682,10 @@ NEWS_ICONS = {
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398
 import logging
 LOG_FILTER = [(logging.WARN, 'Empty alt attribute for image %s in %s')]
+
+# Cache settings
+# As of 2025-09-02 the cache seems to save only a couple seconds
+CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = True
+GZIP_CACHE = False
+CONTENT_CACHING_LAYER = 'reader'
