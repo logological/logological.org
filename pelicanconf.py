@@ -119,7 +119,7 @@ MENUITEMS = [
     ('CV <i class="fas fa-download"></i>', '/miller_cv.pdf'),
 ]
 SOCIALITEMS = [
-    ('ACM Digital Library', 'https://dl.acm.org/profile/99659541876', 'ai ai-acmdl'),
+    ('ACM Digital Library', 'https://dl.acm.org/profile/99660146141', 'ai ai-acmdl'), # also 99659541876; requested merge on 2026-02-05
     ('Academia.edu', 'https://umanitoba.academia.edu/TristanMiller', 'ai ai-academia'),
     ('DBLP', 'https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan', 'ai ai-dblp'),
 #    ('Diaspora', 'https://diasp.eu/people/0f0c56f61e74a82e', 'fab fa-diaspora'),
@@ -132,7 +132,7 @@ SOCIALITEMS = [
     ('Publons', 'https://publons.com/researcher/4277733/tristan-miller/', 'ai ai-publons'),
     ('Scopus', 'https://www.scopus.com/authid/detail.uri?authorId=8725776300', 'ai ai-scopus'),
     ('Semantic Scholar', 'https://www.semanticscholar.org/author/Tristan-Miller/1818919', 'ai ai-semantic-scholar'),
-    ('Twitter', 'https://twitter.com/Logological', 'fa-brands fa-x-twitter'),
+    ('X', 'https://x.com/Logological', 'fa-brands fa-x-twitter'),
 ]
 PROJECTS = [
     {
