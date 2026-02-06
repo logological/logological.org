@@ -124,7 +124,7 @@ SOCIALITEMS = [
     ('DBLP', 'https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan', 'ai ai-dblp'),
 #    ('Diaspora', 'https://diasp.eu/people/0f0c56f61e74a82e', 'fab fa-diaspora'),
     ('GitHub', 'https://github.com/logological', 'fa-brands fa-github'),
-    ('Google Scholar', 'https://scholar.google.co.uk/citations?user=XAfWDQUAAAAJ', 'ai ai-google-scholar'),
+    ('Google Scholar', 'https://scholar.google.ca/citations?user=XAfWDQUAAAAJ', 'ai ai-google-scholar'),
     ('Impactstory', 'https://impactstory.org/u/0000-0002-0749-1100', 'ai ai-impactstory'),
     ('LinkedIn', 'https://www.linkedin.com/in/tristan-miller-032b327', 'fa-brands fa-linkedin-in'),
     ('Mastodon', 'https://mastodon.social/@Logological', 'fa-brands fa-mastodon'),
