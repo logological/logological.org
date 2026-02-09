@@ -209,6 +209,8 @@ If you don't yet have a PKCS#12 certificate, you will need to create one.  There
     10. Press the OK button.
     11. In a terminal, import the certificate into the PKI store: `pk12util -d sql:$HOME/.pki/nssdb -i /path/to/your/new/certificate.p12`
 
+Note: PDF viewers (including Okular) based on the Poppler PDF library may be unable to find more than one certificate in a given database.  (See [Okular Bug 499158](https://bugs.kde.org/show_bug.cgi?id=499158) and [Poppler Merge Request](https://gitlab.freedesktop.org/poppler/poppler/-/merge_requests/1662).)  So if you ever renew or replace your signing certificate, you may need to first delete the old one from the database.  You can do this using, for example, the [Mozilla NSS tools](https://firefox-source-docs.mozilla.org/security/nss/index.html): `certutil -D -n 'Internal Name' -d $HOME/.pki/nssdb` (where `Internal Name` is the internal name for the certificate you specified when you created the certificate).
+
 ## Chat/team communication
 
 The University's Microsoft 365 service includes Microsoft Teams, which can be used for chat and video conferencing.  There is no need to install Microsoft's proprietary Teams application in order to access Teams, as you can access Teams through a free web browser such as [Firefox](https://mozilla.org/firefox) or [Chromium](https://www.chromium.org/Home).  However, note that the web interfaces themselves contain proprietary JavaScript, and accessing Teams through a standalone web browser may not be as convenient as using a dedicated application.  Some alternatives to consider:
