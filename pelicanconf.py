@@ -119,7 +119,7 @@ MENUITEMS = [
     ('CV <i class="fas fa-download"></i>', '/miller_cv.pdf'),
 ]
 SOCIALITEMS = [
-    ('ACM Digital Library', 'https://dl.acm.org/profile/99660146141', 'ai ai-acmdl'), # also 99659541876; requested merge on 2026-02-05
+    ('ACM Digital Library', 'https://dl.acm.org/profile/99660146141', 'ai ai-acmdl'), # formerly also 99659541876; merged on 2026-02-09
     ('Academia.edu', 'https://umanitoba.academia.edu/TristanMiller', 'ai ai-academia'),
     ('DBLP', 'https://dblp.uni-trier.de/pers/hd/m/Miller:Tristan', 'ai ai-dblp'),
 #    ('Diaspora', 'https://diasp.eu/people/0f0c56f61e74a82e', 'fab fa-diaspora'),
