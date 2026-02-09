@@ -5,6 +5,8 @@ slug: um-foss
 
 Much of the officially supported productivity and groupware software the University of Manitoba provides for faculty and staff is proprietary.  If it does not work the way you want, then you may find that it is impossible to fix it or improve it yourself, or to get any help or cooperation from the developers.  However, in many cases it is possible to use [Free Software](https://www.gnu.org/philosophy/free-sw.html) alternatives that suit your needs or that can be more easily improved.  This page aims to document these alternatives and provide some advice on choosing between them, configuring them, and running them.
 
+[TOC]
+
 ## TLDR summary
 
 For those who just want a quick overview of what to do:
