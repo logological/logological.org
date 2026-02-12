@@ -68,7 +68,4 @@ A selection of my humorous poetry:
 
 ## Miscellaneous humour
 
-<!-- * [Sex Pistols impersonations](/sex_pistols.html) -->
 * [Autocomplete maps](/autocomplete.html)
-
-

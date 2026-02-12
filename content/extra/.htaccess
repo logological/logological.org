@@ -354,6 +354,7 @@ Redirect permanent /wiki/Writing /
 # Miscellaneous
 Redirect permanent /photos/pets/Frettchen/London_2009-12/ /photos/pets/Frettchen/London_2009-12-23/
 Redirect permanent /lipograms /fun
+Redirect gone /sex_pistols
 
 # Temporary stuff
 Redirect /miller_cv.pdf https://www.nothingisreal.com/miller_cv.pdf
