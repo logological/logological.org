@@ -19,10 +19,10 @@ mathematics and linguistics, plus a few other odds and ends.
 *[Logology](https://en.wikipedia.org/wiki/Logology)*, or *recreational
 linguistics*, is the study and practice of word games and wordplay.
 Since 2012 I've been writing the Language Games column for
-*[Babel: The Language Magazine](http://www.babelzine.com/)*, and I am
+*[Babel: The Language Magazine](https://www.babelzine.com/)*, and was a
 a regular contributor of language-themed articles and puzzles to
-*[Lingo: The Language Magazine for Younger Readers](http://www.lingozine.com/)*,
-*[Games World of Puzzles](http://www.gamesmagazine-online.com/)*
+*[Lingo: The Language Magazine for Younger Readers](https://web.archive.org/web/20191206130309/http://www.lingozine.com/)*,
+*[Games World of Puzzles](https://gamesworldofpuzzles.com/)*
 (formerly *Games Magazine*),
 *[Word Ways: The Journal of Recreational Linguistics](https://digitalcommons.butler.edu/wordways/)*,
 and other magazines.
@@ -30,18 +30,18 @@ and other magazines.
 * [Shakespeare's Sonnet Generator](https://logological.org/sonnet/),
     a website that randomly generates authentic Shakespearean sonnets
     (a collaboration with
-    [Dave Morice](http://www.amazon.com/Dave-Morice/e/B001K8LX2K/ref=sr_ntt_srch_lnk_4?qid=1417181543&sr=8-4))
+    [Dave Morice](https://www.amazon.com/Dave-Morice/e/B001K8LX2K/ref=sr_ntt_srch_lnk_4?qid=1417181543&sr=8-4))
 * A selection of my logological articles from *Word Ways* (open access from two years after the date of publication):
-    - [Pessimal spelling alphabets](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5233&context=wordways)
-    - [Russian–English homoglyphs, homographs, and homographic translations](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5241&context=wordways)
-    - [Dvorak typewriter words](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5272&context=wordways)
-    - [Perfect Roman windows](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5290&context=wordways)
-    - [The world's shortest personal names](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5327&context=wordways)
-    - [Unigraphic lipogrammatic windows: A survey](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5324&context=wordways)
-    - [Higher-order contronyms](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5341&context=wordways)
-    - [Elemental words revisited](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5375&context=wordways)
-    - [Gadsby: Wikipedia's lost lipogram](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5419&context=wordways)
-    - [Ichthyornithonomy](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5444&context=wordways)
+    - [Pessimal spelling alphabets](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5233&context=wordways)
+    - [Russian–English homoglyphs, homographs, and homographic translations](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5241&context=wordways)
+    - [Dvorak typewriter words](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5272&context=wordways)
+    - [Perfect Roman windows](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5290&context=wordways)
+    - [The world's shortest personal names](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5327&context=wordways)
+    - [Unigraphic lipogrammatic windows: A survey](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5324&context=wordways)
+    - [Higher-order contronyms](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5341&context=wordways)
+    - [Elemental words revisited](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5375&context=wordways)
+    - [Gadsby: Wikipedia's lost lipogram](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5419&context=wordways)
+    - [Ichthyornithonomy](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5444&context=wordways)
 
 ## Recreational mathematics
 
@@ -49,21 +49,21 @@ These papers are mainly for fun, though some of them have some serious research 
 
 * [Why I will never have a girlfriend](/girlfriend.html) (published in *The Annals of Improbable Research*, 2002)
 * [Warum ich niemals eine Freundin haben werde](/freundin.html), a German translation of the above
-* [Knight-graphable words](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5379&context=wordways) (with Mike Keith; published in *Word Ways: The Journal of Recreational Linguistics*, February 2015)
+* [Knight-graphable words](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5379&context=wordways) (with Mike Keith; published in *Word Ways: The Journal of Recreational Linguistics*, February 2015)
 * [A255436: Number of distinct, connected, order-*n* subgraphs of the infinite knight's graph](https://oeis.org/A255436) (published in *The On-line Encyclopedia of Integer Sequences*, February 2015)
-* [New puzzles on knight-graphable words](http://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5405&context=wordways) (with Mike Keith; published in *Word Ways: The Journal of Recreational Linguistics*, May 2015)
+* [New puzzles on knight-graphable words](https://digitalcommons.butler.edu/cgi/viewcontent.cgi?article=5405&context=wordways) (with Mike Keith; published in *Word Ways: The Journal of Recreational Linguistics*, May 2015)
 
 ## Light verse
 
 A selection of my humorous poetry:
 
-* ["Firing the Fireman"](http://lightpoetrymagazine.com/revamp/tristan-miller-winterspring-14/)
+* ["Firing the Fireman"](https://lightpoetrymagazine.com/revamp/tristan-miller-winterspring-14/)
   (published in *Light*, Winter/Spring 2014)
-* ["Ichthyopoesis"](http://lightpoetrymagazine.com/revamp/tristan-miller-winterspring-14/)
+* ["Ichthyopoesis"](https://lightpoetrymagazine.com/revamp/tristan-miller-winterspring-14/)
   (published in *Light*, Winter/Spring 2014)
-* ["Quadrature"](http://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1212&context=jhm) (published in the *Journal of Humanistic Mathematics*, July 2015)
-* ["Paradox"](http://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1212&context=jhm) (published in the *Journal of Humanistic Mathematics*, July 2015)
-* ["Apprehension"](http://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1212&context=jhm) (published in the *Journal of Humanistic Mathematics*, July 2015)
+* ["Quadrature"](https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1212&context=jhm) (published in the *Journal of Humanistic Mathematics*, July 2015)
+* ["Paradox"](https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1212&context=jhm) (published in the *Journal of Humanistic Mathematics*, July 2015)
+* ["Apprehension"](https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1212&context=jhm) (published in the *Journal of Humanistic Mathematics*, July 2015)
 * [Haiku](/haiku.html) (published in *Word Ways: The Journal of Recreational Linguistics*, February 2014)
 
 ## Miscellaneous humour

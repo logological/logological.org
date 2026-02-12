@@ -30,6 +30,6 @@ practices](https://en.wikipedia.org/wiki/Outlook_Express#Criticism). These
 shortcomings affect not only you, the user, but also often create problems and
 annoyances for the recipients of your messages.) Fortunately, there are [a
 number of free e-mail
-clients](https://en.wikipedia.org/wiki/Comparison_of_e-mail_clients) to choose
+clients](https://en.wikipedia.org/wiki/Comparison_of_email_clients) to choose
 from, perhaps the most popular of which is [Mozilla
-Thunderbird](http://www.mozilla.org/en-US/thunderbird/).
+Thunderbird](https://www.thunderbird.net/).

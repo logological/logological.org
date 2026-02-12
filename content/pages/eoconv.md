@@ -43,11 +43,12 @@ You can also
 Packages are available for several systems, including:
 
 * [Debian GNU/Linux](https://packages.debian.org/search?keywords=eoconv)
-* [OpenSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/home:/psych0naut/)
-* [Ubuntu](http://packages.ubuntu.com/search?keywords=eoconv)
+* [OpenSUSE](https://download.opensuse.org/repositories/home:/psych0naut/)
+* [Ubuntu](https://packages.ubuntu.com/search?keywords=eoconv)
 
-Note that, except for the SUSE packages, these packages are produced
-and hosted by third parties. I take no responsibility for them.
+Note that, except for the openSUSE packages, these packages are
+produced and hosted by third parties. I take no responsibility for
+them.
 
 Documentation
 -------------

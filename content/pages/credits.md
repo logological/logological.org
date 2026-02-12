@@ -16,34 +16,34 @@ This website is powered by [Pelican](https://getpelican.com/),
 
 * Mulish Copyright 2011 [The Mulish Project
   Authors](https://github.com/googlefonts/mulish). [SIL Open Font License,
-  1.1](http://scripts.sil.org/OFL).
+  1.1](https://openfontlicense.org/).
 * Saira Extra Condensed Copyright 2016 [The Saira Project
   Authors](mailto:omnibus.type@gmail.com), with reserved font name
-  "Saira". [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
+  "Saira". [SIL Open Font License, 1.1](https://openfontlicense.org/).
 * Academicons Copyright 2021 [The Academicons
   authors](https://github.com/jpswalsh/academicons). [SIL Open Font
-  License, 1.1](http://scripts.sil.org/OFL).
+  License, 1.1](https://openfontlicense.org/).
 * Font Awesome Copyright 2021 [The Font Awesome
   authors](https://github.com/FortAwesome/Font-Awesome). [SIL Open
-  Font License, 1.1](http://scripts.sil.org/OFL).
+  Font License, 1.1](https://openfontlicense.org/).
 * Material Design Icons:
-    * Copyright 2014 Austin Andrews (http://materialdesignicons.com/),
+    * Copyright 2014 Austin Andrews (https://materialdesignicons.com/),
       with Reserved Font Name Material Design Icons.  [SIL Open Font
-      License, 1.1](http://scripts.sil.org/OFL).
+      License, 1.1](https://openfontlicense.org/).
     * Copyright 2014 Google Inc. [Apache License, version
-      2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+      2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## JavaScript licences
 
 <table id="jslicense-labels1">
     <tr>
         <td><a href="/theme/js/carousel.js">carousel.js</a></td>
-        <td><a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU-GPL-3.0-or-later</a></td>
+        <td><a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU-GPL-3.0-or-later</a></td>
         <td><a href="/theme/js/carousel.js">carousel.js</a></td>
     </tr>
     <tr>
         <td><a href="/theme/js/publications.js">publications.js</a></td>
-        <td><a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU-GPL-3.0-or-later</a></td>
+        <td><a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU-GPL-3.0-or-later</a></td>
         <td><a href="/theme/js/publications.js">publications.js</a></td>
     </tr>
     <tr>

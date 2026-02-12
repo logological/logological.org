@@ -37,8 +37,8 @@ from [CTAN](https://ctan.org/), the Comprehensive TeX Archive Network.
 Documentation is included with the package and is also available on
 CTAN.  The documentation includes the following:
 
-* [The `sshrc-insight` user manual](http://mirrors.ctan.org/macros/latex/contrib/sshrc-insight/sshrc-insight.pdf)
-* [A skeleton proposal](http://mirrors.ctan.org/macros/latex/contrib/sshrc-insight/proposal.pdf)
+* [The `sshrc-insight` user manual](https://mirrors.ctan.org/macros/latex/contrib/sshrc-insight/sshrc-insight.pdf)
+* [A skeleton proposal](https://mirrors.ctan.org/macros/latex/contrib/sshrc-insight/proposal.pdf)
   showing `sshrc-insight` in action.
   
 ## Development

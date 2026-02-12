@@ -40,12 +40,12 @@ instructions mentioned above.
 
 Binary packages are available for several systems, including:
 
-* [Debian GNU/Linux](http://packages.debian.org/gpp)
-* [FreeBSD](http://www.freshports.org/textproc/gpp/)
+* [Debian GNU/Linux](https://packages.debian.org/gpp)
+* [FreeBSD](https://www.freshports.org/textproc/gpp/)
 * [macOS](https://trac.macports.org/browser/trunk/dports/lang/gpp/Portfile)
-* [openSUSE and SUSE Linux Enterprise](http://download.opensuse.org/repositories/devel:/tools/)
-* [Ubuntu](http://packages.ubuntu.com/search?keywords=gpp)
-* Fedora (via its package management tool, DNF)
+* [openSUSE](https://download.opensuse.org/repositories/devel:/tools/)
+* [Ubuntu](https://packages.ubuntu.com/search?keywords=gpp)
+* [Fedora](https://packages.fedoraproject.org/pkgs/general-purpose-preprocessor/general-purpose-preprocessor/)
 
 Note that these packages are produced and hosted by third parties. The
 GPP authors take no responsibility for them.
@@ -73,5 +73,5 @@ Authors
 -------
 
 GPP was originally written by [Denis
-Auroux](http://www.math.harvard.edu/~auroux/). Since version 2.12 it
-has been maintained by [Tristan Miller](/).
+Auroux](https://people.math.harvard.edu/~auroux/). Since version 2.12
+it has been maintained by [Tristan Miller](/).

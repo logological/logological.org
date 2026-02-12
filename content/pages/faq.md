@@ -526,8 +526,8 @@ workarounds:
   manually converted with the `epstopdf` script included with TeX
   Live.)
 * Export the page to PDF, then crop the PDF using a tool such as
-  [BRISS](http://briss.sourceforge.net/) or
-  [PDFCrop](http://pdfcrop.sourceforge.net/).
+  [BRISS](https://briss.sourceforge.net/) or
+  [PDFCrop](https://pdfcrop.sourceforge.net/).
 
 ### How can I transpose a tabular environment?
 

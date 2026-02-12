@@ -23,8 +23,8 @@ from [CTAN](https://ctan.org/), the Comprehensive TeX Archive Network.
 Documentation is included with the package and is also available on
 CTAN.  The documentation includes the following:
 
-* [The `heria` user manual](http://mirrors.ctan.org/macros/latex/contrib/heria/heria.pdf)
-* [A skeleton proposal](http://mirrors.ctan.org/macros/latex/contrib/heria/heria-proposal.pdf)
+* [The `heria` user manual](https://mirrors.ctan.org/macros/latex/contrib/heria/heria.pdf)
+* [A skeleton proposal](https://mirrors.ctan.org/macros/latex/contrib/heria/heria-proposal.pdf)
   showing `heria` in action.
   
 There is also a journal article that describes the motivation for and development of the package:

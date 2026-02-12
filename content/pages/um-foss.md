@@ -34,7 +34,7 @@ UM's e-mail system is hosted through a Microsoft Exchange server via Microsoft 3
 * [Mailspring](https://www.getmailspring.com/)
 * [Mozilla Thunderbird](https://www.thunderbird.net/)
 
-If your favourite e-mail client doesn't support OAuth2, you may be able to use it anyway with the help of an OAuth2 proxy such as [oauth2-proxy](https://github.com/simonrob/email-oauth2-proxy) or [DavMail](http://davmail.sourceforge.net/).  If you are using such a proxy, you will need to consult its documentation for how to configure it and your e-mail client.  (Tips on configuring DavMail are given elsewhere on this page.)
+If your favourite e-mail client doesn't support OAuth2, you may be able to use it anyway with the help of an OAuth2 proxy such as [oauth2-proxy](https://github.com/simonrob/email-oauth2-proxy) or [DavMail](https://davmail.sourceforge.net/).  If you are using such a proxy, you will need to consult its documentation for how to configure it and your e-mail client.  (Tips on configuring DavMail are given elsewhere on this page.)
 
 ### Setting up incoming mail (IMAP)
 

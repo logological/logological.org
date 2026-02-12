@@ -60,5 +60,5 @@ Personnel
     vocals)
 -   [Matt McLellan](http://counterpoint.frequency44.com/) (drum machine,
     keyboard)
--   [Mike Katzberg](http://geektrosexual.blogspot.de/) (electric guitar)
+-   [Mike Katzberg](https://geektrosexual.blogspot.de/) (electric guitar)
 -   [Lindsay Snook](http://members.tripod.com/lindsay_snook/) (trombone)

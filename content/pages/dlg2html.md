@@ -41,8 +41,9 @@ You can also
 
 ### Packages
 
-OpenSUSE and SUSE Linux Enterprise RPMs can be found at
-[<http://download.opensuse.org/repositories/home:/psych0naut/>](http://download.opensuse.org/repositories/home:/psych0naut/).
+[OpenSUSE
+RPMs](https://download.opensuse.org/repositories/home:/psych0naut/)
+are available.
 
 Author
 ------

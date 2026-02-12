@@ -17,7 +17,7 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
     lexical-semantic resource for natural language processing based on
     LMF
 -   [TWSI Sense
-    Substituter](http://www.langtech.tu-darmstadt.de/software/twsi-sense-substituter/),
+    Substituter](https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/software/twsi-substituter.html),
     a tool for producing lexical substitutions in English text
 -   [eoconv](/eoconv.html), a tool which converts text files to
     and from various Esperanto text encodings
@@ -26,7 +26,7 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
 
 -   [DELORES](/delores.html), a forward-chaining reasoning engine
     for defeasible logic
--   [WEBWEAVR-III](http://www.cis.uoguelph.ca/~yxiang/ww3/), a Bayesian
+-   [WEBWEAVR-III](https://www.cis.uoguelph.ca/~yxiang/ww3/), a Bayesian
     network research toolkit
 
 ## Document processing
@@ -53,7 +53,7 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
     projects, including the web browser core, the
     [Firefox](https://www.mozilla.org/en-US/firefox/new/) browser, the
     [Thunderbird](https://www.thunderbird.net/) mail and news client,
-    and the [SeaMonkey](http://www.seamonkey-project.org/) Internet
+    and the [SeaMonkey](https://www.seamonkey-project.org/) Internet
     application suite
 
 # Documentation
@@ -90,13 +90,13 @@ QA
 I've identified, and in some cases fixed, a few hundred bugs in various
 Free Software projects:
 
--   [<http://bugs.kde.org/buglist.cgi?short_desc_type=allwordssubstr&short_desc>=&long_desc_type=allwordssubstr&long_desc=&bugidtype=include&bug_id=&votes=&emailreporter1=1&emailtype1=exact&email1=psychonaut%40nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&changedin=&chfieldfrom=&chfieldto=Now&chfieldvalue=&order=Bug+Number&cmdtype=doit
+-   [<https://bugs.kde.org/buglist.cgi?short_desc_type=allwordssubstr&short_desc>=&long_desc_type=allwordssubstr&long_desc=&bugidtype=include&bug_id=&votes=&emailreporter1=1&emailtype1=exact&email1=psychonaut%40nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&changedin=&chfieldfrom=&chfieldto=Now&chfieldvalue=&order=Bug+Number&cmdtype=doit
     My KDE bugs]
 -   [<https://bugzilla.mozilla.org/buglist.cgi?query_format>=&short_desc_type=allwordssubstr&short_desc=&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&emailreporter1=1&emailtype1=exact&email1=psychonaut%40nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailqa_contact2=1&emailtype2=exact&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Bug+Number&field0-0-0=noop&type0-0-0=noop&value0-0-0=
     My Mozilla bugs]
--   [<http://gcc.gnu.org/bugzilla/buglist.cgi?query_format>=&short_desc_type=allwordssubstr&short_desc=&known_to_fail_type=allwordssubstr&known_to_work_type=allwordssubstr&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&gcchost_type=allwordssubstr&gcchost=&gcctarget_type=allwordssubstr&gcctarget=&gccbuild_type=allwordssubstr&gccbuild=&keywords_type=allwords&keywords=&emailreporter1=1&emailtype1=exact&email1=psychonaut%40nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Bug+Number&field0-0-0=noop&type0-0-0=noop&value0-0-0=
+-   [<https://gcc.gnu.org/bugzilla/buglist.cgi?query_format>=&short_desc_type=allwordssubstr&short_desc=&known_to_fail_type=allwordssubstr&known_to_work_type=allwordssubstr&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&gcchost_type=allwordssubstr&gcchost=&gcctarget_type=allwordssubstr&gcctarget=&gccbuild_type=allwordssubstr&gccbuild=&keywords_type=allwords&keywords=&emailreporter1=1&emailtype1=exact&email1=psychonaut%40nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Bug+Number&field0-0-0=noop&type0-0-0=noop&value0-0-0=
     My GCC bugs]
--   [<http://bugzilla.wikimedia.org/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc>=&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&emailreporter1=1&emailtype1=exact&email1=psychonaut@nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=
+-   [<https://bugzilla.wikimedia.org/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc>=&long_desc_type=substring&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=&emailreporter1=1&emailtype1=exact&email1=psychonaut@nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=
     My MediaWiki bugs]
 -   [<https://bugzilla.novell.com/buglist.cgi?query_format=advanced&short_desc_type=fulltext&short_desc>=&long_desc_type=fulltext&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=anywords&keywords=&emailreporter1=1&emailtype1=exact&email1=psychonaut%40nothingisreal.com&emailassigned_to2=1&emailreporter2=1&emailqa_contact2=1&emailcc2=1&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=
     My openSUSE bugs]

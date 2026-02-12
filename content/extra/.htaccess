@@ -297,7 +297,7 @@ Redirect permanent /wiki/About_me /
 Redirect permanent /wiki/Advice_for_German_Writers_of_English_Scientific_Prose /advice
 Redirect permanent /wiki/Autocomplete_maps /autocomplete
 Redirect permanent /wiki/Biblet /biblet
-Redirect permanent /wiki/Blog http://psych0naut.livejournal.com/
+Redirect permanent /wiki/Blog https://psych0naut.livejournal.com/
 Redirect gone /wiki/Budapest_Restaurant_Reviews
 Redirect permanent /wiki/CHEOPS /cheops
 Redirect gone /wiki/CS_Superchick
@@ -354,25 +354,23 @@ Redirect permanent /wiki/Writing /
 # Miscellaneous
 Redirect permanent /photos/pets/Frettchen/London_2009-12/ /photos/pets/Frettchen/London_2009-12-23/
 Redirect permanent /lipograms /fun
-#Redirect permanent /phd.pdf http://files.nothingisreal.com/publications/Tristan_Miller/miller2016adjusting.pdf
-#Redirect seeother /photos/Iceland/Iceland_2010-01/Reykjavík/tn/img_0800.med.jpg http://images.radiotimes.com/namedimage/Who_are_the_White_Walkers_in_Game_of_Thrones_.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/78100.jpg
 
 # Temporary stuff
-Redirect /miller_cv.pdf http://www.nothingisreal.com/miller_cv.pdf
-Redirect /sonnet http://www.nothingisreal.com/sonnet
-Redirect /photos http://www.nothingisreal.com/photos
-Redirect /courses http://www.nothingisreal.com/courses
-Redirect /sagesdesk http://www.nothingisreal.com/sagesdesk
-Redirect /mentifex_faq http://www.nothingisreal.com/mentifex_faq.html
+Redirect /miller_cv.pdf https://www.nothingisreal.com/miller_cv.pdf
+Redirect /sonnet https://www.nothingisreal.com/sonnet
+Redirect /photos https://www.nothingisreal.com/photos
+Redirect /courses https://www.nothingisreal.com/courses
+Redirect /sagesdesk https://www.nothingisreal.com/sagesdesk
+Redirect /mentifex_faq https://www.nothingisreal.com/mentifex_faq.html
 
 # Redirect SemEval-2017 Task 7 site
-Redirect permanent /puns http://alt.qcri.org/semeval2017/task7/
-Redirect permanent /semeval2017/task http://alt.qcri.org/semeval2017/task7/
-Redirect permanent /semeval2017/data http://alt.qcri.org/semeval2017/task7/index.php?id=data-and-resources
-Redirect permanent /semeval2017/references http://alt.qcri.org/semeval2017/task7/index.php?id=references
-Redirect permanent /semeval2017/semeval2017_pun_task.tar.xz http://alt.qcri.org/semeval2017/task7/data/uploads/semeval2017_pun_task.tar.xz
-Redirect permanent /images/SemEval-2017_20160623_flyer.png http://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.png
-Redirect permanent /images/SemEval-2017_20160623_flyer.pdf http://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.pdf
+Redirect permanent /puns https://alt.qcri.org/semeval2017/task7/
+Redirect permanent /semeval2017/task https://alt.qcri.org/semeval2017/task7/
+Redirect permanent /semeval2017/data https://alt.qcri.org/semeval2017/task7/index.php?id=data-and-resources
+Redirect permanent /semeval2017/references https://alt.qcri.org/semeval2017/task7/index.php?id=references
+Redirect permanent /semeval2017/semeval2017_pun_task.tar.xz https://alt.qcri.org/semeval2017/task7/data/uploads/semeval2017_pun_task.tar.xz
+Redirect permanent /images/SemEval-2017_20160623_flyer.png https://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.png
+Redirect permanent /images/SemEval-2017_20160623_flyer.pdf https://alt.qcri.org/semeval2017/task7/data/uploads/semeval-2017_20160623_flyer.pdf
 
 # News to share on Facebook
 Redirect permanent /fb/manitoban https://themanitoban.com/2024/03/crunching-code-and-cracking-jokes/47075/

@@ -186,8 +186,8 @@ accept Word attachments. Here are links to the explanations some of them
 have also posted:
 
 -   [MS-Word is *not* a document exchange
-    format](http://www.goldmark.org./netrants/no-word/attach.html) by
-    [Jeff Goldberg](http://www.goldmark.org/jeff/)
+    format](https://www.goldmark.org./netrants/no-word/attach.html) by
+    [Jeff Goldberg](https://www.goldmark.org/jeff/)
 -   [Don't send Microsoft Word documents to
     me](https://jdebp.uk/FGA/dont-send-word-documents.html)
     by [Jonathan de Boyne
@@ -307,7 +307,7 @@ src='https://files.nothingisreal.com/publications/Tristan_Miller/covers/nonj2006
 <div class='bib-article'>
 <p><span class='bib-author'>Tristan Miller.</span>
 <span class='bib-title'><a
-href='http://news.gilbert.org/Pub/NONJournal/200609'>Please don't send me
+href='https://web.archive.org/web/20061004033815/http://news.gilbert.org/Pub/NONJournal/200609'>Please don't send me
 Microsoft Word documents</a>.</span>
 <span class='bib-journaltitle'>Nonprofit Online News Journal</span>, pages
 66&ndash;71, September 2006.
