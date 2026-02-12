@@ -26,11 +26,8 @@ This website is powered by [Pelican](https://getpelican.com/),
 * Font Awesome Copyright 2021 [The Font Awesome
   authors](https://github.com/FortAwesome/Font-Awesome). [SIL Open
   Font License, 1.1](https://openfontlicense.org/).
-* Material Design Icons:
-    * Copyright 2014 Austin Andrews (https://materialdesignicons.com/),
-      with Reserved Font Name Material Design Icons.  [SIL Open Font
-      License, 1.1](https://openfontlicense.org/).
-    * Copyright 2014 Google Inc. [Apache License, version
+* Material Design Icons Copyright 2023 [Pictogrammers icon
+      group](https://pictogrammers.com/). [Apache License, version
       2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## JavaScript licences
