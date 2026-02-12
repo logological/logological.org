@@ -262,6 +262,7 @@ paradigms:
 -   [What has WYSIWYG done to
     us?](https://web.archive.org/web/20101008195150/http://www.conradiator.com/downloads/pdf/WhatHasWYSIWYG_done2us.pdf)
     by [Conrad Taylor](https://conradiator.wordpress.com/)
+-   [Text processing vs word processors](https://www.schaffter.ca/mom/mom-02.html) by [Peter Schaffter](https://www.schaffter.ca/)
 
 Here are links to some
 [Free](https://www.gnu.org/philosophy/free-sw.html) document preparation
