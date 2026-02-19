@@ -35,7 +35,7 @@ This website is powered by [Pelican](https://getpelican.com/),
 <table id="jslicense-labels1">
     <tr>
         <td><a href="/theme/js/publications.js">publications.js</a></td>
-        <td><a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU-GPL-3.0-or-later</a></td>
+        <td><a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a></td>
         <td><a href="/theme/js/publications.js">publications.js</a></td>
     </tr>
     <tr>
