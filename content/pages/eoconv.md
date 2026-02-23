@@ -23,7 +23,7 @@ Downloading
 
 The [latest stable
 version](https://github.com/logological/eoconv/releases/latest) of
-eoconv is **1.5**, released on 2016-12-22. It requires **Perl 5.20**
+eoconv is **1.6**, released on 2026-02-23. It requires **Perl 5.20**
 or higher. A list of changes from previous versions can be found in
 the [change
 log](https://files.nothingisreal.com/software/eoconv/NEWS).
@@ -35,8 +35,6 @@ on [GitHub](https://github.com/logological/eoconv/releases) or
 [nothingisreal.com](https://files.nothingisreal.com/software/eoconv/).
 You can also
 [browse, download, or clone the development version on GitHub](https://github.com/logological/eoconv/).
-
-<a class="github-fork-ribbon" href="https://github.com/logological/eoconv/" title="Fork me on GitHub">Fork me on GitHub</a>
 
 ### Packages
 
