@@ -100,6 +100,24 @@ The mail server is configured to automatically add an obnoxious "**Caution!** Th
 
 2. Your mail client may allow you to create a client-side filtering rule that automatically rewrites the body of incoming messages.  If so, you could create a filter that looks for and removes the banner.
 
+### Disabling Outlook Reactions
+
+Microsoft 365 implements a nonstandard extension to e-mail that allows Outlook users to send a graphical "reaction" to an e-mail (such as a thumbs-up or a heart) in lieu of a proper e-mail reply.  If the recipient of the response doesn't use Outlook, then the mail server eventually sends them an e-mail notifying them about the reaction.  There are two problems with this:
+
+1. The server sends the e-mail notifications only once per day.
+2. The e-mail notifications don't explain the nature of the reaction in plain language. Rather, they hotlink to the reaction image.  You cannot see what the image actually is unless (a) you read the notification in a graphical e-mail client, (b) you read the HTML version of the e-mail notification instead of the plain-text version, (c) you read the notification while online, and (d) you cede your privacy by allowing your e-mail client to fetch remote content.
+
+Microsoft does provide [a way to disallow Outlook users from sending reactions to your e-mails](https://techcommunity.microsoft.com/blog/outlook/reactions-in-outlook-public-usability-update-september-2023/3928103).  Unfortunately, it is an "opt-out" mechanism that places the burden on the unwilling recipients of the responses, and is not particularly easy to set up.  Basically, you need to configure the system that sends your e-mail—either your e-mail client or your SMTP server—to add the header `X-MS-Reactions: disallow` to outgoing messages.
+
+In Thunderbird, you can unconditionally add this header to all outgoing e-mails from your University of Manitoba accounts and identities:
+
+1. Open the Config Editor from the Settings.
+2. In the search box, type `useremail` and make a note of any preference names of the form `mail.identity.id`_`N`_`.useremail` associated with your UM e-mail address.  (Here _`N`_ should be some number.)
+3. For each _`N`_, create two new preferences with the following String values:
+    * `mail.identity.id`_`N`_`.headers` → `X-MS-Reactions`
+    * `mail.identity.id`_`N`_`.header.X-MS-Reactions` → `X-MS-Reactions: disallow`
+4. Quit and restart Thunderbird.
+
 ## Calendar
 
 The University has at least two calendar systems: a [public calendar system for events](https://eventscalendar.umanitoba.ca/), and another system that hosts the personal calendars associated with umanitoba.ca e-mail accounts.
