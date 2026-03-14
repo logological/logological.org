@@ -150,7 +150,7 @@ actually tried to use it, so I don't know. The modem is apparently part
 of the Intel High Definition Audio chipset, and is identified as
 follows:
 
-```
+```text
 $ cat /proc/asound/card0/codec#0
 Codec: Conexant ID 2c06
 Address: 0

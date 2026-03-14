@@ -3,7 +3,7 @@ slug: fan_mail
 
 # Fan mail for "Why I Will Never Have a Girlfriend"
 
-```
+```text
 From: G——@webtv.net (G—— H——)
 Date: Sat, 1 Apr 2000 07:31:36 -0500 (EST)
 To: psychonaut@nothingisreal.com

@@ -100,7 +100,7 @@ versions of SuSE.
 Finally, modify the relevant sections of your `/etc/X11/xorg.conf` file
 to read as follows:
 
-```
+```xorg.conf
 Section "Module"
   Load         "dbe"
   Load         "dri"
