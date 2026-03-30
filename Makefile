@@ -3,6 +3,7 @@ PELICAN?=pelican
 PELICANOPTS=
 PORT?=8000
 OFFLINE?=0
+WEBKEY_PATTERN=@logological.org
 
 RSYNC?=rsync
 SCP?=scp
@@ -10,6 +11,7 @@ SCP?=scp
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
+WEBKEYDIR=$(INPUTDIR)/.well-known/openpgpkey
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -53,7 +55,7 @@ deploy:
 	make publish
 	make rsync_upload
 
-html: publications maledicta
+html: publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
@@ -92,7 +94,7 @@ else
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --ignore-cache -b 0.0.0.0
 endif
 
-publish: publications maledicta
+publish: publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 publications:
@@ -100,6 +102,13 @@ publications:
 
 maledicta:
 	make -C maledicta
+
+webkeydir:
+	mkdir -p $(WEBKEYDIR)
+	gpg --list-options show-only-fpr-mbox -k "$(WEBKEY_PATTERN)" | grep "$(WEBKEY_PATTERN)" | gpg-wks-client -v --install-key -C $(WEBKEYDIR)
+	cp -prv $(WEBKEYDIR)/logological.org/* $(WEBKEYDIR) # Temporary; until TLS certificate for https://openpgpkey.logological.org/ is generated
+	find $(WEBKEYDIR) -type d -exec chmod ug+rw,o+r,g+s,a+x,u-s,o-wt {} \;
+	find $(WEBKEYDIR) -type f -exec chmod ug+rw,o+r,u-s,g-s,o-wt {} \;
 
 ssh_upload:
 	$(SCP) -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR)
@@ -110,4 +119,4 @@ rsync_upload:
 	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
 	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller-abstracts,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
 
-.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta
+.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta webkeydir

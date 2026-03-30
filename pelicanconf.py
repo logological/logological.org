@@ -62,6 +62,7 @@ STATIC_PATHS = [
     'extra/robots.txt',
     'extra/safari-pinned-tab.svg',
     'extra/site.webmanifest',
+    '.well-known',
 ]
 EXTRA_PATH_METADATA = {
     'extra/.htaccess': {'path': '.htaccess'},
