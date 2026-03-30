@@ -105,7 +105,7 @@ maledicta:
 
 webkeydir:
 	mkdir -p $(WEBKEYDIR)
-	gpg --list-options show-only-fpr-mbox -k "$(WEBKEY_PATTERN)" | grep "$(WEBKEY_PATTERN)" | gpg-wks-client -v --install-key -C $(WEBKEYDIR)
+	gpg --list-options show-only-fpr-mbox -k "$(WEBKEY_PATTERN)" | gpg-wks-client -v --install-key -C $(WEBKEYDIR)
 	cp -prv $(WEBKEYDIR)/logological.org/* $(WEBKEYDIR) # Temporary; until TLS certificate for https://openpgpkey.logological.org/ is generated
 	find $(WEBKEYDIR) -type d -exec chmod ug+rw,o+r,g+s,a+x,u-s,o-wt {} \;
 	find $(WEBKEYDIR) -type f -exec chmod ug+rw,o+r,u-s,g-s,o-wt {} \;
