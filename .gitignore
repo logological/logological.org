@@ -13,3 +13,4 @@ theme/templates/publications_populated.html
 virtualenv/
 content/.well-known/openpgpkey
 !content/.well-known/openpgpkey/logological.org/.htaccess
+!content/.well-known/openpgpkey/.htaccess
