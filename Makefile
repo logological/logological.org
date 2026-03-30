@@ -34,7 +34,6 @@ help:
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
 	@echo '   make html                           (re)generate the web site          '
-	@echo '   make offline                        (re)generate the web site offline  '
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
@@ -54,9 +53,7 @@ deploy:
 	make publish
 	make rsync_upload
 
-html: publications maledicta offline
-
-offline:
+html: publications maledicta
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
