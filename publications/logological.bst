@@ -123,10 +123,10 @@ FUNCTION {init.string.consts}
   "***BEGIN_RECORD***"		'record.marker		:=
   "bib-"			'css.prefix		:=
   "cite-"			'cite.prefix		:=
-  ""			'heading.prefix		:=
+  ""				'heading.prefix		:=
   "https://www.nothingisreal.com/icons/nuvola-1.0/48x48"	'icon.path		:=
   "css"				'css.path		:=
-  "/images/covers"	'covers.path		:=
+  "/images/covers"		'covers.path		:=
   null				'current.year		:=
   null				'current.pubtype	:=
 }
@@ -507,7 +507,7 @@ FUNCTION {output.bibitem}
   newline$
   "        <div class='col-sm-2 text-center'>" write$
   newline$
-  "          <img src='" covers.path * "/" * cite$ * ".jpg' alt='' class='border border-dark img-fluid'>" * write$
+  "          <img src='" covers.path * "/" * cite$ * ".webp' alt='' class='border border-dark img-fluid'>" * write$
   newline$
   "        </div>" write$
   newline$
