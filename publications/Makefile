@@ -1,4 +1,4 @@
-default: refresh ../content/pages/publications.html ../content/pages/publications-recreational.html ../theme/templates/publications_populated.html
+default: refresh covers ../content/pages/publications.html ../content/pages/publications-recreational.html ../theme/templates/publications_populated.html
 
 ../theme/templates/publications_populated.html: miller-featured.bbl ../theme/templates/publications.html
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
@@ -27,9 +27,12 @@ all.bib: miller.bib miller-abstracts.bib miller-recreational.bib
 %.aux: %.tex
 	rm -f $*.bbl && pdflatex -draftmode $<
 
+covers:
+	make -C covers
+
 clean:
 	rm -f {miller,miller-featured,miller-recreational}.{aux,bbl,blg,log} ../theme/templates/publications_populated.html
 
 .PRECIOUS: %.aux
 
-.PHONY: refresh clean
+.PHONY: refresh clean covers
