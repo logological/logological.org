@@ -114,6 +114,17 @@ var entry = button.data('bibtex')
 var modal = $(this)
 modal.find('.bibtexBody').text(entry)
 })
+
+$('#bibtexCopy').on('click', function () {
+  var text = $('#bibtex .bibtexBody').text();
+  navigator.clipboard.writeText(text).then(function () {
+    var btn = $('#bibtexCopy');
+    btn.text('Copied!');
+    setTimeout(function () {
+      btn.text('Copy to clipboard');
+    }, 2000);
+  });
+});
 </script>
 </body>
 </html>

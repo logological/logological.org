@@ -124,7 +124,7 @@ function to_bibtex(     firstyear, firstauthor, key) {
     "  pages = {" pages "}," "\n" \
     "  issn = {" issn "}," "\n"
     if ($9) bibtex = bibtex "  isbn = {" isbn "}," "\n"
-    bibtex = bibtex "}"
+    bibtex = bibtex "}" "\n"
 
     return bibtex
 }
