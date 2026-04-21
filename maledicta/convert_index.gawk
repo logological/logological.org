@@ -3,7 +3,7 @@
 # This script takes a tab-separated value (TSV) file of the Maledicta
 # article index and converts it to various other formats.
 #
-# Copyright 2019 Tristan Miller <tristan@logological.org>
+# Copyright 2019, 2026 Tristan Miller <tristan@logological.org>
 # 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -34,8 +34,8 @@ NR==1 {
 	    print to_plaintsv()
 	    break
 	case "html":
-	    print "  <table id='maledictaIndex' class='table table-striped table-bordered table-sm'>"
-	    print "    <thead>"
+	    print "  <table id='maledictaIndex' class='table table-striped table-bordered table-sm sticky-header'>"
+	    print "    <thead class='thead-dark'>"
 	    print "      <tr>"
 	    print "        <th class='th-sm'>Title</th>"
 	    print "        <th class='th-sm'>Author</th>"
