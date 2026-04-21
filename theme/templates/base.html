@@ -33,17 +33,6 @@
     <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/biblet.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/codehilite.css">
-
-    <!-- Feeds -->
-    {% if FEED_ALL_ATOM %}
-        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-    {% endif %}
-    {% if FEED_ALL_RSS %}
-        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
-    {% endif %}
-
-    <!-- Google Analytics -->
-    {{ GOOGLE_ANALYTICS }}
 {% endblock head %}
 </head>
 
