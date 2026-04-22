@@ -97,15 +97,15 @@
 }
 
 .bib-field {
-  margin-left: 3ex;
-  text-indent: -19ex;
-  padding-left: 19ex;
+  text-indent: -24ex;
+  padding-left: 24ex;
 }
 
 .bib-field-data {
 }
 
 .bib-field-name {
+  white-space: pre;
 }
 
 .bib-footer {
@@ -269,4 +269,30 @@ div.cite {
   padding-top: 1em;
   padding-bottom: 2em;
   font-size: 90%;
+}
+
+.copyable {
+  position: relative;
+}
+
+.copyable .copy-btn {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #555;
+  background: #eee;
+  border: none;
+  padding: 0.25rem;
+}
+
+.copyable:hover .copy-btn {
+  opacity: 0.8;
+}
+
+.copyable .copy-btn.copied {
 }

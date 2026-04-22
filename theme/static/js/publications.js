@@ -10,4 +10,31 @@ function openTab(publication, tabName) {
     document.getElementById(publication + "-" + tabName).classList.remove("d-none");
 }
 
+/* Copy to clipboard */
+document.querySelectorAll('.copyable').forEach(function (container) {
+  var btn = container.querySelector('.copy-btn');
+  var icon = btn.querySelector('span');
+
+  btn.addEventListener('click', function () {
+    // Collect only the text nodes, excluding the button itself
+    var text = Array.from(container.childNodes)
+      .filter(function (node) {
+        return node !== btn;
+      })
+      .map(function (node) {
+        return node.textContent;
+      })
+      .join('');
+
+    navigator.clipboard.writeText(text.trim()).then(function () {
+      icon.classList.replace('mdi-content-copy', 'mdi-check');
+      btn.classList.add('copied');
+      setTimeout(function () {
+        icon.classList.replace('mdi-check', 'mdi-content-copy');
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  });
+});
+
 // @license-end

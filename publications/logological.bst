@@ -96,7 +96,7 @@ FUNCTION {init.state.consts}
    #3 'after.block :=
    #0 'in.span :=
    #0 'in.bibliography :=
-  #12 'longest.entry.name :=
+  #14 'longest.entry.name :=
 }
 
 % Global strings
@@ -473,6 +473,13 @@ FUNCTION {output.icons}
   while$
 }
 
+FUNCTION {output.copybutton}
+{
+  "<button class='copy-btn' aria-label='Copy' title='Copy'>" write$ newline$
+  "   <span class='mdi mdi-content-copy'></span>" write$ newline$
+  "</button>" write$ newline$
+}
+
 % Not implemented for logological.org
 FUNCTION {output.pubtype.heading}
 {  pubtype missing$
@@ -520,8 +527,9 @@ FUNCTION {output.bibitem}
     { "            <div class='" css.prefix * type$ * "'>" * write$ }
   if$
   newline$
-  "              <div id='" cite$ * "-citation' class='" * cite$ * "-tab'>" * write$
+  "              <div id='" cite$ * "-citation' class='" * cite$ * "-tab copyable'>" * write$
   newline$
+  output.copybutton
   ""
   before.all 'output.state :=
 }
@@ -529,8 +537,9 @@ FUNCTION {output.bibitem}
 FUNCTION {output.abstract}
 { abstract missing$
     'skip$
-    { "              <div id='" cite$ * "-abstract' class='d-none " * css.prefix * "abstract " * cite$ * "-tab'>" * 
-      abstract * "</div>" *
+    { "              <div id='" cite$ * "-abstract' class='d-none " * css.prefix * "abstract " * cite$ * "-tab copyable'>" * write$
+      output.copybutton
+      abstract "</div>" *
       #0 latex2htmlize.abstracts =
         'skip$
         'latex2html
@@ -579,12 +588,13 @@ FUNCTION {output.entry}
     { 's :=
       't :=
       "<div class='" css.prefix * "field'>" * write$
-      "<span class='" css.prefix * "field-name' >" * write$
+      newline$
+      "<span class='" css.prefix * "field-name'>  " * write$
       t write$
       longest.entry.name t string.length - 'j :=
       {j #0 >}
         { j #1 - 'j :=
-          "&nbsp;" write$
+          " " write$
         }
       while$
       "</span> = <span class='" css.prefix * "field-data'>" * write$
@@ -632,13 +642,15 @@ FUNCTION {output.entries}
 
 FUNCTION {output.bibtex}
 { %"{% raw %}" write$ newline$
-  "<div id='" cite$ * "-bibtex' class='d-none " * css.prefix * "bibtex " * cite$ * "-tab'>" * write$ newline$
+  "<div id='" cite$ * "-bibtex' class='d-none " * css.prefix * "bibtex " * cite$ * "-tab copyable'>" * write$ newline$
+  output.copybutton
   "<span class='" css.prefix * "entry-type'>" * write$
   "@" type$ * "</span>{" * write$
   "<span class='" css.prefix * "entry-key'>" * cite$ *
   "</span>,<br>" * write$ newline$
   output.entries
-  "}</div>" write$ newline$
+  "}" write$ newline$
+  "</div>" write$ newline$
   %"{% endraw %}" write$ newline$
 }
 
