@@ -475,7 +475,7 @@ FUNCTION {output.icons}
 
 FUNCTION {output.copybutton}
 {
-  "<button class='copy-btn' aria-label='Copy' title='Copy'>" write$ newline$
+  "<button class='" swap$ * "' aria-label='Copy' title='Copy'>" * write$ newline$
   "   <span class='mdi mdi-content-copy'></span>" write$ newline$
   "</button>" write$ newline$
 }
@@ -529,7 +529,7 @@ FUNCTION {output.bibitem}
   newline$
   "              <div id='" cite$ * "-citation' class='" * cite$ * "-tab copyable'>" * write$
   newline$
-  output.copybutton
+  "copy-btn" output.copybutton
   ""
   before.all 'output.state :=
 }
@@ -538,7 +538,7 @@ FUNCTION {output.abstract}
 { abstract missing$
     'skip$
     { "              <div id='" cite$ * "-abstract' class='d-none " * css.prefix * "abstract " * cite$ * "-tab copyable'>" * write$
-      output.copybutton
+      "copy-btn" output.copybutton
       abstract "</div>" *
       #0 latex2htmlize.abstracts =
         'skip$
@@ -643,14 +643,13 @@ FUNCTION {output.entries}
 FUNCTION {output.bibtex}
 { %"{% raw %}" write$ newline$
   "<div id='" cite$ * "-bibtex' class='d-none " * css.prefix * "bibtex " * cite$ * "-tab copyable'>" * write$ newline$
-  output.copybutton
+  "copy-btn-bibtex" output.copybutton
   "<span class='" css.prefix * "entry-type'>" * write$
   "@" type$ * "</span>{" * write$
   "<span class='" css.prefix * "entry-key'>" * cite$ *
   "</span>,<br>" * write$ newline$
   output.entries
-  "}" write$ newline$
-  "</div>" write$ newline$
+  "}</div>" write$ newline$
   %"{% endraw %}" write$ newline$
 }
 

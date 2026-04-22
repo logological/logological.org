@@ -275,7 +275,7 @@ div.cite {
   position: relative;
 }
 
-.copyable .copy-btn {
+.copyable .copy-btn,.copy-btn-bibtex {
   position: absolute;
   bottom: 0.4rem;
   right: 0.4rem;
@@ -290,7 +290,7 @@ div.cite {
   padding: 0.25rem;
 }
 
-.copyable:hover .copy-btn {
+.copyable:hover .copy-btn,.copy-btn-bibtex {
   opacity: 0.8;
 }
 
