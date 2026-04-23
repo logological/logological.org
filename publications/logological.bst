@@ -514,7 +514,13 @@ FUNCTION {output.bibitem}
   newline$
   "        <div class='col-sm-2 text-center'>" write$
   newline$
-  "          <img src='" covers.path * "/" * cite$ * ".webp' alt='' class='border border-dark img-fluid'>" * write$
+  "          <picture>" write$
+  newline$
+  "            <source srcset='" covers.path * "/" * cite$ * ".webp' type='image/webp' />" * write$
+  newline$
+  "            <img src='" covers.path * "/" * cite$ * ".jpg' alt='' class='border border-dark img-fluid'>" * write$
+  newline$
+  "          </picture>" write$
   newline$
   "        </div>" write$
   newline$
