@@ -690,3 +690,19 @@ CACHE_CONTENT = True
 LOAD_CONTENT_CACHE = True
 GZIP_CACHE = False
 CONTENT_CACHING_LAYER = 'reader'
+
+
+# Generate a 32-bit xxhash from a given file.  We probably want to change this to base64-encoded sha256/384/512 per the spec.
+import sys
+import xxhash
+from base64 import urlsafe_b64encode
+
+def get_file_hash(filename: str) -> str:
+    if filename not in get_file_hash._cache:
+        print ('not cached: \n' + filename)
+        with open(filename, "rb") as f:
+            get_file_hash._cache[filename] = xxhash.xxh32(f.read()).hexdigest()
+
+    return get_file_hash._cache[filename]
+
+get_file_hash._cache: dict[str, str] = {}
