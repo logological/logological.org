@@ -58,18 +58,17 @@ deploy:
 html: css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-$(OUTPUTDIR)/theme/%.min.css: theme/static/%.css
-	mkdir -p $(@D)
+%.min.css: %.css
 	$(PY) -m csscompressor --output $@ $<
 
 css:	\
-	$(OUTPUTDIR)/theme/css/maledicta/cosmo.min.css \
-	$(OUTPUTDIR)/theme/css/maledicta/mdb-override.min.css \
-	$(OUTPUTDIR)/theme/css/maledicta/style.min.css \
-	$(OUTPUTDIR)/theme/css/biblet.min.css \
-	$(OUTPUTDIR)/theme/css/codehilite.min.css \
-	$(OUTPUTDIR)/theme/sourcesanspro/sourcesanspro.min.css \
-	$(OUTPUTDIR)/theme/css/startbootstrap-resume/styles.min.css
+	theme/static/css/maledicta/cosmo.min.css \
+	theme/static/css/maledicta/mdb-override.min.css \
+	theme/static/css/maledicta/style.min.css \
+	theme/static/css/biblet.min.css \
+	theme/static/css/codehilite.min.css \
+	theme/static/sourcesanspro/sourcesanspro.min.css \
+	theme/static/css/startbootstrap-resume/styles.min.css
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*
