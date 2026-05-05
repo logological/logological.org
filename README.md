@@ -15,6 +15,7 @@ You'll need the following Python libraries to build the website:
 * Pelican
 * Markdown
 * GitPython
+* csscompressor
 
 There are various ways you can install these dependencies:
 
