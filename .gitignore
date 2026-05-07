@@ -5,6 +5,7 @@ cache/
 *.swp
 \#*#
 .#*
+*.min.css
 content/pages/publications-recreational.html
 content/pages/publications.html
 content/pages/maledicta.html

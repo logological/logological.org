@@ -55,8 +55,20 @@ deploy:
 	make publish
 	make rsync_upload
 
-html: publications maledicta webkeydir
+html: css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+%.min.css: %.css
+	$(PY) -m csscompressor --output $@ $<
+
+css:	\
+	theme/static/css/maledicta/cosmo.min.css \
+	theme/static/css/maledicta/mdb-override.min.css \
+	theme/static/css/maledicta/style.min.css \
+	theme/static/css/biblet.min.css \
+	theme/static/css/codehilite.min.css \
+	theme/static/sourcesanspro/sourcesanspro.min.css \
+	theme/static/css/startbootstrap-resume/styles.min.css
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*
@@ -94,7 +106,7 @@ else
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --ignore-cache -b 0.0.0.0
 endif
 
-publish: publications maledicta webkeydir
+publish: css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 publications:
