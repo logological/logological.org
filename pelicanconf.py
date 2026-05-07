@@ -692,17 +692,104 @@ GZIP_CACHE = False
 CONTENT_CACHING_LAYER = 'reader'
 
 
-# Generate a 32-bit xxhash from a given file.  We probably want to change this to base64-encoded sha256/384/512 per the spec.
-import sys
-import xxhash
-from base64 import urlsafe_b64encode
+import base64
+import hashlib
+import jinja2
+from jinja2 import pass_context
 
-def get_file_hash(filename: str) -> str:
-    if filename not in get_file_hash._cache:
-        print ('not cached: \n' + filename)
-        with open(filename, "rb") as f:
-            get_file_hash._cache[filename] = xxhash.xxh32(f.read()).hexdigest()
+def get_file_hash(filename: str, algorithm: str) -> str:
+    """
+    Return the base64url-encoded (RFC 4648 §5, no padding) hash of a file's
+    contents using the specified algorithm.  sha256, sha384, and sha512 hashes
+    are always computed and cached alongside the requested algorithm.
 
-    return get_file_hash._cache[filename]
+    Args:
+        filename:  Path to the file to hash.
+        algorithm: Hash algorithm name recognised by hashlib (e.g. "sha256").
 
-get_file_hash._cache: dict[str, str] = {}
+    Returns:
+        The base64url-encoded digest string for the requested algorithm.
+    """
+    cache = get_file_hash._cache
+
+    if (filename, algorithm) not in cache:
+        data = open(filename, "rb").read()
+
+        def _compute_and_cache(algo: str) -> str:
+            digest = hashlib.new(algo, data).digest()
+            encoded = base64.urlsafe_b64encode(digest).rstrip(b"=").decode()
+            cache[(filename, algo)] = encoded
+            return encoded
+
+        for algo in ("sha256", "sha384", "sha512"):
+            if (filename, algo) not in cache:
+                _compute_and_cache(algo)
+
+        if (filename, algorithm) not in cache:
+            _compute_and_cache(algorithm)
+
+    return cache[(filename, algorithm)]
+
+get_file_hash._cache: dict[tuple[str, str], str] = {}
+
+# To do: separate input/output filenames
+def get_versioned_file(filename: str) -> str:
+    """
+    Take the given filename and append a query string with the
+    base64url-encoded sha256 hash of the file's contents.
+
+    Args:
+        filename:  Path of the file to hash.
+
+    Returns:
+        The filename plus a query string with the base64url-encoded
+        sha256 hash of the file's contents, suitable for use as the
+        value of an HTML src or href attribute.
+    """
+    return filename + "?v=" + get_file_hash(filename)
+
+# To do: apply the version flag
+@pass_context
+def integrity(context,
+              filename: str,
+              attrib: str="href",
+              in_path: str="",
+              out_path: str="",
+              version: bool=False) -> str:
+    """
+    Returns HTML src/href and integrity attributes for a given file.
+
+    Args:
+        filename:  Common part of the path of the file to hash
+        attrib  :  HTML attribute name for the path (typically src or href)
+        in_path :  Path prefix for the local file
+        out_path:  Path prefix for the remote file
+        settings:  Settings dictionary for the current context
+
+    Returns:
+        A string containing an HTML src attribute (with the value being
+        the filename) and an HTML integrity attribute (with the value
+        being the sha256, sha384, and sha512 hashes of the file's contents,
+        in the format prescribed by the HTML specification).
+    """
+    if in_path == "":
+        in_path = context["THEME"] + "/" + context["THEME_STATIC_PATHS"][0] + "/"
+    if out_path == "":
+        out_path = context["SITEURL"] + "/" + context["THEME_STATIC_DIR"] + "/"
+    in_filename = in_path + filename
+    return '%s="%s%s" integrity="sha256-%s sha384-%s sha512-%s"' %(
+        attrib,
+        out_path,
+        filename,
+        get_file_hash(in_filename, "sha256"),
+        get_file_hash(in_filename, "sha384"),
+        get_file_hash(in_filename, "sha512")
+        )
+
+JINJA_FILTERS = {
+    "get_versioned_file": get_versioned_file,
+    "integrity": integrity,
+}
+
+# For debugging
+# JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.debug']}

@@ -27,12 +27,12 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fonts and styling -->
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/startbootstrap-resume/styles.min.css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/materialdesignicons/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/biblet.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/codehilite.min.css">
+    <link rel="stylesheet" {{ "css/startbootstrap-resume/styles.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "font-awesome/css/all.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "materialdesignicons/css/materialdesignicons.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "academicons/css/academicons.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/biblet.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/codehilite.min.css" | integrity }} >
 {% endblock head %}
 </head>
 
@@ -68,8 +68,8 @@
 </footer>
 
 <!-- Bootstrap core JS-->
-<script src="{{ SITEURL }}/theme/js/bootstrap.bundle.min.js"></script>
+<script {{ "js/bootstrap.bundle.min.js" | integrity(attrib="src") }} ></script>
 <!-- Core theme JS-->
-<script src="{{ SITEURL }}/theme/js/startbootstrap-resume/scripts.js"></script>
+<script {{ "js/startbootstrap-resume/scripts.js" | integrity(attrib="src") }} ></script>
 </body>
 </html>
