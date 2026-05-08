@@ -755,35 +755,39 @@ def integrity(context,
               attrib: str="href",
               in_path: str="",
               out_path: str="",
+              crossorigin: str="anonymous",
               version: bool=False) -> str:
     """
     Returns HTML src/href and integrity attributes for a given file.
 
     Args:
-        filename:  Common part of the path of the file to hash
-        attrib  :  HTML attribute name for the path (typically src or href)
-        in_path :  Path prefix for the local file
-        out_path:  Path prefix for the remote file
-        settings:  Settings dictionary for the current context
+        filename:    Common part of the path of the file to hash
+        attrib  :    HTML attribute name for the path (typically src or href)
+        in_path :    Path prefix for the local file
+        out_path:    Path prefix for the remote file
+        crossorigin: Value of the crossorigin attribute
 
     Returns:
         A string containing an HTML src attribute (with the value being
-        the filename) and an HTML integrity attribute (with the value
-        being the sha256, sha384, and sha512 hashes of the file's contents,
-        in the format prescribed by the HTML specification).
+        the filename), an HTML integrity attribute (with the value being
+        the sha256, sha384, and sha512 hashes of the file's contents, in
+        the format prescribed by the HTML specification), and a crossorigin
+        attribute (with the value being that specified by the crossorigin
+        argument).
     """
     if in_path == "":
         in_path = context["THEME"] + "/" + context["THEME_STATIC_PATHS"][0] + "/"
     if out_path == "":
         out_path = context["SITEURL"] + "/" + context["THEME_STATIC_DIR"] + "/"
     in_filename = in_path + filename
-    return '%s="%s%s" integrity="sha256-%s sha384-%s sha512-%s"' %(
+    return '%s="%s%s" integrity="sha256-%s sha384-%s sha512-%s" crossorigin="%s"' %(
         attrib,
         out_path,
         filename,
         get_file_hash(in_filename, "sha256"),
         get_file_hash(in_filename, "sha384"),
-        get_file_hash(in_filename, "sha512")
+        get_file_hash(in_filename, "sha512"),
+        crossorigin
         )
 
 JINJA_FILTERS = {
