@@ -36,7 +36,7 @@
 {% endblock head %}
 </head>
 
-<body id="page-top" {% block body_attributes %}{% endblock body_attributes %}>
+<body id="page-top" {% block body_attributes %}{% endblock body_attributes %} >
 
   {% block navbar %}
   <!-- Navigation-->
@@ -63,13 +63,15 @@
     {% endblock %}
   </div>
 
+{% block footer %}
 <footer lang="{{ DEFAULT_LANG }}" class="text-end border-top border-top-1 mt-5">
   <p class="mb-0 pb-0"><small><a href="{{ SITEURL }}/credits.html" data-jslicense="1">Credits</a> | Last modified: {% block modified %}{{ BUILD_TIME }}{% endblock modified %}</small></p>
 </footer>
+{% endblock %}
 
-<!-- Bootstrap core JS-->
+{% block appendix %}
 <script {{ "js/bootstrap.bundle.min.js" | integrity(attrib="src") }} ></script>
-<!-- Core theme JS-->
 <script {{ "js/startbootstrap-resume/scripts.js" | integrity(attrib="src") }} ></script>
+{% endblock %}
 </body>
 </html>
