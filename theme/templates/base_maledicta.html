@@ -27,16 +27,16 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fonts and styling -->
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/maledicta/cosmo.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/maledicta/mdb/mdb.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/maledicta/mdb-override.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/sourcesanspro/sourcesanspro.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/academicons/css/academicons.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/maledicta/style.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/biblet.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/codehilite.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/maledicta/mdb/addons/datatables.min.css">
+    <link rel="stylesheet" {{ "css/maledicta/cosmo.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/maledicta/mdb/mdb.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/maledicta/mdb-override.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "sourcesanspro/sourcesanspro.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "academicons/css/academicons.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "font-awesome/css/all.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/maledicta/style.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/biblet.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/codehilite.min.css" | integrity }} >
+    <link rel="stylesheet" {{ "css/maledicta/mdb/addons/datatables.min.css" | integrity }} >
 {% endblock head %}
 </head>
 
@@ -89,11 +89,11 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{SITEURL}}/theme/js/maledicta/jquery-3.7.0.slim.min.js"></script>
-<script src="{{SITEURL}}/theme/js/maledicta/popper.min.js"></script>
-<script src="{{SITEURL}}/theme/js/maledicta/bootstrap.min.js"></script>
-<script src="{{SITEURL}}/theme/js/maledicta/mdb/mdb.min.js"></script>
-<script src="{{SITEURL}}/theme/js/maledicta/mdb/addons/datatables.min.js"></script>
+<script {{ "js/maledicta/jquery-3.7.0.slim.min.js" | integrity(attrib="src") }}></script>
+<script {{ "js/maledicta/popper.min.js" | integrity(attrib="src") }}></script>
+<script {{ "js/maledicta/bootstrap.min.js" | integrity(attrib="src") }}></script>
+<script {{ "js/maledicta/mdb/mdb.min.js" | integrity(attrib="src") }}></script>
+<script {{ "js/maledicta/mdb/addons/datatables.min.js" | integrity(attrib="src") }}></script>
 <script>
 $(document).ready(function () {
 $('#maledictaIndex').DataTable({

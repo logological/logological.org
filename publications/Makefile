@@ -1,6 +1,6 @@
-default: refresh covers ../content/pages/publications.html ../content/pages/publications-recreational.html ../theme/templates/publications_populated.html
+default: refresh covers ../content/pages/publications.html ../content/pages/publications-recreational.html ../theme/templates/index-publications_populated.html
 
-../theme/templates/publications_populated.html: miller-featured.bbl ../theme/templates/publications.html
+../theme/templates/index-publications_populated.html: miller-featured.bbl ../theme/templates/index-publications.html
 	sed '/<!-- BIBLIOGRAPHY -->/ r $<' $(word 2,$^) >$@
 
 ../content/pages/publications.html: miller.bbl publications.html

@@ -2,29 +2,31 @@
 
 {% block title %}{{ SITENAME }}{% endblock %}
 
-{% block body_attributes %}
-onload="equalizeCardHeight()"
-onresize="equalizeCardHeight()"
-{% endblock body_attributes %}
+{% block body_attributes %}onload="equalizeCardHeight()" onresize="equalizeCardHeight()"{% endblock body_attributes %}
 
 {% block content %}
 
-{% include 'about.html' %}
+{% include 'index-about.html' %}
 
 <hr class="m-0" />
 
-{% include 'news.html' %}
+{% include 'index-news.html' %}
 
 <hr class="m-0" />
 
-{% include 'publications_populated.html' %}
+{% include 'index-publications_populated.html' %}
 
 <hr class="m-0" />
 
-{% include 'projects.html' %}
+{% include 'index-projects.html' %}
 
 <hr class="m-0" />
 
-{% include 'miscellany.html' %}
+{% include 'index-miscellany.html' %}
 
+{% endblock %}
+
+{% block appendix %}
+{{ super() }}
+<script {{ "js/publications.js" | integrity(attrib="src") }} ></script>
 {% endblock %}
