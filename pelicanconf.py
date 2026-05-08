@@ -717,7 +717,7 @@ def get_file_hash(filename: str, algorithm: str) -> str:
 
         def _compute_and_cache(algo: str) -> str:
             digest = hashlib.new(algo, data).digest()
-            encoded = base64.urlsafe_b64encode(digest).rstrip(b"=").decode()
+            encoded = base64.b64encode(digest).decode()
             cache[(filename, algo)] = encoded
             return encoded
 
