@@ -1,7 +1,7 @@
 % BibTeX logological bibliography style, based on `biblet'
 %
 % Copyright (C) 1985 Oren Patashnik
-% Copyright (C) 2021-2025 Tristan Miller
+% Copyright (C) 2021-2026 Tristan Miller
 %                    psychonaut@nothingisreal.com
 %                    https://www.nothingisreal.com/biblet/
 %
@@ -47,6 +47,7 @@ ENTRY
     institution
     isbn
     issn
+    issuetitle
     journal
     key
     month
@@ -869,6 +870,17 @@ FUNCTION {format.jtitle.link}
   if$
 }
 
+FUNCTION {format.jtitle.issue.link}
+{ "" 'link :=
+  bookurl empty$
+    {  "<span class='" css.prefix * "journaltitle'>" * title * "</span>" *}
+    {
+      "<span class='" css.prefix * "journaltitle'><a href='" * bookurl * "'>" *
+      title * "</a></span>" * 
+    }
+  if$
+}
+
 FUNCTION {format.title.link}
 { "" 'link :=
   pdf empty$
@@ -886,6 +898,26 @@ FUNCTION {format.title.link}
       "<a href='" link * "'>" *
       %title=" *   quote$ * title latex2html * quote$ * ">" * 
       title "t" change.case$ * "</a>" * 
+    }
+  if$
+}
+
+FUNCTION {format.issuetitle.link}
+{ "" 'link :=
+  pdf empty$
+    {
+      html empty$
+	{ }
+	{ html 'link := }
+      if$ 
+    }
+    { pdf 'link := }
+  if$
+  link empty$
+    { "<span class='" css.prefix * "issuetitle " * css.prefix * "title'>" * issuetitle "t" change.case$ * "</span>" * }
+    {
+      "<span class='" css.prefix * "issuetitle " * css.prefix * "title'><a href='" * link * "'>" *
+      issuetitle "t" change.case$ * "</a></span>" * 
     }
   if$
 }
@@ -1224,6 +1256,25 @@ FUNCTION {article}
       format.pages output
     }
   if$
+  format.issn output
+  new.block
+  format.doi output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {periodical}
+{ output.bibitem
+  format.editors output.nonnull
+  new.block
+  format.issuetitle.link "issuetitle" output.check
+  "<br>" write$ % Line break after authors
+  new.block
+  format.jtitle.issue.link "title" output.check
+  "<br>" write$ % Line break after title
+  format.vol.num.pages output
+  format.date "year" output.check
   format.issn output
   new.block
   format.doi output
@@ -1779,6 +1830,8 @@ FUNCTION {presort}
   type$ "book" =
   type$ "inbook" =
   or
+  type$ "periodical" =
+  or    
     'author.editor.sort
     { type$ "proceedings" =
 	'editor.organization.sort

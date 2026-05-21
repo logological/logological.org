@@ -218,6 +218,22 @@
     font-style: italic;
 }
 
+.bib-issuetitle {
+    font-style: italic;
+}
+
+.bib-issuetitle a {
+    font-weight: normal !important;
+}
+
+.bib-issuetitle.bib-title {
+    font-weight: bold;
+}
+
+.bib-issuetitle.bib-title a {
+    font-weight: bold;
+}
+
 .bib-journaltitle {
     font-style: italic;
 }
@@ -233,6 +249,10 @@
 
 .bib-booktitle a {
     font-weight: normal;
+}
+
+.bib-booktitle.bib-title {
+    font-weight: bold;
 }
 
 .bib-booktitle.bib-title a {
