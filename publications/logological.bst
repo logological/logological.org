@@ -1578,7 +1578,9 @@ FUNCTION {techreport}
   new.block
   format.title "title" output.check
   new.block
+  "<br>" write$ % Line break after authors/editors
   format.tr.number output.nonnull
+  "<br>" write$ % Line break after title
   institution "institution" output.check
   address output
   format.date "year" output.check
