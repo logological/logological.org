@@ -23,13 +23,13 @@ There are various ways you can install these dependencies:
 
 You can install the dependencies system-wide using `pip`:
 
-    sudo pip install pelican markdown gitpython
+    sudo pip install pelican markdown gitpython csscompressor
 
 But if your OS's package manager handles Python libaries, it may be
 better to use it instead.  For example, on openSUSE Tumbleweed, you
 can get the latest releases of everything with `zypper`:
 
-	sudo zypper in python3-pelican python3-Markdown python3-GitPython
+	sudo zypper in python3-pelican python3-Markdown python3-GitPython python3-csscompressor
 
 ### Installing in a virtual environment
 
