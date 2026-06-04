@@ -55,8 +55,11 @@ deploy:
 	make publish
 	make rsync_upload
 
-html: css publications maledicta webkeydir
+html: startbootstrap-resume css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+startbootstrap-resume:
+	make -C startbootstrap-resume
 
 %.min.css: %.css
 	$(PY) -m csscompressor --output $@ $<
@@ -106,7 +109,7 @@ else
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --ignore-cache -b 0.0.0.0
 endif
 
-publish: css publications maledicta webkeydir
+publish: startbootstrap-resume css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 publications:
@@ -131,4 +134,4 @@ rsync_upload:
 	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_WEBSITE_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
 	$(RSYNC) -e "ssh -p $(SSH_PORT)" -P -rvzc publications/resume/{miller-abstracts,miller-polemics,miller-recreational}.bib $(SSH_USER)@$(SSH_HOST):$(SSH_PUBLICATIONS_TARGET_DIR) --cvs-exclude --exclude-from=rsync_exclude.txt
 
-.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta webkeydir
+.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload deploy publications maledicta webkeydir startbootstrap-resume
