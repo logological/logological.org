@@ -120,6 +120,10 @@ In Thunderbird, you can unconditionally add this header to all outgoing e-mails 
     * `mail.identity.id`_`N`_`.header.X-MS-Reactions` → `X-MS-Reactions: disallow`
 4. Quit and restart Thunderbird.
 
+### Online Archive folder
+
+As of May 2026, UM's server is configured to automatically archive all your messages older than two years to an Exchange-specific area that Microsoft variously refers to as the [Online Archive](https://learn.microsoft.com/en-us/exchange/policy-and-compliance/in-place-archiving/in-place-archiving) or In-Place Archive.  There is currently no way of accessing the Online Archive other than through a proprietary client, though Microsoft has been promising to add this functionality to the Graph API since 2023.  (See [Thunderbird Bug 1854332](https://bugzilla.mozilla.org/show_bug.cgi?id=1854332) for details.)  Until that happens, your only recourse is to use a proprietary client (such as Outlook Web Acess), ask IST for an exemption from the auto-archiving, or move your old mail elsewhere before it gets archived.  (This last option could be done manually, but perhaps more realistically using Imap-CLI or some other tool, as described above in [Junk mail filtering](#junk-mail-filtering).)
+
 ## Calendar
 
 The University has at least two calendar systems: a [public calendar system for events](https://eventscalendar.umanitoba.ca/), and another system that hosts the personal calendars associated with umanitoba.ca e-mail accounts.
