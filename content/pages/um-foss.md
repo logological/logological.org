@@ -88,9 +88,11 @@ You may not want either type of filtering if you prefer to use your own spam fil
 
 2. Your mail client may allow you to create a client-side filtering rule that automatically moves all incoming mail from the Junk mail folder to your inbox. Unfortunately, Thunderbird does not yet support filtering rules for mail arriving anywhere other than the inbox.
 
-3. [Imap-CLI](https://github.com/Gentux/imap-cli) is a general-purpose command-line IMAP tool that you can configure to move all messages from one IMAP folder to another (say, from your "Junk mail" folder to your inbox).  You can then run it periodically (via a cron job, for example).  It supports OAuth2 authentication.
+3. [Imap-CLI](https://github.com/Gentux/imap-cli) is a general-purpose command-line IMAP tool that you can configure to move all messages from one IMAP folder to another (say, from your "Junk mail" folder to your inbox).  You can then run it periodically (via a cron job or systemd timer, for example).  It supports OAuth2 authentication.
 
-There is probably no workaround for the filter that "quaratines" e-mails into a special web interface.
+4. You could write your own script that uses the Microsoft's [Graph API](https://learn.microsoft.com/en-us/graph/api/overview) to automatically move messages from your "Junk mail" folder to your inbox.  (Here is [a step-by-step guide, including code](https://mismosystems.com/rescuing-important-emails-from-the-junk-folder-with-microsoft-graph-api/).)  You can then run it periodically (via a cron job or systemd timer, for example).
+
+There is probably no way for users to circumvent the filter that "quaratines" e-mails into a special web interface.  The [remediate endpoint of the Graph API](https://learn.microsoft.com/en-us/graph/api/security-analyzedemail-remediate?view=graph-rest-beta&tabs=http) allows you to move a message from a mailbox into quarantine, but not vice versa.  Messages can be released from quarantine with the [Release-QuarantineMessage cmdlet](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/release-quarantinemessage?view=exchange-ps) of the [Exchange PowerShell](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/?view=exchange-ps), but access to this is typically restricted to server administrators.
 
 ### Content rewriting
 
