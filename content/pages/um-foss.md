@@ -172,7 +172,7 @@ I run DavMail as a headless systemd service in `O365Manual` mode, but to do the 
 16. Press the "Subscribe" button.
 17. Wait a minute or two for DavMail and Thunderbird to perform the initial sychronization of your new calendar.
 18. You can now begin using your calendar!  You will need to keep DavMail running for this, so if you log out of your account or reboot machine, remember to restart it, or configure your account to automatically start it on login.  Alternatively, you can configure DavMail to run as a system service (see below).
-19. The authentication code you entered in a previous step is valid only for 90 days.  (After 90 days, DavMail will probably prompt you again for a new code.)
+19. The authentication code you entered in a previous step is valid only for 90 days.  After 90 days, DavMail should prompt you again for a new code.
 
 ### Configuring DavMail to run as a system service
 
