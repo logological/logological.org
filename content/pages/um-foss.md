@@ -245,4 +245,27 @@ Individual academic units within the university may use Slack, another proprieta
 
 ## VPN
 
-[IST's VPN support page](https://umanitoba.ca/information-services-technology/my-security/vpn-support) links to some [VPN instructions for Linux](https://ithelp.umanitoba.ca/a/1635613-vpn-instructions-for-installing-linux-vpn) that discuss connecting to the VPN with Pulse Secure Client for Linux.  This is unfortunately proprietary software, though it should at least allow you to connect to the university's VPN.
+[IST's VPN support page](https://umanitoba.ca/information-services-technology/my-security/vpn-support) links to some [VPN instructions for Linux](https://ithelp.umanitoba.ca/a/1635613-vpn-instructions-for-installing-linux-vpn) that discuss connecting to UM's Ivanti (formerly Pulse) VPN with the proprietary Pulse Secure Client for Linux.  Alternatively, you can try using [OpenConnect](https://www.infradead.org/openconnect/), a free software VPN client that supports the server's Pulse Connect Secure protocol.
+
+### Pulse Secure Client
+
+Pulse Secure Client is unfortunately proprietary software, though it should at least allow you to connect to the university's VPN.  There are a number of problems you may need to work around with Pulse Secure Client for Linux:
+
+* The Pulse Secure Client installer may fail to detect a missing depedency on Mozilla's Certificate Database Tool (certutil).  If your system does not have certutil installed, then Pulse will fail to install UM's security certificate, and will issue the following warning when you connect to the VPN:
+
+    >You are about to authenticate to an untrusted server. There are problems with the site's security certificate:
+    >  
+    > Certificate Error
+    > 
+    > Should Ivanti Secure Access Client continue to connect? 
+
+    On openSUSE, certutil is provided by the mozilla-nss-tools package; other distributions may have it in some other package.  Ensuring that certutil is installed does allow Pulse to successfully download UM's security certificate, but for some reason it continues to issue the same error message.
+
+* When you run Pulse Secure Client for the first time, it will attempt to download the Chromium Embedded Framework, and may get stuck.  If this happens, you can try reinstalling the framework from the command line.  First run `sudo /opt/pulsesecure/bin/setup_cef.sh uninstall` to uninstall any incomplete version, then `sudo /opt/pulsesecure/bin/setup_cef.sh install` to install it, and finally `sudo /opt/pulsesecure/bin/setup_cef.sh check_install` to verify that the installation was successful.
+
+* The fonts in the Pulse Secure Client GUI may be too small to read on your display.  If so, then you can set the `GDK_SCALE` environment variable to scale up the entire window by any integer factor—for example, `GDK_SCALE=2 /opt/pulsesecure/bin/pulseUI`.  You could also try setting the `GDK_DPI_SCALE` environment variable, which can take non-integer arguments, but this setting doesn't seem to affect all the text.
+
+### OpenConnect
+
+[OpenConnect](https://www.infradead.org/openconnect/), a free software VPN client, does support the Pulse Connect Secure protocol, but (as of June 2026) [it doesn't yet support the Microsoft Azure MFA used by UM's Ivanti VPN server](https://gitlab.com/openconnect/openconnect/-/work_items/619).  In the meantime, you can try using [the "University of Manitoba" fork of openconnect-pulse-gui](https://github.com/markus-meier74/openconnect-pulse-gui), a wrapper around OpenConnect that handles the multi-factor authentication.
+
