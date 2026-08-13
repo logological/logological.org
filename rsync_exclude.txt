@@ -11,3 +11,5 @@ sagesdesk/
 ttrss/
 mentifex*
 miller_cv.pdf
+index[0-9]*.html
+news/
