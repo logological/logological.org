@@ -276,12 +276,6 @@ In KDE Plasma 6:
 qdbus6 org.kde.Shutdown /Shutdown logout
 ```
 
-In KDE Plasma 5:
-
-```bash
-qdbus org.kde.ksmserver /KSMServer logout 0 0 0
-```
-
 ### How can I get applications to display dates in ISO 8601 (YYYY-MM-DD) format?
 
 As of Plasma 5, it is no longer possible to fine-tune the system
