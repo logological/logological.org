@@ -271,5 +271,5 @@ Pulse Secure Client is unfortunately proprietary software, though it should at l
 
 ### OpenConnect
 
-[OpenConnect](https://www.infradead.org/openconnect/), a free software VPN client, does support the Pulse Connect Secure protocol, but (as of June 2026) [it doesn't yet support the Microsoft Azure MFA used by UM's Ivanti VPN server](https://gitlab.com/openconnect/openconnect/-/work_items/619).  In the meantime, you can try using [the "University of Manitoba" fork of openconnect-pulse-gui](https://github.com/markus-meier74/openconnect-pulse-gui), a wrapper around OpenConnect that handles the multi-factor authentication.
+[OpenConnect](https://www.infradead.org/openconnect/), a free software VPN client, does support the Pulse Connect Secure protocol, but (as of June 2026) [it doesn't yet support the Microsoft Azure MFA used by UM's Ivanti VPN server](https://gitlab.com/openconnect/openconnect/-/work_items/619).  In the meantime, you can try using [the "University of Manitoba" fork of openconnect-pulse-gui](https://github.com/logological/openconnect-pulse-gui), a wrapper around OpenConnect that handles the multi-factor authentication.
 
