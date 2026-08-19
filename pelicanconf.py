@@ -678,6 +678,7 @@ NEWS_ICONS = {
     'panelist': 'mdi-human-greeting-proximity',
     'newspaper': 'mdi-newspaper-variant-outline',
     'special-issue': 'mdi-book-open-variant-outline',
+    'award': 'mdi-seal',
 }
 
 # Suppress "alt attribute" warnings pending fix to https://github.com/getpelican/pelican/issues/2398

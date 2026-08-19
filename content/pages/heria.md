@@ -24,7 +24,7 @@ Documentation is included with the package and is also available on
 CTAN.  The documentation includes the following:
 
 * [The `heria` user manual](https://mirrors.ctan.org/macros/latex/contrib/heria/heria.pdf)
-* [A skeleton proposal](https://mirrors.ctan.org/macros/latex/contrib/heria/heria-proposal.pdf)
+* [A skeleton proposal](https://mirrors.ctan.org/macros/latex/contrib/heria/heria-proposal-5.1.pdf)
   showing `heria` in action.
   
 There is also a journal article that describes the motivation for and development of the package:
