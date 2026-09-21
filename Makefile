@@ -15,7 +15,7 @@ WEBKEYDIR=$(INPUTDIR)/.well-known/openpgpkey
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=onza
+SSH_HOST=mog
 SSH_PORT=22
 SSH_USER=psy
 SSH_WEBSITE_TARGET_DIR=www/logological.org
