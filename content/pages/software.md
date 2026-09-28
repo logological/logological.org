@@ -84,8 +84,7 @@ And other miscellaneous documents:
 -   [FAQ](/faq.html), a list of questions I am frequently asking myself
 
 <!--
-QA
---
+# QA
 
 I've identified, and in some cases fixed, a few hundred bugs in various
 Free Software projects:

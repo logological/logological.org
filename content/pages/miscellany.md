@@ -22,7 +22,7 @@ don't really fit into any other section.
 <dt><a href="/word.html">Please don't send me Microsoft Word documents</a></dt>
 <dd>An article on why it is a bad idea to use Microsoft Word as a document interchange format
 <dt><a href="/signature.html">What is "signature.asc"?</a></dt>
-<dd>Read this if you received an e-mail from me which appears to have an attachment named <tt>signature.asc</tt></dd>
+<dd>Read this if you received an e-mail from me which appears to have an attachment named <kbd>signature.asc</kbd></dd>
 <dt><a href="/faq.html">FAQ</a></dt>
 <dd>A list of questions I am frequently asking myself</dd>
 <dt><a href="/um-foss.html">Using Free Software at the University of Manitoba</a></dt>

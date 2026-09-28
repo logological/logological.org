@@ -34,7 +34,7 @@ Commodore 64 keyboard. The video was shot by Barry Bircher and Tristan
 Miller at Miller Comprehensive High School in Regina, Saskatchewan in
 1992.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b9dF1WMbzhg?si=cfw0Q6CQUReUYUMb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b9dF1WMbzhg?si=cfw0Q6CQUReUYUMb" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Beatle demo
 -----------
@@ -44,4 +44,4 @@ BBS]({static}/images/CUGS_Beatles.d64) was produced around 1992 by
 Tristan Miller.  It features Sidplayer music arranged by Music Man3,
 Jim Masterson, Fred Micoff, and Wes and Steve.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Lu6WxKXozpU?si=DfIUaJnlCLpWQvFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lu6WxKXozpU?si=DfIUaJnlCLpWQvFM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
