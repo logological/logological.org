@@ -7,6 +7,8 @@ WEBKEY_PATTERN=@logological.org
 
 RSYNC?=rsync
 SCP?=scp
+JAVA?=java
+VNU?=$(HOME)/opt/vnu/vnu.jar
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
@@ -39,6 +41,7 @@ help:
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
+	@echo '   make validate                       validate HTML and CSS with vnu     '
 	@echo '   make deploy                         alias for make rsync_upload        '
 	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
 	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
@@ -58,6 +61,9 @@ deploy:
 
 html: startbootstrap-resume css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+validate:
+	$(JAVA) -jar $(VNU) --stdout --skip-non-html --also-check-css $(OUTPUTDIR)
 
 startbootstrap-resume:
 	make -C startbootstrap-resume
