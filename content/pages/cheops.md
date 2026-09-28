@@ -2,7 +2,7 @@ title: CHEOPS
 
 # CHEOPS
 
-<img src="{static}/images/Cheops.png" style="float:right; width: 300px;">
+<img src="{static}/images/Cheops.png" style="float:right; width: 300px;" alt="Black-and-white cartoon of a pharaoh sitting at a table and contemplating a game of chess. The pharaoh holds a shepherd's crook and rests his chin on one hand. A cat lies curled up beside the table, one of the chess pieces in its mouth.">
 **CHEOPS** (CHEss OPponent
 Simulator) is a fully-functional chess program capable of
 human-vs-human, human-vs-computer, and computer-vs-computer play. It
@@ -66,7 +66,7 @@ Screenshots
 -----------
 
 <table>
-<tr><td><a href="/images/Cheops1.png"><img src="/images/Cheops1.png" width="250" style="margin-right: 1em;"></a></td><td><a href="/images/Cheops2.png"><img src="/images/Cheops2.png" width="250"></a></td></tr>
+<tr><td><a href="/images/Cheops1.png"><img src="/images/Cheops1.png" width="250" style="margin-right: 1em;" alt="Screenshot of the Cheops chess program running in a terminal, displaying its evaluation attributes and their numeric weights, with a prompt to select an attribute to change."></a></td><td><a href="/images/Cheops2.png"><img src="/images/Cheops2.png" width="250" alt="Screenshot of the Cheops chess program running in a terminal, showing the human player's first move of g1f3 and then the computer opponent's first move of e7e6."></a></td></tr>
 <tr><td>Configuring the computer opponent</td><td>Game in progress</td></tr>
 </table>
 
