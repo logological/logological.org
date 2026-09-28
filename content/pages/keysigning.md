@@ -2,7 +2,7 @@ title: Key-signing party
 slug: keysigning
 
 # Key-signing party
-<a href="/images/keysigning_poster.pdf"><img src="/images/keysigning_poster.jpg" title="Publicity poster for the key-signing party" alt="[A publicity poster advertising the key-signing party at TU Darmstadt]" style="float:right; border: thin solid black; margin-left: 1em; width: 300px;" /></a>
+<a href="/images/keysigning_poster.pdf"><img src="/images/keysigning_poster.jpg" title="Publicity poster for the key-signing party" alt="[A publicity poster advertising the key-signing party at TU Darmstadt]" style="float:right; border: thin solid black; margin-left: 1em; width: 300px;"></a>
 
 An OpenPGP key-signing party will be held on **Thursday, 8 September 2016
 at 12:00** in
@@ -70,8 +70,7 @@ We will use the following protocol:
    and fingerprint of each key.  Next to each key will be two
    checkboxes: one for verifying that the fingerprint matches, and one
    for verifying that the owner's identity matches.  The list will
-   look something like this:<br /><br
-   />![Sample list of keys](images/keysigning_list.png)
+   look something like this:<br><br>![Sample list of keys](images/keysigning_list.png)
 
 2. The keys on the list are numbered.  Everyone lines up in that order.
 

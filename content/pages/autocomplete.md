@@ -10,16 +10,16 @@ suggestion which makes sense.
 Canada
 ------
 
-<a href="/images/O_Autocompleted_Canada.svg"><img src="/images/O_Autocompleted_Canada.png" /></a>
+<a href="/images/O_Autocompleted_Canada.svg"><img src="/images/O_Autocompleted_Canada.png"></a>
 
 Europe
 ------
 
-<a href="/images/Autocempleted_Europe.svg"><img src="/images/Autocompleted_Europe.png" /></a>
+<a href="/images/Autocempleted_Europe.svg"><img src="/images/Autocompleted_Europe.png"></a>
 
 
 British Isles
 -------------
 
-<a href="/images/Autocompleted_British_Isles.svg"><img src="/images/Autocompleted_British_Isles.png" /></a>
+<a href="/images/Autocompleted_British_Isles.svg"><img src="/images/Autocompleted_British_Isles.png"></a>
 

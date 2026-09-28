@@ -303,7 +303,7 @@ A version of this article appears in the following publication:
 <li class='bib-bibitem' id='cite-miller2006please'>
 <div class='bib-cover-container'><img class='bib-cover'
 src='https://files.nothingisreal.com/publications/Tristan_Miller/covers/nonj200609.png'
-/></div>
+></div>
 <div class='bib-article'>
 <p><span class='bib-author'>Tristan Miller.</span>
 <span class='bib-title'><a

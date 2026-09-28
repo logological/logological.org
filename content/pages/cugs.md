@@ -4,7 +4,7 @@ slug: cugs
 # Commodore Users Group of Saskatchewan
 
 <img src="{static}/images/CUGS_logo.png" style="float:right; width:
-300px; margin-left: 1em;" />The **Commodore Users Group of Saskatchewan** (CUGS) was a
+300px; margin-left: 1em;">The **Commodore Users Group of Saskatchewan** (CUGS) was a
 nonprofit organization comprised of Commodore 64 and 128 users
 interested in sharing ideas, programs, knowledge, problems, and
 solutions with each other. Membership benefits included access to an

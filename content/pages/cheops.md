@@ -2,7 +2,7 @@ title: CHEOPS
 
 # CHEOPS
 
-<img src="{static}/images/Cheops.png" style="float:right; width: 300px;" />
+<img src="{static}/images/Cheops.png" style="float:right; width: 300px;">
 **CHEOPS** (CHEss OPponent
 Simulator) is a fully-functional chess program capable of
 human-vs-human, human-vs-computer, and computer-vs-computer play. It
@@ -66,7 +66,7 @@ Screenshots
 -----------
 
 <table>
-<tr><td><a href="/images/Cheops1.png"><img src="/images/Cheops1.png" width="250" style="margin-right: 1em;" /></a></td><td><a href="/images/Cheops2.png"><img src="/images/Cheops2.png" width="250" /></a></td></tr>
+<tr><td><a href="/images/Cheops1.png"><img src="/images/Cheops1.png" width="250" style="margin-right: 1em;"></a></td><td><a href="/images/Cheops2.png"><img src="/images/Cheops2.png" width="250"></a></td></tr>
 <tr><td>Configuring the computer opponent</td><td>Game in progress</td></tr>
 </table>
 
