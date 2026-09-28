@@ -517,7 +517,7 @@ FUNCTION {output.bibitem}
   newline$
   "          <picture>" write$
   newline$
-  "            <source srcset='" covers.path * "/" * cite$ * ".webp' type='image/webp' />" * write$
+  "            <source srcset='" covers.path * "/" * cite$ * ".webp' type='image/webp'>" * write$
   newline$
   "            <img src='" covers.path * "/" * cite$ * ".jpg' alt='' class='border border-dark img-fluid'>" * write$
   newline$
