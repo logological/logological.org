@@ -1,5 +1,6 @@
 Title: eFISK
 lang: de
+save_as: efisk.html
 
 # eFISK: Eine aufmerksamkeitsbasierte Schlüsselwort-Extraktions- und Information Retrieval-Maschine
 
