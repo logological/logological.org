@@ -13,6 +13,7 @@
 [submodule "startbootstrap-resume"]
 	path = startbootstrap-resume
 	url = git@github.com:logological/startbootstrap-resume.git
+        branch = master
 [submodule "Font-Awesome"]
 	path = Font-Awesome
 	url = https://github.com/FortAwesome/Font-Awesome.git
