@@ -61,6 +61,7 @@ deploy:
 
 html: startbootstrap-resume css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(RM) $(OUTPUTDIR)/index[0-9].html $(OUTPUTDIR)/index[1-9][0-9].html
 
 validate:
 	$(JAVA) -jar $(VNU) --stdout --skip-non-html --also-check-css $(OUTPUTDIR)
@@ -81,7 +82,7 @@ css:	\
 	theme/static/css/startbootstrap-resume/styles.min.css
 
 clean:
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*
+	[ ! -d $(OUTPUTDIR) ] || $(RM) -r $(OUTPUTDIR)/*
 	make -C publications clean
 	make -C maledicta clean
 
@@ -118,6 +119,7 @@ endif
 
 publish: startbootstrap-resume css publications maledicta webkeydir
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	$(RM) $(OUTPUTDIR)/index[0-9].html $(OUTPUTDIR)/index[1-9][0-9].html
 
 publications:
 	make -C publications

@@ -377,7 +377,7 @@ Redirect permanent /images/SemEval-2017_20160623_flyer.pdf https://alt.qcri.org/
 Redirect permanent /fb/manitoban https://themanitoban.com/2024/03/crunching-code-and-cracking-jokes/47075/
 
 # Don't serve articles and index pages that Pelican stupidly generates
-# (This is now handled by rsync_excludes.txt)
+# (This is now handled by Makefile rules and rsync_excludes.txt)
 #Redirect 404 /news
 #Redirect 404 /index2
 #Redirect 404 /index2.html
