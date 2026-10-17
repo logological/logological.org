@@ -249,7 +249,7 @@ Individual academic units within the university may use Slack, another proprieta
 
 ## VPN
 
-[IST's VPN support page](https://umanitoba.ca/information-services-technology/my-security/vpn-support) links to some [VPN instructions for Linux](https://ithelp.umanitoba.ca/a/1635613-vpn-instructions-for-installing-linux-vpn) that discuss connecting to UM's Ivanti (formerly Pulse) VPN with the proprietary Pulse Secure Client for Linux.  Alternatively, you can try using [OpenConnect](https://www.infradead.org/openconnect/), a free software VPN client that supports the server's Pulse Connect Secure protocol.
+[IST's VPN support page](https://umanitoba.ca/information-services-technology/my-security/vpn-support) links to some [VPN instructions for Linux](https://umanitoba.haloitsm.com/portal/kb?id=158) that discuss connecting to UM's Ivanti (formerly Pulse) VPN with the proprietary Pulse Secure Client for Linux.  Alternatively, you can try using [OpenConnect](https://www.infradead.org/openconnect/), a free software VPN client that supports the server's Pulse Connect Secure protocol.
 
 ### Pulse Secure Client
 
