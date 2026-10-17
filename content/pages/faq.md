@@ -169,10 +169,10 @@ apply the correct style hooks.  You need to create a custom Elisp
 style file specifying these hooks.  You can try having AUCTeX
 automatically generate such a style file by running `M-x
 TeX-auto-generate`.  You'll first be prompted for the path to the
-LaTeX style or class file, and then to the AUCTeX style directory
-(normally `$HOME/.emacs.d/auctex/style`) for output.  The generated
-style file will have the same basename as the input file, but with a
-`.el` suffix.  Open it and edit it as necessary.
+LaTeX style or class file, and then to the `TeX-auto-private`
+directory (normally `$HOME/.emacs.d/auctex/auto`) for output.  The
+generated style file will have the same basename as the input file,
+but with a `.el` suffix.  Open it and edit it as necessary.
 
 ### How can I tell AUCTeX to display my viewer on a remote display?
 
