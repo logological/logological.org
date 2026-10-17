@@ -255,6 +255,10 @@ Individual academic units within the university may use Slack, another proprieta
 
 Pulse Secure Client is unfortunately proprietary software, though it should at least allow you to connect to the university's VPN.  There are a number of problems you may need to work around with Pulse Secure Client for Linux:
 
+* The Pulse Secure Client packages are available only as 32-/64-bit deb packages for Ubuntu or 32-/64-bit RPM packages for CentOS. These packages can likely be installed on other GNU/Linux distributions that support deb or RPM packages, though you may need to solve some dependency issues.  For example, trying to install the RPM on openSUSE results in a warning about a missing dependency on libbsd.  On openSUSE, this dependency is actually named libbsd0, so as long as you have that installed, you can ignore the warning.
+
+* The RPM packages, at least on openSUSE, cannot be installed overtop older versions.  If you need to upgrade to a newer version of Pulse Secure Client, you will need to uninstall the old RPM before you install the new one.
+
 * The Pulse Secure Client installer may fail to detect a missing depedency on Mozilla's Certificate Database Tool (certutil).  If your system does not have certutil installed, then Pulse will fail to install UM's security certificate, and will issue the following warning when you connect to the VPN:
 
     >You are about to authenticate to an untrusted server. There are problems with the site's security certificate:
