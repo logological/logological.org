@@ -55,6 +55,7 @@ ENTRY
     number
     organization
     pages
+    poster
     pubtype
     pdf
     ps
@@ -152,6 +153,11 @@ FUNCTION {get.icon.data}
   #0 in.bibliography = 'skip$ {data} if$
   record.marker
 
+  "Poster"
+  "mdi-presentation"
+  #0 in.bibliography = 'skip$ {poster} if$
+  record.marker
+
   "Video"
   "mdi-video"
   #0 in.bibliography = 'skip$ {video} if$
@@ -163,7 +169,7 @@ FUNCTION {get.icon.data}
   record.marker
 
   "PDF"
-  "mdi-file-pdf"
+  "mdi-file-pdf-box"
   #0 in.bibliography = 'skip$ {pdf} if$
   record.marker
   
