@@ -33,11 +33,11 @@ FOOTER_RIGHT = """
 """.format(repo=REPOURL, repo_name=REPOURL[19:])
 
 # Where to put generated files
-ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_URL = 'news/{slug}.html'
 ARTICLE_SAVE_AS = ARTICLE_URL
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = PAGE_URL
-USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = False
 CATEGORY_URL = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
@@ -102,7 +102,7 @@ ARTICLES_FRONT_PAGE = 5
 SUMMARY_MAX_LENGTH = 25
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
-DEFAULT_CATEGORY = 'news'
+DEFAULT_CATEGORY = None
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
