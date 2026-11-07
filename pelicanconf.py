@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
+from datetime import datetime, timedelta, timezone
 import subprocess
-import datetime
 import pytz
 
 SITEAUTHOR = u"Tristan Miller"
@@ -21,8 +21,9 @@ DEFAULT_DATE = 'fs'
 DEFAULT_LANG = u'en-ca'
 TIMEZONE = u'America/Winnipeg'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
-BUILD_TIME = datetime.datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M %Z")
+BUILD_TIME = datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M %Z")
 #date.today()#.strftime(format='%Y-%m-%d')
+SECURITY_EXPIRES_TIME = (datetime.now(timezone.utc) + timedelta(days=365)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 # This goes at the footer of the site
 FOOTER_LEFT = "" # Superseded; see base.html
@@ -91,6 +92,9 @@ ARTICLE_EXCLUDES = [
 PAGE_EXCLUDES = [
     'extra',
     ]
+TEMPLATE_PAGES = {
+    '../theme/templates/security.txt': ".well-known/security.txt",
+}
 
 #READERS = {"html": None}
 

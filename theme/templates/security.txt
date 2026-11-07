@@ -1,0 +1,5 @@
+Contact: mailto:tristan@logological.org
+
+Encryption: https://logological.org/BF8A2EE4.txt
+
+Expires: {{ SECURITY_EXPIRES_TIME }}
