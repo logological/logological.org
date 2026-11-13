@@ -49,6 +49,8 @@ Software](https://www.gnu.org/philosophy/free-sw.html).
     moderation tools
 -   [GPP](/gpp.html), a general-purpose preprocessor with
     customizable syntax
+-   [Little Shop of Horrors](/lsoh.html), an unfinished QuickBASIC
+    port of the multiplayer game for the C*Base BBS
 -   Various current and former [Mozilla](https://www.mozilla.org/)
     projects, including the web browser core, the
     [Firefox](https://www.mozilla.org/en-US/firefox/new/) browser, the
